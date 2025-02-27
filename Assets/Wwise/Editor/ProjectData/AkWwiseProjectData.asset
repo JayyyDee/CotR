@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 04dbe3dc954cf04999c0f4a2686209f5
     GuidInternal: 
-    m_lastTime: -8584609918701282128
+    m_lastTime: -8584609889477998560
     List:
     - name: SoundBank_Gemme_Jadeite_Pickup
       guid: 17ec3b43fb1f104bb9eaaa381f02a407
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 604df3ab7243064eadf8b44faad8fe60
     GuidInternal: 
-    m_lastTime: -8584609918701372270
+    m_lastTime: -8584609889479465603
     List:
     - name: Event_Footstep
       guid: 43e4f4946bb312449325cca687fbb9a6
@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: f5bdefd3bb5238479be43fe2685c877e
     GuidInternal: 
-    m_lastTime: -8584610021432848005
+    m_lastTime: -8584609889477948388
     List:
     - name: Footsteps
       guid: 6b06de6a67622846a8bd36f0bfb55764
