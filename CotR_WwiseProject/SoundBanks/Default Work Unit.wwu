@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DCE3DB04-4C95-49F0-99C0-F4A2686209F5}" SchemaVersion="123">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{DCE3DB04-4C95-49F0-99C0-F4A2686209F5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DCE3DB04-4C95-49F0-99C0-F4A2686209F5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SoundBank_Movement" ID="{57AB60DA-A6F4-4B2B-BFAC-3C4279A4B7E3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Event_Footstep" ID="{94F4E443-B36B-4412-9325-CCA687FBB9A6}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SoundBank_Gemme_Jadeite_Pickup" ID="{433BEC17-1FFB-4B10-B9EA-AA381F02A407}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Event_Jadeide_Slow__Pickup" ID="{6E97C1E0-ED20-4DE1-A635-5292B3F19CD8}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

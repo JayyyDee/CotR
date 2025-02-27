@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3618206844	Event_Footstep			\Default Work Unit\Event_Footstep	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Footsteps			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	60015073	Roche 2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\A4\{A4C0AD17-C06F-03E4-5E3E-4BEF2E34D208}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch_Footsteps\Walking Stone\Roche 2_$itemnumber		38168
+	269112766	Roche 1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\DF\{DFFDB0B0-ABA8-6A75-C521-6B7648E75B13}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch_Footsteps\Walking Stone\Roche 1_$itemnumber		27148
+	637276841	Roche 6_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\ED\{ED24927D-5056-5D72-81AB-ACE5D7102AA4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch_Footsteps\Walking Stone\Roche 6_$itemnumber		28148
+	758329150	Roche 5_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\EB\{EB0590CB-A475-A823-F98B-4F9641D737BA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch_Footsteps\Walking Stone\Roche 5_$itemnumber		29152
+	878144356	Roche 3_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1C\{1C3C2880-CEC6-2A37-7EFB-E73216FE7E58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch_Footsteps\Walking Stone\Roche 3_$itemnumber		30488
+	1049465078	Roche 4_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\29\{2990C488-6B1F-0B02-325D-2A413B9A1357}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch_Footsteps\Walking Stone\Roche 4_$itemnumber		70564
+

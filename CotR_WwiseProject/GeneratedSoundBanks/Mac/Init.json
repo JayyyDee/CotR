@@ -41,9 +41,25 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps",
+      "GUID": "{6ADE066B-6267-4628-A8BD-36F0BFB55764}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Stone",
+        "GUID": "{DA0274EC-8ED5-4EEA-920D-44B634FF901E}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{DD917FBE-2DC0-5023-5E21-A2BB94639725}"
+  "FileHash": "{BEEFF38A-706A-9128-30BF-318ACDA634EC}"
  }
 }

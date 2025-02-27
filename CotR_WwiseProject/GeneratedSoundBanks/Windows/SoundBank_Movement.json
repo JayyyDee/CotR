@@ -1,0 +1,129 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "486013808",
+    "Type": "User",
+    "GUID": "{57AB60DA-A6F4-4B2B-BFAC-3C4279A4B7E3}",
+    "Language": "SFX",
+    "Hash": "{8A250DDF-E570-9DC0-1A6D-8559F56B498F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Movement",
+    "ShortName": "SoundBank_Movement",
+    "Path": "SoundBank_Movement.bnk",
+    "Media": [
+     {
+      "Id": "60015073",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Roche 2_$itemnumber.wav",
+      "CachePath": "A4/{A4C0AD17-C06F-03E4-5E3E-4BEF2E34D208}.wem"
+     },
+     {
+      "Id": "269112766",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Roche 1_$itemnumber.wav",
+      "CachePath": "DF/{DFFDB0B0-ABA8-6A75-C521-6B7648E75B13}.wem"
+     },
+     {
+      "Id": "637276841",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Roche 6_$itemnumber.wav",
+      "CachePath": "ED/{ED24927D-5056-5D72-81AB-ACE5D7102AA4}.wem"
+     },
+     {
+      "Id": "758329150",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Roche 5_$itemnumber.wav",
+      "CachePath": "EB/{EB0590CB-A475-A823-F98B-4F9641D737BA}.wem"
+     },
+     {
+      "Id": "878144356",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Roche 3_$itemnumber.wav",
+      "CachePath": "1C/{1C3C2880-CEC6-2A37-7EFB-E73216FE7E58}.wem"
+     },
+     {
+      "Id": "1049465078",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Roche 4_$itemnumber.wav",
+      "CachePath": "29/{2990C488-6B1F-0B02-325D-2A413B9A1357}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3618206844",
+      "Name": "Event_Footstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Event_Footstep",
+      "GUID": "{94F4E443-B36B-4412-9325-CCA687FBB9A6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.14089641",
+      "DurationMax": "0.36702645",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2385628198",
+         "Id": "1216965916",
+         "GUID": "{DA0274EC-8ED5-4EEA-920D-44B634FF901E}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "60015073"
+         },
+         {
+          "Id": "269112766"
+         },
+         {
+          "Id": "637276841"
+         },
+         {
+          "Id": "758329150"
+         },
+         {
+          "Id": "878144356"
+         },
+         {
+          "Id": "1049465078"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps",
+      "GUID": "{6ADE066B-6267-4628-A8BD-36F0BFB55764}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Stone",
+        "GUID": "{DA0274EC-8ED5-4EEA-920D-44B634FF901E}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1169F562-6ED3-1BEE-CFF4-81266DBD21A2}"
+ }
+}

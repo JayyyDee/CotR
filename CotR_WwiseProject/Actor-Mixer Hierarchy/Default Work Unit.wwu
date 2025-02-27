@@ -1,6 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Switch_Footsteps" ID="{B03350EF-8F17-4DD8-B630-D913070D9C4B}" ShortID="304605297">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Stone" ID="{DA0274EC-8ED5-4EEA-920D-44B634FF901E}" WorkUnitID="{D3EFBDF5-52BB-4738-9BE4-3FE2685C877E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Footsteps" ID="{6ADE066B-6267-4628-A8BD-36F0BFB55764}" WorkUnitID="{D3EFBDF5-52BB-4738-9BE4-3FE2685C877E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Walking Stone" ID="{AD543608-2225-4506-B020-59E94C9B72FF}" ShortID="421981936">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Roche 1_$itemnumber" ID="{288473E4-3C09-4C81-8360-B23B8AEC7FC4}" ShortID="1063539738">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Roche 1_$itemnumber" ID="{1D074058-D1E9-429A-BCD3-8BD00B9F6C52}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.497486114501953"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.638382521373687"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Roche 1_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="269112766"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Roche 1_$itemnumber" ID="{1D074058-D1E9-429A-BCD3-8BD00B9F6C52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Roche 2_$itemnumber" ID="{D45383C4-5AB8-4273-B41F-CB078933047F}" ShortID="753123036">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Roche 2_$itemnumber" ID="{69C28218-F1AD-46D0-AC3C-46F675E9D929}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.534014815217132"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.732313466069859"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Roche 2_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="60015073"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Roche 2_$itemnumber" ID="{69C28218-F1AD-46D0-AC3C-46F675E9D929}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Roche 3_$itemnumber" ID="{C74BC7BE-629A-4E6D-A4F1-6A8B188280BB}" ShortID="817161744">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Roche 3_$itemnumber" ID="{4418EA4F-6622-4B8C-9A1F-EC76D29F4C97}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.534014815217132"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.692305841477045"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Roche 3_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="878144356"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Roche 3_$itemnumber" ID="{4418EA4F-6622-4B8C-9A1F-EC76D29F4C97}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Roche 4_$itemnumber" ID="{64C33D5E-4041-43B6-A1BC-AC18FFF5F340}" ShortID="800845232">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Roche 4_$itemnumber" ID="{B0736BA3-CDA5-4C36-8CBD-2B565F24EBFD}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.540972662972404"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.907999121890479"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Roche 4_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1049465078"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Roche 4_$itemnumber" ID="{B0736BA3-CDA5-4C36-8CBD-2B565F24EBFD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Roche 5_$itemnumber" ID="{9D382976-39F5-4453-BA8E-BA5750B2E3EA}" ShortID="686649619">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Roche 5_$itemnumber" ID="{F900F0C6-CB54-468F-9B3C-5599781D9BB8}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.542712124911222"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.694045303415863"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Roche 5_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="758329150"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Roche 5_$itemnumber" ID="{F900F0C6-CB54-468F-9B3C-5599781D9BB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Roche 6_$itemnumber" ID="{2C6562A2-A9ED-4095-8546-14DB0FA551B1}" ShortID="1070430910">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Roche 6_$itemnumber" ID="{CB3708B8-CA5C-4075-B7C7-C8ACD6730C92}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.540972662972404"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.687087455660591"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Roche 6_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="637276841"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Roche 6_$itemnumber" ID="{CB3708B8-CA5C-4075-B7C7-C8ACD6730C92}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Walking Stone" ID="{AD543608-2225-4506-B020-59E94C9B72FF}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Stone" ID="{DA0274EC-8ED5-4EEA-920D-44B634FF901E}"/>
+								<ItemList>
+									<ItemRef Name="Walking Stone" ID="{AD543608-2225-4506-B020-59E94C9B72FF}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Sound Name="Jadeide Slow_$itemnumber" ID="{7EB39DD9-298E-4CA4-B706-BA93B8DC7E4B}" ShortID="326426044">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Jadeide Slow_$itemnumber" ID="{D8D9086F-DE31-4D9B-B3F3-0B2C914F69D2}">
+							<Language>SFX</Language>
+							<AudioFile>Jadeide Slow_$itemnumber.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="963335504"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Jadeide Slow_$itemnumber" ID="{D8D9086F-DE31-4D9B-B3F3-0B2C914F69D2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
