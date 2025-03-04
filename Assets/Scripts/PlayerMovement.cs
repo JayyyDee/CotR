@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour
 {
     public float speed { get; private set; }
     [SerializeField] private float movementSpeed = 1500;
@@ -13,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     private int gemCounter = 0; //Move in GemManager
 
     private Rigidbody2D rb;
+
+    //Multiplayer
+
 
     void Start()
     {
