@@ -15,10 +15,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
-      
+
     }
 
-    
     void Update()
     {
         //Get the value (1 or -1) for the movement
@@ -27,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         //For animation, the animation will start on the front.
         speed = moveVertical;
-        
+
     }
 
     private void FixedUpdate() //FixedUpdate for physics
@@ -42,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(movement * movementSpeed * Time.fixedDeltaTime);
 
         //If the horizontal velocity is more than the max speed, set velocity to the maxSpeed to not go pass it.
-        if(rb.velocity.x > maxSpeed)
+        if (rb.velocity.x > maxSpeed)
         {
             rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
         }
