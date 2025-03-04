@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private float moveHorizontal;
     private float moveVertical;
 
+    private int gemCounter = 0; //Move in GemManager
+
     private Rigidbody2D rb;
 
     void Start()
@@ -52,7 +54,17 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(maxSpeed, rb.velocity.x);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Move in GemManager, when colliding with the gem, set inactive and plya sound.
+        if (collision.CompareTag("Gemme"))
+        {
+            collision.gameObject.SetActive(false);
+            gemCounter = 1;
+        }
+    }
 }
+
 
 //Old movement code
 //transform.position += movement * Time.deltaTime * 3;
