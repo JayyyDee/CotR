@@ -1618,6 +1618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154abf75f817aa744b189731016aaf62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 2500
+  maxSpeed: 2500
 --- !u!50 &420150100
 Rigidbody2D:
   serializedVersion: 4
@@ -1631,8 +1633,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 15
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1641,7 +1643,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -1967,7 +1969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc1c1dfd2f1e3c4495454ecd5a48948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: 
   useOtherObject: 0
   data:
     idInternal: 0
@@ -6080,7 +6082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6634275156817948352, guid: 8ad930bff828a9c4da736f81b37d748c, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7464728694945356335, guid: 8ad930bff828a9c4da736f81b37d748c, type: 3}
       propertyPath: m_SortingLayer
