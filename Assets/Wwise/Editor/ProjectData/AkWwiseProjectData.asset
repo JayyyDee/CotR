@@ -125,8 +125,8 @@ MonoBehaviour:
         guid: 43e4f4946bb312449325cca687fbb9a6
       Path: Events\Default Work Unit\Event_Footstep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.36702645
+      minDuration: 0.14089641
     - name: Event_Jadeide_Slow__Pickup
       guid: e0c1976e20ede14da6355292b3f19cd8
       id: 35105690
@@ -142,8 +142,8 @@ MonoBehaviour:
         guid: e0c1976e20ede14da6355292b3f19cd8
       Path: Events\Default Work Unit\Event_Jadeide_Slow__Pickup
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.9253125
+      minDuration: 5.9253125
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

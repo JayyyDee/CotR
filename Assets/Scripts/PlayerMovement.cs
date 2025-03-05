@@ -33,7 +33,6 @@ public class PlayerMovement : NetworkBehaviour
         //For animation, the animation will start on the front.
         speed = moveVertical;
 
-       
     }
 
     private void FixedUpdate() //FixedUpdate for physics

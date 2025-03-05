@@ -2,28 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using static UnityEngine.GraphicsBuffer;
 
 public class CameraMovement : MonoBehaviour
-  
 {
-     [SerializeField] public Transform player;
-    public Vector3 offset = new Vector3(0f, 0f, -5f);
-    public float smoothSpeed = 5f;
-
+    [SerializeField] public Transform player;
+    private Vector3 offset = new Vector3(0f, 0f, -10f);
+    private float smoothSpeed = 5f;
 
     void Update()
     {
-        //Locks the camera on the owner of the game only.
-        //if (!IsOwner)
-        //{
-        //    return;
-        //}
+        if (player == null)
+        {
+            // Try to find the target dynamically if it appears later
+            GameObject foundObject = GameObject.FindWithTag("Player");
+            if (foundObject != null)
+            {
+                player = foundObject.transform;
+            }
+        }
 
         if (player != null)
         {
-            Vector3 targetPosition = player.position + offset;
-            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
+            Debug.Log("PEY");
+            Vector3 desiredPosition = player.position + offset;
+            transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
         }
-        
     }
 }
