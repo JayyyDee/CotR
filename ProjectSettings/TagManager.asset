@@ -14,8 +14,8 @@ TagManager:
   - UI
   - Ground
   - Player
-  - 
-  - 
+  - Ring
+  - Gem
   - 
   - 
   - 
@@ -45,9 +45,12 @@ TagManager:
   - name: Ground
     uniqueID: 3153208317
     locked: 0
+  - name: Ring
+    uniqueID: 2186016155
+    locked: 0
+  - name: Gem
+    uniqueID: 2761443297
+    locked: 0
   - name: Player
     uniqueID: 2898504839
-    locked: 0
-  - name: Jadeite
-    uniqueID: 2761443297
     locked: 0
