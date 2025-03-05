@@ -11,21 +11,25 @@ public class PlayerMovement : NetworkBehaviour
     private float moveHorizontal;
     private float moveVertical;
 
-    private int gemCounter = 0; //Move in GemManager
+    private int gemCounter = 0;
+
+    public HealthBarManager healthBar;
+    public int maxHealth = 1000;
+    public int currentHealth;
 
     private Rigidbody2D rb;
 
    
-
-    void Start()
-    {
+    void Start() {
        rb = GetComponent<Rigidbody2D>();
        rb.gravityScale = 0;
 
+       //Healthbar
+       currentHealth = maxHealth;
+       healthBar.SetMaxHealth(maxHealth);
     }
 
-    void Update()
-    {
+    void Update() {
         //Get the value (1 or -1) for the movement
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetAxis("Vertical");
@@ -33,6 +37,17 @@ public class PlayerMovement : NetworkBehaviour
         //For animation, the animation will start on the front.
         speed = moveVertical;
 
+        //To test for damage, press O
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            TakeDamage(100);
+        }
+
+        //To test for healing, press P
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TakeHealing(100);
+        }
     }
 
     private void FixedUpdate() //FixedUpdate for physics
@@ -45,7 +60,15 @@ public class PlayerMovement : NetworkBehaviour
 
         PlayerMov();
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Move in GemManager, when colliding with the gem, set inactive and plya sound.
+        if (collision.CompareTag("Gemme"))
+        {
+            collision.gameObject.SetActive(false);
+            gemCounter = 1;
+        }
+    }
     private void PlayerMov()
     {
         if (speed == 0)
@@ -69,14 +92,16 @@ public class PlayerMovement : NetworkBehaviour
             rb.velocity = new Vector2(maxSpeed, rb.velocity.x);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    void TakeDamage(int damage)
     {
-        //Move in GemManager, when colliding with the gem, set inactive and plya sound.
-        if (collision.CompareTag("Gemme"))
-        {
-            collision.gameObject.SetActive(false);
-            gemCounter = 1;
-        }
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
+    void TakeHealing(int heal)
+    {
+        currentHealth += heal;
+        healthBar.SetHealth(currentHealth);
     }
 }
 

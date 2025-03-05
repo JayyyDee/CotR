@@ -24,7 +24,6 @@ public class CameraMovement : MonoBehaviour
 
         if (player != null)
         {
-            Debug.Log("PEY");
             Vector3 desiredPosition = player.position + offset;
             transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
         }
