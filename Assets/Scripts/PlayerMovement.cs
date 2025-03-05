@@ -20,6 +20,7 @@ public class PlayerMovement : NetworkBehaviour
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
+       rb.gravityScale = 0;
 
     }
 
