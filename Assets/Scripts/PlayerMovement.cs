@@ -15,8 +15,7 @@ public class PlayerMovement : NetworkBehaviour
 
     private Rigidbody2D rb;
 
-    //Multiplayer
-
+   
 
     void Start()
     {
@@ -33,9 +32,21 @@ public class PlayerMovement : NetworkBehaviour
         //For animation, the animation will start on the front.
         speed = moveVertical;
 
+       
     }
 
     private void FixedUpdate() //FixedUpdate for physics
+    {
+        //If the player is not the owner of the playable, can't access the movement.
+        if (!IsOwner)
+        {
+            return;
+        }
+
+        PlayerMov();
+    }
+
+    private void PlayerMov()
     {
         if (speed == 0)
         {
