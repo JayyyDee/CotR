@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 519420035}
   - component: {fileID: 519420036}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: PlayerCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2165,7 +2165,12 @@ MonoBehaviour:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 803566927}
     PlayerPrefab: {fileID: 6908946048115158358, guid: 8ad930bff828a9c4da736f81b37d748c, type: 3}
-    NetworkPrefabs: []
+    NetworkPrefabs:
+    - Override: 0
+      Prefab: {fileID: 519420028}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0

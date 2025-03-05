@@ -6,15 +6,11 @@ using Unity.Netcode;
 public class CameraMovement : MonoBehaviour
   
 {
-    public Transform player;
+     [SerializeField] public Transform player;
+    public Vector3 offset = new Vector3(0f, 0f, -5f);
+    public float smoothSpeed = 5f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         //Locks the camera on the owner of the game only.
@@ -23,6 +19,11 @@ public class CameraMovement : MonoBehaviour
         //    return;
         //}
 
-        transform.position = player.transform.position + new Vector3(0,0,-5);
+        if (player != null)
+        {
+            Vector3 targetPosition = player.position + offset;
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
+        }
+        
     }
 }
