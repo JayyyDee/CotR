@@ -8,6 +8,7 @@ public class PlayerMovement : NetworkBehaviour
     public float speed { get; private set; }
     [SerializeField] private float movementSpeed = 1500;
     [SerializeField] private float maxSpeed = 1500;
+    [SerializeField] private Transform spawnPoint;
     private float moveHorizontal;
     private float moveVertical;
 
@@ -21,12 +22,15 @@ public class PlayerMovement : NetworkBehaviour
 
    
     void Start() {
-       rb = GetComponent<Rigidbody2D>();
-       rb.gravityScale = 0;
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0;
 
-       //Healthbar
-       currentHealth = maxHealth;
-       healthBar.SetMaxHealth(maxHealth);
+        //Healthbar
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+
+        gameObject.transform.position = spawnPoint.position;
+      
     }
 
     void Update() {
@@ -37,17 +41,21 @@ public class PlayerMovement : NetworkBehaviour
         //For animation, the animation will start on the front.
         speed = moveVertical;
 
-        //To test for damage, press O
-        if (Input.GetKeyDown(KeyCode.O))
+        if (IsOwner)
         {
-            TakeDamage(100);
+            //To test for damage, press O
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                TakeDamage(100);
+            }
+
+            //To test for healing, press P
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                TakeHealing(100);
+            }
         }
 
-        //To test for healing, press P
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            TakeHealing(100);
-        }
     }
 
     private void FixedUpdate() //FixedUpdate for physics
@@ -59,6 +67,7 @@ public class PlayerMovement : NetworkBehaviour
         }
 
         PlayerMov();
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -95,13 +104,33 @@ public class PlayerMovement : NetworkBehaviour
 
     void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (currentHealth > 0)
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+        }
+
+        if (currentHealth <= 0)
+        {
+            gameObject.SetActive(false);
+            Invoke("Death", 2);
+
+        }
     }
     void TakeHealing(int heal)
     {
-        currentHealth += heal;
-        healthBar.SetHealth(currentHealth);
+        if ( currentHealth < maxHealth)
+        {
+            currentHealth += heal;
+            healthBar.SetHealth(currentHealth);
+        }
+
+    }
+
+    void Death ()
+    {
+        gameObject.SetActive(false);
+        gameObject.transform.position = spawnPoint.position;
     }
 }
 

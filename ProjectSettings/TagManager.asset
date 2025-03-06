@@ -51,6 +51,9 @@ TagManager:
   - name: Gem
     uniqueID: 2761443297
     locked: 0
+  - name: Respawn
+    uniqueID: 657095017
+    locked: 0
   - name: Player
     uniqueID: 2898504839
     locked: 0

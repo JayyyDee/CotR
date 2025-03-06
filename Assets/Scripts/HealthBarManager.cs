@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBarManager : MonoBehaviour
+public class HealthBarManager : NetworkBehaviour
 {
     [SerializeField] public Slider slider;
     [SerializeField] public Gradient gradient;
