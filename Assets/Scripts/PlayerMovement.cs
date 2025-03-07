@@ -12,6 +12,8 @@ public class PlayerMovement : NetworkBehaviour
     private float moveHorizontal;
     private float moveVertical;
 
+    private List<GameObject> inventory = new List<GameObject>();
+
     private int gemCounter = 0;
 
     public HealthBarManager healthBar;
@@ -76,6 +78,21 @@ public class PlayerMovement : NetworkBehaviour
         {
             collision.gameObject.SetActive(false);
             gemCounter = 1;
+        }
+
+        if (collision.CompareTag("Ring"))
+        {
+            inventory.Add(collision.gameObject);
+            collision.gameObject.SetActive(false);
+            string fullInv = "";
+            foreach(GameObject gameObject in inventory)
+            {
+                fullInv += (gameObject.name+" ");
+                
+            }
+            Debug.Log(fullInv);
+
+
         }
     }
     private void PlayerMov()
