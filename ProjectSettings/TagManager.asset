@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Gemme
   - Ring
+  - Dummy
   layers:
   - Default
   - TransparentFX

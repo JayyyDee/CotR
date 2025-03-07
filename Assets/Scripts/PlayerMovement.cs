@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using Unity.VisualScripting;
 
 public class PlayerMovement : NetworkBehaviour
 {
@@ -22,6 +23,8 @@ public class PlayerMovement : NetworkBehaviour
 
     private Rigidbody2D rb;
 
+    public Ring ring;
+    private Vector2 mousePosition; 
    
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -43,6 +46,10 @@ public class PlayerMovement : NetworkBehaviour
         //For animation, the animation will start on the front.
         speed = moveVertical;
 
+        //Test for aiming with mouse 
+        //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+
         if (IsOwner)
         {
             //To test for damage, press O
@@ -56,6 +63,11 @@ public class PlayerMovement : NetworkBehaviour
             {
                 TakeHealing(100);
             }
+            //To shoot a bullet
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                ring.Shoot(transform);
+            }
         }
 
     }
@@ -67,6 +79,11 @@ public class PlayerMovement : NetworkBehaviour
         {
             return;
         }
+
+        ////Testing the aiming (again)
+        //Vector2 aimDirection = mousePosition - rb.position;
+        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        //rb.rotation = aimAngle;
 
         PlayerMov();
 
@@ -82,13 +99,14 @@ public class PlayerMovement : NetworkBehaviour
 
         if (collision.CompareTag("Ring"))
         {
+            
             inventory.Add(collision.gameObject);
+            ring = collision.gameObject.GetComponent<Ring>();
             collision.gameObject.SetActive(false);
             string fullInv = "";
             foreach(GameObject gameObject in inventory)
             {
-                fullInv += (gameObject.name+" ");
-                
+                fullInv += (gameObject.name + " ");
             }
             Debug.Log(fullInv);
 
