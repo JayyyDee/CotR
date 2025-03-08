@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c166ba404ef4014aaf4499e0ca8642c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: f2d9e0ec
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -266,9 +266,11 @@ MonoBehaviour:
   movementSpeed: 2500
   maxSpeed: 2500
   spawnPoint: {fileID: 0}
+  footstepsSpeed: 0.35
   healthBar: {fileID: 4514664683419283216}
   maxHealth: 1000
   currentHealth: 0
+  ring: {fileID: 0}
 --- !u!50 &8457053170429327023
 Rigidbody2D:
   serializedVersion: 4

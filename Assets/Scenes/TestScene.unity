@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320237439}
   - component: {fileID: 320237438}
+  - component: {fileID: 320237440}
   m_Layer: 0
   m_Name: Wwise Banks
   m_TagString: Untagged
@@ -156,7 +157,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ba900e11736f58946a66bc625b7504d3, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0
@@ -179,6 +180,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &320237440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320237437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc1c1dfd2f1e3c4495454ecd5a48948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6001ba6ab3621d244a6286bc776b4874, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &335885657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,7 +1880,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0058495402, y: 0.0035749972}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1865,7 +1891,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.6}
+  m_Size: {x: 0.91831076, y: 1.0359945}
   m_EdgeRadius: 0
 --- !u!114 &627569382
 MonoBehaviour:
@@ -1892,7 +1918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8bf9c3fcf82214580ac732c9221ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5f7e1664c
+  triggerList: d1bbb3b5
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -1900,9 +1926,9 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3b59076399c32aa42847c32dd48044bd, type: 2}
   useCallbacks: 0
-  stopSoundOnDestroy: 1
+  stopSoundOnDestroy: 0
   Callbacks: []
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0

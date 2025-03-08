@@ -13,6 +13,10 @@ public class PlayerMovement : NetworkBehaviour
     private float moveHorizontal;
     private float moveVertical;
 
+
+    private bool playingFootsteps = false; // To check Are we playing the sound of footsteps currently
+    public float footstepsSpeed = 0.3f; //BASE Time between playing each Footsteps sound //How fast we walk //will have to modif to match selon le speed animation
+
     private List<GameObject> inventory = new List<GameObject>();
 
     private int gemCounter = 0;
@@ -38,10 +42,21 @@ public class PlayerMovement : NetworkBehaviour
       
     }
 
-    void Update() {
+    void Update() 
+    {
         //Get the value (1 or -1) for the movement
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetAxis("Vertical");
+
+        //StartFootsteps AKA the condition to enable or disable the sounds of walking
+        if (moveVertical > 0 && !playingFootsteps || moveVertical < 0 && !playingFootsteps || moveHorizontal > 0 && !playingFootsteps || moveHorizontal < 0 && !playingFootsteps) 
+        {
+            StartFootsteps();
+        }
+        else if (moveVertical == 0 && moveHorizontal == 0) 
+        {
+            StopFootsteps();
+        }
 
         //For animation, the animation will start on the front.
         speed = moveVertical;
@@ -95,6 +110,7 @@ public class PlayerMovement : NetworkBehaviour
         {
             collision.gameObject.SetActive(false);
             gemCounter = 1;
+            AkUnitySoundEngine.PostEvent("Event_Jadeide_Slow__Pickup", this.gameObject); // The Event to play sounds of collecting the Jadeide
         }
 
         if (collision.CompareTag("Ring"))
@@ -135,6 +151,23 @@ public class PlayerMovement : NetworkBehaviour
         {
             rb.velocity = new Vector2(maxSpeed, rb.velocity.x);
         }
+    }
+
+    // Walking Sounds
+    void StartFootsteps()  //Start walking
+    {
+        playingFootsteps = true;
+        InvokeRepeating(nameof(PlayFootsteps), 0f, footstepsSpeed);
+    }
+    void StopFootsteps() //Stop walking
+    {
+        playingFootsteps = false;
+        CancelInvoke(nameof(PlayFootsteps));
+    }
+
+    void PlayFootsteps()  //The Event to play sounds of footsteps
+    {
+        AkUnitySoundEngine.PostEvent("Event_Footstep", this.gameObject);
     }
 
     void TakeDamage(int damage)
