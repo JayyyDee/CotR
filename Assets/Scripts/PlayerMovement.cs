@@ -28,7 +28,8 @@ public class PlayerMovement : NetworkBehaviour
     public HealthBarManager healthBar;
     public int maxHealth = 1000;
     private int currentHealth;
-   /* private NetworkVariable<int> currentHealth = new NetworkVariable<int>();*/ //NetworkVariable = Every time this value is changed, all of the client gets updated
+    //private NetworkVariable<int> maxHealth = new NetworkVariable<int>(1000);
+    //private NetworkVariable<int> currentHealth = new NetworkVariable<int>(); //NetworkVariable = Every time this value is changed, all of the client gets updated
 
     private Rigidbody2D rb;
 
@@ -41,11 +42,9 @@ public class PlayerMovement : NetworkBehaviour
         rb.gravityScale = 0;
 
         //Setup for the healthbar
-        if (IsOwner)
-        {
-            currentHealth = maxHealth;
-            healthBar.SetMaxHealth(maxHealth);
-        }
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+
 
         //Set the player's spawn point on the spawnpoint location.
         gameObject.transform.position = spawnPoint.position;
@@ -77,13 +76,13 @@ public class PlayerMovement : NetworkBehaviour
         //To test for damage, press O
         if (Input.GetKeyDown(KeyCode.O))
         {
-            TakeDamageClientRpc(100);
+            TakeDamageServerRpc(100);
         }
 
         //To test for healing, press P
         if (Input.GetKeyDown(KeyCode.P))
         {
-            TakeHealingClientRpc(100);
+            HealingServerRpc(100);
         }
         //To shoot a bullet
         if (Input.GetKeyDown(KeyCode.E))
@@ -189,11 +188,15 @@ public class PlayerMovement : NetworkBehaviour
         AkUnitySoundEngine.PostEvent("Event_Footstep", this.gameObject);
     }
 
+    [ServerRpc]
+    private void TakeDamageServerRpc(int damage)
+    {
+        TakeDamageClientRpc(damage);
+    }
+
     [ClientRpc]
     private void TakeDamageClientRpc(int damage)
     {
-        if (IsOwner)
-        {
             if (currentHealth > 0)
             {
                 currentHealth -= damage;
@@ -206,21 +209,21 @@ public class PlayerMovement : NetworkBehaviour
                 Invoke("Death", 2);
 
             }
-        }
+    }
+    [ServerRpc]
+    private void HealingServerRpc(int heal)
+    {
+        HealingClientRpc(heal);
     }
 
     [ClientRpc]
-    void TakeHealingClientRpc(int heal)
+    void HealingClientRpc(int heal)
     {
-        if (IsOwner)
+        if (currentHealth < maxHealth)
         {
-            if (currentHealth < maxHealth)
-            {
-                currentHealth += heal;
-                healthBar.SetHealth(currentHealth);
-            }
+            currentHealth += heal;
+            healthBar.SetHealth(currentHealth);
         }
-
     }
 
     void Death ()
