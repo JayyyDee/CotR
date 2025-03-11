@@ -40,8 +40,11 @@ public class PlayerMovement : NetworkBehaviour
         rb.gravityScale = 0;
 
         //Setup for the healthbar
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        if (IsOwner)
+        {
+            currentHealth = maxHealth;
+            healthBar.SetMaxHealth(maxHealth);
+        }
 
         //Set the player's spawn point on the spawnpoint location.
         gameObject.transform.position = spawnPoint.position;
@@ -70,26 +73,7 @@ public class PlayerMovement : NetworkBehaviour
         //Test for aiming with mouse 
         //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        //If the player is the owner of the healthbar, can deal damage or heal himself (for test)
-        if (IsOwner)
-        {
-            //To test for damage, press O
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                TakeDamage(100);
-            }
-
-            //To test for healing, press P
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                TakeHealing(100);
-            }
-            //To shoot a bullet
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                ring.Shoot(transform);
-            }
-        }
+        HealthBarClientRpc();
 
     }
 
@@ -189,27 +173,55 @@ public class PlayerMovement : NetworkBehaviour
         AkUnitySoundEngine.PostEvent("Event_Footstep", this.gameObject);
     }
 
+    [ClientRpc]
+    private void HealthBarClientRpc()
+    {
+        //To test for damage, press O
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            TakeDamage(100);
+        }
+
+        //To test for healing, press P
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TakeHealing(100);
+        }
+        //To shoot a bullet
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            ring.Shoot(transform);
+        }
+    }
+
     void TakeDamage(int damage)
     {
-        if (currentHealth > 0)
+        if (IsOwner)
         {
-            currentHealth -= damage;
-            healthBar.SetHealth(currentHealth);
+            if (currentHealth > 0)
+            {
+                currentHealth -= damage;
+                healthBar.SetHealth(currentHealth);
+            }
+
+            if (currentHealth <= 0)
+            {
+                gameObject.SetActive(false);
+                Invoke("Death", 2);
+
+            }
         }
 
-        if (currentHealth <= 0)
-        {
-            gameObject.SetActive(false);
-            Invoke("Death", 2);
-
-        }
     }
     void TakeHealing(int heal)
     {
-        if ( currentHealth < maxHealth)
+        if (IsOwner)
         {
-            currentHealth += heal;
-            healthBar.SetHealth(currentHealth);
+            if (currentHealth < maxHealth)
+            {
+                currentHealth += heal;
+                healthBar.SetHealth(currentHealth);
+            }
         }
 
     }

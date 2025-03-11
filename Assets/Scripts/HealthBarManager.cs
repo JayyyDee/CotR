@@ -12,17 +12,17 @@ public class HealthBarManager : NetworkBehaviour
 
     public void SetMaxHealth(int health)
     {
-        slider.maxValue = health;
-        slider.value = health;
+            slider.maxValue = health;
+            slider.value = health;
 
-        //The gradient will start at the beginning, so the health will be green.
-        fill.color = gradient.Evaluate(1f);
+            //The gradient will start at the beginning, so the health will be green.
+            fill.color = gradient.Evaluate(1f);
     }
    public void SetHealth(int health)
-    {
-        slider.value = health;
+   {
+            slider.value = health;
 
-        //Update the slider to represent the color for the amount of health
-        fill.color = gradient.Evaluate(slider.normalizedValue);
+            //Update the slider to represent the color for the amount of health
+            fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 }
