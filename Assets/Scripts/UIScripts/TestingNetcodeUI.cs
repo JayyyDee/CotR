@@ -9,7 +9,7 @@ public class TestingNetcodeUI : MonoBehaviour
     [SerializeField] private Button hostButton;
     [SerializeField] private Button clientButton;
 
-    [SerializeField] public GameObject mainCamera;
+    [SerializeField] public GameObject player;
 
     private void Awake()
     {
@@ -18,8 +18,6 @@ public class TestingNetcodeUI : MonoBehaviour
             Debug.Log("HOSTING");
             NetworkManager.Singleton.StartHost();
             Hide();
-            //Destroy original camera for the player camera
-            GameObject.Destroy(mainCamera);
         });
 
         //When clicking on the CLIENT button, join a game as a client.
@@ -27,8 +25,6 @@ public class TestingNetcodeUI : MonoBehaviour
             Debug.Log("CLIENT");
             NetworkManager.Singleton.StartClient();
             Hide();
-            //Destroy original camera for the player camera
-            GameObject.Destroy(mainCamera);
         });
     }
 

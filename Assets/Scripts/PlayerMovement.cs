@@ -13,9 +13,13 @@ public class PlayerMovement : NetworkBehaviour
     private float moveHorizontal;
     private float moveVertical;
 
+    //Camera
+    [SerializeField] private GameObject mainCamera;
+    [SerializeField] private GameObject playerCamera;
+
 
     private bool playingFootsteps = false; // To check Are we playing the sound of footsteps currently
-    public float footstepsSpeed = 0.3f; //BASE Time between playing each Footsteps sound //How fast we walk //will have to modif to match selon le speed animation
+    public float footstepsSpeed = 0.2f; //BASE Time between playing each Footsteps sound //How fast we walk //will have to modif to match selon le speed animation
 
     private List<GameObject> inventory = new List<GameObject>();
 
@@ -103,6 +107,26 @@ public class PlayerMovement : NetworkBehaviour
         PlayerMov();
 
     }
+
+    public override void OnNetworkSpawn()
+    {
+
+        if (IsOwner) {
+
+            playerCamera.gameObject.SetActive(true);
+            mainCamera.gameObject.SetActive(false);
+            playerCamera.GetComponent<CameraMovement>().player = this.transform;
+        }
+
+
+        base.OnNetworkSpawn();
+    }
+
+    //private void OnEnable()
+    //{
+ 
+    //}
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Move in GemManager, when colliding with the gem, set inactive and plya sound.
@@ -197,6 +221,8 @@ public class PlayerMovement : NetworkBehaviour
 
     void Death ()
     {
+        mainCamera.gameObject.SetActive(true);
+        playerCamera.gameObject.SetActive(false);
         gameObject.SetActive(false);
         gameObject.transform.position = spawnPoint.position;
     }

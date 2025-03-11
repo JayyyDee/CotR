@@ -207,7 +207,8 @@ MonoBehaviour:
   MultiPositionType: 1
   multiPositionTypeLabel: 0
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
+  LargeModePositions:
+  - {fileID: 0}
   multiPositionArray: []
 --- !u!114 &3639026320823998679
 MonoBehaviour:
@@ -266,6 +267,8 @@ MonoBehaviour:
   movementSpeed: 2500
   maxSpeed: 2500
   spawnPoint: {fileID: 0}
+  mainCamera: {fileID: 5697387170484357916, guid: ff360a798feb867459e850c1654db984, type: 3}
+  playerCamera: {fileID: 8482001589336971933}
   footstepsSpeed: 0.35
   healthBar: {fileID: 4514664683419283216}
   maxHealth: 1000
@@ -544,6 +547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 1191223830479898540, guid: c0f4976303c76be489dbdc957938c854, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2211517650107779677, guid: c0f4976303c76be489dbdc957938c854, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -593,6 +600,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0f4976303c76be489dbdc957938c854, type: 3}
+--- !u!1 &8482001589336971933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1191223830479898540, guid: c0f4976303c76be489dbdc957938c854, type: 3}
+  m_PrefabInstance: {fileID: 7295281926863494449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8903317221232138092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2211517650107779677, guid: c0f4976303c76be489dbdc957938c854, type: 3}
