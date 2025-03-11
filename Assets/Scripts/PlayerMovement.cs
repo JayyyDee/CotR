@@ -32,16 +32,18 @@ public class PlayerMovement : NetworkBehaviour
     private Rigidbody2D rb;
 
     public Ring ring;
-    private Vector2 mousePosition; 
+    private Vector2 mousePosition;
+
    
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
 
-        //Healthbar
+        //Setup for the healthbar
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
+        //Set the player's spawn point on the spawnpoint location.
         gameObject.transform.position = spawnPoint.position;
       
     }
@@ -68,7 +70,7 @@ public class PlayerMovement : NetworkBehaviour
         //Test for aiming with mouse 
         //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-
+        //If the player is the owner of the healthbar, can deal damage or heal himself (for test)
         if (IsOwner)
         {
             //To test for damage, press O
@@ -110,7 +112,7 @@ public class PlayerMovement : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-
+        //When the player spawns, attach the playerCamera to the player that enters the lobby.
         if (IsOwner) {
 
             playerCamera.gameObject.SetActive(true);
@@ -118,18 +120,12 @@ public class PlayerMovement : NetworkBehaviour
             playerCamera.GetComponent<CameraMovement>().player = this.transform;
         }
 
-
         base.OnNetworkSpawn();
     }
 
-    //private void OnEnable()
-    //{
- 
-    //}
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Move in GemManager, when colliding with the gem, set inactive and plya sound.
+        //Move in GemManager, when colliding with the gem, set inactive and play sound.
         if (collision.CompareTag("Gemme"))
         {
             collision.gameObject.SetActive(false);
@@ -177,13 +173,12 @@ public class PlayerMovement : NetworkBehaviour
         }
     }
 
-    // Walking Sounds
-    void StartFootsteps()  //Start walking
+    void StartFootsteps()  //Start walking sound effect
     {
         playingFootsteps = true;
         InvokeRepeating(nameof(PlayFootsteps), 0f, footstepsSpeed);
     }
-    void StopFootsteps() //Stop walking
+    void StopFootsteps() //Stop walking sound effect
     {
         playingFootsteps = false;
         CancelInvoke(nameof(PlayFootsteps));
@@ -227,7 +222,3 @@ public class PlayerMovement : NetworkBehaviour
         gameObject.transform.position = spawnPoint.position;
     }
 }
-
-
-//Old movement code
-//transform.position += movement * Time.deltaTime * 3;
