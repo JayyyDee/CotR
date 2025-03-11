@@ -27,7 +27,8 @@ public class PlayerMovement : NetworkBehaviour
 
     public HealthBarManager healthBar;
     public int maxHealth = 1000;
-    public int currentHealth;
+    private int currentHealth;
+   /* private NetworkVariable<int> currentHealth = new NetworkVariable<int>();*/ //NetworkVariable = Every time this value is changed, all of the client gets updated
 
     private Rigidbody2D rb;
 
@@ -73,7 +74,22 @@ public class PlayerMovement : NetworkBehaviour
         //Test for aiming with mouse 
         //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        HealthBarClientRpc();
+        //To test for damage, press O
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            TakeDamageClientRpc(100);
+        }
+
+        //To test for healing, press P
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TakeHealingClientRpc(100);
+        }
+        //To shoot a bullet
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            ring.Shoot(transform);
+        }
 
     }
 
@@ -174,27 +190,7 @@ public class PlayerMovement : NetworkBehaviour
     }
 
     [ClientRpc]
-    private void HealthBarClientRpc()
-    {
-        //To test for damage, press O
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            TakeDamage(100);
-        }
-
-        //To test for healing, press P
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            TakeHealing(100);
-        }
-        //To shoot a bullet
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ring.Shoot(transform);
-        }
-    }
-
-    void TakeDamage(int damage)
+    private void TakeDamageClientRpc(int damage)
     {
         if (IsOwner)
         {
@@ -211,9 +207,10 @@ public class PlayerMovement : NetworkBehaviour
 
             }
         }
-
     }
-    void TakeHealing(int heal)
+
+    [ClientRpc]
+    void TakeHealingClientRpc(int heal)
     {
         if (IsOwner)
         {
