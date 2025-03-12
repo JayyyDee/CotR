@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMovement : NetworkBehaviour
 {
@@ -38,7 +39,12 @@ public class PlayerMovement : NetworkBehaviour
     public Ring ring;
     private Vector2 mousePosition;
 
-   
+    //Gamemode Gemme
+    float currentTime;
+    public float startingTime = 22f;
+
+    [SerializeField] Text countdownText;
+
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
@@ -50,8 +56,14 @@ public class PlayerMovement : NetworkBehaviour
 
         //Set the player's spawn point on the spawnpoint location.
         gameObject.transform.position = spawnPoint.position;
-      
+
+        //Gamemode Gemme Timer
+        countdownText.enabled = false;
+        currentTime = startingTime;
+
     }
+
+
 
     void Update() 
     {
@@ -133,6 +145,16 @@ public class PlayerMovement : NetworkBehaviour
             gemIcon.gameObject.SetActive(true);
             gemCounter = 1;
             AkUnitySoundEngine.PostEvent("Event_Jadeide_Slow__Pickup", this.gameObject); // The Event to play sounds of collecting the Jadeide
+
+            countdownText.enabled = true;
+            currentTime = -1 * Time.deltaTime;
+            countdownText.text = currentTime.ToString("0");
+
+            if (currentTime <= 0)
+            {
+                currentTime = 0;
+                // Your Code Here
+            }
         }
 
         if (collision.CompareTag("Ring"))
@@ -147,9 +169,8 @@ public class PlayerMovement : NetworkBehaviour
                 fullInv += (gameObject.name + " ");
             }
             Debug.Log(fullInv);
-
-
         }
+
     }
     private void PlayerMov()
     {
