@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingTime: 22
   countdownText: {fileID: 0}
-  player: {fileID: 6908946048115158358, guid: 8ad930bff828a9c4da736f81b37d748c, type: 3}
+  player: {fileID: 295593122}
 --- !u!4 &1116617888
 Transform:
   m_ObjectHideFlags: 0
