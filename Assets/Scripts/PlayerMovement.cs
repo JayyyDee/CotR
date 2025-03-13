@@ -11,7 +11,7 @@ public class PlayerMovement : NetworkBehaviour
     public float speed { get; private set; }
     [SerializeField] private float movementSpeed = 1500;
     [SerializeField] private float maxSpeed = 1500;
-    [SerializeField] private GameObject spawnPoint;
+    [SerializeField] private Transform spawnPoint;
     private float moveHorizontal;
     private float moveVertical;
 
@@ -55,7 +55,7 @@ public class PlayerMovement : NetworkBehaviour
 
 
         //Set the player's spawn point on the spawnpoint location.
-        gameObject.transform.position = spawnPoint.transform.position;
+        gameObject.transform.position = spawnPoint.position;
 
         //Gamemode Gemme Timer
         countdownText.enabled = false;
@@ -255,6 +255,6 @@ public class PlayerMovement : NetworkBehaviour
         mainCamera.gameObject.SetActive(true);
         playerCamera.gameObject.SetActive(false);
         gameObject.SetActive(false);
-        gameObject.transform.position = spawnPoint.transform.position;
+        gameObject.transform.position = spawnPoint.position;
     }
 }
