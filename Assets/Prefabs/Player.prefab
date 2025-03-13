@@ -124,6 +124,8 @@ GameObject:
   - component: {fileID: 804191196876815011}
   - component: {fileID: 8457053170429327023}
   - component: {fileID: 6165612374240500858}
+  - component: {fileID: -5078443122011580822}
+  - component: {fileID: -7695022764903982875}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -286,6 +288,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   multiPositionArray: []
 --- !u!114 &3639026320823998679
 MonoBehaviour:
@@ -343,13 +346,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2500
   maxSpeed: 2500
-  spawnPoint: {fileID: 0}
+  spawnPoint: {fileID: 7389161817023305173, guid: b581db2c5eab43844bc72aa35d312e3b, type: 3}
   mainCamera: {fileID: 5697387170484357916, guid: ff360a798feb867459e850c1654db984, type: 3}
   playerCamera: {fileID: 8482001589336971933}
   footstepsSpeed: 0.35
-  gemIcon: {fileID: 5179075842583951021}
-  healthBar: {fileID: 4514664683419283216}
-  maxHealth: 1000
   ring: {fileID: 0}
 --- !u!50 &8457053170429327023
 Rigidbody2D:
@@ -423,6 +423,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.6}
   m_EdgeRadius: 0
+--- !u!114 &-5078443122011580822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6908946048115158358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e1d5363062d8645b787aceb241ec73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemIcon: {fileID: 5179075842583951021}
+--- !u!114 &-7695022764903982875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6908946048115158358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63241407bf371bc4ab1cd65ba802c2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 4660444626869022651, guid: 2dbe62a5049e80f4582fbdd311b9b903, type: 3}
+  maxHealth: 1000
 --- !u!1001 &1198805116772816196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -578,17 +605,6 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &4514664683419283216 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3315860415977568852, guid: 91ec3221abb56ae4299b44e1998fbb15, type: 3}
-  m_PrefabInstance: {fileID: 1198805116772816196}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7620666577405387757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f87f00fad3824b4ba2646766347ed99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7620666577405387757 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8746281875889895081, guid: 91ec3221abb56ae4299b44e1998fbb15, type: 3}

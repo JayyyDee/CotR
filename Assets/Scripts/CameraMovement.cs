@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.Netcode;
 using static UnityEngine.GraphicsBuffer;
 
-public class CameraMovement : MonoBehaviour
+public class CameraMovement : NetworkBehaviour
 {
     [SerializeField] public Transform player;
     private Vector3 offset = new Vector3(0f, 0f, -10f);

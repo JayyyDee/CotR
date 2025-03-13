@@ -24,15 +24,6 @@ public class PlayerMovement : NetworkBehaviour
 
     private List<GameObject> inventory = new List<GameObject>();
 
-    [SerializeField] public Image gemIcon;
-    private int gemCounter = 0;
-
-    public HealthBarManager healthBar;
-    public int maxHealth = 1000;
-    private int currentHealth;
-    //private NetworkVariable<int> maxHealth = new NetworkVariable<int>(1000);
-    //private NetworkVariable<int> currentHealth = new NetworkVariable<int>(); //NetworkVariable = Every time this value is changed, all of the client gets updated
-
     private Rigidbody2D rb;
 
     public Ring ring;
@@ -42,11 +33,6 @@ public class PlayerMovement : NetworkBehaviour
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
-
-        //Setup for the healthbar
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-
 
         //Set the player's spawn point on the spawnpoint location.
         gameObject.transform.position = spawnPoint.position;
@@ -75,17 +61,6 @@ public class PlayerMovement : NetworkBehaviour
         //Test for aiming with mouse 
         //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        //To test for damage, press O
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            TakeDamageServerRpc(100);
-        }
-
-        //To test for healing, press P
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            HealingServerRpc(100);
-        }
         //To shoot a bullet
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -126,14 +101,6 @@ public class PlayerMovement : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Move in GemManager, when colliding with the gem, set inactive and play sound.
-        if (collision.CompareTag("Gemme"))
-        {
-            collision.gameObject.SetActive(false);
-            gemIcon.gameObject.SetActive(true);
-            gemCounter = 1;
-            AkUnitySoundEngine.PostEvent("Event_Jadeide_Slow__Pickup", this.gameObject); // The Event to play sounds of collecting the Jadeide
-        }
 
         if (collision.CompareTag("Ring"))
         {
@@ -190,46 +157,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         AkUnitySoundEngine.PostEvent("Event_Footstep", this.gameObject);
     }
-
-    [ServerRpc]
-    private void TakeDamageServerRpc(int damage)
-    {
-        TakeDamageClientRpc(damage);
-    }
-
-    [ClientRpc]
-    private void TakeDamageClientRpc(int damage)
-    {
-            if (currentHealth > 0)
-            {
-                currentHealth -= damage;
-                healthBar.SetHealth(currentHealth);
-            }
-
-            if (currentHealth <= 0)
-            {
-                gameObject.SetActive(false);
-                Invoke("Death", 2);
-
-            }
-    }
-    [ServerRpc]
-    private void HealingServerRpc(int heal)
-    {
-        HealingClientRpc(heal);
-    }
-
-    [ClientRpc]
-    void HealingClientRpc(int heal)
-    {
-        if (currentHealth < maxHealth)
-        {
-            currentHealth += heal;
-            healthBar.SetHealth(currentHealth);
-        }
-    }
-
-    void Death ()
+    void Death()
     {
         mainCamera.gameObject.SetActive(true);
         playerCamera.gameObject.SetActive(false);

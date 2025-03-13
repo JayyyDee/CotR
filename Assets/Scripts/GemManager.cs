@@ -8,14 +8,16 @@ public class GemManager : MonoBehaviour
     [SerializeField] public Image gemIcon;
     private int gemCounter = 0;
 
-    public void GemCollect (Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Move in GemManager, when colliding with the gem, set inactive and play sound.
         if (collision.CompareTag("Gemme"))
         {
             collision.gameObject.SetActive(false);
             gemIcon.gameObject.SetActive(true);
             gemCounter = 1;
+            AkUnitySoundEngine.PostEvent("Event_Jadeide_Slow__Pickup", this.gameObject); // The Event to play sounds of collecting the Jadeide
         }
     }
-    
+
 }

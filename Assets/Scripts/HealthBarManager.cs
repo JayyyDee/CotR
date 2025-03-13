@@ -25,4 +25,5 @@ public class HealthBarManager : NetworkBehaviour
             //Update the slider to represent the color for the amount of health
             fill.color = gradient.Evaluate(slider.normalizedValue);
     }
+
 }
