@@ -19,6 +19,7 @@ public class HealthManager : NetworkBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
+            
             TakeDamageServerRpc(100);
         }
 
@@ -33,6 +34,7 @@ public class HealthManager : NetworkBehaviour
     private void TakeDamageServerRpc(int damage)
     {
         TakeDamageClientRpc(damage);
+      
     }
 
     [ClientRpc]
@@ -42,6 +44,7 @@ public class HealthManager : NetworkBehaviour
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
+            Debug.Log(currentHealth);
         }
 
         if (currentHealth <= 0)
