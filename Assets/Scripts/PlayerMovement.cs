@@ -13,30 +13,30 @@ public class PlayerMovement : NetworkBehaviour
     [SerializeField] private Transform spawnPoint;
     private float moveHorizontal;
     private float moveVertical;
-
+    private Ring ring;
     //Camera
     [SerializeField] private GameObject mainCamera;
     [SerializeField] private GameObject playerCamera;
 
+    private Inventory inventory;
 
     private bool playingFootsteps = false; // To check Are we playing the sound of footsteps currently
     public float footstepsSpeed = 0.2f; //BASE Time between playing each Footsteps sound //How fast we walk //will have to modif to match selon le speed animation
 
-    private List<GameObject> inventory = new List<GameObject>();
-
     private Rigidbody2D rb;
 
-    public Ring ring;
-    private Vector2 mousePosition;
+    
+    
 
    
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
+        inventory = gameObject.GetComponent<Inventory>();
 
         //Set the player's spawn point on the spawnpoint location.
         gameObject.transform.position = spawnPoint.position;
-      
+
     }
 
     void Update() 
@@ -57,16 +57,6 @@ public class PlayerMovement : NetworkBehaviour
 
         //For animation, the animation will start on the front.
         speed = moveVertical;
-
-        //Test for aiming with mouse 
-        //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        //To shoot a bullet
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ring.Shoot(transform);
-        }
-
     }
 
     private void FixedUpdate() //FixedUpdate for physics
@@ -76,11 +66,6 @@ public class PlayerMovement : NetworkBehaviour
         {
             return;
         }
-
-        ////Testing the aiming (again)
-        //Vector2 aimDirection = mousePosition - rb.position;
-        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-        //rb.rotation = aimAngle;
 
         PlayerMov();
 
@@ -101,22 +86,6 @@ public class PlayerMovement : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.CompareTag("Ring"))
-        {
-            
-            inventory.Add(collision.gameObject);
-            ring = collision.gameObject.GetComponent<Ring>();
-            collision.gameObject.SetActive(false);
-            string fullInv = "";
-            foreach(GameObject gameObject in inventory)
-            {
-                fullInv += (gameObject.name + " ");
-            }
-            Debug.Log(fullInv);
-
-
-        }
     }
     private void PlayerMov()
     {
