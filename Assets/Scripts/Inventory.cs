@@ -4,6 +4,7 @@ using System.Diagnostics.Tracing;
 using System.Net.NetworkInformation;
 using UnityEngine.UI;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class Inventory : MonoBehaviour
 {
@@ -22,8 +23,8 @@ public class Inventory : MonoBehaviour
             }
             inventory.Add(collision.gameObject.GetComponent<Ring>());
 
-            
-            
+
+
             collision.gameObject.SetActive(false);
             string fullInv = "";
             int i = 0;
@@ -38,12 +39,37 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            ChangeEquiped(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ChangeEquiped(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ChangeEquiped(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            ChangeEquiped(3);
+        }
+    }
+
     public Ring GetEquipped()
     {
         return inventory[0];
     }
 
-    public void ShootEquiped()
+    public void ChangeEquiped(int i)
+    {
+        equipedRing = inventory[i];
+    }
+
+    public void ShootEquiped(Transform transform)
     {
         equipedRing.Shoot(transform);
     }

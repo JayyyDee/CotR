@@ -5,21 +5,23 @@ using UnityEngine;
 public class AimingShooting : MonoBehaviour
 {
     private Inventory inventory;
-    private Rigidbody2D rb;
-    [SerializeField] private GameObject playerCamera;
+    public GameObject aimSpot;
+    [SerializeField] private Camera playerCamera;
     private Vector2 mousePosition;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
         inventory = this.gameObject.GetComponent<Inventory>();
     }
 
     private void Update()
     {
         //Test for aiming with mouse 
-        //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetKeyDown(KeyCode.Mouse0)){
-            inventory.ShootEquiped();
+        //playerCamera.ScreenToWorldPoint(Input.mousePosition);
+        //mousePosition = playerCamera.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetMouseButtonDown(0))
+        {
+            inventory.ShootEquiped(transform);
         }
 
     }
@@ -28,17 +30,19 @@ public class AimingShooting : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ////Testing the aiming (again)
-        //Vector2 aimDirection = mousePosition - rb.position;
-        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-        //rb.rotation = aimAngle;
+        //Debug.Log(mousePosition);
+        //////Testing the aiming (again)
+        //Vector2 aimDirection = mousePosition - aimSpot.GetComponent<Rigidbody2D>().position;
+        //float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        //Debug.Log(aimAngle);
+        //aimSpot.GetComponent<Rigidbody2D>().rotation = aimAngle;
     }
 
 
 
     private void OnMouseDown()
     {
-        inventory.ShootEquiped();
+        inventory.ShootEquiped(transform);
     }
 }
 
