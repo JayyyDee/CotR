@@ -37,34 +37,36 @@ public class PlayerMovement : NetworkBehaviour
 
     void Update() 
     {
-        //Get the value (1 or -1) for the movement
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetAxis("Vertical");
+        //If the game state is not in the GamePlaying state, the player can't move. (From GameManager)
+        if (GameManager.Instance.isGamePlaying()) {
+            //Get the value (1 or -1) for the movement
+            moveHorizontal = Input.GetAxis("Horizontal");
+            moveVertical = Input.GetAxis("Vertical");
 
-        //StartFootsteps AKA the condition to enable or disable the sounds of walking
-        if (moveVertical > 0 && !playingFootsteps || moveVertical < 0 && !playingFootsteps || moveHorizontal > 0 && !playingFootsteps || moveHorizontal < 0 && !playingFootsteps) 
-        {
-            StartFootsteps();
-        }
-        else if (moveVertical == 0 && moveHorizontal == 0) 
-        {
-            StopFootsteps();
+            //StartFootsteps AKA the condition to enable or disable the sounds of walking
+            if (moveVertical > 0 && !playingFootsteps || moveVertical < 0 && !playingFootsteps || moveHorizontal > 0 && !playingFootsteps || moveHorizontal < 0 && !playingFootsteps) {
+                StartFootsteps();
+            }
+            else if (moveVertical == 0 && moveHorizontal == 0) {
+                StopFootsteps();
+            }
+
+            //For animation, the animation will start on the front.
+            speed = moveVertical;
         }
 
-        //For animation, the animation will start on the front.
-        speed = moveVertical;
     }
 
     private void FixedUpdate() //FixedUpdate for physics
     {
-        //If the player is not the owner of the playable, can't access the movement.
-        if (!IsOwner)
-        {
-            return;
+        //If the game state is not in the GamePlaying state, the player can't move. (From GameManager)
+        if (GameManager.Instance.isGamePlaying()) {
+            //If the player is not the owner of the playable, can't access the movement.
+            if (!IsOwner) {
+                return;
+            }
+            PlayerMov();
         }
-
-        PlayerMov();
-
     }
 
     public override void OnNetworkSpawn()
@@ -82,9 +84,6 @@ public class PlayerMovement : NetworkBehaviour
         base.OnNetworkSpawn();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-    }
     private void PlayerMov()
     {
         if (speed == 0)
