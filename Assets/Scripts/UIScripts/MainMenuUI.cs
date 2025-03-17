@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class MainMenuUI : MonoBehaviour
 {
     private void Update() {
-        if (Input.GetKeyUp(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space)) {
             Loader.Load(Loader.Scene.GameScene);
         }
 
-        if (Input.GetKeyUp(KeyCode.Escape)) { 
+        if (Input.GetKeyDown(KeyCode.Escape)) { 
             Application.Quit();
         }
     }

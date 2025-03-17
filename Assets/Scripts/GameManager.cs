@@ -17,21 +17,21 @@ public class GameManager : MonoBehaviour
     }
 
     private State state;
-    private float waitingToStartTimer = 2f;
     private float countdownToStartTimer = 3f;
     private float gamePlayingTimer = 5f;
+    private bool isGamePaused = false;
 
     private void Awake() {
         Instance = this;
         state = State.WaitingToStart;
     }
 
+
     private void Update() {
         //When a condition is met for each state, switch to the next.
         switch (state) {
             case State.WaitingToStart:
-                waitingToStartTimer -= Time.deltaTime;
-                if (waitingToStartTimer < 0f) {
+                if (Input.GetKeyDown(KeyCode.Space)) {
                     state = State.CountdownToStart;
                     OnStateChanged?.Invoke(this, EventArgs.Empty);
                 }
@@ -67,10 +67,7 @@ public class GameManager : MonoBehaviour
     public bool IsGameOverActive() {
         return state == State.GameOver;
     }
-
-
     public float GetCountdownToStartTimer() { 
         return countdownToStartTimer;
     }
-
 }
