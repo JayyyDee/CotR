@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private State state;
     private float waitingToStartTimer = 2f;
     private float countdownToStartTimer = 3f;
-    private float gamePlayingTimer = 15f;
+    private float gamePlayingTimer = 5f;
 
     private void Awake() {
         Instance = this;
@@ -63,6 +63,11 @@ public class GameManager : MonoBehaviour
     public bool IsCountdownToStartActive() {
         return state == State.CountdownToStart;
     }
+
+    public bool IsGameOverActive() {
+        return state == State.GameOver;
+    }
+
 
     public float GetCountdownToStartTimer() { 
         return countdownToStartTimer;
