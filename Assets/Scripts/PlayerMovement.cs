@@ -10,10 +10,11 @@ public class PlayerMovement : NetworkBehaviour
     public float speed { get; private set; }
     [SerializeField] private float movementSpeed = 1500;
     [SerializeField] private float maxSpeed = 1500;
-    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private List<Vector3> spawnPositionList;
     private float moveHorizontal;
     private float moveVertical;
     private Ring ring;
+
     //Camera
     [SerializeField] private GameObject mainCamera;
     [SerializeField] private GameObject playerCamera;
@@ -25,17 +26,12 @@ public class PlayerMovement : NetworkBehaviour
 
     private Rigidbody2D rb;
 
-    
-    
-
    
     void Start() {
+
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
         inventory = gameObject.GetComponent<Inventory>();
-
-        //Set the player's spawn point on the spawnpoint location.
-        gameObject.transform.position = spawnPoint.position;
 
     }
 
@@ -80,6 +76,8 @@ public class PlayerMovement : NetworkBehaviour
             mainCamera.gameObject.SetActive(false);
             playerCamera.GetComponent<CameraMovement>().player = this.transform;
         }
+        //Then, make every of the six players spawn at specific places mentionned in a list.
+        transform.position = spawnPositionList[(int)OwnerClientId];
 
         base.OnNetworkSpawn();
     }
@@ -131,6 +129,5 @@ public class PlayerMovement : NetworkBehaviour
         mainCamera.gameObject.SetActive(true);
         playerCamera.gameObject.SetActive(false);
         gameObject.SetActive(false);
-        gameObject.transform.position = spawnPoint.position;
     }
 }

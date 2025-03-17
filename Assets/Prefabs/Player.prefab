@@ -429,7 +429,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2500
   maxSpeed: 2500
-  spawnPoint: {fileID: 7389161817023305173, guid: b581db2c5eab43844bc72aa35d312e3b, type: 3}
+  spawnPositionList:
+  - {x: -19, y: -1, z: 0}
+  - {x: 18, y: 21, z: 0}
+  - {x: 18, y: -21, z: 0}
+  - {x: -10, y: 21, z: 0}
+  - {x: 26, y: -1, z: 0}
+  - {x: -10, y: -21, z: 0}
   mainCamera: {fileID: 5697387170484357916, guid: ff360a798feb867459e850c1654db984, type: 3}
   playerCamera: {fileID: 8482001589336971933}
   footstepsSpeed: 0.35
