@@ -67390,7 +67390,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.4638166
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -67415,8 +67415,8 @@ Transform:
   m_GameObject: {fileID: 1816458168}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.86, y: 4.61, z: -10}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77329,7 +77329,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -78406,8 +78406,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 213668058, guid: cc33da493cf42b64d851b13e47b782a9, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: -103843345, guid: cc33da493cf42b64d851b13e47b782a9, type: 3}
   - m_RefCount: 6
@@ -78424,8 +78424,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 213668058, guid: cc33da493cf42b64d851b13e47b782a9, type: 3}
   - m_RefCount: 312
     m_Data: {fileID: -1378327460, guid: cc33da493cf42b64d851b13e47b782a9, type: 3}
   m_TileMatrixArray:
