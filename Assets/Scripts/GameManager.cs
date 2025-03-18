@@ -19,9 +19,9 @@ public class GameManager : NetworkBehaviour {
     }
 
     private NetworkVariable<State> state = new NetworkVariable<State>(State.WaitingToStart);
-    private bool isLocalPlayerReady;
     private NetworkVariable<float> countdownToStartTimer = new NetworkVariable<float>(3f);
     private NetworkVariable<float> gamePlayingTimer = new NetworkVariable<float>(10f);
+    private bool isLocalPlayerReady;
     private bool isGamePaused = false;
     private Dictionary<ulong, bool> playerReadyDictionary;
 
@@ -42,16 +42,16 @@ public class GameManager : NetworkBehaviour {
         if (!IsServer) {
             return;
         }
-        //When a condition is met for each state, switch to the next.
+       
         switch (state.Value) {
-            case State.WaitingToStart:
-                if (Input.GetKeyDown(KeyCode.Space)) {
+            case State.WaitingToStart: //When all of the players in the lobby is ready, change state to start countdown
+                if (Input.GetKeyDown(KeyCode.Space)) { 
                     isLocalPlayerReady = true;
                     OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
                     SetPlayerReadyServerRpc();                
                 }
                 break;
-            case State.CountdownToStart:
+            case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
                 if (countdownToStartTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
@@ -71,6 +71,8 @@ public class GameManager : NetworkBehaviour {
         //Debug.Log(state);
     }
 
+    //This creates a new playerID when entering a server. It then checks if that dictionnary has content
+    //and if all players that are in the lobby are ready, it to switches to the countdown state.
     [ServerRpc(RequireOwnership = false)]
     private void SetPlayerReadyServerRpc(ServerRpcParams serverRpcParams = default) {
         playerReadyDictionary[serverRpcParams.Receive.SenderClientId] = true;
