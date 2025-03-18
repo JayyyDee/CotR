@@ -7,7 +7,7 @@ public class MainMenuUI : MonoBehaviour
 {
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
-            Loader.Load(Loader.Scene.GameScene);
+            Loader.Load(Loader.Scene.LobbyScene);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) { 
