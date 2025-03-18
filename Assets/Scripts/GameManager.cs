@@ -20,7 +20,7 @@ public class GameManager : NetworkBehaviour {
 
     private NetworkVariable<State> state = new NetworkVariable<State>(State.WaitingToStart);
     private NetworkVariable<float> countdownToStartTimer = new NetworkVariable<float>(3f);
-    private NetworkVariable<float> gamePlayingTimer = new NetworkVariable<float>(10f);
+    private NetworkVariable<float> gamePlayingTimer = new NetworkVariable<float>(15f);
     private bool isLocalPlayerReady;
     private bool isGamePaused = false;
     private Dictionary<ulong, bool> playerReadyDictionary;
