@@ -69,8 +69,8 @@ public class Inventory : MonoBehaviour
         equipedRing = inventory[i];
     }
 
-    public void ShootEquiped(Transform transform)
+    public void ShootEquiped(GameObject firePoint)
     {
-        equipedRing.Shoot(transform);
+        equipedRing.Shoot(firePoint);
     }
 }

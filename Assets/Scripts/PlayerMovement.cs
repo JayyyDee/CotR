@@ -14,6 +14,7 @@ public class PlayerMovement : NetworkBehaviour
     private float moveHorizontal;
     private float moveVertical;
     private Ring ring;
+    public GameObject aim;
 
     //Camera
     [SerializeField] private GameObject mainCamera;
@@ -77,6 +78,7 @@ public class PlayerMovement : NetworkBehaviour
             playerCamera.gameObject.SetActive(true);
             mainCamera.gameObject.SetActive(false);
             playerCamera.GetComponent<CameraMovement>().player = this.transform;
+
         }
         //Then, make every of the six players spawn at specific places mentionned in a list.
         transform.position = spawnPositionList[(int)OwnerClientId];
