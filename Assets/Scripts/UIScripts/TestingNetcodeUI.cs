@@ -9,20 +9,16 @@ public class TestingNetcodeUI : MonoBehaviour
     [SerializeField] private Button hostButton;
     [SerializeField] private Button clientButton;
 
-    [SerializeField] public GameObject player;
-
     private void Awake()
     {
         //When clicking on the HOST button, start hosting a game.
         hostButton.onClick.AddListener(() => {
-            Debug.Log("HOSTING");
             NetworkManager.Singleton.StartHost();
             Hide();
         });
 
         //When clicking on the CLIENT button, join a game as a client.
         clientButton.onClick.AddListener(() => {
-            Debug.Log("CLIENT");
             NetworkManager.Singleton.StartClient();
             Hide();
         });

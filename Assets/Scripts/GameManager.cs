@@ -90,6 +90,9 @@ public class GameManager : NetworkBehaviour {
         }
     }
 
+    public bool isWaitingToStart() {
+        return state.Value == State.WaitingToStart;
+    }
     public bool isGamePlaying() {
         return state.Value == State.GamePlaying;
     }

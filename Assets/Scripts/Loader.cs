@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,8 @@ public static class Loader { //This class is not attach to anything, can load ev
         MainMenuScene,
         GameScene,
         LoadingScene,
+        LobbyScene,
+        CharacterLobbyScene, 
         TestScene
     }
 
@@ -22,5 +25,10 @@ public static class Loader { //This class is not attach to anything, can load ev
     //When the next scene is done loading, send it to the next loading scene.
     public static void LoaderCallback() {
         SceneManager.LoadScene(targetScene.ToString());
+    }
+
+    //Use this function to load scene in multiplayer.
+    public static void LoadNetwork(Scene targetScene) {
+        NetworkManager.Singleton.SceneManager.LoadScene(targetScene.ToString(), LoadSceneMode.Single);
     }
 }
