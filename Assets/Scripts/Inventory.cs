@@ -22,7 +22,7 @@ public class Inventory : MonoBehaviour
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
             }
-            collision.gameObject.GetComponent<Ring>().equiped = true;
+            collision.gameObject.GetComponent<Ring>().SetEquiped(true);
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             

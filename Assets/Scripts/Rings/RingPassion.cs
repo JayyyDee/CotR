@@ -1,0 +1,67 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RingPassion : Ring
+{
+    public GameObject bulletPrefab;
+    public Color bulletColor;
+    private GameObject firePoint;
+
+    public float fireForce = 1f;
+    public float cooldown = 1f;
+    private float timer;
+    private bool canFire = true;
+    private bool equiped = false;
+    
+
+    // Update is called once per frame
+    void Update()
+    {
+        Debug.Log(equiped);
+        Debug.Log(canFire);
+        //if(equiped){
+             if (!canFire)
+            {
+                timer += (Time.deltaTime);
+                if (timer > cooldown)
+                {
+                    canFire = true;
+                    timer = 0;
+                }
+            }
+
+            if(Input.GetMouseButton(0) && canFire){
+                Shoot();
+                canFire = false;
+            }
+        //}
+    }
+
+    public override void SetEquiped(bool boole)
+    {
+        equiped = boole;
+    }
+    public override void Shoot(){
+        Debug.Log("shoot");
+    //     // {
+    //     //     this.canFire = false;
+    //     //     Vector3 pos = firePoint.transform.position;
+    //     //     Quaternion rot = firePoint.transform.rotation;
+
+    //     //     bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
+    //     //     GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+    //     //     bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+    //     // }
+    }
+
+    public override bool GetCanFire()
+    {
+        return canFire;
+    }
+
+    public override void SetFirePoint(GameObject point)
+    {
+        firePoint = point;
+    }
+}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3112484268007978668}
   - component: {fileID: 4937435128152388269}
   - component: {fileID: 5045609813057977118}
-  - component: {fileID: 592382928835023122}
+  - component: {fileID: -5705574439156711625}
   m_Layer: 8
   m_Name: Passion
   m_TagString: Ring
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: -0.018416073, y: 0}
   serializedVersion: 2
   m_Radius: 0.4079203
---- !u!114 &592382928835023122
+--- !u!114 &-5705574439156711625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +130,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4701691879991881142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91a08b5da1506e646a9982a5de9b77d9, type: 3}
+  m_Script: {fileID: 11500000, guid: fc86acf6e913c8f44b60587b5a01942e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equiped: 0
   bulletPrefab: {fileID: 2559660542848680566, guid: 4a9b6ed8fdcbfe7478477dcdc75546be, type: 3}
   bulletColor: {r: 1, g: 0, b: 0, a: 1}
-  fireForce: 20
-  coolDownMax: 1
-  coolDown: 1
+  fireForce: 5
+  cooldown: 1
