@@ -414,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UISlots: []
+  firePoint: {fileID: 8255465235801129438}
 --- !u!114 &-5402253806699429523
 MonoBehaviour:
   m_ObjectHideFlags: 0

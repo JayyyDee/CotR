@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
     private List<Ring> inventory = new List<Ring>();
     private Ring equipedRing;
     public List<GameObject> UISlots = new List<GameObject>();
+    public GameObject firePoint;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,7 +22,10 @@ public class Inventory : MonoBehaviour
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
             }
+            collision.gameObject.GetComponent<Ring>().equiped = true;
+            collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
             inventory.Add(collision.gameObject.GetComponent<Ring>());
+            
 
 
 
@@ -57,6 +61,11 @@ public class Inventory : MonoBehaviour
         {
             ChangeEquiped(3);
         }
+
+        if (Input.GetMouseButton(0) && equipedRing.GetCanFire())
+        {
+            ShootEquiped();
+        }
     }
 
     public Ring GetEquipped()
@@ -69,8 +78,8 @@ public class Inventory : MonoBehaviour
         equipedRing = inventory[i];
     }
 
-    public void ShootEquiped(GameObject firePoint)
+    public void ShootEquiped()
     {
-        equipedRing.Shoot(firePoint);
+        equipedRing.Shoot();
     }
 }

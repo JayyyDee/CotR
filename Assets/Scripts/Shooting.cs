@@ -17,14 +17,11 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            inventory.ShootEquiped(aimSpot);
+            //inventory.ShootEquiped(aimSpot);
         }
 
     }
 
-    private void OnMouseDown()
-    {
-        inventory.ShootEquiped(aimSpot);
-    }
+    
 }
 
