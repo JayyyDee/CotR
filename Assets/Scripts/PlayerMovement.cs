@@ -81,6 +81,9 @@ public class PlayerMovement : NetworkBehaviour
 
         }
         //Then, make every of the six players spawn at specific places mentionned in a list.
+
+        //Randomize a list---
+
         transform.position = spawnPositionList[(int)OwnerClientId];
 
         base.OnNetworkSpawn();
