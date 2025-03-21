@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public float deathTimer;
     private void Start()
     {
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, deathTimer);
     }
    
     private void OnCollisionEnter2D(Collision2D collision)
