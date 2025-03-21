@@ -52,19 +52,19 @@ public class GameManager : NetworkBehaviour {
     }
 
     private void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            isLocalPlayerReady = true;
+            OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
+            SetPlayerReadyServerRpc();
+            Debug.Log("Space");
+        }
+
         if (!IsServer) {
             return;
         }
-       
+
         switch (state.Value) {
             case State.WaitingToStart: //When all of the players in the lobby is ready, change state to start countdown
-                if (Input.GetKeyDown(KeyCode.Space)) { 
-                    if (state.Value == State.WaitingToStart) {
-                        isLocalPlayerReady = true;
-                        OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
-                        SetPlayerReadyServerRpc();
-                    }               
-                }
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
@@ -90,6 +90,8 @@ public class GameManager : NetworkBehaviour {
     [ServerRpc(RequireOwnership = false)]
     private void SetPlayerReadyServerRpc(ServerRpcParams serverRpcParams = default) {
         playerReadyDictionary[serverRpcParams.Receive.SenderClientId] = true;
+
+        Debug.Log(playerReadyDictionary.Count);
 
         bool allClientReady = true;
         foreach (ulong clientid in NetworkManager.Singleton.ConnectedClientsIds) {
