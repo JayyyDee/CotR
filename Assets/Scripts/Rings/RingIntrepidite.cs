@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class RingIntrepidite : Ring
 {
@@ -42,10 +43,18 @@ public class RingIntrepidite : Ring
         canFire = false;
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
-
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+        StartCoroutine(TripleShot(pos, rot));
+    }
+
+    IEnumerator TripleShot(Vector3 pos, Quaternion rot)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+            bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 
     public override void SetEquiped(bool boole)

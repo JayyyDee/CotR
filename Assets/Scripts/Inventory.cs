@@ -81,8 +81,4 @@ public class Inventory : MonoBehaviour
         
     }
 
-    public void ShootEquiped()
-    {
-        equipedRing.Shoot();
-    }
 }
