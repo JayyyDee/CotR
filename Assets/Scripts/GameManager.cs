@@ -59,16 +59,17 @@ public class GameManager : NetworkBehaviour {
         switch (state.Value) {
             case State.WaitingToStart: //When all of the players in the lobby is ready, change state to start countdown
                 if (Input.GetKeyDown(KeyCode.Space)) { 
-                    isLocalPlayerReady = true;
-                    OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
-                    SetPlayerReadyServerRpc();                
+                    if (state.Value == State.WaitingToStart) {
+                        isLocalPlayerReady = true;
+                        OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
+                        SetPlayerReadyServerRpc();
+                    }               
                 }
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
                 if (countdownToStartTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
- 
                 }
                 break;
             case State.GamePlaying:

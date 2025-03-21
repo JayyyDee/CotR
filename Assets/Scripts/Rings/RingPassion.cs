@@ -18,7 +18,7 @@ public class RingPassion : Ring
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer + " Passion");
+        /*Debug.Log(timer + " Passion");*/
         
         if (!canFire)
         {

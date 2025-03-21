@@ -18,7 +18,7 @@ public class RingPatience : Ring
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer + " Patience");
+        //Debug.Log(timer + " Patience");
 
         if (!canFire)
         {

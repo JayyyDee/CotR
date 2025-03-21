@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
+//using static UnityEditor.PlayerSettings;
 
 public class RingIntrepidite : Ring
 {
@@ -19,7 +19,7 @@ public class RingIntrepidite : Ring
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer + " Intrépidité");
+        //Debug.Log(timer + " Intrépidité");
 
         if (!canFire)
         {

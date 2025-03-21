@@ -18,7 +18,7 @@ public class RingBravoure : Ring
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer + " Bravoure");
+        //Debug.Log(timer + " Bravoure");
 
         if (!canFire)
         {

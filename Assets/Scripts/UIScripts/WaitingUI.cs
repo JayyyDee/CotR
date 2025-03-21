@@ -11,7 +11,7 @@ public class WaitingUI : MonoBehaviour
     }
 
     private void GameManager_OnStateChanged(object sender, System.EventArgs e) {
-        if (GameManager.Instance.IsLocalPlayerReady()) {
+        if (GameManager.Instance.IsCountdownToStartActive()) {
             Hide();
         }
     }
