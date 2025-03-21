@@ -21,15 +21,16 @@ public class Inventory : MonoBehaviour
             if (inventory.Count <= 0)
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
+                collision.gameObject.GetComponent<Ring>().SetEquiped(true);
+
             }
-            collision.gameObject.GetComponent<Ring>().SetEquiped(true);
-            collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
-            inventory.Add(collision.gameObject.GetComponent<Ring>());
             
+            inventory.Add(collision.gameObject.GetComponent<Ring>());
+            collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
+            //collision.gameObject.GetComponent<Ring>().SetEquiped(true);
 
 
-
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
             string fullInv = "";
             int i = 0;
             foreach (Ring ring in inventory)
@@ -62,10 +63,10 @@ public class Inventory : MonoBehaviour
             ChangeEquiped(3);
         }
 
-        if (Input.GetMouseButton(0) && equipedRing.GetCanFire())
-        {
-            ShootEquiped();
-        }
+        //if (Input.GetMouseButton(0) && equipedRing.GetCanFire())
+        //{
+        //    ShootEquiped();
+        //}
     }
 
     public Ring GetEquipped()

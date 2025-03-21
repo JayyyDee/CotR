@@ -133,8 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc86acf6e913c8f44b60587b5a01942e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equiped: 0
   bulletPrefab: {fileID: 2559660542848680566, guid: 4a9b6ed8fdcbfe7478477dcdc75546be, type: 3}
   bulletColor: {r: 1, g: 0, b: 0, a: 1}
-  fireForce: 5
+  fireForce: 20
   cooldown: 1

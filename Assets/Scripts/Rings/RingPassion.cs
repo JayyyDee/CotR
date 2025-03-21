@@ -18,10 +18,10 @@ public class RingPassion : Ring
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(equiped);
+        //Debug.Log(equiped);
         Debug.Log(canFire);
-        //if(equiped){
-             if (!canFire)
+        if(equiped){
+            if (!canFire)
             {
                 timer += (Time.deltaTime);
                 if (timer > cooldown)
@@ -32,29 +32,34 @@ public class RingPassion : Ring
             }
 
             if(Input.GetMouseButton(0) && canFire){
-                Shoot();
+                Debug.Log("shoot");
                 canFire = false;
-            }
-        //}
+                Vector3 pos = firePoint.transform.position;
+                Quaternion rot = firePoint.transform.rotation;
+
+                bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
+                GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+                bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+        }
+        }
+    }
+
+    
+    public override void Shoot(){
+        Debug.Log("shoot");
+        canFire = false;
+        Vector3 pos = firePoint.transform.position;
+        Quaternion rot = firePoint.transform.rotation;
+
+        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
+        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
     }
 
     public override void SetEquiped(bool boole)
     {
         equiped = boole;
     }
-    public override void Shoot(){
-        Debug.Log("shoot");
-    //     // {
-    //     //     this.canFire = false;
-    //     //     Vector3 pos = firePoint.transform.position;
-    //     //     Quaternion rot = firePoint.transform.rotation;
-
-    //     //     bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-    //     //     GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-    //     //     bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
-    //     // }
-    }
-
     public override bool GetCanFire()
     {
         return canFire;
