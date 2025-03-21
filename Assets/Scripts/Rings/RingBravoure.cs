@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RingPassion : Ring
+public class RingBravoure : Ring
 {
     public GameObject bulletPrefab;
     public Color bulletColor;
@@ -13,13 +13,13 @@ public class RingPassion : Ring
     private float timer;
     private bool canFire = true;
     private bool equiped = false;
-    
+
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer + " Passion");
-        
+        Debug.Log(timer + " Bravoure");
+
         if (!canFire)
         {
             timer += (Time.deltaTime);
@@ -29,15 +29,15 @@ public class RingPassion : Ring
                 timer = 0;
             }
         }
-
         if (equiped && Input.GetMouseButton(0) && canFire)
         {
-            Shoot();  
+            Shoot();
         }
     }
 
-    
-    public override void Shoot(){
+
+    public override void Shoot()
+    {
         Debug.Log("shoot");
         canFire = false;
         Vector3 pos = firePoint.transform.position;

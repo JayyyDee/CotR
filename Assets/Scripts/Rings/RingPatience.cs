@@ -18,7 +18,7 @@ public class RingPatience : Ring
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer + " patience");
+        Debug.Log(timer + " Patience");
 
         if (!canFire)
         {
@@ -29,19 +29,9 @@ public class RingPatience : Ring
                 timer = 0;
             }
         }
-        if (equiped)
+        if (equiped && Input.GetMouseButton(0) && canFire)
         {
-            if (Input.GetMouseButton(0) && canFire)
-            {
-                Debug.Log("shoot");
-                canFire = false;
-                Vector3 pos = firePoint.transform.position;
-                Quaternion rot = firePoint.transform.rotation;
-
-                bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-                GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-                bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
-            }
+            Shoot();
         }
     }
 

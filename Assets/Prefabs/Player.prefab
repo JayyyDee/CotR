@@ -140,7 +140,6 @@ GameObject:
   - component: {fileID: -5078443122011580822}
   - component: {fileID: -7695022764903982875}
   - component: {fileID: 8509975520393243399}
-  - component: {fileID: -5402253806699429523}
   - component: {fileID: 6165612374240500858}
   - component: {fileID: 8457053170429327023}
   m_Layer: 7
@@ -415,20 +414,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UISlots: []
   firePoint: {fileID: 8255465235801129438}
---- !u!114 &-5402253806699429523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6908946048115158358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444f556bab032f04e862445e20ef0259, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aimSpot: {fileID: 8255465235801129438}
-  playerCamera: {fileID: 3831054906882358173, guid: c0f4976303c76be489dbdc957938c854, type: 3}
 --- !u!61 &6165612374240500858
 BoxCollider2D:
   m_ObjectHideFlags: 0

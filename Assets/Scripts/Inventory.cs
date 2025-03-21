@@ -27,10 +27,10 @@ public class Inventory : MonoBehaviour
             
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
-            
 
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled =false;
+            collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
 
-            //collision.gameObject.SetActive(false);
             string fullInv = "";
             int i = 0;
             foreach (Ring ring in inventory)
@@ -62,19 +62,27 @@ public class Inventory : MonoBehaviour
         {
             ChangeEquiped(3);
         }
+
     }
 
     public Ring GetEquipped()
     {
-        return inventory[0];
+        return equipedRing;
     }
 
     public void ChangeEquiped(int i)
     {
-        equipedRing.SetEquiped(false);
-        equipedRing = inventory[i];
-        inventory[i].SetEquiped(true);
+        if (inventory[i] != null)
+        {
+            equipedRing.SetEquiped(false);
+            equipedRing = inventory[i];
+            inventory[i].SetEquiped(true);
+        }
+        
     }
 
-    
+    public void ShootEquiped()
+    {
+        equipedRing.Shoot();
+    }
 }

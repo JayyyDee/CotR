@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 567406557815135444}
   - component: {fileID: 8059741308998337757}
   - component: {fileID: 5904185396571815235}
-  - component: {fileID: 211551284293565929}
+  - component: {fileID: 1513676855363165036}
   m_Layer: 8
   m_Name: "Intr\xE9pidit\xE9"
   m_TagString: Ring
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &211551284293565929
+--- !u!114 &1513676855363165036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +130,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5685233403654226034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91a08b5da1506e646a9982a5de9b77d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 42188171ace03a54e91d963f72ea3afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2559660542848680566, guid: 4a9b6ed8fdcbfe7478477dcdc75546be, type: 3}
-  bulletColor: {r: 0, g: 0, b: 0, a: 0}
-  fireForce: 20
-  coolDownMax: 1
-  coolDown: 1
+  bulletColor: {r: 0, g: 0.98823535, b: 1, a: 1}
+  fireForce: 25
+  cooldown: 0.5

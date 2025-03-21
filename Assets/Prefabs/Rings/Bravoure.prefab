@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5249495279793474016}
   - component: {fileID: 7874836680662697755}
   - component: {fileID: 27702232684757997}
-  - component: {fileID: 1086753341101889409}
+  - component: {fileID: 3868230449921187074}
   m_Layer: 8
   m_Name: Bravoure
   m_TagString: Ring
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0.016626483, y: 0}
   serializedVersion: 2
   m_Radius: 0.37114415
---- !u!114 &1086753341101889409
+--- !u!114 &3868230449921187074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +130,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 78470841914451681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91a08b5da1506e646a9982a5de9b77d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 213a82a8929fd7048950866a8f19295c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2559660542848680566, guid: 4a9b6ed8fdcbfe7478477dcdc75546be, type: 3}
-  bulletColor: {r: 0.8584906, g: 0.052643314, b: 0.8338416, a: 1}
-  fireForce: 20
-  coolDownMax: 1
-  coolDown: 1
+  bulletColor: {r: 0.7254902, g: 0.31764707, b: 0.87843144, a: 1}
+  fireForce: 10
+  cooldown: 1
