@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
             
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
-            //collision.gameObject.GetComponent<Ring>().SetEquiped(true);
+            
 
 
             //collision.gameObject.SetActive(false);
@@ -62,11 +62,6 @@ public class Inventory : MonoBehaviour
         {
             ChangeEquiped(3);
         }
-
-        //if (Input.GetMouseButton(0) && equipedRing.GetCanFire())
-        //{
-        //    ShootEquiped();
-        //}
     }
 
     public Ring GetEquipped()
@@ -76,11 +71,10 @@ public class Inventory : MonoBehaviour
 
     public void ChangeEquiped(int i)
     {
+        equipedRing.SetEquiped(false);
         equipedRing = inventory[i];
+        inventory[i].SetEquiped(true);
     }
 
-    public void ShootEquiped()
-    {
-        equipedRing.Shoot();
-    }
+    
 }
