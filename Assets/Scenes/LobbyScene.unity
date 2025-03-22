@@ -168,6 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3707e7cbce5b84dafb375e4b0aaaf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  createGameButton: {fileID: 876101668}
+  joinGameButton: {fileID: 1034346064}
 --- !u!4 &345052932
 Transform:
   m_ObjectHideFlags: 0
@@ -705,7 +707,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 876101669}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 345052931}
+        m_TargetAssemblyTypeName: GameMultiplayer, Assembly-CSharp
+        m_MethodName: StartHost
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 4d461fcc1eb8ac94fa4d755a0844bc07, type: 3}
+        m_TargetAssemblyTypeName: GameMultiplayer, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &876101669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1177,6 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   createGameButton: {fileID: 876101668}
   joinGameButton: {fileID: 1034346064}
+  relayCode: 
 --- !u!1 &1633107913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6960e84d07fb87f47956e7a81d71c4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ProtocolType: 0
+  m_ProtocolType: 1
   m_MaxPacketQueueSize: 128
   m_MaxPayloadSize: 6144
   m_HeartbeatTimeoutMS: 500
