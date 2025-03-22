@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2811913676",
+    "Type": "User",
+    "GUID": "{433BEC17-1FFB-4B10-B9EA-AA381F02A407}",
+    "Language": "SFX",
+    "Hash": "{F89B5C4A-EA92-E5AD-2E41-15964C84CDB6}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Gemme_Jadeite_Pickup",
+    "ShortName": "SoundBank_Gemme_Jadeite_Pickup",
+    "Path": "SoundBank_Gemme_Jadeite_Pickup.bnk",
+    "Media": [
+     {
+      "Id": "963335504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Jadeide Slow_$itemnumber.wav",
+      "CachePath": "2C/{2C3E02BA-0DEE-08D6-3554-B2F494837161}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "35105690",
+      "Name": "Event_Jadeide_Slow__Pickup",
+      "ObjectPath": "\\Events\\Default Work Unit\\Event_Jadeide_Slow__Pickup",
+      "GUID": "{6E97C1E0-ED20-4DE1-A635-5292B3F19CD8}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.9253125",
+      "DurationMax": "5.9253125",
+      "MediaRefs": [
+       {
+        "Id": "963335504"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9B99C45C-9B47-6143-D45D-DC9BCADFAC64}"
+ }
+}

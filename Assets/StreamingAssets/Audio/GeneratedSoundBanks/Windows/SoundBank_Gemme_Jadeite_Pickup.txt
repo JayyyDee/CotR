@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	35105690	Event_Jadeide_Slow__Pickup			\Default Work Unit\Event_Jadeide_Slow__Pickup	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	963335504	Jadeide Slow_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\2C\{2C3E02BA-0DEE-08D6-3554-B2F494837161}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jadeide Slow_$itemnumber		1137756
+
