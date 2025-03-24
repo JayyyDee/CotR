@@ -11,7 +11,7 @@ public class RingIntrepidite : Ring
     private GameObject playerCharacter;
 
     public float fireForce = 1f;
-    public float cooldown = 1f;
+    public float cooldown = 1.4f;
     private float timer;
     private bool canFire = true;
     private bool equiped = false;
@@ -21,6 +21,7 @@ public class RingIntrepidite : Ring
     private bool canActive = true;
 
     public float passiveSpeed = 300f;
+    public float dashDistance = 1500f;
 
 
 
@@ -52,7 +53,7 @@ public class RingIntrepidite : Ring
         {
             Shoot();
         }
-        if (equiped && Input.GetKeyDown(KeyCode.E) && canActive)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
         {
             Active();
         }
@@ -83,7 +84,7 @@ public class RingIntrepidite : Ring
     {
         canActive = false;
         Vector2 forceDirection = (playerCharacter.GetComponent<Rigidbody2D>().velocity).normalized;
-        playerCharacter.GetComponent<Rigidbody2D>().AddForce(forceDirection*3000);
+        playerCharacter.GetComponent<Rigidbody2D>().AddForce(forceDirection*dashDistance);
     }
 
     public override void Passive()
