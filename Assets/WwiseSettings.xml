@@ -10,6 +10,7 @@
   <LoadSoundEngineInEditMode>true</LoadSoundEngineInEditMode>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
+  <WwiseInstallationPathWindows>D:\Wwise</WwiseInstallationPathWindows>
   <WwiseProjectPath>../CotR_WwiseProject/CotR_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
