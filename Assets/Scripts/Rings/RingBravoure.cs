@@ -7,6 +7,7 @@ public class RingBravoure : Ring
     public GameObject bulletPrefab;
     public Color bulletColor;
     private GameObject firePoint;
+    private GameObject playerCharacter;
 
     public float fireForce = 1f;
     public float cooldown = 1f;
@@ -48,6 +49,15 @@ public class RingBravoure : Ring
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
     }
 
+    public override void Active()
+    {
+        
+    }
+
+    public override void Passive()
+    {
+        
+    }
     public override void SetEquiped(bool boole)
     {
         equiped = boole;
@@ -61,4 +71,11 @@ public class RingBravoure : Ring
     {
         firePoint = point;
     }
+
+    public override void SetPlayer(GameObject player)
+    {
+        playerCharacter = player;
+    }
+
+    
 }

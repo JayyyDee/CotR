@@ -47,6 +47,10 @@ public abstract class Ring: MonoBehaviour
     public abstract void SetEquiped(Boolean boole);
 
     public abstract void Shoot();
+
+    public abstract void Active();
+
+    public abstract void Passive();
     // {
     //     // if (canFire)
     //     // {
@@ -62,8 +66,9 @@ public abstract class Ring: MonoBehaviour
 
 
     public abstract void SetFirePoint(GameObject point);
-    
-    
+
+    public abstract void SetPlayer(GameObject player);
+
     public abstract Boolean GetCanFire();
 
 }

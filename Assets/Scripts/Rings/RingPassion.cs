@@ -7,12 +7,14 @@ public class RingPassion : Ring
     public GameObject bulletPrefab;
     public Color bulletColor;
     private GameObject firePoint;
+    private GameObject playerCharacter;
 
     public float fireForce = 1f;
     public float cooldown = 1f;
     private float timer;
     private bool canFire = true;
     private bool equiped = false;
+    private GameObject player;
     
 
     // Update is called once per frame
@@ -60,5 +62,20 @@ public class RingPassion : Ring
     public override void SetFirePoint(GameObject point)
     {
         firePoint = point;
+    }
+
+    public override void SetPlayer(GameObject player)
+    {
+        playerCharacter = player;
+    }
+
+    public override void Active()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void Passive()
+    {
+        throw new System.NotImplementedException();
     }
 }

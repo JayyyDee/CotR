@@ -8,12 +8,20 @@ public class RingIntrepidite : Ring
     public GameObject bulletPrefab;
     public Color bulletColor;
     private GameObject firePoint;
+    private GameObject playerCharacter;
 
     public float fireForce = 1f;
     public float cooldown = 1f;
     private float timer;
     private bool canFire = true;
     private bool equiped = false;
+
+    public float activeCooldown = 5f;
+    private float activeTimer;
+    private bool canActive = true;
+
+    public float passiveSpeed = 300f;
+
 
 
     // Update is called once per frame
@@ -30,9 +38,23 @@ public class RingIntrepidite : Ring
                 timer = 0;
             }
         }
+
+        if (!canActive)
+        {
+            activeTimer += (Time.deltaTime);
+            if (activeTimer > activeCooldown)
+            {
+                canActive = true;
+                activeTimer = 0;
+            }
+        }
         if (equiped && Input.GetMouseButton(0) && canFire)
         {
             Shoot();
+        }
+        if (equiped && Input.GetKeyDown(KeyCode.E) && canActive)
+        {
+            Active();
         }
     }
 
@@ -57,6 +79,18 @@ public class RingIntrepidite : Ring
         }
     }
 
+    public override void Active()
+    {
+        canActive = false;
+        Vector2 forceDirection = (playerCharacter.GetComponent<Rigidbody2D>().velocity).normalized;
+        playerCharacter.GetComponent<Rigidbody2D>().AddForce(forceDirection*3000);
+    }
+
+    public override void Passive()
+    {
+        playerCharacter.GetComponent<PlayerMovement>().speedBuff = passiveSpeed;
+    }
+
     public override void SetEquiped(bool boole)
     {
         equiped = boole;
@@ -70,4 +104,11 @@ public class RingIntrepidite : Ring
     {
         firePoint = point;
     }
+
+    public override void SetPlayer(GameObject player)
+    {
+        playerCharacter = player;
+    }
+
+    
 }

@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
             
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
-
+            collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
             collision.gameObject.GetComponent<SpriteRenderer>().enabled =false;
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
 

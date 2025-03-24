@@ -137,3 +137,4 @@ MonoBehaviour:
   bulletColor: {r: 0, g: 0.98823535, b: 1, a: 1}
   fireForce: 15
   cooldown: 0.5
+  activeCooldown: 5

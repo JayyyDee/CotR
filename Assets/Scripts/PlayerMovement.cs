@@ -16,6 +16,11 @@ public class PlayerMovement : NetworkBehaviour
     private Ring ring;
     public GameObject aim;
 
+
+    //Rings
+    //Intrepidite passive
+    public float speedBuff = 0f;
+
     //Camera
     [SerializeField] private GameObject mainCamera;
     [SerializeField] private GameObject playerCamera;
@@ -96,19 +101,19 @@ public class PlayerMovement : NetworkBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal, moveVertical);
         //Apply force to the rigidbody to move it.
-        rb.AddForce(movement * movementSpeed * Time.fixedDeltaTime);
+        rb.AddForce(movement * (movementSpeed+speedBuff) * Time.fixedDeltaTime);
 
         //If the horizontal velocity is more than the max speed, set velocity to the maxSpeed to not go pass it.
-        if (rb.velocity.x > maxSpeed)
-        {
-            rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
-        }
+        //if (rb.velocity.x > maxSpeed)
+        //{
+        //    rb.velocity = new Vector2(maxSpeed, rb.velocity.y);
+        //}
 
-        //If the vertical velocity is more than the max speed, set velocity to the maxSpeed to not go pass it.
-        if (rb.velocity.y > maxSpeed)
-        {
-            rb.velocity = new Vector2(maxSpeed, rb.velocity.x);
-        }
+        ////If the vertical velocity is more than the max speed, set velocity to the maxSpeed to not go pass it.
+        //if (rb.velocity.y > maxSpeed)
+        //{
+        //    rb.velocity = new Vector2(maxSpeed, rb.velocity.x);
+        //}
     }
 
     void StartFootsteps()  //Start walking sound effect
