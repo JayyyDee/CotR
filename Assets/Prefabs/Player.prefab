@@ -205,9 +205,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1396462457
-  m_SortingLayer: 6
-  m_SortingOrder: 0
+  m_SortingLayerID: -1664244731
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 065310deb7179db43b4f9cbba3d964fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -370,6 +370,7 @@ MonoBehaviour:
   - {x: 26, y: -1, z: 0}
   - {x: -10, y: -21, z: 0}
   aim: {fileID: 5563848817751554134}
+  speedBuff: 0
   mainCamera: {fileID: 5697387170484357916, guid: ff360a798feb867459e850c1654db984, type: 3}
   playerCamera: {fileID: 8482001589336971933}
   footstepsSpeed: 0.35
