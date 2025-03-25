@@ -15,7 +15,6 @@ public class Inventory : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.CompareTag("Ring"))
         {
             if (inventory.Count <= 0)
