@@ -14,7 +14,9 @@ public class GameManager : NetworkBehaviour {
    private enum State {
         WaitingToStart,
         CountdownToStart,
+        GemCountdown,
         GamePlaying,
+
         GameOver,
     }
 
@@ -22,6 +24,7 @@ public class GameManager : NetworkBehaviour {
 
     private NetworkVariable<State> state = new NetworkVariable<State>(State.WaitingToStart);
     private NetworkVariable<float> countdownToStartTimer = new NetworkVariable<float>(3f);
+    private NetworkVariable<float> gemCountdownTimer = new NetworkVariable<float>(15f);
     private NetworkVariable<float> gamePlayingTimer = new NetworkVariable<float>(60f);
     private bool isLocalPlayerReady;
     private bool isGamePaused = false;
@@ -69,6 +72,12 @@ public class GameManager : NetworkBehaviour {
             case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
                 if (countdownToStartTimer.Value < 0f) {
+                    state.Value = State.GemCountdown;
+                }
+                break;
+            case State.GemCountdown: //When the countdown finished, switch to game playing              
+                gemCountdownTimer.Value -= Time.deltaTime;
+                if (gemCountdownTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
                 }
                 break;
@@ -76,7 +85,6 @@ public class GameManager : NetworkBehaviour {
                 gamePlayingTimer.Value -= Time.deltaTime;
                 if (gamePlayingTimer.Value < 0f) {
                     state.Value = State.GameOver;
-
                 }
                 break;
             case State.GameOver:
@@ -118,10 +126,16 @@ public class GameManager : NetworkBehaviour {
     public bool IsCountdownToStartActive() {
         return state.Value == State.CountdownToStart;
     }
+    public bool IsGemCountdownActive() {
+        return state.Value == State.GemCountdown;
+    }
     public bool IsGameOverActive() {
         return state.Value == State.GameOver;
     }
     public float GetCountdownToStartTimer() { 
         return countdownToStartTimer.Value;
+    }
+    public float GetGemCountdownTimer() {
+        return gemCountdownTimer.Value;
     }
 }

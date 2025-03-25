@@ -44,7 +44,7 @@ public class PlayerMovement : NetworkBehaviour
     void Update() 
     {
         //If the game state is not in the GamePlaying state, the player can't move. (From GameManager)
-        if (GameManager.Instance.isGamePlaying()) {
+        if (GameManager.Instance.isGamePlaying() || GameManager.Instance.IsGemCountdownActive()) {
             //Get the value (1 or -1) for the movement
             moveHorizontal = Input.GetAxis("Horizontal");
             moveVertical = Input.GetAxis("Vertical");
@@ -66,7 +66,7 @@ public class PlayerMovement : NetworkBehaviour
     private void FixedUpdate() //FixedUpdate for physics
     {
         //If the game state is not in the GamePlaying state, the player can't move. (From GameManager)
-        if (GameManager.Instance.isGamePlaying()) {
+        if (GameManager.Instance.isGamePlaying() || GameManager.Instance.IsGemCountdownActive()) {
             //If the player is not the owner of the playable, can't access the movement.
             if (!IsOwner) {
                 return;
