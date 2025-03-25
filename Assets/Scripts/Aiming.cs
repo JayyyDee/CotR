@@ -11,11 +11,11 @@ public class Aiming : NetworkBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (IsOwner) {
+        //if (IsOwner) {
             mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
             Vector3 aimDirection = mousePos - transform.position;
             float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, aimAngle);
-        }
+        //}
     }
 }
