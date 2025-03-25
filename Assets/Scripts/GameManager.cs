@@ -16,16 +16,18 @@ public class GameManager : NetworkBehaviour {
         CountdownToStart,
         GemCountdown,
         GamePlaying,
-
+        GemTaken,
         GameOver,
     }
 
     [SerializeField] private Transform playerPrefab;
+    [SerializeField] private GameObject gem;
 
     private NetworkVariable<State> state = new NetworkVariable<State>(State.WaitingToStart);
     private NetworkVariable<float> countdownToStartTimer = new NetworkVariable<float>(3f);
     private NetworkVariable<float> gemCountdownTimer = new NetworkVariable<float>(15f);
     private NetworkVariable<float> gamePlayingTimer = new NetworkVariable<float>(60f);
+    private NetworkVariable<float> gemTakenTimer = new NetworkVariable<float>(20f);
     private bool isLocalPlayerReady;
     private bool isGamePaused = false;
     private Dictionary<ulong, bool> playerReadyDictionary;
@@ -55,7 +57,7 @@ public class GameManager : NetworkBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && isWaitingToStart()) {
             isLocalPlayerReady = true;
             OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
             SetPlayerReadyServerRpc();
@@ -82,9 +84,21 @@ public class GameManager : NetworkBehaviour {
                 }
                 break;
             case State.GamePlaying:
-                gamePlayingTimer.Value -= Time.deltaTime;
-                if (gamePlayingTimer.Value < 0f) {
+                //gamePlayingTimer.Value -= Time.deltaTime;
+                //if (gamePlayingTimer.Value < 0f) {
+                //    state.Value = State.GemTaken;
+                //}
+                if (gem.activeSelf == false) {
+                    state.Value = State.GemTaken;
+                }
+                break;
+            case State.GemTaken:
+                gemTakenTimer.Value -= Time.deltaTime;
+                if (gemTakenTimer.Value < 0f) {
                     state.Value = State.GameOver;
+                }
+                if (gem.activeSelf == true) {
+                    state.Value = State.GamePlaying;
                 }
                 break;
             case State.GameOver:
@@ -114,20 +128,23 @@ public class GameManager : NetworkBehaviour {
         }
     }
 
+    public bool IsLocalPlayerReady() {
+        return isLocalPlayerReady;
+    }
     public bool isWaitingToStart() {
         return state.Value == State.WaitingToStart;
     }
     public bool isGamePlaying() {
         return state.Value == State.GamePlaying;
     }
-    public bool IsLocalPlayerReady() {
-        return isLocalPlayerReady;
-    }
     public bool IsCountdownToStartActive() {
         return state.Value == State.CountdownToStart;
     }
     public bool IsGemCountdownActive() {
         return state.Value == State.GemCountdown;
+    }
+    public bool IsGemTakenActive() {
+        return state.Value == State.GemTaken;
     }
     public bool IsGameOverActive() {
         return state.Value == State.GameOver;
@@ -137,5 +154,8 @@ public class GameManager : NetworkBehaviour {
     }
     public float GetGemCountdownTimer() {
         return gemCountdownTimer.Value;
+    }
+    public float GetGemTakenTimer() {
+        return gemTakenTimer.Value;
     }
 }
