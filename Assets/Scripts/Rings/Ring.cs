@@ -1,10 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public abstract class Ring: MonoBehaviour 
+public abstract class Ring: NetworkBehaviour 
 {
     // public GameObject bulletPrefab;
     // public Color bulletColor;

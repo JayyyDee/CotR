@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7874836680662697755}
   - component: {fileID: 27702232684757997}
   - component: {fileID: 3868230449921187074}
+  - component: {fileID: 6227974788540719858}
   m_Layer: 8
   m_Name: Bravoure
   m_TagString: Ring
@@ -137,3 +138,19 @@ MonoBehaviour:
   bulletColor: {r: 0.7254902, g: 0.31764707, b: 0.87843144, a: 1}
   fireForce: 10
   cooldown: 1
+--- !u!114 &6227974788540719858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78470841914451681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1

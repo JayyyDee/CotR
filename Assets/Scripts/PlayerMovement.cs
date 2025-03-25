@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class PlayerMovement : NetworkBehaviour
 {
+    public static PlayerMovement LocalInstance {  get; private set; }
+
     public float speed { get; private set; }
     [SerializeField] private float movementSpeed = 1500;
     [SerializeField] private float maxSpeed = 1500;
@@ -83,6 +85,7 @@ public class PlayerMovement : NetworkBehaviour
             playerCamera.gameObject.SetActive(true);
             mainCamera.gameObject.SetActive(false);
             playerCamera.GetComponent<CameraMovement>().player = this.transform;
+            LocalInstance = this;
 
         }
         //Then, make every of the six players spawn at specific places mentionned in a list.
