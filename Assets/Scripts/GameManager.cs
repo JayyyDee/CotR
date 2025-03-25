@@ -26,7 +26,6 @@ public class GameManager : NetworkBehaviour {
     private NetworkVariable<State> state = new NetworkVariable<State>(State.WaitingToStart);
     private NetworkVariable<float> countdownToStartTimer = new NetworkVariable<float>(3f);
     private NetworkVariable<float> gemCountdownTimer = new NetworkVariable<float>(15f);
-    private NetworkVariable<float> gamePlayingTimer = new NetworkVariable<float>(60f);
     private NetworkVariable<float> gemTakenTimer = new NetworkVariable<float>(20f);
     private bool isLocalPlayerReady;
     private bool isGamePaused = false;
@@ -83,11 +82,7 @@ public class GameManager : NetworkBehaviour {
                     state.Value = State.GamePlaying;
                 }
                 break;
-            case State.GamePlaying:
-                //gamePlayingTimer.Value -= Time.deltaTime;
-                //if (gamePlayingTimer.Value < 0f) {
-                //    state.Value = State.GemTaken;
-                //}
+            case State.GamePlaying://When the gem is no longer active finished, switch to gem taken state
                 if (gem.activeSelf == false) {
                     state.Value = State.GemTaken;
                 }

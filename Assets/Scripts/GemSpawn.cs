@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GemSpawn : MonoBehaviour
+public class GemSpawn : MonoBehaviour //This class waits until the game state is on game playing before spawning the gem.
 {
     private void Start() {
         this.gameObject.SetActive(false);

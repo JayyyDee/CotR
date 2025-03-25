@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class GemTakenUI : MonoBehaviour
+public class GemTakenUI : MonoBehaviour //This class sets active the UI to alert player that the gem is taken and starts a countdown.
 {
     [SerializeField] private TextMeshProUGUI countdownText;
 
