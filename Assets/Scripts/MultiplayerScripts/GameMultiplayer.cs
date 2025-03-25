@@ -21,6 +21,8 @@ public class GameMultiplayer : NetworkBehaviour
     public event EventHandler OnTryingToJoinGame;
     public event EventHandler OnFailedToJoinGame;
 
+    public string joinCode = "";
+
     private void Awake() {
         Instance = this;
 
@@ -37,13 +39,14 @@ public class GameMultiplayer : NetworkBehaviour
         try {
             Allocation allocation = await RelayService.Instance.CreateAllocationAsync(MAX_PLAYER_AMOUNT - 1);
 
-            string relayJoinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
+            joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(new RelayServerData(allocation, "dtls"));
 
             NetworkManager.Singleton.ConnectionApprovalCallback += NetworkManager_ConnectionApprovalCallback;
             NetworkManager.Singleton.StartHost();
             Loader.LoadNetwork(Loader.Scene.CharacterLobbyScene);
+            Debug.Log(joinCode);
         }  catch (RelayServiceException e) {
             Debug.Log(e);
         }
@@ -82,5 +85,8 @@ public class GameMultiplayer : NetworkBehaviour
 
     private void NetworkManager_OnClientDisconnectCallback(ulong clientID) {
         OnFailedToJoinGame?.Invoke(this, EventArgs.Empty);  
+    }
+    public string GetRoomCode() {
+        return joinCode;
     }
 }
