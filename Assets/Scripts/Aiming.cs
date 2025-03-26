@@ -27,8 +27,9 @@ public class Aiming : NetworkBehaviour
 
         if (!IsOwner) {
             return;
+        } else {
+           transform.rotation = Quaternion.Euler(0, 0, angle);
         }
-        transform.rotation = Quaternion.Euler(0, 0, angle);
         
     }
 }
