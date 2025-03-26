@@ -16,7 +16,7 @@ public class Aiming : NetworkBehaviour
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
          Vector3 aimDirection = mousePos - transform.position;
          float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-         //transform.rotation = Quaternion.Euler(0, 0, aimAngle); 
+         transform.rotation = Quaternion.Euler(0, 0, aimAngle); 
         
         
         SetPlayerAimServerRpc(aimAngle);
@@ -30,8 +30,11 @@ public class Aiming : NetworkBehaviour
     [ClientRpc]
     private void SetPlayerAimClientRpc(float aim) {
 
-    
-        transform.rotation = Quaternion.Euler(0, 0, aim);
+        if (!IsOwner)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, aim);
+        }
+        
     
         
 
