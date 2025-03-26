@@ -22,7 +22,7 @@ public class Aiming : NetworkBehaviour
         SetPlayerAimServerRpc(aimAngle);
     }
 
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = true)]
     private void SetPlayerAimServerRpc(float aim) {
         SetPlayerAimClientRpc(aim);
     }
@@ -30,8 +30,9 @@ public class Aiming : NetworkBehaviour
     [ClientRpc]
     private void SetPlayerAimClientRpc(float aim) {
 
-        if (!IsOwner)
+        if (IsOwner)
         {
+
             transform.rotation = Quaternion.Euler(0, 0, aim);
         }
         
