@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class Projectile : NetworkBehaviour
 {
     public float deathTimer;
     private void Start()
@@ -12,9 +13,12 @@ public class Projectile : MonoBehaviour
    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Dummy"))
+        if (collision.collider.CompareTag("Player") && !IsOwner)
         {
+            
             Destroy(gameObject);
+            Debug.Log("HIT");
+            
             //Damage
         }
         
