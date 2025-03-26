@@ -370,7 +370,7 @@ MonoBehaviour:
   - {x: -10, y: 21, z: 0}
   - {x: 26, y: -1, z: 0}
   - {x: -10, y: -21, z: 0}
-  aim: {fileID: 5563848817751554134}
+  aim: {fileID: 2919077443469202754}
   speedBuff: 0
   mainCamera: {fileID: 5697387170484357916, guid: ff360a798feb867459e850c1654db984, type: 3}
   playerCamera: {fileID: 8482001589336971933}
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UISlots: []
-  firePoint: {fileID: 8255465235801129438}
+  firePoint: {fileID: 1667787176971857098}
 --- !u!61 &6165612374240500858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -830,6 +830,10 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 951099334
       objectReference: {fileID: 0}
+    - target: {fileID: 727669950962160398, guid: 36c56cc22b0aa1f45800af32f0e720ad, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 5770422159226431148}
     - target: {fileID: 5476619524907086446, guid: 36c56cc22b0aa1f45800af32f0e720ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -882,6 +886,16 @@ PrefabInstance:
 --- !u!4 &1278381350126387082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5476619524907086446, guid: 36c56cc22b0aa1f45800af32f0e720ad, type: 3}
+  m_PrefabInstance: {fileID: 6754666486059126244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1667787176971857098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5375132984365130030, guid: 36c56cc22b0aa1f45800af32f0e720ad, type: 3}
+  m_PrefabInstance: {fileID: 6754666486059126244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2919077443469202754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8448682642061924518, guid: 36c56cc22b0aa1f45800af32f0e720ad, type: 3}
   m_PrefabInstance: {fileID: 6754666486059126244}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7295281926863494449
