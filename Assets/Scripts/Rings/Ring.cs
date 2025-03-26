@@ -52,20 +52,9 @@ public abstract class Ring: NetworkBehaviour
     public abstract void Active();
 
     public abstract void Passive();
-    // {
-    //     // if (canFire)
-    //     // {
-    //     //     this.canFire = false;
-    //     //     Vector3 pos = firePoint.transform.position;
-    //     //     Quaternion rot = firePoint.transform.rotation;
 
-    //     //     bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-    //     //     GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-    //     //     bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
-    //     // }
-    // }
-
-
+    public abstract void SetAttackSpeed(float speed);
+  
     public abstract void SetFirePoint(GameObject point);
 
     public abstract void SetPlayer(GameObject player);

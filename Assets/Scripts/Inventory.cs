@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     private Ring equipedRing;
     public List<GameObject> UISlots = new List<GameObject>();
     public GameObject firePoint;
+    private float attackSpeed =1f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,19 +22,24 @@ public class Inventory : MonoBehaviour
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
                 collision.gameObject.GetComponent<Ring>().SetEquiped(true);
-
             }
             
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
             collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
+            collision.gameObject.GetComponent<Ring>().Passive();
+            collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
+
+
             collision.gameObject.GetComponent<SpriteRenderer>().enabled =false;
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
 
             string fullInv = "";
             int i = 0;
+
             foreach (Ring ring in inventory)
             {
+                ring.SetAttackSpeed(attackSpeed);
                 GameObject.Find("Slot" + i).GetComponent<Image>().sprite = inventory[i].GetComponent<SpriteRenderer>().sprite;
                 fullInv += (ring.name + " ");
                 i++;
@@ -80,4 +86,9 @@ public class Inventory : MonoBehaviour
         
     }
 
+    //Set the attack speed of all rings in the inventory
+    public void SetASpeed(float speed)
+    {
+        attackSpeed = speed;
+    }
 }

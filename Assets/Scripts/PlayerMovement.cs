@@ -40,6 +40,7 @@ public class PlayerMovement : NetworkBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
         inventory = gameObject.GetComponent<Inventory>();
+        
 
     }
 
@@ -88,9 +89,13 @@ public class PlayerMovement : NetworkBehaviour
             LocalInstance = this;
 
         }
-        //Then, make every of the six players spawn at specific places mentionned in a list.
-        
-        transform.position = spawnPositionList[(int)(Random.Range(0f, 5f))];
+        if(!IsOwner)
+        {
+            gameObject.tag = "Enemy";
+        }
+            //Then, make every of the six players spawn at specific places mentionned in a list.
+
+            transform.position = spawnPositionList[(int)(Random.Range(0f, 5f))];
 
         base.OnNetworkSpawn();
     }

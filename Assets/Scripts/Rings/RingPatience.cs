@@ -15,6 +15,13 @@ public class RingPatience : Ring
     private bool canFire = true;
     private bool equiped = false;
 
+    /*
+    1 is normal speed
+    <1 is slower
+    >1 is faster
+    */
+    private float attackSpeed = 1f;
+
 
     // Update is called once per frame
     void Update()
@@ -24,7 +31,7 @@ public class RingPatience : Ring
         if (!canFire)
         {
             timer += (Time.deltaTime);
-            if (timer > cooldown)
+            if (timer > (cooldown / attackSpeed))
             {
                 canFire = true;
                 timer = 0;
@@ -78,5 +85,8 @@ public class RingPatience : Ring
         playerCharacter = player;
     }
 
-    
+    public override void SetAttackSpeed(float speed)
+    {
+        attackSpeed = speed;
+    }
 }

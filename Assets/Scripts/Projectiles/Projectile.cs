@@ -13,7 +13,7 @@ public class Projectile : NetworkBehaviour
    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player") && !IsOwner)
+        if (collision.collider.CompareTag("Enemy"))
         {
             
             Destroy(gameObject);

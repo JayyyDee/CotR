@@ -9,13 +9,22 @@ public class RingPassion : Ring
     private GameObject firePoint;
     private GameObject playerCharacter;
 
+    public float bonusASpeed;
+
     public float fireForce = 1f;
     public float cooldown = 1f;
     private float timer;
     private bool canFire = true;
     private bool equiped = false;
-    private GameObject player;
-    
+
+    /*
+    1 is normal speed
+    <1 is slower
+    >1 is faster
+    */
+    private float attackSpeed = 1f;
+
+
 
     // Update is called once per frame
     void Update()
@@ -25,7 +34,7 @@ public class RingPassion : Ring
         if (!canFire)
         {
             timer += (Time.deltaTime);
-            if (timer > cooldown)
+            if (timer > (cooldown / attackSpeed))
             {
                 canFire = true;
                 timer = 0;
@@ -49,6 +58,7 @@ public class RingPassion : Ring
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
     }
+    
 
     public override void SetEquiped(bool boole)
     {
@@ -71,11 +81,16 @@ public class RingPassion : Ring
 
     public override void Active()
     {
-        throw new System.NotImplementedException();
+        ;
     }
 
     public override void Passive()
     {
-        throw new System.NotImplementedException();
+        playerCharacter.GetComponent<Inventory>().SetASpeed(bonusASpeed);
+    }
+
+    public override void SetAttackSpeed(float speed)
+    {
+        attackSpeed = speed;
     }
 }
