@@ -6,6 +6,7 @@ using UnityEngine;
 public class Projectile : NetworkBehaviour
 {
     public float deathTimer;
+    public int damage;
     private void Start()
     {
         Destroy(gameObject, deathTimer);
@@ -18,7 +19,7 @@ public class Projectile : NetworkBehaviour
             
             Destroy(gameObject);
             Debug.Log("HIT");
-            collision.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(200);
+            collision.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
             
             //Damage
         }

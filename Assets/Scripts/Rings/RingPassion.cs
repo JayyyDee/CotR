@@ -17,6 +17,13 @@ public class RingPassion : Ring
     private bool canFire = true;
     private bool equiped = false;
 
+    public float activeCooldown = 5f;
+    private float activeTimer;
+    private bool canActive = true;
+    private bool activeBoost = false;
+
+    public int damage = 100;
+
     /*
     1 is normal speed
     <1 is slower
@@ -30,7 +37,7 @@ public class RingPassion : Ring
     void Update()
     {
         /*Debug.Log(timer + " Passion");*/
-        
+        Debug.Log(activeBoost);
         if (!canFire)
         {
             timer += (Time.deltaTime);
@@ -41,21 +48,42 @@ public class RingPassion : Ring
             }
         }
 
+        if (!canActive)
+        {
+            activeTimer += (Time.deltaTime);
+            if (activeTimer > activeCooldown)
+            {
+                canActive = true;
+                activeTimer = 0;
+            }
+        }
+
         if (equiped && Input.GetMouseButton(0) && canFire)
         {
             Shoot();
+        }
+
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        {
+            Active();
         }
     }
 
     
     public override void Shoot(){
-        Debug.Log("shoot");
         canFire = false;
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
 
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+        if (activeBoost)
+        {
+            bullet.GetComponent<SpriteRenderer>().color = Color.yellow;
+            bullet.GetComponent<ProjectilePassion>().SetBoost(true);
+            activeBoost = false;
+        }
+        bullet.GetComponent<ProjectilePassion>().SetDamage(damage);
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
     }
     
@@ -81,7 +109,8 @@ public class RingPassion : Ring
 
     public override void Active()
     {
-        ;
+        activeBoost = true;
+        canActive = false;
     }
 
     public override void Passive()

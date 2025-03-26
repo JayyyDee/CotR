@@ -137,7 +137,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2559660542848680566, guid: 417b0280bf30b2c499ea3e37e4e85969, type: 3}
   bulletColor: {r: 0, g: 0.98823535, b: 1, a: 1}
   fireForce: 15
-  cooldown: 0.5
+  cooldown: 0.75
   activeCooldown: 5
   passiveSpeed: 300
   dashDistance: 1500
