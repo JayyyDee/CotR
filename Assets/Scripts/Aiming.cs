@@ -24,9 +24,9 @@ public class Aiming : NetworkBehaviour
 
     [ClientRpc]
     private void SetPlayerAimClientRpc(float angle) {
-        //if (IsOwner) {
+        if (IsOwner) {
         
         transform.rotation = Quaternion.Euler(0, 0, angle);
-        //}
+        }
     }
 }
