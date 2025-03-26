@@ -69,7 +69,6 @@ public class RingIntrepidite : Ring
 
     public override void Shoot()
     {
-        Debug.Log("shoot");
         canFire = false;
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;

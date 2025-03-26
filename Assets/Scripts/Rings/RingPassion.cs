@@ -37,7 +37,7 @@ public class RingPassion : Ring
     void Update()
     {
         /*Debug.Log(timer + " Passion");*/
-        Debug.Log(activeBoost);
+        
         if (!canFire)
         {
             timer += (Time.deltaTime);

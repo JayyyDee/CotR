@@ -82234,7 +82234,7 @@ GameObject:
   - component: {fileID: 2073251686}
   - component: {fileID: 2073251685}
   - component: {fileID: 2073251684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}

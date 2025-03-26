@@ -145,4 +145,16 @@ public class PlayerMovement : NetworkBehaviour
         playerCamera.gameObject.SetActive(false);
         gameObject.SetActive(false);
     }
+
+    public void SetSlow()
+    {
+        StartCoroutine(Slow());
+    }
+
+    IEnumerator Slow()
+    {
+        movementSpeed *= 0.5f;
+        yield return new WaitForSeconds(0.05f);
+        movementSpeed = maxSpeed;
+    }
 }

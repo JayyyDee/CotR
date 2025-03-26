@@ -15,6 +15,10 @@ public class RingBravoure : Ring
     private bool canFire = true;
     private bool equiped = false;
 
+    public float activeCooldown = 5f;
+    private float activeTimer;
+    private bool canActive = true;
+
     /*
     1 is normal speed
     <1 is slower
@@ -41,6 +45,21 @@ public class RingBravoure : Ring
         {
             Shoot();
         }
+
+        if (!canActive)
+        {
+            activeTimer += (Time.deltaTime);
+            if (activeTimer > activeCooldown)
+            {
+                canActive = true;
+                activeTimer = 0;
+            }
+        }
+        
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        {
+            Active();
+        }
     }
 
 
@@ -48,17 +67,29 @@ public class RingBravoure : Ring
     {
         Debug.Log("shoot");
         canFire = false;
-        Vector3 pos = firePoint.transform.position;
-        Quaternion rot = firePoint.transform.rotation;
 
-        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+        playerCharacter.GetComponent<ProjectileBravoure>().Shoot();
+        
     }
 
     public override void Active()
     {
+        StartCoroutine(ActiveAbility());
+        canActive = false;
         
+    }
+
+    IEnumerator ActiveAbility()
+    {
+        Vector3 pos = firePoint.transform.position + (firePoint.transform.right*2.5f);
+        Quaternion rot = firePoint.transform.rotation;
+        yield return new WaitForSeconds(0.75f);
+        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
+        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+
+
+        
+
     }
 
     public override void Passive()
