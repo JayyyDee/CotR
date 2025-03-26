@@ -18,6 +18,7 @@ public class Projectile : NetworkBehaviour
             
             Destroy(gameObject);
             Debug.Log("HIT");
+            collision.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(200);
             
             //Damage
         }

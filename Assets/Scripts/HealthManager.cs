@@ -30,8 +30,10 @@ public class HealthManager : NetworkBehaviour
         }
     }
 
+    
+
     [ServerRpc]
-    private void TakeDamageServerRpc(int damage)
+    public void TakeDamageServerRpc(int damage)
     {
         TakeDamageClientRpc(damage);
       
