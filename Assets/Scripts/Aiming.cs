@@ -17,7 +17,7 @@ public class Aiming : NetworkBehaviour
         SetPlayerAimServerRpc(aimAngle);
     }
 
-    [ServerRpc(RequireOwnership = false)]
+    [ServerRpc(RequireOwnership = true)]
     private void SetPlayerAimServerRpc(float angle) {
         SetPlayerAimClientRpc(angle);
     }
