@@ -21,21 +21,21 @@ public class Aiming : NetworkBehaviour
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         aim = aimAngle;
         transform.rotation = Quaternion.Euler(0, 0, aimAngle);
-        SetPlayerAimServerRpc();
+        //SetPlayerAimServerRpc();
     }
 
-    [ServerRpc(RequireOwnership = false)]
-    private void SetPlayerAimServerRpc() {
-        SetPlayerAimClientRpc();
-    }
+    //[ServerRpc(RequireOwnership = false)]
+    //private void SetPlayerAimServerRpc() {
+    //    SetPlayerAimClientRpc();
+    //}
 
-    [ClientRpc]
-    private void SetPlayerAimClientRpc() {
+    //[ClientRpc]
+    //private void SetPlayerAimClientRpc() {
 
-        if (!IsOwner) {
-            transform.rotation = Quaternion.Euler(0, 0, aim);
-        }
+    //    //if (!IsOwner) {
+    //    //    transform.rotation = Quaternion.Euler(0, 0, aim);
+    //    //}
         
 
-    }
+    //}
 }
