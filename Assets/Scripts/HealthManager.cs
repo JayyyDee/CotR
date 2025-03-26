@@ -30,12 +30,13 @@ public class HealthManager : NetworkBehaviour
         }
     }
 
-    
 
-    [ServerRpc]
+
+    [ServerRpc(RequireOwnership = false)]
     public void TakeDamageServerRpc(int damage)
     {
         TakeDamageClientRpc(damage);
+
       
     }
 
@@ -56,7 +57,7 @@ public class HealthManager : NetworkBehaviour
 
         }
     }
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     private void HealingServerRpc(int heal)
     {
         HealingClientRpc(heal);
