@@ -7,14 +7,20 @@ public class Aiming : NetworkBehaviour
 {
     private Vector3 mousePos;
     public Camera cam;
+    private float aim;
     
 
     void FixedUpdate()
     {
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 aimDirection = mousePos - transform.position;
+        float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        aim = aimAngle;
+        transform.rotation = Quaternion.Euler(0, 0, aimAngle);
         SetPlayerAimServerRpc();
     }
 
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     private void SetPlayerAimServerRpc() {
         SetPlayerAimClientRpc();
     }
@@ -25,10 +31,7 @@ public class Aiming : NetworkBehaviour
         if (!IsOwner) {
             return;
         }
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 aimDirection = mousePos - transform.position;
-        float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, aimAngle);
-            
+        transform.rotation = Quaternion.Euler(0, 0, aim);
+
     }
 }
