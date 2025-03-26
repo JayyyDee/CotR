@@ -22,9 +22,6 @@ public class Aiming : NetworkBehaviour
     [ClientRpc]
     private void SetPlayerAimClientRpc() {
 
-        if (!IsOwner) {
-            return;
-        }
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 aimDirection = mousePos - transform.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
