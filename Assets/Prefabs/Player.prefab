@@ -91,7 +91,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8361459846496440990
 Transform:
   m_ObjectHideFlags: 0
@@ -877,6 +877,10 @@ PrefabInstance:
     - target: {fileID: 8448682642061924518, guid: 36c56cc22b0aa1f45800af32f0e720ad, type: 3}
       propertyPath: m_Name
       value: Rotation (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448682642061924518, guid: 36c56cc22b0aa1f45800af32f0e720ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
