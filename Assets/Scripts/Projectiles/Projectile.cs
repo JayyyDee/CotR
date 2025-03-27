@@ -12,16 +12,19 @@ public class Projectile : NetworkBehaviour
         Destroy(gameObject, deathTimer);
     }
    
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.collider.CompareTag("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy"))
         {
             
             Destroy(gameObject);
             Debug.Log("HIT");
-            collision.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
+            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
             
             //Damage
+        }
+        if(collider.gameObject.CompareTag("Walls")){
+            Destroy(gameObject);
         }
         
 

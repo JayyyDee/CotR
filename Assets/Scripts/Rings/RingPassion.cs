@@ -79,7 +79,7 @@ public class RingPassion : Ring
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         if (activeBoost)
         {
-            bullet.GetComponent<SpriteRenderer>().color = Color.yellow;
+            bullet.GetComponent<SpriteRenderer>().color = new Color(1.00f,0.65f,0.00f);
             bullet.GetComponent<ProjectilePassion>().SetBoost(true);
             activeBoost = false;
         }

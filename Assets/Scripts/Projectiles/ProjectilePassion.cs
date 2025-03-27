@@ -7,6 +7,8 @@ using UnityEngine;
 public class ProjectilePassion : NetworkBehaviour
 {
         public float deathTimer;
+
+        public GameObject explosionPrefab;
         private int damage;
         private bool boost = false;
         private void Start()
@@ -19,17 +21,20 @@ public class ProjectilePassion : NetworkBehaviour
     {
         Debug.Log(damage);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
         {
 
-            if (collision.collider.CompareTag("Enemy"))
+            if (collider.CompareTag("Enemy"))
             {
 
                 Destroy(gameObject);
                 Debug.Log("HIT");
-                collision.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
+                collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
 
                 //Damage
+            }
+            if(collider.CompareTag("Walls")){
+                Destroy(gameObject);
             }
 
 
@@ -51,12 +56,14 @@ public class ProjectilePassion : NetworkBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
         if (boost)
         {
-            transform.localScale = new Vector3(3, 3, 1);
+            GameObject explosion = Instantiate(explosionPrefab,transform.position, transform.rotation);
+            explosion.transform.localScale= new Vector3(3,3,1);
+            explosion.GetComponent<SpriteRenderer>().color = Color.yellow;
         }
         else
         {
             
-            transform.localScale = new Vector3(2, 2, 1);
+            GameObject explosion = Instantiate(explosionPrefab,transform.position, transform.rotation);
         }
         
     }

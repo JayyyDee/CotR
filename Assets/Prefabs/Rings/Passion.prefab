@@ -140,7 +140,7 @@ MonoBehaviour:
   fireForce: 20
   cooldown: 1.5
   activeCooldown: 3
-  damage: 100
+  damage: 50
 --- !u!114 &1561217443545409421
 MonoBehaviour:
   m_ObjectHideFlags: 0

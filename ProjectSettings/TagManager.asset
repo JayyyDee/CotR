@@ -8,6 +8,7 @@ TagManager:
   - Ring
   - Dummy
   - Enemy
+  - Walls
   layers:
   - Default
   - TransparentFX

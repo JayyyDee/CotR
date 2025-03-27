@@ -11,20 +11,20 @@ public class ProjectileBravoureActive : MonoBehaviour
         Destroy(gameObject, deathTimer);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.collider.CompareTag("Enemy"))
+        if (collider.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<PlayerMovement>().SetSlow();
+            collider.gameObject.GetComponent<PlayerMovement>().SetSlow();
             
             Debug.Log("HIT");
             
 
             
         }
-        if (collision.collider.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerMovement>().SetSlow();
+            collider.gameObject.GetComponent<PlayerMovement>().SetSlow();
 
             Debug.Log("LOLXD");
 
