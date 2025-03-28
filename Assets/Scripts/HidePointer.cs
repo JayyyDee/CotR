@@ -8,10 +8,7 @@ public class HidePointer : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!IsOwner)
-        {
-            GetComponent<SpriteRenderer>().enabled = false;
-        }
+        
     }
 
     // Update is called once per frame
@@ -19,7 +16,7 @@ public class HidePointer : NetworkBehaviour
     {
         if (!IsOwner)
         {
-            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 }
