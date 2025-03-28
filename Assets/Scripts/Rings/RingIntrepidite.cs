@@ -127,12 +127,10 @@ public class RingIntrepidite : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        ShootClientRpc();
+        if (playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        {
+            Shoot();
+        }
     }
 
-    [ClientRpc]
-    private void ShootClientRpc()
-    {
-            Shoot();
-    }
 }

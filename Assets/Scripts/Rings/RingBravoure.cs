@@ -125,16 +125,9 @@ public class RingBravoure : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        ShootClientRpc();
-    }
-
-    [ClientRpc]
-    private void ShootClientRpc()
-    {
+        if (playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        {
             Shoot();
-
-        
+        }
     }
-    
-
 }
