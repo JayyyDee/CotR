@@ -42,7 +42,7 @@ public class ProjectilePassion : NetworkBehaviour
     {
         base.OnNetworkSpawn();
 
-        GetComponent<Rigidbody2D>().AddForce(transform.right * fireForce, ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().AddForce(transform.right * 10, ForceMode2D.Impulse);
     }
 
     public void SetDamage(int dmg)

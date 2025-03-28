@@ -5,8 +5,9 @@ using System.Net.NetworkInformation;
 using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
+using Unity.Netcode;
 
-public class Inventory : MonoBehaviour
+public class Inventory : NetworkBehaviour
 {
     private List<Ring> inventory = new List<Ring>();
     private Ring equipedRing;
@@ -16,6 +17,9 @@ public class Inventory : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!IsOwner) {
+            return;
+        }
         if (collision.CompareTag("Ring"))
         {
             if (inventory.Count <= 0)
@@ -51,6 +55,10 @@ public class Inventory : MonoBehaviour
 
     private void Update()
     {
+        if (!IsOwner) {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             ChangeEquiped(0);

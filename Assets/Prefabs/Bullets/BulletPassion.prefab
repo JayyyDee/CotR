@@ -180,3 +180,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTimer: 0.4
   explosionPrefab: {fileID: 5329460689129265816, guid: 190dc8a86119d2a469045d228ccf2a17, type: 3}
+  fireForce: 0
