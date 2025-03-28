@@ -133,7 +133,11 @@ public class RingIntrepidite : Ring
     [ClientRpc]
     private void ShootClientRpc()
     {
-        Shoot();
+        if (IsOwner)
+        {
+            Shoot();
+        }
+        
         
     }
 }
