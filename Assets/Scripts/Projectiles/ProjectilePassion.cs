@@ -9,8 +9,10 @@ public class ProjectilePassion : NetworkBehaviour
         public float deathTimer;
 
         public GameObject explosionPrefab;
-        private int damage;
+        private int damage = 50;
         private bool boost = false;
+
+    public float fireForce;
         private void Start()
         {
             Destroy(gameObject, deathTimer);
@@ -35,6 +37,13 @@ public class ProjectilePassion : NetworkBehaviour
 
 
         }
+
+    public override void OnNetworkSpawn()
+    {
+        base.OnNetworkSpawn();
+
+        GetComponent<Rigidbody2D>().AddForce(transform.right * fireForce, ForceMode2D.Impulse);
+    }
 
     public void SetDamage(int dmg)
     {

@@ -71,9 +71,10 @@ public class RingPassion : Ring
         }
     }
 
-    
-    public override void Shoot(){
-        
+
+    public override void Shoot()
+    {
+
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
 
@@ -81,13 +82,13 @@ public class RingPassion : Ring
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         if (activeBoost)
         {
-            bullet.GetComponent<SpriteRenderer>().color = new Color(1.00f,0.65f,0.00f);
+            bullet.GetComponent<SpriteRenderer>().color = new Color(1.00f, 0.65f, 0.00f);
             bullet.GetComponent<ProjectilePassion>().SetBoost(true);
+            bullet.GetComponent<ProjectilePassion>().fireForce = fireForce;
             activeBoost = false;
         }
         bullet.GetComponent<NetworkObject>().Spawn();
-        bullet.GetComponent<ProjectilePassion>().SetDamage(damage);
-        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+
     }
     
 
