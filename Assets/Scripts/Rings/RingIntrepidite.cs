@@ -57,12 +57,12 @@ public class RingIntrepidite : Ring
                 activeTimer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire)
         {
             ShootServerRpc();
             canFire = false;
         }
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
         {
             Active();
         }

@@ -59,7 +59,7 @@ public class RingPassion : Ring
             }
         }
 
-        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire)
         {
             ShootServerRpc();
             canFire = false;

@@ -42,7 +42,7 @@ public class RingBravoure : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire)
         {
             ShootServerRpc();
         }
