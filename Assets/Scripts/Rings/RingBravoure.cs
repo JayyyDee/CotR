@@ -67,9 +67,7 @@ public class RingBravoure : Ring
     public override void Shoot()
     {
         Debug.Log("shoot");
-        if (!IsOwner) {
-            return;
-        }
+        
         canFire = false;
 
         playerCharacter.GetComponent<ProjectileBravoure>().Shoot();

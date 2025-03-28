@@ -71,9 +71,6 @@ public class RingIntrepidite : Ring
 
     public override void Shoot()
     {
-        if (!IsOwner) {
-            return;
-        }
 
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
