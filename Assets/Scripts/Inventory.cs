@@ -17,11 +17,16 @@ public class Inventory : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!IsOwner) {
-            return;
-        }
+        
+        
         if (collision.CompareTag("Ring"))
         {
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            
+            if (!IsOwner) {
+            return;
+            }
             if (inventory.Count <= 0)
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
@@ -34,9 +39,8 @@ public class Inventory : NetworkBehaviour
             collision.gameObject.GetComponent<Ring>().Passive();
             collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
 
+            
 
-            collision.gameObject.GetComponent<SpriteRenderer>().enabled =false;
-            collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
 
             string fullInv = "";
             int i = 0;
