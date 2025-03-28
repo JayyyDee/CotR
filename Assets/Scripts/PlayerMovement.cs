@@ -92,7 +92,7 @@ public class PlayerMovement : NetworkBehaviour
         if(!IsOwner)
         {
             gameObject.tag = "Enemy";
-            //aim.SetActive(false);
+            aim.SetActive(false);
         }
             //Then, make every of the six players spawn at specific places mentionned in a list.
 
