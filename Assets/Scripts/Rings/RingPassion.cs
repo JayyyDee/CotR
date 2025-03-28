@@ -59,7 +59,7 @@ public class RingPassion : Ring
             }
         }
 
-        if (equiped && Input.GetMouseButton(0) && canFire)
+        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
             ShootServerRpc();
             canFire = false;

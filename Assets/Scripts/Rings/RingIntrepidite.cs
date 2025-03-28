@@ -57,7 +57,7 @@ public class RingIntrepidite : Ring
                 activeTimer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire)
+        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
             ShootServerRpc();
             canFire = false;
