@@ -6,6 +6,7 @@ using UnityEngine;
 public class Aiming : NetworkBehaviour {
     private Vector3 mousePos;
     public Camera cam;
+    public GameObject playerCharacter;
    
 
     void FixedUpdate() {
@@ -25,8 +26,8 @@ public class Aiming : NetworkBehaviour {
 
     [ClientRpc]
     private void SetPlayerAimClientRpc(float aim) {
-        if (gameObject.transform.parent.parent.GetComponent<NetworkObject>().IsOwner) {
-
+        if (playerCharacter.GetComponent<NetworkObject>().IsOwner) {
+            
             transform.rotation = Quaternion.Euler(0, 0, aim);
         }
     }
