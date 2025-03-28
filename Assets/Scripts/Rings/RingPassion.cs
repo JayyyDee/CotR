@@ -125,7 +125,7 @@ public class RingPassion : Ring
         attackSpeed = speed;
     }
 
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     public void ShootServerRPC()
     {
         ShootClientRPC();
