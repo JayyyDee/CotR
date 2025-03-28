@@ -132,6 +132,6 @@ public class RingIntrepidite : Ring
     [ClientRpc]
     private void ShootClientRPC()
     {
-        Shoot();
+        this.Shoot();
     }
 }
