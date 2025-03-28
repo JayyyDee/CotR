@@ -85,6 +85,7 @@ public class RingPassion : Ring
             bullet.GetComponent<ProjectilePassion>().SetBoost(true);
             activeBoost = false;
         }
+        bullet.GetComponent<NetworkObject>().Spawn();
         bullet.GetComponent<ProjectilePassion>().SetDamage(damage);
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
     }

@@ -71,6 +71,7 @@ public class RingIntrepidite : Ring
 
     public override void Shoot()
     {
+
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
@@ -82,6 +83,7 @@ public class RingIntrepidite : Ring
         for (int i = 0; i < 3; i++)
         {
             GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+            bullet.GetComponent<NetworkObject>().Spawn();
             bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
             yield return new WaitForSeconds(0.05f);
         }
@@ -132,9 +134,7 @@ public class RingIntrepidite : Ring
     [ClientRpc]
     private void ShootClientRPC()
     {
-        if (IsOwner)
-        {
-            Shoot();
-        }
+        Shoot();
+        
     }
 }
