@@ -63,7 +63,7 @@ public class ProjectilePassion : NetworkBehaviour
         
     }
 
-    [ServerRpc(RequireOwnership = true)]
+    [ServerRpc(RequireOwnership = false)]
     private void ExplosionServerRpc()
     {
         ExplosionClientRpc();

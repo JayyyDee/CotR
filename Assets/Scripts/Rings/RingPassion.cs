@@ -58,8 +58,8 @@ public class RingPassion : Ring
                 activeTimer = 0;
             }
         }
-
-        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+       
+            if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
             ShootServerRpc();
             canFire = false;
@@ -130,10 +130,9 @@ public class RingPassion : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        if (playerCharacter.GetComponent<NetworkObject>().IsOwner)
-        {
+       
             Shoot();
-        }
+       
         
     }
 
