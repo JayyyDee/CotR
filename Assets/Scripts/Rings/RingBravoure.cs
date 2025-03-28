@@ -130,7 +130,11 @@ public class RingBravoure : Ring
     [ClientRpc]
     private void ShootClientRPC()
     {
-        Shoot();
+        if (IsOwner)
+        {
+            Shoot();
+        }
+        
     }
     
 

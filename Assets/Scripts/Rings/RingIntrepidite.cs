@@ -123,7 +123,7 @@ public class RingIntrepidite : Ring
         attackSpeed = speed;
     }
 
-    [ServerRpc(RequireOwnership = true)]
+    [ServerRpc(RequireOwnership = false)]
     public void ShootServerRPC()
     {
         ShootClientRPC();
@@ -132,6 +132,9 @@ public class RingIntrepidite : Ring
     [ClientRpc]
     private void ShootClientRPC()
     {
-        this.Shoot();
+        if (IsOwner)
+        {
+            Shoot();
+        }
     }
 }
