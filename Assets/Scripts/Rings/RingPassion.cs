@@ -61,7 +61,7 @@ public class RingPassion : Ring
 
         if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
-            ShootServerRPC();
+            ShootServerRpc();
             canFire = false;
         }
 
@@ -128,13 +128,13 @@ public class RingPassion : Ring
     }
 
     [ServerRpc(RequireOwnership = false)]
-    public void ShootServerRPC()
+    public void ShootServerRpc()
     {
-        ShootClientRPC();
+        ShootClientRpc();
     }
 
     [ClientRpc]
-    private void ShootClientRPC()
+    private void ShootClientRpc()
     {
         if (IsOwner)
         {

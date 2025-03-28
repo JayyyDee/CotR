@@ -44,7 +44,7 @@ public class RingBravoure : Ring
         }
         if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
-            ShootServerRPC();
+            ShootServerRpc();
         }
 
         if (!canActive)
@@ -122,13 +122,13 @@ public class RingBravoure : Ring
     }
 
     [ServerRpc(RequireOwnership = false)]
-    public void ShootServerRPC()
+    public void ShootServerRpc()
     {
-        ShootClientRPC();
+        ShootClientRpc();
     }
 
     [ClientRpc]
-    private void ShootClientRPC()
+    private void ShootClientRpc()
     {
             Shoot();
 

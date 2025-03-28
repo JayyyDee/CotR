@@ -59,7 +59,7 @@ public class RingIntrepidite : Ring
         }
         if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
-            ShootServerRPC();
+            ShootServerRpc();
             canFire = false;
         }
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
@@ -126,13 +126,13 @@ public class RingIntrepidite : Ring
     }
 
     [ServerRpc(RequireOwnership = false)]
-    public void ShootServerRPC()
+    public void ShootServerRpc()
     {
-        ShootClientRPC();
+        ShootClientRpc();
     }
 
     [ClientRpc]
-    private void ShootClientRPC()
+    private void ShootClientRpc()
     {
         Shoot();
         

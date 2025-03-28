@@ -59,18 +59,18 @@ public class ProjectilePassion : NetworkBehaviour
         
         yield return new WaitForSeconds(0.2f);
         GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-        ExplosionServerRPC();
+        ExplosionServerRpc();
         
     }
 
     [ServerRpc(RequireOwnership = true)]
-    private void ExplosionServerRPC()
+    private void ExplosionServerRpc()
     {
-        ExplosionClientRPC();
+        ExplosionClientRpc();
     }
 
     [ClientRpc]
-    private void ExplosionClientRPC()
+    private void ExplosionClientRpc()
     {
         GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
 
