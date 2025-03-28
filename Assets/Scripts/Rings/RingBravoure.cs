@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 public class RingBravoure : Ring
@@ -41,9 +42,9 @@ public class RingBravoure : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
-            Shoot();
+            ShootServerRPC();
         }
 
         if (!canActive)
@@ -81,7 +82,7 @@ public class RingBravoure : Ring
 
     IEnumerator ActiveAbility()
     {
-        Vector3 pos = firePoint.transform.position + (firePoint.transform.right*2.5f);
+        Vector3 pos = firePoint.transform.position + (firePoint.transform.right*3.5f);
         Quaternion rot = firePoint.transform.rotation;
         yield return new WaitForSeconds(0.75f);
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
@@ -119,4 +120,18 @@ public class RingBravoure : Ring
     {
         attackSpeed = speed;
     }
+
+    [ServerRpc]
+    public void ShootServerRPC()
+    {
+        ShootClientRPC();
+    }
+
+    [ClientRpc]
+    private void ShootClientRPC()
+    {
+        Shoot();
+    }
+    
+
 }

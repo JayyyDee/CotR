@@ -17,10 +17,6 @@ public class ProjectilePassion : NetworkBehaviour
             StartCoroutine(Explosion());
         }
 
-    private void Update()
-    {
-        Debug.Log(damage);
-    }
     private void OnTriggerEnter2D(Collider2D collider)
         {
 
@@ -54,18 +50,33 @@ public class ProjectilePassion : NetworkBehaviour
         
         yield return new WaitForSeconds(0.2f);
         GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-        if (boost)
-        {
-            GameObject explosion = Instantiate(explosionPrefab,transform.position, transform.rotation);
-            explosion.transform.localScale= new Vector3(3,3,1);
-            explosion.GetComponent<SpriteRenderer>().color = Color.yellow;
-        }
-        else
-        {
-            
-            GameObject explosion = Instantiate(explosionPrefab,transform.position, transform.rotation);
-        }
+        ExplosionServerRPC();
         
     }
-    
+
+    [ServerRpc]
+    private void ExplosionServerRPC()
+    {
+        ExplosionClientRPC();
+    }
+
+    [ClientRpc]
+    private void ExplosionClientRPC()
+    {
+        GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+
+        //if (boost)
+        //{
+        //    GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+        //    explosion.transform.localScale = new Vector3(3, 3, 1);
+        //    explosion.GetComponent<SpriteRenderer>().color = Color.yellow;
+        //}
+        //else
+        //{
+
+        //    GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+        //}
+        
+    }
+
 }

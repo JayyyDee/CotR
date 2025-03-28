@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 public class RingPassion : Ring
@@ -58,9 +59,10 @@ public class RingPassion : Ring
             }
         }
 
-        if (equiped && Input.GetMouseButton(0) && canFire)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
-            Shoot();
+            ShootServerRPC();
+            canFire = false;
         }
 
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
@@ -71,7 +73,7 @@ public class RingPassion : Ring
 
     
     public override void Shoot(){
-        canFire = false;
+        
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
 
@@ -121,5 +123,17 @@ public class RingPassion : Ring
     public override void SetAttackSpeed(float speed)
     {
         attackSpeed = speed;
+    }
+
+    [ServerRpc]
+    public void ShootServerRPC()
+    {
+        ShootClientRPC();
+    }
+
+    [ClientRpc]
+    private void ShootClientRPC()
+    {
+        Shoot();
     }
 }

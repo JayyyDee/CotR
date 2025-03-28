@@ -49,9 +49,6 @@ TagManager:
   - name: Ground
     uniqueID: 3153208317
     locked: 0
-  - name: Test background
-    uniqueID: 2630722565
-    locked: 0
   - name: Ring
     uniqueID: 2186016155
     locked: 0
@@ -63,4 +60,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2898504839
+    locked: 0
+  - name: Bush
+    uniqueID: 2630722565
     locked: 0

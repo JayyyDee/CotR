@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 //using static UnityEditor.PlayerSettings;
 
@@ -56,11 +57,12 @@ public class RingIntrepidite : Ring
                 activeTimer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
-            Shoot();
+            ShootServerRPC();
+            canFire = false;
         }
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             Active();
         }
@@ -69,7 +71,6 @@ public class RingIntrepidite : Ring
 
     public override void Shoot()
     {
-        canFire = false;
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
@@ -120,5 +121,17 @@ public class RingIntrepidite : Ring
     public override void SetAttackSpeed(float speed)
     {
         attackSpeed = speed;
+    }
+
+    [ServerRpc]
+    public void ShootServerRPC()
+    {
+        ShootClientRPC();
+    }
+
+    [ClientRpc]
+    private void ShootClientRPC()
+    {
+        Shoot();
     }
 }
