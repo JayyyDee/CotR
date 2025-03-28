@@ -11,7 +11,13 @@ public class Projectile : NetworkBehaviour
     {
         Destroy(gameObject, deathTimer);
     }
-   
+    public override void OnNetworkSpawn()
+    {
+        base.OnNetworkSpawn();
+
+        GetComponent<Rigidbody2D>().AddForce(transform.right * 15, ForceMode2D.Impulse);
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.CompareTag("Enemy"))

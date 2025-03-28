@@ -87,7 +87,6 @@ public class RingIntrepidite : Ring
         {
             GameObject bullet = Instantiate(bulletPrefab, pos, rot);
             bullet.GetComponent<NetworkObject>().Spawn();
-            bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
             yield return new WaitForSeconds(0.05f);
         }
     }

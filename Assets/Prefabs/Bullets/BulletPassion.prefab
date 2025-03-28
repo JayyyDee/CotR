@@ -178,6 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53303f56ba330024ea7e5d437a4a09ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathTimer: 0.4
+  deathTimer: 0.3
   explosionPrefab: {fileID: 5329460689129265816, guid: 190dc8a86119d2a469045d228ccf2a17, type: 3}
   fireForce: 0
