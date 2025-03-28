@@ -1,0 +1,149 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "831985312",
+    "Type": "User",
+    "GUID": "{5817B06B-D7BB-4381-9314-0472A6E292D7}",
+    "Language": "SFX",
+    "Hash": "{DFE040E5-A8C1-A987-045C-C08306EB7CC2}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Musique",
+    "ShortName": "SoundBank_Musique",
+    "Path": "SoundBank_Musique.bnk",
+    "Media": [
+     {
+      "Id": "76740085",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Musique_Lobby_Full_Onetime_$itemnumber.wav",
+      "CachePath": "54/{5499C53F-253B-B55F-8678-B5267EA2CFD8}.wem"
+     },
+     {
+      "Id": "157330873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Musique_Combat_Loop_$itemnumber.wav",
+      "CachePath": "E6/{E6AAAC7A-C0CE-1B8A-8CE8-6C47EBFFB642}.wem"
+     },
+     {
+      "Id": "179266749",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Musique_Combat_Full_Onetime_$itemnumber.wav",
+      "CachePath": "B8/{B8E7A006-2E7B-84FA-6E93-B0C319B13C8A}.wem"
+     },
+     {
+      "Id": "286630306",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Musique_Lobby_Loop_$itemnumber.wav",
+      "CachePath": "01/{01258048-69E5-1421-27AC-0AE2EB3C6F33}.wem"
+     },
+     {
+      "Id": "716039497",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Musique_Lobby_Start_$itemnumber.wav",
+      "CachePath": "18/{1893A4CB-6658-5668-5F89-7320E7EDF119}.wem"
+     },
+     {
+      "Id": "1035898425",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Musique_Menu_Loop_$itemnumber.wav",
+      "CachePath": "99/{99B6257A-820C-2E38-7C6F-02C89A07F797}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "54626728",
+      "Name": "Play_Musique_Combat_Full_Onetime__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Musique\\Combat\\Play_Musique_Combat_Full_Onetime__itemnumber",
+      "GUID": "{24EABE29-9C91-462D-8CF0-D8DF5F7BC2B2}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "179266749"
+       }
+      ]
+     },
+     {
+      "Id": "227535219",
+      "Name": "Play_Musique_Combat_Loop__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Musique\\Combat\\Play_Musique_Combat_Loop__itemnumber",
+      "GUID": "{32A5B175-6D5C-4FE9-9679-E0631C9184BD}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "157330873"
+       }
+      ]
+     },
+     {
+      "Id": "699954836",
+      "Name": "Play_Musique_Lobby_Full_Onetime__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Musique\\Lobby\\Play_Musique_Lobby_Full_Onetime__itemnumber",
+      "GUID": "{B5200DAB-8292-47BE-BB30-F1BB8B9DD946}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "76740085"
+       }
+      ]
+     },
+     {
+      "Id": "2547827055",
+      "Name": "Play_Musique_Lobby_Loop__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Musique\\Lobby\\Play_Musique_Lobby_Loop__itemnumber",
+      "GUID": "{093CEFE1-BA05-4F1B-AF4E-89204DDF2C86}",
+      "DurationType": "OneShot",
+      "DurationMin": "68.01435",
+      "DurationMax": "68.01435",
+      "MediaRefs": [
+       {
+        "Id": "286630306"
+       }
+      ]
+     },
+     {
+      "Id": "3229792879",
+      "Name": "Play_Musique_Lobby_Start__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Musique\\Lobby\\Play_Musique_Lobby_Start__itemnumber",
+      "GUID": "{6AA0E906-00A0-47BB-9795-24521BF1EB10}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.4935699",
+      "DurationMax": "2.4935699",
+      "MediaRefs": [
+       {
+        "Id": "716039497"
+       }
+      ]
+     },
+     {
+      "Id": "4142008756",
+      "Name": "Play_Musique_Menu_Loop__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Musique\\Menu\\Play_Musique_Menu_Loop__itemnumber",
+      "GUID": "{8215AA30-5566-4C83-B9AC-BFE713185800}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1035898425"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1E27B30E-401E-7F0A-5486-E08C2351CA9D}"
+ }
+}

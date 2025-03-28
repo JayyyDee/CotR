@@ -68,7 +68,7 @@
      {
       "Id": "3618206844",
       "Name": "Event_Footstep",
-      "ObjectPath": "\\Events\\Default Work Unit\\Event_Footstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\OTHER\\Event_Footstep",
       "GUID": "{94F4E443-B36B-4412-9325-CCA687FBB9A6}",
       "DurationType": "OneShot",
       "DurationMin": "0.14089641",
@@ -124,6 +124,6 @@
     ]
    }
   ],
-  "FileHash": "{133E7DFD-440B-E185-5C09-1B6589829C33}"
+  "FileHash": "{DC570A7C-D112-0BD1-ADB5-8B9DC8347F43}"
  }
 }

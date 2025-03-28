@@ -28,7 +28,7 @@
      {
       "Id": "35105690",
       "Name": "Event_Jadeide_Slow__Pickup",
-      "ObjectPath": "\\Events\\Default Work Unit\\Event_Jadeide_Slow__Pickup",
+      "ObjectPath": "\\Events\\Default Work Unit\\OTHER\\Event_Jadeide_Slow__Pickup",
       "GUID": "{6E97C1E0-ED20-4DE1-A635-5292B3F19CD8}",
       "DurationType": "OneShot",
       "DurationMin": "5.9253125",
@@ -42,6 +42,6 @@
     ]
    }
   ],
-  "FileHash": "{EE61FB09-56DE-E0D5-12A4-AE646DA29B33}"
+  "FileHash": "{95E129CD-9D8B-58E0-4992-5A09513E5263}"
  }
 }

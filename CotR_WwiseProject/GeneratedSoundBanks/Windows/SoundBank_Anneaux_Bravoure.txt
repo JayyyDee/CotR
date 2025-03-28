@@ -1,0 +1,28 @@
+Event	ID	Name			Wwise Object Path	Notes
+	48028301	Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2__itemnumber			\Default Work Unit\Anneaux\Bravoure\Attack\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2__itemnumber	
+	971120188	Play_Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2__itemnumber			\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2__itemnumber	
+	1311394723	Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber			\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber	
+	1375151096	Play_Anneaux_Bravoure_Anneaux_Bravoure_Passif_full__itemnumber			\Default Work Unit\Anneaux\Bravoure\Passif\Play_Anneaux_Bravoure_Anneaux_Bravoure_Passif_full__itemnumber	
+	2245180070	Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1__itemnumber			\Default Work Unit\Anneaux\Bravoure\Attack\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1__itemnumber	
+	2443778206	Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber			\Default Work Unit\Anneaux\Bravoure\Base\Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber	
+	2786944721	Play_Anneaux_Bravoure_Actif_Base2__itemnumber			\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Base2__itemnumber	
+	2795927674	Play_Anneaux_Bravoure_Actif_Base1__itemnumber			\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Base1__itemnumber	
+	3245141071	Play_Anneaux_Bravoure_Actif_Holding__itemnumber			\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Holding__itemnumber	
+	3355272866	Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber			\Default Work Unit\Anneaux\Bravoure\Attack\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber	
+	3519253650	Play_Anneaux_Bravoure_Actif_Activation__itemnumber			\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Activation__itemnumber	
+	3848766526	Play_Anneaux_Bravoure_Actif_Attack_Full__itemnumber			\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Attack_Full__itemnumber	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	175041230	Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\BB\{BB4D09AB-E528-9881-B318-5AAA34384F25}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Actif\Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2_$itemnumber		242500
+	188644940	Anneaux_Bravoure_Actif_Base2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\F1\{F19CFCB9-CA1F-CFF6-E52F-AB2647370CD0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Actif\Anneaux_Bravoure_Actif_Base2_$itemnumber		1019228
+	189912528	Anneaux_Bravoure_Actif_Activation_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\80\{80EB6534-E36B-B377-C649-4BEF545F8DF0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Actif\Anneaux_Bravoure_Actif_Activation_$itemnumber		240380
+	441688529	Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\8A\{8A7567F1-288F-BD45-2EBB-0BB6829E83F5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Attack\Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1_$itemnumber		53952
+	477605912	Anneaux_Bravoure_Anneaux_Bravoure_Equip_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\29\{294763D0-CCEF-6756-7C13-EE408613EFF7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Base\Anneaux_Bravoure_Anneaux_Bravoure_Equip_$itemnumber		174092
+	480967136	Anneaux_Bravoure_Actif_Absorb&Convert_Full_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\67\{67B11A63-982A-E76B-F87C-996FCBE2C552}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Actif\Anneaux_Bravoure_Actif_Absorb&Convert_Full_$itemnumber		236236
+	553152634	Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\E4\{E4A1433F-A3A2-5DA0-3567-92B13184BCAA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Attack\Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2_$itemnumber		190664
+	691235544	Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\B2\{B20F57B7-0D8F-3CF8-8EDF-1899BF7BA7CF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Attack\Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full_$itemnumber		215524
+	695838447	Anneaux_Bravoure_Anneaux_Bravoure_Passif_full_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\B2\{B2580F79-C82A-DB4D-0185-BF3D2435B4B1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Passif\Anneaux_Bravoure_Anneaux_Bravoure_Passif_full_$itemnumber		159572
+	819710120	Anneaux_Bravoure_Actif_Base1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\32\{3263716D-8D5C-559A-441E-9EF49F993DE9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Actif\Anneaux_Bravoure_Actif_Base1_$itemnumber		1106224
+	904626975	Anneaux_Bravoure_Actif_Holding_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\55\{55BC745E-78D6-E687-0666-D000DDF9850F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Actif\Anneaux_Bravoure_Actif_Holding_$itemnumber		1035800
+	1014682642	Anneaux_Bravoure_Actif_Attack_Full_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\F8\{F8DC6285-17B9-E49A-0F36-3B4F8AEE868F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Bravoure\Actif\Anneaux_Bravoure_Actif_Attack_Full_$itemnumber		468232
+

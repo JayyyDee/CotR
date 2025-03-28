@@ -1,0 +1,393 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "467007289",
+    "Type": "User",
+    "GUID": "{C1B71D5D-FB70-4F58-91DB-2B0BFCDAEDD0}",
+    "Language": "SFX",
+    "Hash": "{03252A65-BBA0-CC62-480E-C2256A845BB9}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Patience",
+    "ShortName": "SoundBank_Anneaux_Patience",
+    "Path": "SoundBank_Anneaux_Patience.bnk",
+    "Media": [
+     {
+      "Id": "84209251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Attack_TNT_Wait_$itemnumber.wav",
+      "CachePath": "C0/{C0ED9407-E970-3F1F-BDF3-FF590746FCF0}.wem"
+     },
+     {
+      "Id": "149880440",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Attack_TNT_Despawn_$itemnumber.wav",
+      "CachePath": "01/{016648FF-854C-CD64-8DFF-F9D9797C793D}.wem"
+     },
+     {
+      "Id": "156510942",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Passif_LeaveRayon_$itemnumber.wav",
+      "CachePath": "1F/{1F19A1DB-B81D-9D32-506E-6DE126FDC453}.wem"
+     },
+     {
+      "Id": "215130135",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Passif_Inside_Start_$itemnumber.wav",
+      "CachePath": "78/{7898ECEA-581A-56CD-A239-535802FE5AB7}.wem"
+     },
+     {
+      "Id": "291238352",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Patience_Attack_Trow_Impact_Full_$itemnumber.wav",
+      "CachePath": "2E/{2E730EEA-C752-4784-DC1E-DEF8F4E23CFF}.wem"
+     },
+     {
+      "Id": "316972307",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Actif_Explosion_PT2_$itemnumber.wav",
+      "CachePath": "12/{12C016E1-4608-7588-45D1-E2A8396E8C73}.wem"
+     },
+     {
+      "Id": "318579479",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Patience_Attack_Trow_FULL_$itemnumber.wav",
+      "CachePath": "C2/{C2A29A10-103A-3766-8295-5E3705813F8A}.wem"
+     },
+     {
+      "Id": "342946220",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Attack_Trow_Impact_Placed_$itemnumber.wav",
+      "CachePath": "24/{245CED15-0152-C65A-F2B7-0719E2B3B31E}.wem"
+     },
+     {
+      "Id": "555447540",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Passif_Inside_Full_$itemnumber.wav",
+      "CachePath": "BC/{BC09185B-5D5E-3294-2873-9533B9C59A04}.wem"
+     },
+     {
+      "Id": "561102837",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Patience_Actif_Explosion_Full_$itemnumber.wav",
+      "CachePath": "D1/{D1A0B8FB-0AEE-CA8C-5F13-EEA892E18D90}.wem"
+     },
+     {
+      "Id": "570987956",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Actif_Explosion_PT1_$itemnumber.wav",
+      "CachePath": "8D/{8DA87CD8-C211-DC54-6C06-63289F202A3A}.wem"
+     },
+     {
+      "Id": "585554242",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Attack_Trow_PT2_$itemnumber.wav",
+      "CachePath": "39/{394302AE-2141-D458-E724-B6DEC87BEE8B}.wem"
+     },
+     {
+      "Id": "668898919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Passif_EnterRayon_$itemnumber.wav",
+      "CachePath": "9E/{9E90DB9E-E4B3-59F8-ECE9-39BCA59C7A42}.wem"
+     },
+     {
+      "Id": "848998930",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Attack_Trow_Impact_Damage_$itemnumber.wav",
+      "CachePath": "36/{36A61602-FE62-5F80-18F9-EB9EC80738E9}.wem"
+     },
+     {
+      "Id": "941894203",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Passif_Inside_Loop_$itemnumber.wav",
+      "CachePath": "37/{3725D98D-355A-1E99-1A67-E37A189D30AF}.wem"
+     },
+     {
+      "Id": "1013355837",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Patience_Attack_Trow_PT1_$itemnumber.wav",
+      "CachePath": "58/{5891F75B-48CC-A637-0B3F-999C81DA68D9}.wem"
+     },
+     {
+      "Id": "1063534659",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Patience_Equipe_FULL_$itemnumber.wav",
+      "CachePath": "EF/{EF9A621C-B93F-C081-9F56-ABF79ED6B887}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "820125396",
+      "Name": "Play_Anneaux_Patience_Actif_Explosion_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Actif\\Play_Anneaux_Patience_Actif_Explosion_PT1__itemnumber",
+      "GUID": "{2B142AF3-41E4-49A6-8B35-93AD366C3100}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.013343",
+      "DurationMax": "1.013343",
+      "MediaRefs": [
+       {
+        "Id": "570987956"
+       }
+      ]
+     },
+     {
+      "Id": "1595907359",
+      "Name": "Play_Anneaux_Patience_Actif_Explosion_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Actif\\Play_Anneaux_Patience_Actif_Explosion_PT2__itemnumber",
+      "GUID": "{E3C30DC7-416D-44DA-AEE5-B9DC8A1FB28C}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3954232",
+      "DurationMax": "1.3954232",
+      "MediaRefs": [
+       {
+        "Id": "316972307"
+       }
+      ]
+     },
+     {
+      "Id": "2569161331",
+      "Name": "Play_Anneaux_Patience_Attack_TNT_Despawn__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\TNT\\Play_Anneaux_Patience_Attack_TNT_Despawn__itemnumber",
+      "GUID": "{4F1FB338-4A49-4BB3-BA9F-404C4A3FC59F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4817531",
+      "DurationMax": "0.4817531",
+      "MediaRefs": [
+       {
+        "Id": "149880440"
+       }
+      ]
+     },
+     {
+      "Id": "647745864",
+      "Name": "Play_Anneaux_Patience_Attack_TNT_Wait__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\TNT\\Play_Anneaux_Patience_Attack_TNT_Wait__itemnumber",
+      "GUID": "{011A3AFF-1F8C-4951-8BCE-D4F3166AD1E6}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "84209251"
+       }
+      ]
+     },
+     {
+      "Id": "2562864793",
+      "Name": "Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\Throw\\Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber",
+      "GUID": "{8DB9C33D-B570-42A8-85EB-63FD2D60F761}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9801186",
+      "DurationMax": "0.9801186",
+      "MediaRefs": [
+       {
+        "Id": "848998930"
+       }
+      ]
+     },
+     {
+      "Id": "1211254069",
+      "Name": "Play_Anneaux_Patience_Attack_Trow_Impact_Placed__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\Throw\\Play_Anneaux_Patience_Attack_Trow_Impact_Placed__itemnumber",
+      "GUID": "{8B6D0166-CB89-4A0D-B949-CA4932D7E3C0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.18273383",
+      "DurationMax": "0.18273383",
+      "MediaRefs": [
+       {
+        "Id": "342946220"
+       }
+      ]
+     },
+     {
+      "Id": "2835906194",
+      "Name": "Play_Anneaux_Patience_Attack_Trow_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\Throw\\Play_Anneaux_Patience_Attack_Trow_PT1__itemnumber",
+      "GUID": "{A6821937-9982-4A90-A04C-3F34D363BB61}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3156313",
+      "DurationMax": "0.3156313",
+      "MediaRefs": [
+       {
+        "Id": "1013355837"
+       }
+      ]
+     },
+     {
+      "Id": "3058761769",
+      "Name": "Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\Throw\\Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber",
+      "GUID": "{7D044096-473D-4490-96C8-392A215C4D3C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4817531",
+      "DurationMax": "0.4817531",
+      "MediaRefs": [
+       {
+        "Id": "585554242"
+       }
+      ]
+     },
+     {
+      "Id": "468307329",
+      "Name": "Play_Anneaux_Patience_Passif_EnterRayon__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Passif\\Play_Anneaux_Patience_Passif_EnterRayon__itemnumber",
+      "GUID": "{82A3CF4F-93C0-4EFF-86D1-6472272A1D15}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8638333",
+      "DurationMax": "0.8638333",
+      "MediaRefs": [
+       {
+        "Id": "668898919"
+       }
+      ]
+     },
+     {
+      "Id": "584110532",
+      "Name": "Play_Anneaux_Patience_Passif_Inside_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Passif\\Play_Anneaux_Patience_Passif_Inside_Full__itemnumber",
+      "GUID": "{478C53F7-CB77-47FF-BA45-60257588A477}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "555447540"
+       }
+      ]
+     },
+     {
+      "Id": "2340276349",
+      "Name": "Play_Anneaux_Patience_Passif_Inside_Loop__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Passif\\Play_Anneaux_Patience_Passif_Inside_Loop__itemnumber",
+      "GUID": "{0AC4F58E-2750-404C-B6CF-97CEB07841C5}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "941894203"
+       }
+      ]
+     },
+     {
+      "Id": "782609553",
+      "Name": "Play_Anneaux_Patience_Passif_Inside_Start__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Passif\\Play_Anneaux_Patience_Passif_Inside_Start__itemnumber",
+      "GUID": "{32BC8F8D-8C35-4ADA-BF9A-2FE8CEA489F4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.33224347",
+      "DurationMax": "0.33224347",
+      "MediaRefs": [
+       {
+        "Id": "215130135"
+       }
+      ]
+     },
+     {
+      "Id": "3230843872",
+      "Name": "Play_Anneaux_Patience_Passif_LeaveRayon__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Passif\\Play_Anneaux_Patience_Passif_LeaveRayon__itemnumber",
+      "GUID": "{7981F902-4ADF-4CD4-91F8-669775C8CD04}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4817531",
+      "DurationMax": "0.4817531",
+      "MediaRefs": [
+       {
+        "Id": "156510942"
+       }
+      ]
+     },
+     {
+      "Id": "1932143882",
+      "Name": "Play_FULL_Anneaux_Patience_Actif_Explosion_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Actif\\Play_FULL_Anneaux_Patience_Actif_Explosion_Full__itemnumber",
+      "GUID": "{00AF21B3-BAEB-4F8C-BCDA-AD18E3E71578}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4286475",
+      "DurationMax": "1.4286475",
+      "MediaRefs": [
+       {
+        "Id": "561102837"
+       }
+      ]
+     },
+     {
+      "Id": "3146683060",
+      "Name": "Play_FULL_Anneaux_Patience_Attack_Trow_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\Throw\\Play_FULL_Anneaux_Patience_Attack_Trow_FULL__itemnumber",
+      "GUID": "{2D335D40-24A6-4B9C-BE12-94880D0C1B0F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.56481403",
+      "DurationMax": "0.56481403",
+      "MediaRefs": [
+       {
+        "Id": "318579479"
+       }
+      ]
+     },
+     {
+      "Id": "1427764535",
+      "Name": "Play_FULL_Anneaux_Patience_Attack_Trow_Impact_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Attack\\Throw\\Play_FULL_Anneaux_Patience_Attack_Trow_Impact_Full__itemnumber",
+      "GUID": "{40D4BD83-E61D-4B74-A521-23C2C50F6804}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.196077",
+      "DurationMax": "1.196077",
+      "MediaRefs": [
+       {
+        "Id": "291238352"
+       }
+      ]
+     },
+     {
+      "Id": "986124536",
+      "Name": "Play_FULL_Anneaux_Patience_Equipe_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Patience\\Base\\Play_FULL_Anneaux_Patience_Equipe_FULL__itemnumber",
+      "GUID": "{E5E6714E-2A04-41A3-9C89-366644A4FDD7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0964038",
+      "DurationMax": "1.0964038",
+      "MediaRefs": [
+       {
+        "Id": "1063534659"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{172FE920-0E28-3FD1-CA9F-BB6B7F34CC56}"
+ }
+}

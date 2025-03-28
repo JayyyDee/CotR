@@ -1,0 +1,287 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2084984678",
+    "Type": "User",
+    "GUID": "{9F21CCFA-C429-4678-A406-C19CFF76994A}",
+    "Language": "SFX",
+    "Hash": "{E4B92A91-0EE8-4B9A-2539-8319027E728F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Bravoure",
+    "ShortName": "SoundBank_Anneaux_Bravoure",
+    "Path": "SoundBank_Anneaux_Bravoure.bnk",
+    "Media": [
+     {
+      "Id": "175041230",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2_$itemnumber.wav",
+      "CachePath": "BB/{BB4D09AB-E528-9881-B318-5AAA34384F25}.wem"
+     },
+     {
+      "Id": "188644940",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Actif_Base2_$itemnumber.wav",
+      "CachePath": "F1/{F19CFCB9-CA1F-CFF6-E52F-AB2647370CD0}.wem"
+     },
+     {
+      "Id": "189912528",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Actif_Activation_$itemnumber.wav",
+      "CachePath": "80/{80EB6534-E36B-B377-C649-4BEF545F8DF0}.wem"
+     },
+     {
+      "Id": "441688529",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1_$itemnumber.wav",
+      "CachePath": "8A/{8A7567F1-288F-BD45-2EBB-0BB6829E83F5}.wem"
+     },
+     {
+      "Id": "477605912",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Equip_$itemnumber.wav",
+      "CachePath": "29/{294763D0-CCEF-6756-7C13-EE408613EFF7}.wem"
+     },
+     {
+      "Id": "480967136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Actif_Absorb&Convert_Full_$itemnumber.wav",
+      "CachePath": "67/{67B11A63-982A-E76B-F87C-996FCBE2C552}.wem"
+     },
+     {
+      "Id": "553152634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2_$itemnumber.wav",
+      "CachePath": "E4/{E4A1433F-A3A2-5DA0-3567-92B13184BCAA}.wem"
+     },
+     {
+      "Id": "691235544",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full_$itemnumber.wav",
+      "CachePath": "B2/{B20F57B7-0D8F-3CF8-8EDF-1899BF7BA7CF}.wem"
+     },
+     {
+      "Id": "695838447",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Passif_full_$itemnumber.wav",
+      "CachePath": "B2/{B2580F79-C82A-DB4D-0185-BF3D2435B4B1}.wem"
+     },
+     {
+      "Id": "819710120",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Actif_Base1_$itemnumber.wav",
+      "CachePath": "32/{3263716D-8D5C-559A-441E-9EF49F993DE9}.wem"
+     },
+     {
+      "Id": "904626975",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Actif_Holding_$itemnumber.wav",
+      "CachePath": "55/{55BC745E-78D6-E687-0666-D000DDF9850F}.wem"
+     },
+     {
+      "Id": "1014682642",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bravoure_Actif_Attack_Full_$itemnumber.wav",
+      "CachePath": "F8/{F8DC6285-17B9-E49A-0F36-3B4F8AEE868F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1311394723",
+      "Name": "Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Actif\\Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber",
+      "GUID": "{29D5F6F0-9779-44C9-974B-4F662550D195}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2298967",
+      "DurationMax": "1.2298967",
+      "MediaRefs": [
+       {
+        "Id": "480967136"
+       }
+      ]
+     },
+     {
+      "Id": "3519253650",
+      "Name": "Play_Anneaux_Bravoure_Actif_Activation__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Actif\\Play_Anneaux_Bravoure_Actif_Activation__itemnumber",
+      "GUID": "{63AEEDE0-1D80-4269-8F94-E197786B8386}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2514738",
+      "DurationMax": "1.2514738",
+      "MediaRefs": [
+       {
+        "Id": "189912528"
+       }
+      ]
+     },
+     {
+      "Id": "3848766526",
+      "Name": "Play_Anneaux_Bravoure_Actif_Attack_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Actif\\Play_Anneaux_Bravoure_Actif_Attack_Full__itemnumber",
+      "GUID": "{59E47883-6112-4235-AEA3-EB66F583DC69}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.438216",
+      "DurationMax": "2.438216",
+      "MediaRefs": [
+       {
+        "Id": "1014682642"
+       }
+      ]
+     },
+     {
+      "Id": "2795927674",
+      "Name": "Play_Anneaux_Bravoure_Actif_Base1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Actif\\Play_Anneaux_Bravoure_Actif_Base1__itemnumber",
+      "GUID": "{F7A11993-46C3-4329-9A76-4B747A2FEFC2}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.7610946",
+      "DurationMax": "5.7610946",
+      "MediaRefs": [
+       {
+        "Id": "819710120"
+       }
+      ]
+     },
+     {
+      "Id": "2786944721",
+      "Name": "Play_Anneaux_Bravoure_Actif_Base2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Actif\\Play_Anneaux_Bravoure_Actif_Base2__itemnumber",
+      "GUID": "{939B6518-C828-4A05-8F78-1629A9CF5594}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.307975",
+      "DurationMax": "5.307975",
+      "MediaRefs": [
+       {
+        "Id": "188644940"
+       }
+      ]
+     },
+     {
+      "Id": "3245141071",
+      "Name": "Play_Anneaux_Bravoure_Actif_Holding__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Actif\\Play_Anneaux_Bravoure_Actif_Holding__itemnumber",
+      "GUID": "{91991181-FC40-40D1-8130-A68A80B4C762}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "904626975"
+       }
+      ]
+     },
+     {
+      "Id": "971120188",
+      "Name": "Play_Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Actif\\Play_Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2__itemnumber",
+      "GUID": "{088812CC-E177-4A98-902E-BBAAA2C9139A}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2625257",
+      "DurationMax": "1.2625257",
+      "MediaRefs": [
+       {
+        "Id": "175041230"
+       }
+      ]
+     },
+     {
+      "Id": "3355272866",
+      "Name": "Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Attack\\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber",
+      "GUID": "{BD930F40-31D7-4D5D-9409-5C3D8C9FACAE}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.122011",
+      "DurationMax": "1.122011",
+      "MediaRefs": [
+       {
+        "Id": "691235544"
+       }
+      ]
+     },
+     {
+      "Id": "2245180070",
+      "Name": "Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Attack\\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1__itemnumber",
+      "GUID": "{C3E10268-F362-4141-96F4-F9FFAE5F0BD1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2805028",
+      "DurationMax": "0.2805028",
+      "MediaRefs": [
+       {
+        "Id": "441688529"
+       }
+      ]
+     },
+     {
+      "Id": "48028301",
+      "Name": "Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Attack\\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2__itemnumber",
+      "GUID": "{759C0E2A-2B6E-4FFB-8A8C-B295968C8C74}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.99254817",
+      "DurationMax": "0.99254817",
+      "MediaRefs": [
+       {
+        "Id": "553152634"
+       }
+      ]
+     },
+     {
+      "Id": "2443778206",
+      "Name": "Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Base\\Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber",
+      "GUID": "{7BB19AD0-5D97-43A7-BE0F-92408205EEE0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9062396",
+      "DurationMax": "0.9062396",
+      "MediaRefs": [
+       {
+        "Id": "477605912"
+       }
+      ]
+     },
+     {
+      "Id": "1375151096",
+      "Name": "Play_Anneaux_Bravoure_Anneaux_Bravoure_Passif_full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bravoure\\Passif\\Play_Anneaux_Bravoure_Anneaux_Bravoure_Passif_full__itemnumber",
+      "GUID": "{44FA8020-221C-41E0-9470-536D059B249D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.83060896",
+      "DurationMax": "0.83060896",
+      "MediaRefs": [
+       {
+        "Id": "695838447"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{15D56E66-94DF-7012-4BC2-9D9A24DDD251}"
+ }
+}

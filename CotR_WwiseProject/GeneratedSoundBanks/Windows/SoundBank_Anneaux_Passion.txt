@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	80281929	Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber			\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber	
+	368652901	Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber			\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber	
+	419834130	Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber			\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber	
+	683100430	Play_Anneaux_Passion_Anneaux_Passion_Attack_Full__itemnumber			\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Attack_Full__itemnumber	
+	2624215598	Play_FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full__itemnumber			\Default Work Unit\Anneaux\Passion\Play_FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full__itemnumber	
+	3852939954	Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber			\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	157554816	Anneaux_Passion_Anneaux_Passion_Attack_Pt2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\6B\{6B53FB9A-D423-61BE-FD32-44F461FB3397}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Passion\Attack\Anneaux_Passion_Anneaux_Passion_Attack_Pt2_$itemnumber		103668
+	338727196	FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\57\{57B6E61B-CCDE-F728-E07D-65F61D5EBF8C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Passion\Passif\FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full_$itemnumber		172332
+	433850664	Anneaux_Passion_Anneaux_Passion_Attack_Pt1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\DC\{DC17BFD4-F6C5-1B82-9054-3F3AEB7ED428}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Passion\Attack\Anneaux_Passion_Anneaux_Passion_Attack_Pt1_$itemnumber		169952
+	584985879	Anneaux_Passion_Anneaux_Passion_Equip_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\5F\{5FE2C611-0BD5-5FB5-03C0-D51B1236EB7A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Passion\Base\Anneaux_Passion_Anneaux_Passion_Equip_$itemnumber		215524
+	686703082	Anneaux_Passion_Anneaux_Passion_Actif_Full_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\B4\{B4D7DAFD-0769-438F-0810-F9DB8D1EDFBC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Passion\Actif\Anneaux_Passion_Anneaux_Passion_Actif_Full_$itemnumber		273520
+	1060622862	Anneaux_Passion_Anneaux_Passion_Attack_Full_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\94\{949780A8-7871-4FEF-C3EE-AAF3F4550657}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Anneaux\Passion\Attack\Anneaux_Passion_Anneaux_Passion_Attack_Full_$itemnumber		190664
+

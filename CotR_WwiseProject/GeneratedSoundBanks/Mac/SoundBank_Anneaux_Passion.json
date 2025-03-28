@@ -1,0 +1,157 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4293030339",
+    "Type": "User",
+    "GUID": "{D0909FAA-8146-4687-8C75-F2D5950BF49E}",
+    "Language": "SFX",
+    "Hash": "{00571F33-619B-3AA8-17FE-62BADD8564C1}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Passion",
+    "ShortName": "SoundBank_Anneaux_Passion",
+    "Path": "SoundBank_Anneaux_Passion.bnk",
+    "Media": [
+     {
+      "Id": "157554816",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Passion_Anneaux_Passion_Attack_Pt2_$itemnumber.wav",
+      "CachePath": "6B/{6B53FB9A-D423-61BE-FD32-44F461FB3397}.wem"
+     },
+     {
+      "Id": "338727196",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full_$itemnumber.wav",
+      "CachePath": "57/{57B6E61B-CCDE-F728-E07D-65F61D5EBF8C}.wem"
+     },
+     {
+      "Id": "433850664",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Passion_Anneaux_Passion_Attack_Pt1_$itemnumber.wav",
+      "CachePath": "DC/{DC17BFD4-F6C5-1B82-9054-3F3AEB7ED428}.wem"
+     },
+     {
+      "Id": "584985879",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Passion_Anneaux_Passion_Equip_$itemnumber.wav",
+      "CachePath": "5F/{5FE2C611-0BD5-5FB5-03C0-D51B1236EB7A}.wem"
+     },
+     {
+      "Id": "686703082",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Passion_Anneaux_Passion_Actif_Full_$itemnumber.wav",
+      "CachePath": "B4/{B4D7DAFD-0769-438F-0810-F9DB8D1EDFBC}.wem"
+     },
+     {
+      "Id": "1060622862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Passion_Anneaux_Passion_Attack_Full_$itemnumber.wav",
+      "CachePath": "94/{949780A8-7871-4FEF-C3EE-AAF3F4550657}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "368652901",
+      "Name": "Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Passion\\Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber",
+      "GUID": "{CD8480D9-A6EB-43F4-A252-6478E9C5FE5F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4240907",
+      "DurationMax": "1.4240907",
+      "MediaRefs": [
+       {
+        "Id": "686703082"
+       }
+      ]
+     },
+     {
+      "Id": "683100430",
+      "Name": "Play_Anneaux_Passion_Anneaux_Passion_Attack_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Passion\\Play_Anneaux_Passion_Anneaux_Passion_Attack_Full__itemnumber",
+      "GUID": "{17477963-7EFB-4558-AD8C-8D98F1C0A5E3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.99254817",
+      "DurationMax": "0.99254817",
+      "MediaRefs": [
+       {
+        "Id": "1060622862"
+       }
+      ]
+     },
+     {
+      "Id": "3852939954",
+      "Name": "Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Passion\\Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber",
+      "GUID": "{7EA0E4C9-33FE-4E3A-B142-0B5A65F75699}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8846625",
+      "DurationMax": "0.8846625",
+      "MediaRefs": [
+       {
+        "Id": "433850664"
+       }
+      ]
+     },
+     {
+      "Id": "80281929",
+      "Name": "Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Passion\\Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber",
+      "GUID": "{4F2EA412-1E1F-4049-B03E-8EFDADF7CA51}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.53942835",
+      "DurationMax": "0.53942835",
+      "MediaRefs": [
+       {
+        "Id": "157554816"
+       }
+      ]
+     },
+     {
+      "Id": "419834130",
+      "Name": "Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Passion\\Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber",
+      "GUID": "{E2D53755-18BB-431B-BC64-DB652219CD92}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.122011",
+      "DurationMax": "1.122011",
+      "MediaRefs": [
+       {
+        "Id": "584985879"
+       }
+      ]
+     },
+     {
+      "Id": "2624215598",
+      "Name": "Play_FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Passion\\Play_FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full__itemnumber",
+      "GUID": "{2610DC24-8C30-4D03-A36E-6C36E2B81A3E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8970577",
+      "DurationMax": "0.8970577",
+      "MediaRefs": [
+       {
+        "Id": "338727196"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D68F3DE5-52E7-3CB1-4845-5AA16B504C28}"
+ }
+}

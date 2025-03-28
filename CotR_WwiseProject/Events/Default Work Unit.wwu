@@ -3,28 +3,866 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Event_Footstep" ID="{94F4E443-B36B-4412-9325-CCA687FBB9A6}">
+				<Folder Name="OTHER" ID="{62525F4A-D8DF-4750-B6F1-CB485573FE10}" ShortID="985846193">
 					<ChildrenList>
-						<Action Name="" ID="{B332032E-AC46-4637-B9EB-B741F0C4850A}" ShortID="390583975">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Switch_Footsteps" ID="{B03350EF-8F17-4DD8-B630-D913070D9C4B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Event_Jadeide_Slow__Pickup" ID="{6E97C1E0-ED20-4DE1-A635-5292B3F19CD8}">
+							<ChildrenList>
+								<Action Name="" ID="{23CC4DA6-456B-4C06-A807-3CE9D3578306}" ShortID="110740946">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jadeide Slow_$itemnumber" ID="{7EB39DD9-298E-4CA4-B706-BA93B8DC7E4B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Event_Footstep" ID="{94F4E443-B36B-4412-9325-CCA687FBB9A6}">
+							<ChildrenList>
+								<Action Name="" ID="{B332032E-AC46-4637-B9EB-B741F0C4850A}" ShortID="390583975">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch_Footsteps" ID="{B03350EF-8F17-4DD8-B630-D913070D9C4B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Event_Jadeide_Slow__Pickup" ID="{6E97C1E0-ED20-4DE1-A635-5292B3F19CD8}">
+				</Folder>
+				<Folder Name="Anneaux" ID="{05910FCE-D875-4576-8354-BBB379CA6DB9}" ShortID="439695661">
 					<ChildrenList>
-						<Action Name="" ID="{23CC4DA6-456B-4C06-A807-3CE9D3578306}" ShortID="110740946">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jadeide Slow_$itemnumber" ID="{7EB39DD9-298E-4CA4-B706-BA93B8DC7E4B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="Passion" ID="{B687297F-887B-4032-BD52-4E2F786BD91F}" ShortID="310462075">
+							<ChildrenList>
+								<Event Name="Play_Anneaux_Passion_Anneaux_Passion_Attack_Full__itemnumber" ID="{17477963-7EFB-4558-AD8C-8D98F1C0A5E3}">
+									<ChildrenList>
+										<Action Name="" ID="{D3521553-6C61-48D4-A7F3-50CFF5D3E475}" ShortID="570350956">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Anneaux_Passion_Anneaux_Passion_Attack_Full_$itemnumber" ID="{7A711C80-E417-4290-B915-F2D2E9DC76D5}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full__itemnumber" ID="{2610DC24-8C30-4D03-A36E-6C36E2B81A3E}">
+									<ChildrenList>
+										<Action Name="" ID="{75C265B2-E42A-4A54-881D-9E672D12906B}" ShortID="163740883">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full_$itemnumber" ID="{BBDAD26E-D9D0-4AC8-A50D-076426317DA6}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber" ID="{CD8480D9-A6EB-43F4-A252-6478E9C5FE5F}">
+									<ChildrenList>
+										<Action Name="" ID="{205197F4-3E5E-4842-AEC7-2D4436D27A98}" ShortID="562724401">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Anneaux_Passion_Anneaux_Passion_Actif_Full_$itemnumber" ID="{94B62C00-BEEE-4EEF-B271-CF86DEFBA292}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber" ID="{7EA0E4C9-33FE-4E3A-B142-0B5A65F75699}">
+									<ChildrenList>
+										<Action Name="" ID="{71C1B238-9EC5-46C5-A178-22CA09959A3B}" ShortID="838315822">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Anneaux_Passion_Anneaux_Passion_Attack_Pt1_$itemnumber" ID="{BA030E96-82A9-4091-9087-317C7F29DDB4}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber" ID="{4F2EA412-1E1F-4049-B03E-8EFDADF7CA51}">
+									<ChildrenList>
+										<Action Name="" ID="{21476692-B0DD-42D8-BAB4-F7DE913B24E0}" ShortID="940794585">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Anneaux_Passion_Anneaux_Passion_Attack_Pt2_$itemnumber" ID="{8CF1F7B2-72FF-4D74-96DA-23A93BDB5E5B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber" ID="{E2D53755-18BB-431B-BC64-DB652219CD92}">
+									<ChildrenList>
+										<Action Name="" ID="{E5FC521D-6618-49E7-B023-B2DD2B405E9B}" ShortID="85712029">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Anneaux_Passion_Anneaux_Passion_Equip_$itemnumber" ID="{7B5DB8C1-BA19-4D14-8988-C49DD636D92B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Bravoure" ID="{95D60264-260C-4579-AA54-E88FA72BA9AF}" ShortID="762136197">
+							<ChildrenList>
+								<Folder Name="Actif" ID="{E92F4661-65C0-443B-AD99-3082667D96A4}" ShortID="558567891">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Bravoure_Actif_Activation__itemnumber" ID="{63AEEDE0-1D80-4269-8F94-E197786B8386}">
+											<ChildrenList>
+												<Action Name="" ID="{6D268F2E-C3A6-41AA-96CE-0A44E1A881F5}" ShortID="588518019">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Actif_Activation_$itemnumber" ID="{8A46B1C4-0528-4B39-B109-585F38CBBF54}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Actif_Attack_Full__itemnumber" ID="{59E47883-6112-4235-AEA3-EB66F583DC69}">
+											<ChildrenList>
+												<Action Name="" ID="{87F69077-008A-45FB-96A1-7577E37AFD71}" ShortID="665651415">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Actif_Attack_Full_$itemnumber" ID="{DB36868F-92A4-42AC-95A4-CE1677A64558}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Actif_Base1__itemnumber" ID="{F7A11993-46C3-4329-9A76-4B747A2FEFC2}">
+											<ChildrenList>
+												<Action Name="" ID="{60046A50-EDD5-41CF-9E4F-2C452D2DED3A}" ShortID="280404223">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Actif_Base1_$itemnumber" ID="{A2221CF7-8235-4D9F-A80B-3E707A9CAC74}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Actif_Base2__itemnumber" ID="{939B6518-C828-4A05-8F78-1629A9CF5594}">
+											<ChildrenList>
+												<Action Name="" ID="{FF7DF884-856C-42AE-AAEB-EDD46BF57B66}" ShortID="1042044566">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Actif_Base2_$itemnumber" ID="{A884B528-F1EC-4D21-9D3D-D8C4F52E7560}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Actif_Holding__itemnumber" ID="{91991181-FC40-40D1-8130-A68A80B4C762}">
+											<ChildrenList>
+												<Action Name="" ID="{4E255D94-11A0-4B44-885E-E5D4F5C9200C}" ShortID="292709981">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Actif_Holding_$itemnumber" ID="{0C3BF0C2-8152-4706-881C-557E8C7317AA}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2__itemnumber" ID="{088812CC-E177-4A98-902E-BBAAA2C9139A}">
+											<ChildrenList>
+												<Action Name="" ID="{D75CAE57-7198-4369-B3C8-7A4E880E0F35}" ShortID="726633410">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2_$itemnumber" ID="{8AF10786-1B08-435D-B11B-09A55E4C01FF}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber" ID="{29D5F6F0-9779-44C9-974B-4F662550D195}">
+											<ChildrenList>
+												<Action Name="" ID="{3122699E-9DEB-4D0C-83C3-DACEB8BCEE50}" ShortID="551267365">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Actif_Absorb&amp;Convert_Full_$itemnumber" ID="{FA1DB89C-DF1D-4425-99FD-8CD2F382A105}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Attack" ID="{17584C0F-860E-41BD-97CC-624437928544}" ShortID="169234144">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber" ID="{BD930F40-31D7-4D5D-9409-5C3D8C9FACAE}">
+											<ChildrenList>
+												<Action Name="" ID="{507CDA0A-572B-4C1D-9E80-DF9CF52379E3}" ShortID="293854110">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full_$itemnumber" ID="{191704B3-F526-44DD-9641-33564709B2FA}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2__itemnumber" ID="{759C0E2A-2B6E-4FFB-8A8C-B295968C8C74}">
+											<ChildrenList>
+												<Action Name="" ID="{FBD8E2AC-1BF1-488A-A44A-8AFE73D0A787}" ShortID="494934691">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2_$itemnumber" ID="{512F6CA9-3FB8-4AC7-BC70-9B684D6609F7}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1__itemnumber" ID="{C3E10268-F362-4141-96F4-F9FFAE5F0BD1}">
+											<ChildrenList>
+												<Action Name="" ID="{86C44C05-A8DF-42FD-BC13-67338C576A04}" ShortID="130316627">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1_$itemnumber" ID="{7A7300E9-0B22-412D-85EF-F94041FA6BA4}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Base" ID="{11484FE2-41D5-4068-B92A-D84D0A4D2D9E}" ShortID="536733184">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber" ID="{7BB19AD0-5D97-43A7-BE0F-92408205EEE0}">
+											<ChildrenList>
+												<Action Name="" ID="{AABFBB91-81D8-47EA-BE9B-29291A3846E2}" ShortID="369197373">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Anneaux_Bravoure_Equip_$itemnumber" ID="{7CAC90FC-6C7B-48AA-BB8A-21202643E460}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Passif" ID="{B4F6CC57-F3B7-4056-8DD8-87BE6EAA96C0}" ShortID="794515330">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Bravoure_Anneaux_Bravoure_Passif_full__itemnumber" ID="{44FA8020-221C-41E0-9470-536D059B249D}">
+											<ChildrenList>
+												<Action Name="" ID="{B2BCE504-DB01-4061-B1E7-5FA553DACAFF}" ShortID="886913104">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bravoure_Anneaux_Bravoure_Passif_full_$itemnumber" ID="{D8040084-5AD3-4115-AD51-8DBA19C68B35}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Intrépidité" ID="{57B8586A-5453-4EF1-91BE-6F0FA9E905F5}" ShortID="350650007">
+							<ChildrenList>
+								<Folder Name="Base" ID="{54BFA6D3-36E7-459E-8835-38D1460C0959}" ShortID="285724622">
+									<ChildrenList>
+										<Event Name="Play_FULL_Anneaux_Intr_pidit__Equipe_FULL__itemnumber" ID="{23903AFB-446B-438C-855A-89FEA4ABF553}">
+											<ChildrenList>
+												<Action Name="" ID="{45B33335-7B64-4E5D-B7ED-73FA17E76B81}" ShortID="892989982">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Intrépidité_Equipe_FULL_$itemnumber" ID="{FEA5470E-AF7A-45B1-9EE9-8C297BD2AC45}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Attack" ID="{D2FDA16F-DADD-4C9D-9A2C-47CC9CF2445E}" ShortID="215256492">
+									<ChildrenList>
+										<Folder Name="Catch" ID="{8CA2F900-2DD1-42C6-8A85-7BA93E67D851}" ShortID="310878995">
+											<ChildrenList>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type2__itemnumber" ID="{AB6EE25A-BB70-423D-A3DD-BE14C38C37C3}">
+													<ChildrenList>
+														<Action Name="" ID="{7C50A685-43BA-41CB-A852-69624174AF9A}" ShortID="824873798">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type2_$itemnumber" ID="{0288AABC-1473-4F42-A4F8-40ED1A61FD26}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type1__itemnumber" ID="{D13D78D5-28DB-44FC-8F8D-6A72DDFD5F33}">
+													<ChildrenList>
+														<Action Name="" ID="{5FC63C2B-1E68-4874-93B2-FA63981C1803}" ShortID="378394219">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type1_$itemnumber" ID="{9CDC8BF7-F38C-482E-8276-11E1CBC77260}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type4__itemnumber" ID="{98E1F7B1-C8A2-459E-B735-C946BEBADD47}">
+													<ChildrenList>
+														<Action Name="" ID="{BD6C9BB1-65CF-4017-BA60-2E9FE9B05131}" ShortID="732742158">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type4_$itemnumber" ID="{876EE9A8-9A6C-41E8-9147-FEE4BF055274}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type3__itemnumber" ID="{DD409594-5BC1-470C-A23B-B82414122BDB}">
+													<ChildrenList>
+														<Action Name="" ID="{C42A5D81-B3B7-4629-A450-AF86898879B0}" ShortID="916705249">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type3_$itemnumber" ID="{B2ED8BD1-4592-43A2-8490-FEC8CE3C65A0}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Flying" ID="{8FFF9012-5491-4F48-8439-0E3EC31AF3DF}" ShortID="219448853">
+											<ChildrenList>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Flying_Part2__itemnumber" ID="{D5C3A2CA-7AB9-4311-A25F-537F0E809D9A}">
+													<ChildrenList>
+														<Action Name="" ID="{E60C313A-5EC1-42BD-B63C-7D5AE86ABA33}" ShortID="33128908">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Flying_Part2_$itemnumber" ID="{3FD57B92-0BC6-4642-9A22-9ACF20321C2A}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Flying_PT1__itemnumber" ID="{5ED5D258-6933-4C1B-9087-9BE29995AADE}">
+													<ChildrenList>
+														<Action Name="" ID="{5E699932-7E75-4A44-B215-1F3749CA9286}" ShortID="468668345">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Flying_PT1_$itemnumber" ID="{24E19692-5E84-4EE2-B402-1B6984D9A5E1}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_FULL_Anneaux_Intr_pidit__Attack_Blades_Flying_Full__itemnumber" ID="{18117D30-1870-4706-8D37-1F2C42AC6677}">
+													<ChildrenList>
+														<Action Name="" ID="{61ECBCB7-4415-42ED-9EFC-D666DD19789A}" ShortID="12451950">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="FULL_Anneaux_Intrépidité_Attack_Blades_Flying_Full_$itemnumber" ID="{BE2CEC2C-CC99-4CBD-A0EA-363D6F7EBC48}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Stay" ID="{7D3F104E-A064-4192-83E3-214CA3C7EAD1}" ShortID="984591302">
+											<ChildrenList>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Stop__itemnumber" ID="{1F45A37B-A055-4A90-9414-63F69302ABA2}">
+													<ChildrenList>
+														<Action Name="" ID="{B1E7E418-AFC9-4F88-B67B-448A268733C8}" ShortID="473522724">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Stay_Stop_$itemnumber" ID="{6910FED9-54CA-4014-B493-7350DB82EF82}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Full_WithSTART_END__itemnumber" ID="{C0C8FBB6-15D1-42E5-98F6-D6E2ECD55B35}">
+													<ChildrenList>
+														<Action Name="" ID="{88078801-B810-4C15-A1E1-A313B969BE33}" ShortID="568418495">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Stay_Full_WithSTART&amp;END_$itemnumber" ID="{12D61D6B-39DC-4F02-AEC2-A69DFB675C2A}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Stay__itemnumber" ID="{88A8CDAD-DA30-45F8-A8F8-59CE34F1F80E}">
+													<ChildrenList>
+														<Action Name="" ID="{71BB7986-6693-4A46-AE7A-8A69FA077385}" ShortID="845221076">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Stay_$itemnumber" ID="{D7164EB3-7189-4D14-BC8D-9156641A010F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Start__itemnumber" ID="{C74C690E-66F3-4048-8093-93B2CDC2FC43}">
+													<ChildrenList>
+														<Action Name="" ID="{684862F8-4D5D-485C-81F1-635653C76E67}" ShortID="323446639">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Stay_Start_$itemnumber" ID="{D18EE31E-E7BB-4E5A-924B-682FDDC00A65}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Start_Stop__itemnumber" ID="{14320371-6139-4FCC-8796-6811A88DA405}">
+													<ChildrenList>
+														<Action Name="" ID="{67B93F15-F321-4499-9F2A-A28ED12E8A45}" ShortID="376783048">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Blades_Stay_Start&amp;Stop_$itemnumber" ID="{F7773D0A-D007-44D2-9C8F-398AB726C329}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Throw" ID="{8B1DBDA5-478B-434D-9149-2FC8D72524F1}" ShortID="394917632">
+											<ChildrenList>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Throw_TYPE3__itemnumber" ID="{403BC60E-A6E0-4E72-BF7A-05AECFA5FD64}">
+													<ChildrenList>
+														<Action Name="" ID="{35C64837-8E86-4005-AB6D-7A3CEA585109}" ShortID="754726027">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Throw_TYPE3_$itemnumber" ID="{99F0786C-5B2D-4D9F-A192-EE31EE8F664B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber" ID="{3B69C486-A258-4CD4-AA6F-2C5AE4411240}">
+													<ChildrenList>
+														<Action Name="" ID="{F1EC369F-0B1C-4A43-B78E-1699A29046DC}" ShortID="474451256">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Throw_TYPE1_$itemnumber" ID="{72100632-5724-42FF-B2A9-3B9850E68CB7}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Throw_TYPE2__itemnumber" ID="{95021D9B-FF4B-436C-A9E6-A98C732EC1BA}">
+													<ChildrenList>
+														<Action Name="" ID="{B7464757-A468-4436-B6BA-52AD39F07790}" ShortID="798630490">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Throw_TYPE2_$itemnumber" ID="{2521E0DE-987B-4DDD-B593-8E4CC6471D47}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Intr_pidit__Attack_Throw_TYPE4__itemnumber" ID="{623ED789-E026-415C-815D-9864F5D7B631}">
+													<ChildrenList>
+														<Action Name="" ID="{14971E8C-D0D2-41D8-A6A7-23A71FB34808}" ShortID="586217385">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Intrépidité_Attack_Throw_TYPE4_$itemnumber" ID="{D9CD0F7F-72E8-433A-8650-C95F6F71FCDB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Passif" ID="{725B4DE0-A80E-40FE-AE79-D1DCE18BBC79}" ShortID="691900828">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Intr_pidit__Passif_End__itemnumber" ID="{3E8D4D75-D35B-4F4C-8878-F97CF53A46C7}">
+											<ChildrenList>
+												<Action Name="" ID="{CAC4A8CA-943D-4135-B759-F109B78B7320}" ShortID="526088002">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Intrépidité_Passif_End_$itemnumber" ID="{9F1906C2-E153-4833-9347-4FE48AAF11E8}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Intr_pidit__Passif_Active__itemnumber" ID="{0632574C-BBB7-4514-9B44-D8F5204A0FF1}">
+											<ChildrenList>
+												<Action Name="" ID="{99070553-8B18-4AEE-A288-5F8AB1A73D30}" ShortID="592575151">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Intrépidité_Passif_Active_$itemnumber" ID="{5AD19C2F-0830-4745-A26B-74B62C5BB956}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Intr_pidit__Passif_Full__itemnumber" ID="{E319C10D-C37B-4FAE-9B2E-FD8AFB60C880}">
+											<ChildrenList>
+												<Action Name="" ID="{F4693FC3-4B2C-491D-9158-22F7262402C3}" ShortID="188916979">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Intrépidité_Passif_Full_$itemnumber" ID="{15B10EEF-B082-46EF-90B2-38CA7A5E7EE3}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Actif" ID="{FFA2B604-9F63-42A0-A8F1-81C8DB18862F}" ShortID="62305544">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Intr_pidit__Actif_Dash__itemnumber" ID="{82CFABE5-18EF-4837-BCF4-9EC0880BD102}">
+											<ChildrenList>
+												<Action Name="" ID="{0310CDEA-5369-4343-802E-146FE1CF1DC7}" ShortID="531075741">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Intrépidité_Actif_Dash_$itemnumber" ID="{49245A8A-9887-4F0E-888B-0A301894A4D2}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Intr_pidit__Actif_FX3__itemnumber" ID="{4059FCF6-166F-48F7-9AC4-586CBF516F94}">
+											<ChildrenList>
+												<Action Name="" ID="{8EEA3F81-3FCC-4EC9-AEDE-49238F147277}" ShortID="681634110">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Intrépidité_Actif_FX3_$itemnumber" ID="{C172675D-93D2-44D3-8E8A-FC569ADB5678}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Intr_pidit__Actif_FX1__itemnumber" ID="{AE3DC9AA-1C79-4375-9981-16B60E1E65CA}">
+											<ChildrenList>
+												<Action Name="" ID="{0257A410-4ED8-47CD-BA90-EA19FF9F7701}" ShortID="732033035">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Intrépidité_Actif_FX1_$itemnumber" ID="{52541B18-7C56-45A1-AEF1-197F51744534}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Intr_pidit__Actif_FX2__itemnumber" ID="{84BEA3B6-A9DC-4BCE-8DAF-4519BD8EA95E}">
+											<ChildrenList>
+												<Action Name="" ID="{365330B2-1010-43AE-9AD2-5BEB82D38F91}" ShortID="51472749">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Intrépidité_Actif_FX2_$itemnumber" ID="{254F8222-5B9E-4E15-B220-86FA6900C900}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber" ID="{4AB6C130-E80B-4C07-92D4-0B15CA3B5D91}">
+											<ChildrenList>
+												<Action Name="" ID="{E87CE8DE-3A9F-4385-BFFE-C95D19CE9E4C}" ShortID="362038763">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Intrépidité_Actif_Full_$itemnumber" ID="{9F217206-3EA2-4D18-9259-54BF15A499CA}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Patience" ID="{4F73F1C1-FA1C-4C44-AD0A-23BA748C152D}" ShortID="299607992">
+							<ChildrenList>
+								<Folder Name="Actif" ID="{A3460B51-0C76-425A-9EB2-AD960D387C0A}" ShortID="228080632">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Patience_Actif_Explosion_PT1__itemnumber" ID="{2B142AF3-41E4-49A6-8B35-93AD366C3100}">
+											<ChildrenList>
+												<Action Name="" ID="{AD17C9EC-154F-4C79-8286-66F150E009D6}" ShortID="46746082">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Patience_Actif_Explosion_PT1_$itemnumber" ID="{B607CDB8-6E31-4BF4-AB7E-D741077EA5CF}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Patience_Actif_Explosion_Full__itemnumber" ID="{00AF21B3-BAEB-4F8C-BCDA-AD18E3E71578}">
+											<ChildrenList>
+												<Action Name="" ID="{354F918A-A0AB-4262-8D89-BCB058FB7E29}" ShortID="832539716">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Patience_Actif_Explosion_Full_$itemnumber" ID="{61AF2560-1BB4-463F-A371-10DD5FD92457}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Patience_Actif_Explosion_PT2__itemnumber" ID="{E3C30DC7-416D-44DA-AEE5-B9DC8A1FB28C}">
+											<ChildrenList>
+												<Action Name="" ID="{9A97E06F-3444-4713-904C-55EF9EC94707}" ShortID="44388108">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Patience_Actif_Explosion_PT2_$itemnumber" ID="{AFD630C7-4BE9-4378-B667-08D284DC1314}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Passif" ID="{FDE94BB1-E481-47E6-997A-A26A67B41856}" ShortID="505456935">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Patience_Passif_Inside_Loop__itemnumber" ID="{0AC4F58E-2750-404C-B6CF-97CEB07841C5}">
+											<ChildrenList>
+												<Action Name="" ID="{0FB1175E-DE3E-49A5-8B0A-37D34A1D5E20}" ShortID="468362479">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Patience_Passif_Inside_Loop_$itemnumber" ID="{31D8527A-1BF7-46E8-A250-022E787F413E}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Patience_Passif_LeaveRayon__itemnumber" ID="{7981F902-4ADF-4CD4-91F8-669775C8CD04}">
+											<ChildrenList>
+												<Action Name="" ID="{C2A29523-6E03-435A-A664-2578F60B2CF8}" ShortID="377749119">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Patience_Passif_LeaveRayon_$itemnumber" ID="{238855AC-1C3A-4C56-8842-E9C8E52FCB26}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Patience_Passif_EnterRayon__itemnumber" ID="{82A3CF4F-93C0-4EFF-86D1-6472272A1D15}">
+											<ChildrenList>
+												<Action Name="" ID="{EB57AA18-46E7-4767-88B8-6368984A9196}" ShortID="843979765">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Patience_Passif_EnterRayon_$itemnumber" ID="{EE2F1FAB-607F-4EAA-A44D-86ADA9042517}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Patience_Passif_Inside_Full__itemnumber" ID="{478C53F7-CB77-47FF-BA45-60257588A477}">
+											<ChildrenList>
+												<Action Name="" ID="{AB967A60-83D5-4FA3-BEE7-0B4FBE8B76B2}" ShortID="762981207">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Patience_Passif_Inside_Full_$itemnumber" ID="{BA79436F-5A84-4EA0-9A07-66CC5CEFAA63}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Patience_Passif_Inside_Start__itemnumber" ID="{32BC8F8D-8C35-4ADA-BF9A-2FE8CEA489F4}">
+											<ChildrenList>
+												<Action Name="" ID="{5714E9F9-9023-4044-969A-DC19B995EAA9}" ShortID="49670055">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Patience_Passif_Inside_Start_$itemnumber" ID="{282613FA-C39F-4DB6-AAA4-0C740CED3166}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Attack" ID="{A1CE3622-59D6-4410-A433-E457DC0CBCF4}" ShortID="514043031">
+									<ChildrenList>
+										<Folder Name="Throw" ID="{E88BC0B0-53F2-4375-8242-CBA9D7BFE9C4}" ShortID="332891879">
+											<ChildrenList>
+												<Event Name="Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber" ID="{8DB9C33D-B570-42A8-85EB-63FD2D60F761}">
+													<ChildrenList>
+														<Action Name="" ID="{398616FB-385C-4E52-A35A-06DC6476A3AD}" ShortID="371214588">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Patience_Attack_Trow_Impact_Damage_$itemnumber" ID="{C345D619-460B-4D14-8C11-FAB0D5BD39F9}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_FULL_Anneaux_Patience_Attack_Trow_FULL__itemnumber" ID="{2D335D40-24A6-4B9C-BE12-94880D0C1B0F}">
+													<ChildrenList>
+														<Action Name="" ID="{EBCF042C-4807-4E5B-94C4-9D7640458EDA}" ShortID="754499198">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="FULL_Anneaux_Patience_Attack_Trow_FULL_$itemnumber" ID="{3B549B36-40D3-4FE4-885E-F0DBDFA5AA09}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Patience_Attack_Trow_PT1__itemnumber" ID="{A6821937-9982-4A90-A04C-3F34D363BB61}">
+													<ChildrenList>
+														<Action Name="" ID="{4335CE7F-B46D-4B8D-96E3-44DBBDB2A9A9}" ShortID="393539801">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Patience_Attack_Trow_PT1_$itemnumber" ID="{57A07B13-4304-4D06-8FEA-0C5FF274001F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Patience_Attack_Trow_Impact_Placed__itemnumber" ID="{8B6D0166-CB89-4A0D-B949-CA4932D7E3C0}">
+													<ChildrenList>
+														<Action Name="" ID="{D55A7D3B-B9B8-405A-9285-BEF664D1B97F}" ShortID="204248853">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Patience_Attack_Trow_Impact_Placed_$itemnumber" ID="{D31205C6-85AC-4005-BB76-ED2E1E34BD48}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber" ID="{7D044096-473D-4490-96C8-392A215C4D3C}">
+													<ChildrenList>
+														<Action Name="" ID="{4C26E943-02D6-409B-A4B6-B602F68568DA}" ShortID="925508314">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Patience_Attack_Trow_PT2_$itemnumber" ID="{028E4ECF-A9D3-4ECC-9734-8E76B94E0131}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_FULL_Anneaux_Patience_Attack_Trow_Impact_Full__itemnumber" ID="{40D4BD83-E61D-4B74-A521-23C2C50F6804}">
+													<ChildrenList>
+														<Action Name="" ID="{082231D0-D1FE-4828-B89F-FCFA48CF87AC}" ShortID="1009086522">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="FULL_Anneaux_Patience_Attack_Trow_Impact_Full_$itemnumber" ID="{6AAABA8D-F4D2-409F-AF1B-B37FDA469BED}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="TNT" ID="{CBBC971B-66C9-4ACB-A41E-2748A64A8C53}" ShortID="491311180">
+											<ChildrenList>
+												<Event Name="Play_Anneaux_Patience_Attack_TNT_Despawn__itemnumber" ID="{4F1FB338-4A49-4BB3-BA9F-404C4A3FC59F}">
+													<ChildrenList>
+														<Action Name="" ID="{6B8FF412-F18A-46A9-8076-3D733C503551}" ShortID="311735002">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Patience_Attack_TNT_Despawn_$itemnumber" ID="{70475DA0-0DA9-483A-9181-6250F321EB7C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="Play_Anneaux_Patience_Attack_TNT_Wait__itemnumber" ID="{011A3AFF-1F8C-4951-8BCE-D4F3166AD1E6}">
+													<ChildrenList>
+														<Action Name="" ID="{D0C02A4E-C2A2-4A50-BAC4-B16307E68498}" ShortID="47505494">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Anneaux_Patience_Attack_TNT_Wait_$itemnumber" ID="{882FBB77-23D8-4CA7-A3BC-E3762528BC53}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Base" ID="{7102C8AC-FD53-4381-8704-A1C53F5E2793}" ShortID="19295686">
+									<ChildrenList>
+										<Event Name="Play_FULL_Anneaux_Patience_Equipe_FULL__itemnumber" ID="{E5E6714E-2A04-41A3-9C89-366644A4FDD7}">
+											<ChildrenList>
+												<Action Name="" ID="{389F7C68-D5C0-437B-B4F2-84B191C6FC51}" ShortID="595305008">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Patience_Equipe_FULL_$itemnumber" ID="{F9F883B6-F833-4F6C-A442-8A0562F719A1}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="Musique" ID="{98A1DA84-849A-43D9-B36A-B035A0C6BC08}" ShortID="690835885">
+					<ChildrenList>
+						<Folder Name="Combat" ID="{65A1D8F6-424C-411C-B0E9-22E55DF6B67D}" ShortID="245745555">
+							<ChildrenList>
+								<Event Name="Play_Musique_Combat_Full_Onetime__itemnumber" ID="{24EABE29-9C91-462D-8CF0-D8DF5F7BC2B2}">
+									<ChildrenList>
+										<Action Name="" ID="{B1D27CD3-FB7A-44ED-A10D-32F4CCF7702D}" ShortID="250673864">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Musique_Combat_Full_Onetime_$itemnumber" ID="{4CB950A3-D64D-430F-B803-22537F563A98}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Musique_Combat_Loop__itemnumber" ID="{32A5B175-6D5C-4FE9-9679-E0631C9184BD}">
+									<ChildrenList>
+										<Action Name="" ID="{ABF8FD54-7CAA-4643-A999-ADBC4C41F952}" ShortID="694169984">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Musique_Combat_Loop_$itemnumber" ID="{B31E4467-ECB0-4FCA-97DB-6FC38313ADB8}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Menu" ID="{7D5F2CBA-A9B7-48BD-BBB0-D3AABE08D0C8}" ShortID="20984577">
+							<ChildrenList>
+								<Event Name="Play_Musique_Menu_Loop__itemnumber" ID="{8215AA30-5566-4C83-B9AC-BFE713185800}">
+									<ChildrenList>
+										<Action Name="" ID="{763D2918-2BDB-41FA-AEF5-033A5BE9FE3D}" ShortID="249671777">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Musique_Menu_Loop_$itemnumber" ID="{655241BF-0FAF-429C-9AB5-453CF41115F5}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Lobby" ID="{6E19D038-4B29-42B7-9E4F-6E13D1F3F645}" ShortID="412723691">
+							<ChildrenList>
+								<Event Name="Play_Musique_Lobby_Full_Onetime__itemnumber" ID="{B5200DAB-8292-47BE-BB30-F1BB8B9DD946}">
+									<ChildrenList>
+										<Action Name="" ID="{1D3E5DCF-B4DD-4533-A839-BEA7D9C3E09B}" ShortID="988587341">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Musique_Lobby_Full_Onetime_$itemnumber" ID="{FE1AFE05-3C7B-47EC-AC36-FC9C0C7A6899}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Musique_Lobby_Loop__itemnumber" ID="{093CEFE1-BA05-4F1B-AF4E-89204DDF2C86}">
+									<ChildrenList>
+										<Action Name="" ID="{ECA2BA5A-0AEC-4ED0-8860-D6CD6DA1D30C}" ShortID="801006693">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Musique_Lobby_Loop_$itemnumber" ID="{EA69A2A8-AED9-4274-BE8D-2559110FCEDC}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Musique_Lobby_Start__itemnumber" ID="{6AA0E906-00A0-47BB-9795-24521BF1EB10}">
+									<ChildrenList>
+										<Action Name="" ID="{C1E7C441-2943-4EF3-8118-87E08A1F2F26}" ShortID="695210743">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Musique_Lobby_Start_$itemnumber" ID="{5FD5B797-2459-4722-B1EB-818673C52643}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
