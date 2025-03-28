@@ -24,9 +24,9 @@ public class Inventory : NetworkBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
             
-            if (!IsOwner) {
-            return;
-            }
+            //if (!IsOwner) {
+            //return;
+            //}
             if (inventory.Count <= 0)
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
@@ -35,9 +35,14 @@ public class Inventory : NetworkBehaviour
             
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
-            collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
-            collision.gameObject.GetComponent<Ring>().Passive();
-            collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
+            if (IsOwner)
+            {
+                collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
+                collision.gameObject.GetComponent<Ring>().Passive();
+                collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
+            }
+            
+            
 
             
 
@@ -45,7 +50,11 @@ public class Inventory : NetworkBehaviour
             string fullInv = "";
             int i = 0;
 
-            foreach (Ring ring in inventory)
+            if (!IsOwner)
+            {
+                return;
+            }
+                foreach (Ring ring in inventory)
             {
                 ring.SetAttackSpeed(attackSpeed);
                 GameObject.Find("Slot" + i).GetComponent<Image>().sprite = inventory[i].GetComponent<SpriteRenderer>().sprite;
