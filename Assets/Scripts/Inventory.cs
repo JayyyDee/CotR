@@ -35,14 +35,13 @@ public class Inventory : NetworkBehaviour
             
             
             
-            if (IsOwner)
-            {
+           
                 inventory.Add(collision.gameObject.GetComponent<Ring>());
                 collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
                 collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
                 collision.gameObject.GetComponent<Ring>().Passive();
                 collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
-            }
+            
             
             
 

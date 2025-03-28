@@ -136,9 +136,6 @@ public class RingPassion : Ring
     [ClientRpc]
     private void ShootClientRpc()
     {
-        if (IsOwner)
-        {
             Shoot();
-        }
     }
 }
