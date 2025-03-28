@@ -26,7 +26,7 @@ public class Aiming : NetworkBehaviour {
 
     [ClientRpc]
     private void SetPlayerAimClientRpc(float aim) {
-        if (playerCharacter.GetComponent<NetworkObject>().IsOwner) {
+        if (gameObject.transform.parent.GetComponent<NetworkObject>().IsOwner) {
             
             transform.rotation = Quaternion.Euler(0, 0, aim);
         }
