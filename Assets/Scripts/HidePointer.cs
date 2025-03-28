@@ -14,7 +14,7 @@ public class HidePointer : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!IsOwner)
+        if (IsOwner)
         {
             GetComponent<SpriteRenderer>().enabled = true;
         }
