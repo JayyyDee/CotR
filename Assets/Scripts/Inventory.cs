@@ -23,19 +23,13 @@ public class Inventory : NetworkBehaviour
         {
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
-            
-            //if (!IsOwner) {
-            //return;
-            //}
+           
             if (inventory.Count <= 0)
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
                 collision.gameObject.GetComponent<Ring>().SetEquiped(true);
             }
-            
-            
-            
-           
+
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
             collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
