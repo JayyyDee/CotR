@@ -26,6 +26,7 @@ public class PlayerMovement : NetworkBehaviour
     //Camera
     [SerializeField] private GameObject mainCamera;
     [SerializeField] private GameObject playerCamera;
+    [SerializeField] private GameObject deathScreen;
 
     private Inventory inventory;
 
@@ -143,6 +144,7 @@ public class PlayerMovement : NetworkBehaviour
     void Death()
     {
         mainCamera.gameObject.SetActive(true);
+        deathScreen.gameObject.SetActive(true);
         playerCamera.gameObject.SetActive(false);
         gameObject.SetActive(false);
     }

@@ -6,9 +6,12 @@ using UnityEngine.UI;
 
 public class MatchOverUI : MonoBehaviour
 {
+    public static MatchOverUI Instance { get; private set; }
+
     [SerializeField] private Button createGameButton;
 
     private void Start() {
+        Instance = this;
         GameManager.Instance.OnStateChanged += GameManager_OnStateChanged;
         Hide();
 

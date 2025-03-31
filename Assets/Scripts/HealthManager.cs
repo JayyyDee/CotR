@@ -5,6 +5,7 @@ using Unity.Netcode;
 
 public class HealthManager : NetworkBehaviour
 {
+    [SerializeField] private GameObject deathScreen;
     public HealthBarManager healthBar;
     public int maxHealth = 1000;
     private int currentHealth;
@@ -53,6 +54,7 @@ public class HealthManager : NetworkBehaviour
         if (currentHealth <= 0)
         {
             gameObject.SetActive(false);
+            deathScreen.gameObject.SetActive(true);
             Invoke("Death", 2);
 
         }
