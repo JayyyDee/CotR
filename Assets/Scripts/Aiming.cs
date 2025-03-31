@@ -11,6 +11,10 @@ public class Aiming : NetworkBehaviour {
    
 
     void FixedUpdate() {
+        if (!playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        {
+            return;
+        }
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 aimDirection = mousePos - transform.position;
