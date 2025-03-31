@@ -28,16 +28,16 @@ public class Aiming : NetworkBehaviour {
 
     [ServerRpc(RequireOwnership = false)]
     private void SetPlayerAimServerRpc(float aim) {
-        transform.rotation = Quaternion.Euler(0, 0, aim);
-        //SetPlayerAimClientRpc(aim);
+        
+        SetPlayerAimClientRpc(aim);
     }
 
     [ClientRpc]
     private void SetPlayerAimClientRpc(float aim) {
-        if (gameObject.transform.parent.GetComponent<NetworkObject>().IsOwner) {
+        
             
-           // transform.rotation = Quaternion.Euler(0, 0, aim);
-        }
+           transform.rotation = Quaternion.Euler(0, 0, aim);
+        
     }
 }
 
