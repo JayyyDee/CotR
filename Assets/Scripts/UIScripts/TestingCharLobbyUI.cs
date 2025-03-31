@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class TestingCharLobbyUI : MonoBehaviour
 {
     [SerializeField] private Button readyButton;
-    [SerializeField] private Button showCodeButton;
     [SerializeField] public TextMeshProUGUI roomCode;
 
     private void Awake() {
@@ -16,9 +15,11 @@ public class TestingCharLobbyUI : MonoBehaviour
             CharacterLobbyReady.Instance.SetPlayerReady();
         });
 
-        showCodeButton.onClick.AddListener(() =>
-        {
-            roomCode.text = GameMultiplayer.Instance.GetRoomCode().ToString();
-        });
+        //roomCode.text = GameMultiplayer.Instance.GetRoomCode().ToString();
     }
+
+    private void Update() {
+        roomCode.text = GameMultiplayer.Instance.GetRoomCode().ToString();
+    }
+
 }
