@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathTimer: 0.4
-  damage: 0
+  damage: 40
 --- !u!114 &2404957676647525746
 MonoBehaviour:
   m_ObjectHideFlags: 0
