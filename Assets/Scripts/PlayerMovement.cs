@@ -141,13 +141,6 @@ public class PlayerMovement : NetworkBehaviour
     {
         AkUnitySoundEngine.PostEvent("Event_Footstep", this.gameObject);
     }
-    void Death()
-    {
-        mainCamera.gameObject.SetActive(true);
-        deathScreen.gameObject.SetActive(true);
-        playerCamera.gameObject.SetActive(false);
-        gameObject.SetActive(false);
-    }
 
     public void SetSlow()
     {

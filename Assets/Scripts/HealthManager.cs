@@ -51,12 +51,8 @@ public class HealthManager : NetworkBehaviour
             Debug.Log(currentHealth);
         }
 
-        if (currentHealth <= 0)
-        {
-            gameObject.SetActive(false);
-            deathScreen.gameObject.SetActive(true);
-            Invoke("Death", 2);
-
+        if (currentHealth <= 0) {
+            Death();
         }
     }
     [ServerRpc(RequireOwnership = false)]
@@ -73,5 +69,10 @@ public class HealthManager : NetworkBehaviour
             currentHealth += heal;
             healthBar.SetHealth(currentHealth);
         }
+    }
+
+    private void Death() {
+        gameObject.SetActive(false);
+        deathScreen.gameObject.SetActive(true);
     }
 }
