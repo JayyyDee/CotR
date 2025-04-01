@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : NetworkBehaviour
 {
@@ -95,9 +96,9 @@ public class PlayerMovement : NetworkBehaviour
             gameObject.tag = "Enemy";
             aim.SetActive(false);
         }
-            //Then, make every of the six players spawn at specific places mentionned in a list.
-
-            transform.position = spawnPositionList[(int)(Random.Range(0f, 5f))];
+        //Then, make every of the six players spawn at specific places mentionned in a list.
+        GetRandomPosition();
+        //transform.position = spawnPositionList[(int)(Random.Range(0f, 5f))];
 
         base.OnNetworkSpawn();
     }
@@ -152,5 +153,18 @@ public class PlayerMovement : NetworkBehaviour
         movementSpeed *= 0.5f;
         yield return new WaitForSeconds(0.05f);
         movementSpeed = maxSpeed;
+    }
+
+    Vector3 GetRandomPosition() {
+        // Select a random index
+        int randomIndex = (int)Random.Range(0f, 5f);
+
+        // Get the position at the random index
+        Vector3 randomPosition = spawnPositionList[randomIndex];
+
+        // Remove the used position from the list
+        spawnPositionList.RemoveAt(randomIndex);
+
+        return randomPosition;
     }
 }

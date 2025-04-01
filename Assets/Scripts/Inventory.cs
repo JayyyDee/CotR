@@ -17,8 +17,7 @@ public class Inventory : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        
+            
         if (collision.CompareTag("Ring"))
         {
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
