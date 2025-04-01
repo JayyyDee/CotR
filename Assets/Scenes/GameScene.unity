@@ -3691,7 +3691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eea3d4e29b277542863d41b2daf9498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.5
+  amplitude: 0.25
   velocity: 1.5
 --- !u!1 &291017993
 GameObject:
@@ -10455,7 +10455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eea3d4e29b277542863d41b2daf9498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.5
+  amplitude: 0.25
   velocity: 1.5
 --- !u!1001 &307709856
 PrefabInstance:
@@ -49132,7 +49132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eea3d4e29b277542863d41b2daf9498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.5
+  amplitude: 0.25
   velocity: 1.5
 --- !u!1001 &1355224280
 PrefabInstance:
@@ -49230,7 +49230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eea3d4e29b277542863d41b2daf9498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.5
+  amplitude: 0.25
   velocity: 1.5
 --- !u!114 &1355224283
 MonoBehaviour:
@@ -81590,7 +81590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eea3d4e29b277542863d41b2daf9498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.5
+  amplitude: 0.25
   velocity: 1.5
 --- !u!1 &1576715616
 GameObject:
@@ -82424,7 +82424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eea3d4e29b277542863d41b2daf9498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.5
+  amplitude: 0.25
   velocity: 1.5
 --- !u!1 &1756924320
 GameObject:
