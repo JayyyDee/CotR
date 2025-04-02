@@ -92,16 +92,31 @@ public class RingPatience : Ring
         attackSpeed = speed;
     }
 
-    public override void Drop()
+    [ServerRpc(RequireOwnership = false)]
+    public void DropServerRpc()
     {
-        GameObject ring = Instantiate(ringPrefab, new Vector2(playerCharacter.transform.position.x + Random.Range(0, 1f), playerCharacter.transform.position.y + Random.Range(0, 1f)), playerCharacter.transform.rotation);
-        ring.GetComponent<NetworkObject>().Spawn();
+        //GameObject ring = Instantiate(ringPrefab, new Vector2(playerCharacter.transform.position.x + Random.Range(0, 1f), playerCharacter.transform.position.y + Random.Range(0, 1f)), playerCharacter.transform.rotation);
+        //ring.GetComponent<SpriteRenderer>().enabled = true;
+        //ring.GetComponent<CircleCollider2D>().enabled = true;
+        //ring.GetComponent<Ring>().SetEquiped(false);
+        //ring.GetComponent<NetworkObject>().Spawn();
+        DropClientRpc();
     }
 
-    public override void OnNetworkSpawn()
+    [ClientRpc]
+    public void DropClientRpc()
     {
-        base.OnNetworkSpawn();
-        //Vector2 random = Random.insideUnitCircle.normalized;
-        //GetComponent<Rigidbody2D>().AddForce(random * Random.Range(0f, 2f), ForceMode2D.Impulse);
+        gameObject.transform.position = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
+
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.GetComponent<CircleCollider2D>().enabled = true;
+        gameObject.GetComponent<Ring>().SetEquiped(false);
+
+    }
+
+
+    public override void Drop()
+    {
+        DropServerRpc();
     }
 }
