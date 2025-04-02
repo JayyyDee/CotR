@@ -15,6 +15,13 @@ public class Inventory : NetworkBehaviour
     public GameObject firePoint;
     private float attackSpeed =1f;
 
+    public override void OnNetworkSpawn()
+    {
+        GetComponentInChildren<Aiming>().SetPlayer(gameObject);
+        
+    }
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
             
