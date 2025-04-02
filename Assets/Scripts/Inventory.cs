@@ -12,12 +12,13 @@ public class Inventory : NetworkBehaviour
     private List<Ring> inventory = new List<Ring>();
     private Ring equipedRing;
     public List<GameObject> UISlots = new List<GameObject>();
-    public GameObject firePoint;
+    private GameObject firePoint;
     private float attackSpeed =1f;
 
     public override void OnNetworkSpawn()
     {
         GetComponentInChildren<Aiming>().SetPlayer(gameObject);
+        firePoint = transform.GetChild(2).gameObject.transform.GetChild(0).gameObject;
         
     }
     
