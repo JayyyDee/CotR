@@ -88,6 +88,7 @@ public class GameManager : NetworkBehaviour {
                 }
                 break;
             case State.GemTaken:
+                gemTakenTimer.Value = 20f;
                 gemTakenTimer.Value -= Time.deltaTime;
                 if (gemTakenTimer.Value < 0f) {
                     state.Value = State.GameOver;
