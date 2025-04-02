@@ -16,4 +16,9 @@ public class DeathScreenUI : MonoBehaviour
             Loader.Load(Loader.Scene.MainMenuScene);
         });
     }
+
+    public void Death() {
+        gameObject.SetActive(true);
+    }
+
 }

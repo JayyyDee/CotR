@@ -93,7 +93,7 @@ public class GameManager : NetworkBehaviour {
                     state.Value = State.GameOver;
                 }
                 if (gem.activeSelf == true) {
-                    gemTakenTimer.Value = 20f;
+                    gemTakenTimer.Value = 20f; //Reset value when active
                     state.Value = State.GamePlaying;
                 }
                 break;
