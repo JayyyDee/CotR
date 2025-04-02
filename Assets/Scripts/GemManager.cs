@@ -5,34 +5,58 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 
 public class GemManager : MonoBehaviour
 {
     [SerializeField] public Image gemIcon;
     private int gemCounter = 0;
+    private GameObject gem;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Move in GemManager, when colliding with the gem, set inactive and play sound.
         if (collision.CompareTag("Gemme"))
         {
-            CollectGemServerRpc(collision);
+            gem = collision.GameObject();
+            CollectGemServerRpc();
         }
     }
 
     [ServerRpc]
-    private void CollectGemServerRpc(Collider2D gem)
+    private void CollectGemServerRpc()
     {
-        CollectGemClientRpc(gem);
+        CollectGemClientRpc();
     }
 
     [ClientRpc]
-    void CollectGemClientRpc(Collider2D gem)
+    void CollectGemClientRpc()
     {
         gem.gameObject.SetActive(false);
         gemIcon.gameObject.SetActive(true);
-        gemCounter = 1;
         AkUnitySoundEngine.PostEvent("Event_Jadeide_Slow__Pickup", this.gameObject); // The Event to play sounds of collecting the Jadeide
     }
 
+    public void Death()
+    {
+        if (gem)
+        {
+            DropGemServerRpc();
+        }
+        
+    }
+
+    [ServerRpc]
+    private void DropGemServerRpc()
+    {
+        DropGemClientRpc();
+    }
+
+    [ServerRpc]
+    private void DropGemClientRpc()
+    {
+        gem.transform.position = transform.position;
+        gem.gameObject.SetActive(true);
+        
+    }
 }
