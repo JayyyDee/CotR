@@ -73,6 +73,7 @@ public class HealthManager : NetworkBehaviour
 
     private void Death() {
         gameObject.GetComponent<Inventory>().Death();
+        gameObject.GetComponent<GemManager>().Death();
         gameObject.SetActive(false);
         deathScreen.gameObject.SetActive(true);
     }
