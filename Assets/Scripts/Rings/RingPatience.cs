@@ -93,20 +93,15 @@ public class RingPatience : Ring
     }
 
     [ServerRpc(RequireOwnership = false)]
-    public void DropServerRpc()
+    public void DropServerRpc(Vector2 pos)
     {
-        //GameObject ring = Instantiate(ringPrefab, new Vector2(playerCharacter.transform.position.x + Random.Range(0, 1f), playerCharacter.transform.position.y + Random.Range(0, 1f)), playerCharacter.transform.rotation);
-        //ring.GetComponent<SpriteRenderer>().enabled = true;
-        //ring.GetComponent<CircleCollider2D>().enabled = true;
-        //ring.GetComponent<Ring>().SetEquiped(false);
-        //ring.GetComponent<NetworkObject>().Spawn();
-        DropClientRpc();
+        DropClientRpc(pos);
     }
 
     [ClientRpc]
-    public void DropClientRpc()
+    public void DropClientRpc(Vector2 pos)
     {
-        gameObject.transform.position = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
+        gameObject.transform.position = pos;
 
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
@@ -117,6 +112,7 @@ public class RingPatience : Ring
 
     public override void Drop()
     {
-        DropServerRpc();
+        Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
+        DropServerRpc(pos);
     }
 }
