@@ -107,4 +107,12 @@ public class Inventory : NetworkBehaviour
     {
         attackSpeed = speed;
     }
+
+    public void Death()
+    {
+        foreach (Ring ring in inventory)
+        {
+            ring.Drop();
+        }
+    }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 public class RingPatience : Ring
@@ -8,6 +9,7 @@ public class RingPatience : Ring
     public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
+    public GameObject ringPrefab;
 
     public float fireForce = 1f;
     public float cooldown = 1f;
@@ -88,5 +90,18 @@ public class RingPatience : Ring
     public override void SetAttackSpeed(float speed)
     {
         attackSpeed = speed;
+    }
+
+    public override void Drop()
+    {
+        GameObject ring = Instantiate(ringPrefab, new Vector2(playerCharacter.transform.position.x + Random.Range(0, 1f), playerCharacter.transform.position.y + Random.Range(0, 1f)), playerCharacter.transform.rotation);
+        ring.GetComponent<NetworkObject>().Spawn();
+    }
+
+    public override void OnNetworkSpawn()
+    {
+        base.OnNetworkSpawn();
+        //Vector2 random = Random.insideUnitCircle.normalized;
+        //GetComponent<Rigidbody2D>().AddForce(random * Random.Range(0f, 2f), ForceMode2D.Impulse);
     }
 }

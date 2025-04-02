@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5045609813057977118}
   - component: {fileID: -5705574439156711625}
   - component: {fileID: 1561217443545409421}
+  - component: {fileID: 478621481881250584}
   m_Layer: 8
   m_Name: Passion
   m_TagString: Ring
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2108951141
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8b925b81794798c4088167fc07d73518, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2559660542848680566, guid: b6d9e5f22716e4244871a29c826d5e79, type: 3}
   bulletColor: {r: 1, g: 0, b: 0, a: 1}
+  ringPrefab: {fileID: 4701691879991881142}
   bonusASpeed: 1.5
   fireForce: 20
   cooldown: 1.5
@@ -157,3 +159,30 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!50 &478621481881250584
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4701691879991881142}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 220807491572302550}
   - component: {fileID: 4307700160078578927}
   - component: {fileID: 5885013813578906417}
+  - component: {fileID: 7583254043075100355}
   m_Layer: 8
   m_Name: Patience
   m_TagString: Ring
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2108951141
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 00a0f997f223ec349ae4cdb51b1460fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2559660542848680566, guid: 80c947f4d05bb1542a64c6e3f0789132, type: 3}
   bulletColor: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
+  ringPrefab: {fileID: 4574170710129120439}
   fireForce: 5
   cooldown: 2
 --- !u!114 &5885013813578906417
@@ -154,3 +156,30 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!50 &7583254043075100355
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574170710129120439}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
