@@ -11,7 +11,7 @@ public class RingIntrepidite : Ring
     public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
-    public GameObject ringPrefab;
+   
 
     public float fireForce = 1f;
     public float cooldown = 1.4f;
@@ -144,8 +144,8 @@ public class RingIntrepidite : Ring
     public void DropClientRpc(Vector2 pos)
     {
         gameObject.transform.position = pos;
-            
-        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
         gameObject.GetComponent<Ring>().SetEquiped(false);
         

@@ -10,7 +10,7 @@ public class RingPassion : Ring
     public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
-    public GameObject ringPrefab;
+    
 
     public float bonusASpeed;
 
@@ -149,7 +149,7 @@ public class RingPassion : Ring
     {
         gameObject.transform.position = pos;
 
-        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
         gameObject.GetComponent<Ring>().SetEquiped(false);
 

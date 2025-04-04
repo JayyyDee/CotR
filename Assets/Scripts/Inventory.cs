@@ -28,7 +28,7 @@ public class Inventory : NetworkBehaviour
             
         if (collision.CompareTag("Ring"))
         {
-            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false; //GetComponentInChildren<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
            
             if (inventory.Count <= 0)
