@@ -58,7 +58,7 @@ public class RingBravoure : Ring
             }
         }
         
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
             Active();
         }
