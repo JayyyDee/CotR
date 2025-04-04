@@ -82,6 +82,7 @@ public class RingBravoure : Ring
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<NetworkObject>().Spawn();
+        bullet.GetComponent<ProjectileBravoureActive>().player = playerCharacter;
         canActive = false;
         
     }

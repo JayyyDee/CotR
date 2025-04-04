@@ -143,17 +143,27 @@ public class PlayerMovement : NetworkBehaviour
         AkUnitySoundEngine.PostEvent("Event_Footstep", this.gameObject);
     }
 
-    public void SetSlow()
-    {
-        StartCoroutine(Slow());
+    [ServerRpc(RequireOwnership = false)]
+    public void SlowServerRpc() {
+       SlowClientRpc();
     }
 
-    IEnumerator Slow()
-    {
+    [ClientRpc]
+    void SlowClientRpc() {
         movementSpeed *= 0.5f;
-        yield return new WaitForSeconds(0.05f);
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void RemoveSlowServerRpc() {
+        RemoveSlowClientRpc();
+    }
+
+    [ClientRpc]
+    void RemoveSlowClientRpc() {
         movementSpeed = maxSpeed;
     }
+
+
 
     //Vector3 GetRandomPosition() {
     //    // Select a random index
