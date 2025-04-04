@@ -77,23 +77,16 @@ public class RingBravoure : Ring
 
     public override void Active()
     {
-        StartCoroutine(ActiveAbility());
+        Vector3 pos = firePoint.transform.position + (firePoint.transform.right * 3.5f);
+        Quaternion rot = firePoint.transform.rotation;
+        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
+        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+        bullet.GetComponent<NetworkObject>().Spawn();
         canActive = false;
         
     }
 
-    IEnumerator ActiveAbility()
-    {
-        Vector3 pos = firePoint.transform.position + (firePoint.transform.right*3.5f);
-        Quaternion rot = firePoint.transform.rotation;
-        yield return new WaitForSeconds(0.75f);
-        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-
-
-        
-
-    }
+ 
 
     public override void Passive()
     {
@@ -121,6 +114,16 @@ public class RingBravoure : Ring
     public override void SetAttackSpeed(float speed)
     {
         attackSpeed = speed;
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ActiveServerRpc() {
+        ActiveClientRpc();
+    }
+
+    [ClientRpc]
+    public void ActiveClientRpc() {
+        Active();
     }
 
     [ServerRpc(RequireOwnership = false)]

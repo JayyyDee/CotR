@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class ProjectileBravoureActive : MonoBehaviour
-{
+public class ProjectileBravoureActive : NetworkBehaviour {
     public float deathTimer;
     public int damage;
     private void Start()
@@ -11,11 +11,15 @@ public class ProjectileBravoureActive : MonoBehaviour
         Destroy(gameObject, deathTimer);
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    public override void OnNetworkSpawn() {
+        base.OnNetworkSpawn();
+    }
+
+        private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Enemy"))
         {
-            collider.gameObject.GetComponent<PlayerMovement>().SetSlow();
+            //collider.gameObject.GetComponent<PlayerMovement>().SetSlow();
             
             Debug.Log("HIT");
             
@@ -24,7 +28,7 @@ public class ProjectileBravoureActive : MonoBehaviour
         }
         if (collider.CompareTag("Player"))
         {
-            collider.gameObject.GetComponent<PlayerMovement>().SetSlow();
+            //collider.gameObject.GetComponent<PlayerMovement>().SetSlow();
 
             Debug.Log("LOLXD");
 
