@@ -23,6 +23,7 @@ public class PlayerMovement : NetworkBehaviour
     //Rings
     //Intrepidite passive
     public float speedBuff = 0f;
+    private float slowTimer;
 
     //Camera
     [SerializeField] private GameObject mainCamera;
@@ -49,23 +50,35 @@ public class PlayerMovement : NetworkBehaviour
     void Update() 
     {
         //If the game state is not in the GamePlaying state, the player can't move. (From GameManager)
-        if (GameManager.Instance.isGamePlaying() || GameManager.Instance.IsGemCountdownActive() || GameManager.Instance.IsGemTakenActive()) {
+        if (GameManager.Instance.isGamePlaying() || GameManager.Instance.IsGemCountdownActive() || GameManager.Instance.IsGemTakenActive())
+        {
             //Get the value (1 or -1) for the movement
             moveHorizontal = Input.GetAxis("Horizontal");
             moveVertical = Input.GetAxis("Vertical");
 
             //StartFootsteps AKA the condition to enable or disable the sounds of walking
-            if (moveVertical > 0 && !playingFootsteps || moveVertical < 0 && !playingFootsteps || moveHorizontal > 0 && !playingFootsteps || moveHorizontal < 0 && !playingFootsteps) {
+            if (moveVertical > 0 && !playingFootsteps || moveVertical < 0 && !playingFootsteps || moveHorizontal > 0 && !playingFootsteps || moveHorizontal < 0 && !playingFootsteps)
+            {
                 StartFootsteps();
             }
-            else if (moveVertical == 0 && moveHorizontal == 0) {
+            else if (moveVertical == 0 && moveHorizontal == 0)
+            {
                 StopFootsteps();
             }
 
             //For animation, the animation will start on the front.
             speed = moveVertical;
-        }
 
+            if (slowTimer > 0f)
+            {
+                slowTimer -= (Time.deltaTime);
+                if (slowTimer <= 0)
+                {
+                    RemoveSlowServerRpc();
+                }
+
+            }
+        }
     }
 
     private void FixedUpdate() //FixedUpdate for physics
@@ -150,6 +163,7 @@ public class PlayerMovement : NetworkBehaviour
 
     [ClientRpc]
     void SlowClientRpc() {
+        slowTimer = 3f;
         movementSpeed *= 0.5f;
     }
 

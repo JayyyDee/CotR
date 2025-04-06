@@ -56,7 +56,7 @@ public class HealthManager : NetworkBehaviour
         }
     }
     [ServerRpc(RequireOwnership = false)]
-    private void HealingServerRpc(int heal)
+    public void HealingServerRpc(int heal)
     {
         HealingClientRpc(heal);
     }
@@ -68,6 +68,10 @@ public class HealthManager : NetworkBehaviour
         {
             currentHealth += heal;
             healthBar.SetHealth(currentHealth);
+        }
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
         }
     }
 

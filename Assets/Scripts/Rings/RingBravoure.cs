@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RingBravoure : Ring
@@ -21,6 +22,11 @@ public class RingBravoure : Ring
     private float activeTimer;
     private bool canActive = true;
 
+
+    public float passiveCooldown = 7f;
+    private float passiveTimer;
+    private bool startPassive = false;
+
     /*
     1 is normal speed
     <1 is slower
@@ -33,6 +39,8 @@ public class RingBravoure : Ring
     void Update()
     {
         //Debug.Log(timer + " Bravoure");
+
+        
 
         if (!canFire)
         {
@@ -62,6 +70,18 @@ public class RingBravoure : Ring
         {
             Active();
         }
+
+        if (startPassive)
+        {
+            passiveTimer += (Time.deltaTime);
+            if (passiveTimer > passiveCooldown)
+            {
+                playerCharacter.GetComponent<HealthManager>().HealingServerRpc(150);
+                passiveTimer = 0;
+            }
+            
+        }
+
     }
 
 
@@ -77,7 +97,7 @@ public class RingBravoure : Ring
 
     public override void Active()
     {
-        Vector3 pos = firePoint.transform.position + (firePoint.transform.right * 3.5f);
+        Vector3 pos = firePoint.transform.position + (firePoint.transform.right * 4f);
         Quaternion rot = firePoint.transform.rotation;
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
@@ -91,7 +111,7 @@ public class RingBravoure : Ring
 
     public override void Passive()
     {
-        
+        startPassive = true;
     }
     public override void SetEquiped(bool boole)
     {
