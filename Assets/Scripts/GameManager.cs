@@ -31,6 +31,9 @@ public class GameManager : NetworkBehaviour {
     private bool isGamePaused = false;
     private Dictionary<ulong, bool> playerReadyDictionary;
 
+    private uint musicPlayingID;
+    private string currentMusicEvent = "";
+
     private void Awake() {
         Instance = this;
         playerReadyDictionary = new Dictionary<ulong, bool>();
@@ -69,6 +72,7 @@ public class GameManager : NetworkBehaviour {
 
         switch (state.Value) {
             case State.WaitingToStart: //When all of the players in the lobby is ready, change state to start countdown
+                SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber"); //Musique2
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
@@ -76,18 +80,21 @@ public class GameManager : NetworkBehaviour {
                     state.Value = State.GemCountdown;
                 }
                 break;
-            case State.GemCountdown: //When the countdown finished, switch to game playing              
+            case State.GemCountdown: //When the countdown finished, switch to game playing
+                SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 gemCountdownTimer.Value -= Time.deltaTime;
                 if (gemCountdownTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
                 }
                 break;
             case State.GamePlaying://When the gem is no longer active finished, switch to gem taken state
+                SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 if (gem.activeSelf == false) {
                     state.Value = State.GemTaken;
                 }
                 break;
             case State.GemTaken:
+                SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 gemTakenTimer.Value -= Time.deltaTime;
                 if (gemTakenTimer.Value < 0f) {
                     state.Value = State.GameOver;
@@ -122,6 +129,19 @@ public class GameManager : NetworkBehaviour {
         if (allClientReady) {
             state.Value = State.CountdownToStart;
         }
+    }
+    private void SwitchMusic(string newMusicEvent) {
+        if (currentMusicEvent == newMusicEvent)
+            return;
+
+        // Stop la musique actuelle si elle existe
+        if (!string.IsNullOrEmpty(currentMusicEvent)) {
+            AkUnitySoundEngine.StopPlayingID(musicPlayingID);
+        }
+
+        // Joue la nouvelle
+        musicPlayingID = AkUnitySoundEngine.PostEvent(newMusicEvent, gameObject);
+        currentMusicEvent = newMusicEvent;
     }
 
     public bool IsLocalPlayerReady() {
