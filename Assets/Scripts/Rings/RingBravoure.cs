@@ -99,7 +99,6 @@ public class RingBravoure : Ring
     {
         Vector3 pos = firePoint.transform.position + (firePoint.transform.right * 4f);
         Quaternion rot = firePoint.transform.rotation;
-        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<NetworkObject>().Spawn();
         bullet.GetComponent<ProjectileBravoureActive>().player = playerCharacter;
@@ -174,6 +173,7 @@ public class RingBravoure : Ring
 
     public override void Drop()
     {
+        startPassive = false;
         Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
         DropServerRpc(pos);
     }

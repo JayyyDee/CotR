@@ -14,6 +14,7 @@ public class Inventory : NetworkBehaviour
     public List<GameObject> UISlots = new List<GameObject>();
     private GameObject firePoint;
     private float attackSpeed =1f;
+   
 
     public override void OnNetworkSpawn()
     {
@@ -44,7 +45,11 @@ public class Inventory : NetworkBehaviour
             collision.gameObject.GetComponent<Ring>().Passive();
             collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
             
-            
+            if(collision.gameObject.name == "Patience")
+            {
+                
+                collision.gameObject.GetComponent<RingPatience>().SetCamera(gameObject.transform.Find("PlayerCamera").gameObject.GetComponent<Camera>());
+            }
             
 
             
@@ -57,6 +62,7 @@ public class Inventory : NetworkBehaviour
             {
                 return;
             }
+            
                 foreach (Ring ring in inventory)
             {
                 ring.SetAttackSpeed(attackSpeed);
@@ -64,7 +70,6 @@ public class Inventory : NetworkBehaviour
                 fullInv += (ring.name + " ");
                 i++;
             }
-            Debug.Log(fullInv);
 
         }
     }
@@ -90,6 +95,10 @@ public class Inventory : NetworkBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             ChangeEquiped(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            ChangeEquiped(4);
         }
 
     }

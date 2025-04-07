@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7378000903808465439}
   - component: {fileID: 5947881880623366713}
-  - component: {fileID: 2513290194004693554}
+  - component: {fileID: 6537882149962568081}
   - component: {fileID: 455967064905786083}
   - component: {fileID: 496552088198242888}
   - component: {fileID: 4714930159217554089}
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2513290194004693554
+--- !u!114 &6537882149962568081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,13 +99,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2207754702986021701}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a901e125d632aa549b5a040c0b1e3500, type: 3}
+  m_Script: {fileID: 11500000, guid: f0c21d0137988c84082c9b92b1be824f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6770849948375740100, guid: 2a0c320c383060d45ab1a259db5b172c, type: 3}
+  bulletPrefab: {fileID: 765932938243824025, guid: a86ac81f6b64aa84c8792ae36f9a635e, type: 3}
   bulletColor: {r: 0.2627451, g: 1, b: 0.83921576, a: 1}
-  fireForce: 20
+  fireForce: 30
   cooldown: 3
+  activePrefab: {fileID: 8743353872314220699, guid: b17b932d86e878f49af2a4df0a5773a9, type: 3}
+  activeCooldown: 10
+  passivePrefab: {fileID: 1615494897302446803, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
 --- !u!114 &455967064905786083
 MonoBehaviour:
   m_ObjectHideFlags: 0

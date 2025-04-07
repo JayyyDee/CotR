@@ -9,7 +9,14 @@ public class RingPatience : Ring
     public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
+    private Vector3 mousePos;
+    private Camera cam;
+
     
+    public float range;
+    private Queue<GameObject> zones= new Queue<GameObject>();
+
+
 
     public float fireForce = 1f;
     public float cooldown = 1f;
@@ -28,7 +35,16 @@ public class RingPatience : Ring
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(timer + " Patience");
+        //if (playerCharacter.GetComponent<NetworkObject>().IsOwner && equiped)
+        //{
+        //    
+        //}
+        if (equiped)
+        {
+            mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        }
+        Vector3 aimDirection = mousePos - playerCharacter.transform.position;
+
 
         if (!canFire)
         {
@@ -50,22 +66,25 @@ public class RingPatience : Ring
     {
         Debug.Log("shoot");
         canFire = false;
-        Vector3 pos = firePoint.transform.position;
-        Quaternion rot = firePoint.transform.rotation;
-
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+        GameObject bullet = Instantiate(bulletPrefab, mousePos, Quaternion.identity);
+        zones.Enqueue(bullet);
+        if(zones.Count > 3)
+        {
+            zones.Dequeue();
+        }
+
+        
     }
 
     public override void Active()
     {
-        
+        //Activates/Explodes all zones 
     }
 
     public override void Passive()
     {
-        
+        playerCharacter.transform.Find("RangePatience").gameObject.SetActive(true);
     }
 
     public override void SetEquiped(bool boole)
@@ -112,7 +131,12 @@ public class RingPatience : Ring
 
     public override void Drop()
     {
+        playerCharacter.transform.Find("RangePatience").gameObject.SetActive(true);
         Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
         DropServerRpc(pos);
+    }
+    public void SetCamera(Camera camera)
+    {
+        cam = camera;
     }
 }

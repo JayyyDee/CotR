@@ -1,18 +1,149 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
-public class RingPerseverance : MonoBehaviour
+public class RingPerseverance : Ring
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject bulletPrefab;
+    public Color bulletColor;
+    private GameObject firePoint;
+    private GameObject playerCharacter;
+
+
+    public float fireForce = 1f;
+    public float cooldown = 1f;
+    private float timer;
+    private bool canFire = true;
+    private bool equiped = false;
+
+    public GameObject activePrefab;
+    public float activeCooldown = 5f;
+    private float activeTimer;
+    private bool canActive = true;
+
+    public GameObject passivePrefab;
+
+    /*
+    1 is normal speed
+    <1 is slower
+    >1 is faster
+    */
+    private float attackSpeed = 1f;
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(timer + " Patience");
+
+        if (!canFire)
+        {
+            timer += (Time.deltaTime);
+            if (timer > (cooldown / attackSpeed))
+            {
+                canFire = true;
+                timer = 0;
+            }
+        }
+        if (equiped && Input.GetMouseButton(0) && canFire)
+        {
+            Shoot();
+        }
+
+        if (!canActive)
+        {
+            activeTimer += (Time.deltaTime);
+            if (activeTimer > activeCooldown)
+            {
+                canActive = true;
+                activeTimer = 0;
+            }
+        }
+
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        {
+            Active();
+        }
+    }
+
+
+    public override void Shoot()
+    {
+        Debug.Log("shoot");
+        canFire = false;
+        Vector3 pos = firePoint.transform.position;
+        Quaternion rot = bulletPrefab.transform.rotation* firePoint.transform.rotation  ;
+
+        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
+        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
+    }
+
+    public override void Active()
+    {
+        Vector3 pos = playerCharacter.transform.position;
+        Quaternion rot = playerCharacter.transform.rotation;
+        GameObject activeHitbox = Instantiate(activePrefab, pos, rot);
+        activeHitbox.GetComponent<NetworkObject>().Spawn();
+        activeHitbox.GetComponent<ActivePerseverance>().player = playerCharacter;
+        canActive = false;
+    }
+
+    public override void Passive()
+    {
+        GameObject passiveHitbox = playerCharacter.transform.Find("PassivePerseverance").gameObject;
+        passiveHitbox.SetActive(true);
+        passiveHitbox.GetComponent<PassivePerseverance>().player = playerCharacter;
+    }
+
+    public override void SetEquiped(bool boole)
+    {
+        equiped = boole;
+    }
+    public override bool GetCanFire()
+    {
+        return canFire;
+    }
+
+    public override void SetFirePoint(GameObject point)
+    {
+        firePoint = point;
+    }
+
+    public override void SetPlayer(GameObject player)
+    {
+        playerCharacter = player;
+    }
+
+    public override void SetAttackSpeed(float speed)
+    {
+        attackSpeed = speed;
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void DropServerRpc(Vector2 pos)
+    {
+        DropClientRpc(pos);
+    }
+
+    [ClientRpc]
+    public void DropClientRpc(Vector2 pos)
+    {
+        gameObject.transform.position = pos;
+
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.GetComponent<CircleCollider2D>().enabled = true;
+        gameObject.GetComponent<Ring>().SetEquiped(false);
+
+    }
+
+
+    public override void Drop()
+    {
+        playerCharacter.transform.Find("PassivePerseverance").gameObject.SetActive(true);
+        Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
+        DropServerRpc(pos);
     }
 }
