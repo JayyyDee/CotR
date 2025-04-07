@@ -56,7 +56,7 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    private void SwitchMusic(string newMusicEvent)
+    public void SwitchMusic(string newMusicEvent)
     {
         if (currentMusicEvent == newMusicEvent)
             return;
