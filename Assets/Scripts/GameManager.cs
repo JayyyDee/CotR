@@ -72,7 +72,7 @@ public class GameManager : NetworkBehaviour {
 
         switch (state.Value) {
             case State.WaitingToStart: //When all of the players in the lobby is ready, change state to start countdown
-                SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber"); //Musique2
+                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber");
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
@@ -81,20 +81,20 @@ public class GameManager : NetworkBehaviour {
                 }
                 break;
             case State.GemCountdown: //When the countdown finished, switch to game playing
-                SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 gemCountdownTimer.Value -= Time.deltaTime;
                 if (gemCountdownTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
                 }
                 break;
             case State.GamePlaying://When the gem is no longer active finished, switch to gem taken state
-                SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 if (gem.activeSelf == false) {
                     state.Value = State.GemTaken;
                 }
                 break;
             case State.GemTaken:
-                SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 gemTakenTimer.Value -= Time.deltaTime;
                 if (gemTakenTimer.Value < 0f) {
                     state.Value = State.GameOver;
