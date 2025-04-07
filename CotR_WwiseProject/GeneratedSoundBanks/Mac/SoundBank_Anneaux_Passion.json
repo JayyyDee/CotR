@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D0909FAA-8146-4687-8C75-F2D5950BF49E}",
     "Language": "SFX",
-    "Hash": "{00571F33-619B-3AA8-17FE-62BADD8564C1}",
+    "Hash": "{CDF8AAF3-7EE9-BF35-EAC3-B375BCACBBCF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Passion",
     "ShortName": "SoundBank_Anneaux_Passion",
     "Path": "SoundBank_Anneaux_Passion.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Passion_Anneaux_Passion_Attack_Pt2_$itemnumber.wav",
-      "CachePath": "6B/{6B53FB9A-D423-61BE-FD32-44F461FB3397}.wem"
+      "CachePath": "AB/{AB198E41-6FF7-1BC4-CDFB-8960658CD6C6}.wem"
      },
      {
       "Id": "338727196",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full_$itemnumber.wav",
-      "CachePath": "57/{57B6E61B-CCDE-F728-E07D-65F61D5EBF8C}.wem"
+      "CachePath": "36/{360733DB-E340-4451-7974-D38FC3430B11}.wem"
      },
      {
       "Id": "433850664",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Passion_Anneaux_Passion_Equip_$itemnumber.wav",
-      "CachePath": "5F/{5FE2C611-0BD5-5FB5-03C0-D51B1236EB7A}.wem"
+      "CachePath": "7B/{7B0D7E38-5401-2C32-36F3-0DAC517CBBAA}.wem"
      },
      {
       "Id": "686703082",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Passion_Anneaux_Passion_Actif_Full_$itemnumber.wav",
-      "CachePath": "B4/{B4D7DAFD-0769-438F-0810-F9DB8D1EDFBC}.wem"
+      "CachePath": "42/{4297D9C2-2713-69B7-F9C3-0FAF94702B07}.wem"
      },
      {
       "Id": "1060622862",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Passion_Anneaux_Passion_Attack_Full_$itemnumber.wav",
-      "CachePath": "94/{949780A8-7871-4FEF-C3EE-AAF3F4550657}.wem"
+      "CachePath": "16/{16C3AA53-A829-774F-8928-13D5BC6459EA}.wem"
      }
     ],
     "Events": [
@@ -152,6 +152,6 @@
     ]
    }
   ],
-  "FileHash": "{D68F3DE5-52E7-3CB1-4845-5AA16B504C28}"
+  "FileHash": "{2468C65D-0773-8250-9BD6-214C46C19FB2}"
  }
 }

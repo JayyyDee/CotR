@@ -1965,6 +1965,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<Sound Name="Jadeide Slow_$itemnumber" ID="{7EB39DD9-298E-4CA4-B706-BA93B8DC7E4B}" ShortID="326426044">
+							<PropertyList>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
@@ -1995,6 +2002,11 @@
 								<Sound Name="Musique_Combat_Full_Onetime_$itemnumber" ID="{4CB950A3-D64D-430F-B803-22537F563A98}" ShortID="482732020">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-25</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2025,6 +2037,11 @@
 								<Sound Name="Musique_Combat_Loop_$itemnumber" ID="{B31E4467-ECB0-4FCA-97DB-6FC38313ADB8}" ShortID="222131914">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-25</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2059,6 +2076,11 @@
 								<Sound Name="Musique_Menu_Loop_$itemnumber" ID="{655241BF-0FAF-429C-9AB5-453CF41115F5}" ShortID="227889670">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2093,6 +2115,11 @@
 								<Sound Name="Musique_Lobby_Full_Onetime_$itemnumber" ID="{FE1AFE05-3C7B-47EC-AC36-FC9C0C7A6899}" ShortID="1031601771">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2121,6 +2148,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Musique_Lobby_Loop_$itemnumber" ID="{EA69A2A8-AED9-4274-BE8D-2559110FCEDC}" ShortID="375269065">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
@@ -2143,6 +2177,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Musique_Lobby_Start_$itemnumber" ID="{5FD5B797-2459-4722-B1EB-818673C52643}" ShortID="400819113">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>

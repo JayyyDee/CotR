@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1B71D5D-FB70-4F58-91DB-2B0BFCDAEDD0}",
     "Language": "SFX",
-    "Hash": "{03252A65-BBA0-CC62-480E-C2256A845BB9}",
+    "Hash": "{FB7EA8D2-A349-B6AE-9E2F-EB46C8D46997}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Patience",
     "ShortName": "SoundBank_Anneaux_Patience",
     "Path": "SoundBank_Anneaux_Patience.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Attack_TNT_Wait_$itemnumber.wav",
-      "CachePath": "C0/{C0ED9407-E970-3F1F-BDF3-FF590746FCF0}.wem"
+      "CachePath": "3A/{3ADFD41E-BCD7-8786-A89A-D3C42BCD94E9}.wem"
      },
      {
       "Id": "149880440",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Attack_TNT_Despawn_$itemnumber.wav",
-      "CachePath": "01/{016648FF-854C-CD64-8DFF-F9D9797C793D}.wem"
+      "CachePath": "83/{83CD0EC1-8D21-9BF0-C341-2AB85EA2EEDF}.wem"
      },
      {
       "Id": "156510942",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Passif_LeaveRayon_$itemnumber.wav",
-      "CachePath": "1F/{1F19A1DB-B81D-9D32-506E-6DE126FDC453}.wem"
+      "CachePath": "8D/{8D85C7D1-DA86-56EC-93D0-4ADBF0AF7966}.wem"
      },
      {
       "Id": "215130135",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Patience_Attack_Trow_Impact_Full_$itemnumber.wav",
-      "CachePath": "2E/{2E730EEA-C752-4784-DC1E-DEF8F4E23CFF}.wem"
+      "CachePath": "0A/{0A8E519A-6F70-0DC8-22DC-C3C3B2C99EBD}.wem"
      },
      {
       "Id": "316972307",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Actif_Explosion_PT2_$itemnumber.wav",
-      "CachePath": "12/{12C016E1-4608-7588-45D1-E2A8396E8C73}.wem"
+      "CachePath": "9A/{9AC850AD-BF58-007B-933D-4D40D8070C4D}.wem"
      },
      {
       "Id": "318579479",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Patience_Attack_Trow_FULL_$itemnumber.wav",
-      "CachePath": "C2/{C2A29A10-103A-3766-8295-5E3705813F8A}.wem"
+      "CachePath": "D7/{D796673D-A97B-3E65-25AE-032B15C7D65C}.wem"
      },
      {
       "Id": "342946220",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Attack_Trow_Impact_Placed_$itemnumber.wav",
-      "CachePath": "24/{245CED15-0152-C65A-F2B7-0719E2B3B31E}.wem"
+      "CachePath": "A2/{A271F7E8-351B-5D61-FC75-15B740368080}.wem"
      },
      {
       "Id": "555447540",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Passif_Inside_Full_$itemnumber.wav",
-      "CachePath": "BC/{BC09185B-5D5E-3294-2873-9533B9C59A04}.wem"
+      "CachePath": "37/{37C2A879-A547-F7D9-7E63-3E206796924A}.wem"
      },
      {
       "Id": "561102837",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Patience_Actif_Explosion_Full_$itemnumber.wav",
-      "CachePath": "D1/{D1A0B8FB-0AEE-CA8C-5F13-EEA892E18D90}.wem"
+      "CachePath": "0D/{0DB8EC6E-160F-6F6F-A7AB-8762D5955606}.wem"
      },
      {
       "Id": "570987956",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Actif_Explosion_PT1_$itemnumber.wav",
-      "CachePath": "8D/{8DA87CD8-C211-DC54-6C06-63289F202A3A}.wem"
+      "CachePath": "16/{167B6CA9-437A-7560-9D84-96CA030E0740}.wem"
      },
      {
       "Id": "585554242",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Attack_Trow_PT2_$itemnumber.wav",
-      "CachePath": "39/{394302AE-2141-D458-E724-B6DEC87BEE8B}.wem"
+      "CachePath": "B8/{B8F57018-55CD-D3FB-BDB1-40A456E65E93}.wem"
      },
      {
       "Id": "668898919",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Passif_EnterRayon_$itemnumber.wav",
-      "CachePath": "9E/{9E90DB9E-E4B3-59F8-ECE9-39BCA59C7A42}.wem"
+      "CachePath": "06/{06DEBB7E-AC49-58AC-2F45-8CCEB1DA330B}.wem"
      },
      {
       "Id": "848998930",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Attack_Trow_Impact_Damage_$itemnumber.wav",
-      "CachePath": "36/{36A61602-FE62-5F80-18F9-EB9EC80738E9}.wem"
+      "CachePath": "82/{82E44185-C5D2-98FA-9B1A-697B4E174CBC}.wem"
      },
      {
       "Id": "941894203",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Passif_Inside_Loop_$itemnumber.wav",
-      "CachePath": "37/{3725D98D-355A-1E99-1A67-E37A189D30AF}.wem"
+      "CachePath": "ED/{ED48A4E1-C0DF-90DC-37AB-95A3C1BBB3FA}.wem"
      },
      {
       "Id": "1013355837",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Patience_Attack_Trow_PT1_$itemnumber.wav",
-      "CachePath": "58/{5891F75B-48CC-A637-0B3F-999C81DA68D9}.wem"
+      "CachePath": "12/{12798C5C-3794-9920-DB7A-628204DA6EA0}.wem"
      },
      {
       "Id": "1063534659",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Patience_Equipe_FULL_$itemnumber.wav",
-      "CachePath": "EF/{EF9A621C-B93F-C081-9F56-ABF79ED6B887}.wem"
+      "CachePath": "DF/{DF5C597B-CB79-5D38-C6AA-F93F75D6C6F3}.wem"
      }
     ],
     "Events": [
@@ -388,6 +388,6 @@
     ]
    }
   ],
-  "FileHash": "{91615776-97C5-ABB6-F062-6DF98C173D22}"
+  "FileHash": "{12187ABC-5E3D-575B-5862-56FCA0A79BC0}"
  }
 }

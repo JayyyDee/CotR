@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5817B06B-D7BB-4381-9314-0472A6E292D7}",
     "Language": "SFX",
-    "Hash": "{DFE040E5-A8C1-A987-045C-C08306EB7CC2}",
+    "Hash": "{2B45A6E0-5A96-B751-421E-212E6700A67A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Musique",
     "ShortName": "SoundBank_Musique",
     "Path": "SoundBank_Musique.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Musique_Lobby_Full_Onetime_$itemnumber.wav",
-      "CachePath": "54/{5499C53F-253B-B55F-8678-B5267EA2CFD8}.wem"
+      "CachePath": "1D/{1DD7E9D5-32D5-87BC-8381-2427574DAEEC}.wem"
      },
      {
       "Id": "157330873",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Musique_Combat_Loop_$itemnumber.wav",
-      "CachePath": "E6/{E6AAAC7A-C0CE-1B8A-8CE8-6C47EBFFB642}.wem"
+      "CachePath": "AD/{ADE563E2-6179-7B0C-4686-6CDB2C6320B8}.wem"
      },
      {
       "Id": "179266749",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Musique_Combat_Full_Onetime_$itemnumber.wav",
-      "CachePath": "B8/{B8E7A006-2E7B-84FA-6E93-B0C319B13C8A}.wem"
+      "CachePath": "F9/{F9DB8351-FF31-32BD-6494-204608E72D89}.wem"
      },
      {
       "Id": "286630306",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Musique_Lobby_Start_$itemnumber.wav",
-      "CachePath": "18/{1893A4CB-6658-5668-5F89-7320E7EDF119}.wem"
+      "CachePath": "F6/{F6031E6E-64F3-42C8-A543-8EC3F91F06BB}.wem"
      },
      {
       "Id": "1035898425",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Musique_Menu_Loop_$itemnumber.wav",
-      "CachePath": "99/{99B6257A-820C-2E38-7C6F-02C89A07F797}.wem"
+      "CachePath": "01/{01F35AC0-96EF-3935-5C88-49461FE9D4FF}.wem"
      }
     ],
     "Events": [
@@ -144,6 +144,6 @@
     ]
    }
   ],
-  "FileHash": "{1E27B30E-401E-7F0A-5486-E08C2351CA9D}"
+  "FileHash": "{E3C684F9-88AB-700F-E692-6212AED4B060}"
  }
 }

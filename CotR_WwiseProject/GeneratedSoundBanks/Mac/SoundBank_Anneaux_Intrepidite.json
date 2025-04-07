@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{8CD35138-13F2-4AE5-81F7-83B689CEC6A2}",
     "Language": "SFX",
-    "Hash": "{B47D355E-487C-889E-D083-DD0DFB806806}",
+    "Hash": "{1DC7C7C7-5A11-9500-27AB-D74C3BF4FF0B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Intrepidite",
     "ShortName": "SoundBank_Anneaux_Intrepidite",
     "Path": "SoundBank_Anneaux_Intrepidite.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Stay_Start_$itemnumber.wav",
-      "CachePath": "62/{62C050E3-18AD-24B1-933F-A3FDA2CBDBBE}.wem"
+      "CachePath": "6F/{6F7C5ED1-9334-9E06-E2AE-98066FEB6A6A}.wem"
      },
      {
       "Id": "165219883",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type2_$itemnumber.wav",
-      "CachePath": "F7/{F750CC29-2233-56C7-A57B-A02551597EE4}.wem"
+      "CachePath": "53/{53789FDE-A793-9755-3695-FE2E0CF8A252}.wem"
      },
      {
       "Id": "195898799",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Actif_FX3_$itemnumber.wav",
-      "CachePath": "61/{61306BA0-0861-67F0-444D-E885BA8A5633}.wem"
+      "CachePath": "CD/{CD802025-EF5F-3B23-8224-BE36AF246B47}.wem"
      },
      {
       "Id": "200239506",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Flying_PT1_$itemnumber.wav",
-      "CachePath": "B4/{B42AD03A-BF2B-7E77-CC84-016455EC1C26}.wem"
+      "CachePath": "B5/{B5A95C23-F57D-6F47-540E-52F913E7FC22}.wem"
      },
      {
       "Id": "255169250",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Throw_TYPE4_$itemnumber.wav",
-      "CachePath": "B1/{B1BD5071-9641-982B-796D-251C6C6FA585}.wem"
+      "CachePath": "A8/{A8B9B123-633A-0578-903E-DA098229CB6B}.wem"
      },
      {
       "Id": "265658539",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type4_$itemnumber.wav",
-      "CachePath": "82/{8220A98E-8A2A-0093-68A5-55A45235374E}.wem"
+      "CachePath": "E8/{E89EB7DB-4FDE-6E10-1256-2B5D3E15F240}.wem"
      },
      {
       "Id": "308913143",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Flying_Part2_$itemnumber.wav",
-      "CachePath": "04/{046B52DC-A4D3-8EB8-C077-19F4BFF45D0F}.wem"
+      "CachePath": "4A/{4AD6EB69-7CAF-ED88-A9D1-15D19CACCE9A}.wem"
      },
      {
       "Id": "342521728",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Actif_FX1_$itemnumber.wav",
-      "CachePath": "EB/{EB092FDB-A63F-8C71-1124-C88C5BA0AA11}.wem"
+      "CachePath": "73/{7394B0D6-2C8A-C3FE-DC0E-4CBE1EE9A837}.wem"
      },
      {
       "Id": "379169052",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Intrépidité_Equipe_FULL_$itemnumber.wav",
-      "CachePath": "60/{607F8008-2202-106D-B87E-45F1150C2766}.wem"
+      "CachePath": "C3/{C34208CE-35F7-9B7B-347C-B09E835CC670}.wem"
      },
      {
       "Id": "395402706",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Throw_TYPE3_$itemnumber.wav",
-      "CachePath": "04/{04DF42CC-7C92-5505-8A07-B123955821BD}.wem"
+      "CachePath": "D1/{D19016B9-BAA6-B774-F437-8971FA5D8D3C}.wem"
      },
      {
       "Id": "569302592",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Passif_End_$itemnumber.wav",
-      "CachePath": "A4/{A4B83F85-632B-94BD-E19A-8D3829C7F3BE}.wem"
+      "CachePath": "31/{31F4D1EA-7B19-FBD9-DD6D-6EA0A011CDBC}.wem"
      },
      {
       "Id": "633051921",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Intrépidité_Attack_Blades_Flying_Full_$itemnumber.wav",
-      "CachePath": "FF/{FFDB15EE-0286-B0F4-765A-9FDE3C9BCA5D}.wem"
+      "CachePath": "BF/{BF77AAAF-DB3F-621C-0A70-445E46C52A03}.wem"
      },
      {
       "Id": "660672573",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Stay_$itemnumber.wav",
-      "CachePath": "58/{582820EB-4CFB-F6F2-B789-C284B0CAF88D}.wem"
+      "CachePath": "F4/{F47707A8-DEFA-08B2-0554-AA798E98FB31}.wem"
      },
      {
       "Id": "706311438",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Actif_Dash_$itemnumber.wav",
-      "CachePath": "27/{2756E562-7B0F-FCDC-0662-389325B2D15A}.wem"
+      "CachePath": "C1/{C1D4D5B5-C8AD-622C-FA5E-84547A3B40B0}.wem"
      },
      {
       "Id": "829438286",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Stay_Full_WithSTART&END_$itemnumber.wav",
-      "CachePath": "3A/{3A362786-545B-9842-8DA5-E020BEE5D11D}.wem"
+      "CachePath": "91/{91C6B7F0-093E-5BAA-5CC6-4E34A0C752AB}.wem"
      },
      {
       "Id": "893269794",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Stay_Start&Stop_$itemnumber.wav",
-      "CachePath": "7A/{7AEC57B4-2AA0-DC0C-0B03-FAE8DD263C93}.wem"
+      "CachePath": "6B/{6B69D09E-5C69-482E-C4AF-9C5B86E9398F}.wem"
      },
      {
       "Id": "913449576",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Passif_Active_$itemnumber.wav",
-      "CachePath": "BD/{BD7D1CD7-A0B5-5B83-DE3F-140BFF7BBB8B}.wem"
+      "CachePath": "98/{982EE9EF-158F-B4DC-9794-6DE631C1790B}.wem"
      },
      {
       "Id": "917339153",
@@ -157,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Throw_TYPE1_$itemnumber.wav",
-      "CachePath": "9D/{9D5AC7EF-16BC-7EBB-089F-83409DF5244A}.wem"
+      "CachePath": "A8/{A8B1DAF4-01B4-7417-ABCA-759193ACB997}.wem"
      },
      {
       "Id": "956885260",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type3_$itemnumber.wav",
-      "CachePath": "57/{5766CD10-2617-D984-B30D-46663E6732CD}.wem"
+      "CachePath": "96/{966C3EE2-91C0-393E-A9D8-822278C2157D}.wem"
      },
      {
       "Id": "981243878",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Intrépidité_Actif_Full_$itemnumber.wav",
-      "CachePath": "51/{51F337D2-1C5E-884C-E169-5C12FB90FA8F}.wem"
+      "CachePath": "92/{92C51CF7-4891-27C5-BF5F-201BC23F7132}.wem"
      },
      {
       "Id": "987761691",
@@ -181,7 +181,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Catch_Full_Type1_$itemnumber.wav",
-      "CachePath": "4A/{4A4C0528-A061-1F96-DC13-5247280FE286}.wem"
+      "CachePath": "8A/{8AAB2171-A21E-6506-36C9-2D41B8CD3632}.wem"
      },
      {
       "Id": "1009905680",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Blades_Stay_Stop_$itemnumber.wav",
-      "CachePath": "7C/{7C3F8E83-8936-7B73-BD0A-C0BDCCB3AEEE}.wem"
+      "CachePath": "95/{9576E9B1-F3D6-D7A8-76A8-23DA5DC77696}.wem"
      },
      {
       "Id": "1011122487",
@@ -197,7 +197,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Attack_Throw_TYPE2_$itemnumber.wav",
-      "CachePath": "93/{933F3447-F73F-92EC-2BCA-091682408D5D}.wem"
+      "CachePath": "67/{6722F421-1438-0C1C-1B31-BBEB9452B64F}.wem"
      },
      {
       "Id": "1031856712",
@@ -205,7 +205,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Intrépidité_Actif_FX2_$itemnumber.wav",
-      "CachePath": "50/{50148F46-CCCC-BB04-C3CB-E69391F45833}.wem"
+      "CachePath": "4E/{4E8497FC-41B9-40DF-AD4C-E231E9278CE8}.wem"
      },
      {
       "Id": "1045329171",
@@ -213,7 +213,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Intrépidité_Passif_Full_$itemnumber.wav",
-      "CachePath": "5E/{5EC48C55-1DDB-A37D-FD04-57FE7C3DDB86}.wem"
+      "CachePath": "F1/{F1B7D244-9FE0-5D3C-27DF-0E6048FA9429}.wem"
      }
     ],
     "Events": [
@@ -562,6 +562,6 @@
     ]
    }
   ],
-  "FileHash": "{579AA9B2-51FF-B1BF-5179-E0B0F706385F}"
+  "FileHash": "{4CFE46FE-A5F9-BDD3-B9A3-E251C3F0C184}"
  }
 }

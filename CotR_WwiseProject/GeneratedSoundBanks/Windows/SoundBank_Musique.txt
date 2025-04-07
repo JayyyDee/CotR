@@ -7,10 +7,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	4142008756	Play_Musique_Menu_Loop__itemnumber			\Default Work Unit\Musique\Menu\Play_Musique_Menu_Loop__itemnumber	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	76740085	Musique_Lobby_Full_Onetime_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\54\{5499C53F-253B-B55F-8678-B5267EA2CFD8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Lobby\Musique_Lobby_Full_Onetime_$itemnumber		13058900
-	157330873	Musique_Combat_Loop_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\E6\{E6AAAC7A-C0CE-1B8A-8CE8-6C47EBFFB642}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Combat\Musique_Combat_Loop_$itemnumber		8999504
-	179266749	Musique_Combat_Full_Onetime_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\B8\{B8E7A006-2E7B-84FA-6E93-B0C319B13C8A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Combat\Musique_Combat_Full_Onetime_$itemnumber		9587276
+	76740085	Musique_Lobby_Full_Onetime_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1D\{1DD7E9D5-32D5-87BC-8381-2427574DAEEC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Lobby\Musique_Lobby_Full_Onetime_$itemnumber		13058900
+	157330873	Musique_Combat_Loop_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\AD\{ADE563E2-6179-7B0C-4686-6CDB2C6320B8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Combat\Musique_Combat_Loop_$itemnumber		8999504
+	179266749	Musique_Combat_Full_Onetime_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\F9\{F9DB8351-FF31-32BD-6494-204608E72D89}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Combat\Musique_Combat_Full_Onetime_$itemnumber		9587276
 	286630306	Musique_Lobby_Loop_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\01\{01258048-69E5-1421-27AC-0AE2EB3C6F33}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Lobby\Musique_Lobby_Loop_$itemnumber		13058852
-	716039497	Musique_Lobby_Start_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\18\{1893A4CB-6658-5668-5F89-7320E7EDF119}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Lobby\Musique_Lobby_Start_$itemnumber		478860
-	1035898425	Musique_Menu_Loop_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\99\{99B6257A-820C-2E38-7C6F-02C89A07F797}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Menu\Musique_Menu_Loop_$itemnumber		6138424
+	716039497	Musique_Lobby_Start_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\F6\{F6031E6E-64F3-42C8-A543-8EC3F91F06BB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Lobby\Musique_Lobby_Start_$itemnumber		478860
+	1035898425	Musique_Menu_Loop_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\01\{01F35AC0-96EF-3935-5C88-49461FE9D4FF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique\Menu\Musique_Menu_Loop_$itemnumber		6138424
 

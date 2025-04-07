@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{433BEC17-1FFB-4B10-B9EA-AA381F02A407}",
     "Language": "SFX",
-    "Hash": "{F89B5C4A-EA92-E5AD-2E41-15964C84CDB6}",
+    "Hash": "{F8E320A4-7CD6-5266-F4BA-DCDAD871356C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Gemme_Jadeite_Pickup",
     "ShortName": "SoundBank_Gemme_Jadeite_Pickup",
     "Path": "SoundBank_Gemme_Jadeite_Pickup.bnk",
@@ -42,6 +42,6 @@
     ]
    }
   ],
-  "FileHash": "{2E053796-CF47-1F34-0B23-AAA1E2BE02DC}"
+  "FileHash": "{75981698-F5C7-A8CB-6060-99174E2CBD81}"
  }
 }

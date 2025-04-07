@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{9F21CCFA-C429-4678-A406-C19CFF76994A}",
     "Language": "SFX",
-    "Hash": "{E4B92A91-0EE8-4B9A-2539-8319027E728F}",
+    "Hash": "{BB96D86E-01B8-C573-080D-679442CABCF2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Bravoure",
     "ShortName": "SoundBank_Anneaux_Bravoure",
     "Path": "SoundBank_Anneaux_Bravoure.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2_$itemnumber.wav",
-      "CachePath": "BB/{BB4D09AB-E528-9881-B318-5AAA34384F25}.wem"
+      "CachePath": "EB/{EB0A4D03-7D32-DC0E-FA82-E785FB76259D}.wem"
      },
      {
       "Id": "188644940",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Actif_Base2_$itemnumber.wav",
-      "CachePath": "F1/{F19CFCB9-CA1F-CFF6-E52F-AB2647370CD0}.wem"
+      "CachePath": "72/{72D10694-57E1-FE97-36ED-8BAAC7CEF790}.wem"
      },
      {
       "Id": "189912528",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Actif_Activation_$itemnumber.wav",
-      "CachePath": "80/{80EB6534-E36B-B377-C649-4BEF545F8DF0}.wem"
+      "CachePath": "4C/{4C9A9D23-47EE-B380-3A8E-10A28A40A7DB}.wem"
      },
      {
       "Id": "441688529",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1_$itemnumber.wav",
-      "CachePath": "8A/{8A7567F1-288F-BD45-2EBB-0BB6829E83F5}.wem"
+      "CachePath": "CD/{CD18687B-39B1-9F32-035E-8543AB1A0EF1}.wem"
      },
      {
       "Id": "477605912",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Equip_$itemnumber.wav",
-      "CachePath": "29/{294763D0-CCEF-6756-7C13-EE408613EFF7}.wem"
+      "CachePath": "47/{47946600-1CED-F512-57BB-B30DCD45B63C}.wem"
      },
      {
       "Id": "480967136",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Actif_Absorb&Convert_Full_$itemnumber.wav",
-      "CachePath": "67/{67B11A63-982A-E76B-F87C-996FCBE2C552}.wem"
+      "CachePath": "9F/{9F2D0DDD-BCAD-BC35-DA1C-178A4E91C0B9}.wem"
      },
      {
       "Id": "553152634",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2_$itemnumber.wav",
-      "CachePath": "E4/{E4A1433F-A3A2-5DA0-3567-92B13184BCAA}.wem"
+      "CachePath": "5F/{5FBBA2AB-494B-4806-9444-0420484719BF}.wem"
      },
      {
       "Id": "691235544",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full_$itemnumber.wav",
-      "CachePath": "B2/{B20F57B7-0D8F-3CF8-8EDF-1899BF7BA7CF}.wem"
+      "CachePath": "5C/{5C7E026E-86F4-F6F0-BA37-06FB18A233C8}.wem"
      },
      {
       "Id": "695838447",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Anneaux_Bravoure_Passif_full_$itemnumber.wav",
-      "CachePath": "B2/{B2580F79-C82A-DB4D-0185-BF3D2435B4B1}.wem"
+      "CachePath": "D9/{D95E178B-A1E4-8EDA-3022-DFE405DFBA95}.wem"
      },
      {
       "Id": "819710120",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Actif_Base1_$itemnumber.wav",
-      "CachePath": "32/{3263716D-8D5C-559A-441E-9EF49F993DE9}.wem"
+      "CachePath": "1F/{1FA5A793-5709-D2A5-1953-A202D83C56DE}.wem"
      },
      {
       "Id": "904626975",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Actif_Holding_$itemnumber.wav",
-      "CachePath": "55/{55BC745E-78D6-E687-0666-D000DDF9850F}.wem"
+      "CachePath": "5B/{5BFA5B15-5291-470E-9BEC-C641C26F1725}.wem"
      },
      {
       "Id": "1014682642",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bravoure_Actif_Attack_Full_$itemnumber.wav",
-      "CachePath": "F8/{F8DC6285-17B9-E49A-0F36-3B4F8AEE868F}.wem"
+      "CachePath": "03/{0339F0BE-363A-CC89-550A-9ECBCB659D18}.wem"
      }
     ],
     "Events": [
@@ -282,6 +282,6 @@
     ]
    }
   ],
-  "FileHash": "{60FCF12E-02CE-8F93-EC70-040590181C2C}"
+  "FileHash": "{157AC255-C6C6-59E1-CB9B-D3E4A735F557}"
  }
 }
