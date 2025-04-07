@@ -6,19 +6,21 @@ using UnityEngine;
 public class RingPatience : Ring
 {
     public GameObject bulletPrefab;
-    public Color bulletColor;
-    private GameObject firePoint;
+
+    
     private GameObject playerCharacter;
-    private Vector3 mousePos;
+    private Vector2 mousePos;
     private Camera cam;
 
     
     public float range;
     private Queue<GameObject> zones= new Queue<GameObject>();
+    private Vector2 spawnPoint;
 
+    public float activeCooldown;
+    private float activeTimer;
+    private bool canActive = true;
 
-
-    public float fireForce = 1f;
     public float cooldown = 1f;
     private float timer;
     private bool canFire = true;
@@ -31,19 +33,40 @@ public class RingPatience : Ring
     */
     private float attackSpeed = 1f;
 
+    
 
     // Update is called once per frame
     void Update()
     {
-        //if (playerCharacter.GetComponent<NetworkObject>().IsOwner && equiped)
-        //{
-        //    
-        //}
+
+        Debug.Log(activeCooldown + " " + activeTimer + " " + canActive);
         if (equiped)
         {
-            //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+            playerCharacter.transform.Find("RangePatience").gameObject.GetComponent<SpriteRenderer>().enabled = true;
+
         }
-        //Vector3 aimDirection = mousePos - playerCharacter.transform.position;
+        else if(playerCharacter)
+        {
+            
+            playerCharacter.transform.Find("RangePatience").gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        if(cam && playerCharacter.GetComponent<NetworkObject>().IsOwner && equiped)
+        {
+            mousePos = new Vector2(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y);
+            Vector2 playerPos = new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y);
+            Vector2 direction = mousePos - playerPos;
+            
+            if (direction.magnitude > range)
+            {
+                spawnPoint = direction.normalized * range + playerPos;
+                
+            }
+            else
+            {
+                spawnPoint = mousePos;
+            }
+        }
+        
 
 
         if (!canFire)
@@ -55,19 +78,36 @@ public class RingPatience : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire)
+        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
-            Shoot();
+            ShootServerRpc();
+        }
+        if (!canActive)
+        {
+            activeTimer += (Time.deltaTime);
+            if (activeTimer > activeCooldown)
+            {
+                canActive = true;
+                activeTimer = 0;
+            }
+        }
+
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        {
+            Debug.Log("ACTIVE");
+            Active();
         }
     }
 
 
     public override void Shoot()
     {
-        Debug.Log("shoot");
+        
         canFire = false;
-        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.transform.position, Quaternion.identity);
+
+
+
+        GameObject bullet = Instantiate(bulletPrefab,spawnPoint, Quaternion.identity);
         bullet.GetComponent<ZonePatience>().player = playerCharacter;
         zones.Enqueue(bullet);
         if(zones.Count > 3)
@@ -80,12 +120,16 @@ public class RingPatience : Ring
 
     public override void Active()
     {
-        //Activates/Explodes all zones 
+        foreach(GameObject zone in zones)
+        {
+            zone.GetComponent<ZonePatience>().Detonate();
+        }
+        zones.Clear();
     }
 
     public override void Passive()
     {
-        playerCharacter.transform.Find("RangePatience").gameObject.SetActive(true);
+        
     }
 
     public override void SetEquiped(bool boole)
@@ -99,7 +143,7 @@ public class RingPatience : Ring
 
     public override void SetFirePoint(GameObject point)
     {
-        firePoint = point;
+        
     }
 
     public override void SetPlayer(GameObject player)
@@ -113,11 +157,20 @@ public class RingPatience : Ring
     }
 
     [ServerRpc(RequireOwnership = false)]
+    public void ShootServerRpc()
+    {
+        ShootClientRpc();
+    }
+    [ClientRpc]
+    private void ShootClientRpc()
+    {
+        Shoot();
+    }
+    [ServerRpc(RequireOwnership = false)]
     public void DropServerRpc(Vector2 pos)
     {
         DropClientRpc(pos);
     }
-
     [ClientRpc]
     public void DropClientRpc(Vector2 pos)
     {
@@ -128,8 +181,6 @@ public class RingPatience : Ring
         gameObject.GetComponent<Ring>().SetEquiped(false);
 
     }
-
-
     public override void Drop()
     {
         playerCharacter.transform.Find("RangePatience").gameObject.SetActive(true);

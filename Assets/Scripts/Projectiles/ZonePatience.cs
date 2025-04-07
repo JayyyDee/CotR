@@ -5,31 +5,42 @@ using UnityEngine;
 
 public class ZonePatience : NetworkBehaviour
 {
+    public int explosionDamage;
     public int damage;
     public int healing;
     public GameObject player;
+    private bool explode= false;
 
 
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
     }
-    public void Explode()
+    public void Detonate()
     {
-
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        explode = true;
+        Destroy(gameObject, 0.1f);
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerStay2D(Collider2D collider)
     {
         if (collider.CompareTag("Player") && collider.gameObject == player)
         {
-            collider.gameObject.GetComponent<HealthManager>().HealingServerRpc(healing);
+            //yield return new WaitForSeconds(3f);
+            collider.gameObject.GetComponent<HealthManager>().HealingServerRpc((int)(healing*Time.deltaTime));
             Debug.Log("HEAL");
         }
         if (collider.CompareTag("Enemy") && collider.gameObject != player)
         {
-            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
-            Debug.Log("HEAL");
+            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc((int)(damage * Time.deltaTime));
+            Debug.Log("Dmg");
+        }
+        if (explode)
+        {
+            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(explosionDamage);
+            explode = false;
         }
     }
+    
 }

@@ -74,18 +74,19 @@ public class ProjectilePassion : NetworkBehaviour
     {
         GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
 
-        //if (boost)
-        //{
-        //    GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-        //    explosion.transform.localScale = new Vector3(3, 3, 1);
-        //    explosion.GetComponent<SpriteRenderer>().color = Color.yellow;
-        //}
-        //else
-        //{
+        if (boost)
+        {
+            //explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+            explosion.transform.localScale = new Vector3(3, 3, 1);
+            explosion.GetComponent<SpriteRenderer>().color = Color.yellow;
+        }
+        else
+        {
 
-        //    GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-        //}
-        
+            //explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+        }
+        explosion.GetComponent<NetworkObject>().Spawn();
+
     }
 
 }

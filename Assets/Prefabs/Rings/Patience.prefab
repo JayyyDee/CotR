@@ -139,7 +139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2559660542848680566, guid: 80c947f4d05bb1542a64c6e3f0789132, type: 3}
   bulletColor: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
-  fireForce: 5
+  range: 7.2
+  activeCooldown: 1
+  fireForce: 0
   cooldown: 2
 --- !u!114 &5885013813578906417
 MonoBehaviour:
