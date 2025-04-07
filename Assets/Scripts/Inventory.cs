@@ -47,7 +47,7 @@ public class Inventory : NetworkBehaviour
             
             if(collision.gameObject.name == "Patience")
             {
-                
+                Debug.Log("patience");
                 collision.gameObject.GetComponent<RingPatience>().SetCamera(gameObject.transform.Find("PlayerCamera").gameObject.GetComponent<Camera>());
             }
             

@@ -41,9 +41,9 @@ public class RingPatience : Ring
         //}
         if (equiped)
         {
-            mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+            //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         }
-        Vector3 aimDirection = mousePos - playerCharacter.transform.position;
+        //Vector3 aimDirection = mousePos - playerCharacter.transform.position;
 
 
         if (!canFire)
@@ -67,11 +67,12 @@ public class RingPatience : Ring
         Debug.Log("shoot");
         canFire = false;
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
-        GameObject bullet = Instantiate(bulletPrefab, mousePos, Quaternion.identity);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.transform.position, Quaternion.identity);
+        bullet.GetComponent<ZonePatience>().player = playerCharacter;
         zones.Enqueue(bullet);
         if(zones.Count > 3)
         {
-            zones.Dequeue();
+            Destroy(zones.Dequeue(),0);
         }
 
         

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5552534539887279259}
   - component: {fileID: 6007242585806579342}
   - component: {fileID: 8046621380201941833}
-  - component: {fileID: 865421160158187471}
   - component: {fileID: -1091540498032181028}
+  - component: {fileID: 8431452679963444151}
   m_Layer: 0
   m_Name: BulletPatience
   m_TagString: Untagged
@@ -150,20 +150,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &865421160158187471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2559660542848680566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0140524db37e21645b2a09cc94e30c5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathTimer: 1
-  damage: 50
 --- !u!114 &-1091540498032181028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +166,18 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &8431452679963444151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2559660542848680566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184f71ad113e4354f8b602e4044e8c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
+  healing: 100
+  player: {fileID: 0}
