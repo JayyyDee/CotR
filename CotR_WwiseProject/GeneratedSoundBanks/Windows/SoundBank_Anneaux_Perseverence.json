@@ -1,0 +1,597 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "381671057",
+    "Type": "User",
+    "GUID": "{D98C4F86-ED3D-4DCB-896E-B40C1EDB8F13}",
+    "Language": "SFX",
+    "Hash": "{4FE3FBFA-6319-CC6F-A430-C9547D81785E}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Perseverence",
+    "ShortName": "SoundBank_Anneaux_Perseverence",
+    "Path": "SoundBank_Anneaux_Perseverence.bnk",
+    "Media": [
+     {
+      "Id": "56192217",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber.wav",
+      "CachePath": "68/{684B2BA2-20A4-E345-9F5E-42AAB2E621BE}.wem"
+     },
+     {
+      "Id": "99092869",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber.wav",
+      "CachePath": "95/{9521470C-B342-36EE-7D17-425756B11AC8}.wem"
+     },
+     {
+      "Id": "168642711",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Attack_PT2_$itemnumber.wav",
+      "CachePath": "F4/{F4FC83A2-1461-5D74-2850-BC1315013B7A}.wem"
+     },
+     {
+      "Id": "182449704",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber.wav",
+      "CachePath": "24/{245E398C-73BF-8F60-82E5-9A702CD05248}.wem"
+     },
+     {
+      "Id": "326625302",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber.wav",
+      "CachePath": "20/{20BEE5DE-E773-EAFD-3F5B-DFBA279C16FE}.wem"
+     },
+     {
+      "Id": "328737962",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber.wav",
+      "CachePath": "0F/{0FB6BA10-1C75-C105-525C-41BA0E15E86E}.wem"
+     },
+     {
+      "Id": "363963665",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber.wav",
+      "CachePath": "1A/{1AA363BB-1338-0F01-E729-EB44F9B5D48D}.wem"
+     },
+     {
+      "Id": "526768663",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber.wav",
+      "CachePath": "03/{03D8CC23-60CE-B1AD-E0B1-91DE5274A296}.wem"
+     },
+     {
+      "Id": "544681391",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber.wav",
+      "CachePath": "17/{17570239-97C5-3D10-D769-1506F400A993}.wem"
+     },
+     {
+      "Id": "556804157",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber.wav",
+      "CachePath": "F3/{F34A6F96-872E-D789-B70D-031B0C83FB69}.wem"
+     },
+     {
+      "Id": "570457252",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber.wav",
+      "CachePath": "3F/{3FA6C774-BB2C-67C2-8B6E-D3C2616E47A5}.wem"
+     },
+     {
+      "Id": "613183029",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber.wav",
+      "CachePath": "83/{83A988C4-7867-9409-BB09-42365DB7A228}.wem"
+     },
+     {
+      "Id": "646065622",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber.wav",
+      "CachePath": "1A/{1A592880-810B-2E28-83D0-9B7909CD5EBE}.wem"
+     },
+     {
+      "Id": "764642898",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber.wav",
+      "CachePath": "9C/{9CDE2308-AA66-1143-C5E4-8ED34BB85990}.wem"
+     },
+     {
+      "Id": "798338781",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber.wav",
+      "CachePath": "76/{769484EA-A078-4BCF-0F86-D8F9176B94A4}.wem"
+     },
+     {
+      "Id": "807504013",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber.wav",
+      "CachePath": "5D/{5DE8AB51-ADC4-96D4-C361-E20CF64CB21E}.wem"
+     },
+     {
+      "Id": "855018348",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber.wav",
+      "CachePath": "3E/{3EFACFDF-1537-217E-B981-44C9F0FC8D65}.wem"
+     },
+     {
+      "Id": "913382289",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber.wav",
+      "CachePath": "F3/{F3F7FC00-15AD-8413-C45F-C65D72E1E767}.wem"
+     },
+     {
+      "Id": "923683508",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber.wav",
+      "CachePath": "47/{471F38FF-386A-3CDB-174D-44A0449C7545}.wem"
+     },
+     {
+      "Id": "953035216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Attack_PT1_$itemnumber.wav",
+      "CachePath": "81/{8136A3BD-516E-A16D-C875-BA71436E42E5}.wem"
+     },
+     {
+      "Id": "984212802",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber.wav",
+      "CachePath": "A0/{A00233A9-241A-B18A-7BF7-86AEB34279DC}.wem"
+     },
+     {
+      "Id": "1000645471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber.wav",
+      "CachePath": "6F/{6FEC6E8D-2EDD-B80E-E1F7-F6B92D70F316}.wem"
+     },
+     {
+      "Id": "1001334910",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber.wav",
+      "CachePath": "B7/{B7AE9619-B438-2404-FF40-3FFC9EE175BB}.wem"
+     },
+     {
+      "Id": "1046603937",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber.wav",
+      "CachePath": "BB/{BBFFD559-FFD8-99FC-022E-01338CD689B8}.wem"
+     },
+     {
+      "Id": "1046782730",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber.wav",
+      "CachePath": "D8/{D82EC422-88B6-0449-098B-192E45CDBEA9}.wem"
+     },
+     {
+      "Id": "1066925925",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber.wav",
+      "CachePath": "61/{6158B1E8-E347-F04E-65D3-D972FD97C147}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2505770584",
+      "Name": "Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber",
+      "GUID": "{C3BFD631-0238-47BC-9B6E-D64CA9186C59}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.7679021",
+      "DurationMax": "2.7679021",
+      "MediaRefs": [
+       {
+        "Id": "984212802"
+       }
+      ]
+     },
+     {
+      "Id": "69287139",
+      "Name": "Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber",
+      "GUID": "{C0DC81E6-EB1D-49EB-8B25-82B9A601F683}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.4051187",
+      "DurationMax": "2.4051187",
+      "MediaRefs": [
+       {
+        "Id": "646065622"
+       }
+      ]
+     },
+     {
+      "Id": "2375100894",
+      "Name": "Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber",
+      "GUID": "{DBBCB728-0875-4163-8595-FEF80304DD81}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.061477",
+      "DurationMax": "1.061477",
+      "MediaRefs": [
+       {
+        "Id": "1066925925"
+       }
+      ]
+     },
+     {
+      "Id": "349381281",
+      "Name": "Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber",
+      "GUID": "{77F4E35F-FA26-4D9C-8C47-55C318574A3B}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9549987",
+      "DurationMax": "1.9549987",
+      "MediaRefs": [
+       {
+        "Id": "613183029"
+       }
+      ]
+     },
+     {
+      "Id": "2350078742",
+      "Name": "Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber",
+      "GUID": "{9B3CDC14-5FD0-4523-8718-AC46B400C437}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7467343",
+      "DurationMax": "1.7467343",
+      "MediaRefs": [
+       {
+        "Id": "526768663"
+       }
+      ]
+     },
+     {
+      "Id": "1083529149",
+      "Name": "Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber",
+      "GUID": "{9F896C1D-F90B-48A9-BAB6-E9118B6F7D88}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6315115",
+      "DurationMax": "0.6315115",
+      "MediaRefs": [
+       {
+        "Id": "56192217"
+       }
+      ]
+     },
+     {
+      "Id": "415217232",
+      "Name": "Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber",
+      "GUID": "{DD8C8F1F-D52A-45B2-985E-59A79949768A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.80618495",
+      "DurationMax": "0.80618495",
+      "MediaRefs": [
+       {
+        "Id": "363963665"
+       }
+      ]
+     },
+     {
+      "Id": "4121344809",
+      "Name": "Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber",
+      "GUID": "{EFEE8813-3296-499E-848F-AA57F5C79790}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.49042907",
+      "DurationMax": "0.49042907",
+      "MediaRefs": [
+       {
+        "Id": "326625302"
+       }
+      ]
+     },
+     {
+      "Id": "3898489234",
+      "Name": "Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber",
+      "GUID": "{24B18B1A-3950-47FE-A08E-9B11060E00E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9146895",
+      "DurationMax": "1.9146895",
+      "MediaRefs": [
+       {
+        "Id": "1046782730"
+       }
+      ]
+     },
+     {
+      "Id": "659293366",
+      "Name": "Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber",
+      "GUID": "{3C89D609-8514-4877-8D5B-F5B1BDE73EEB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.45683804",
+      "DurationMax": "0.45683804",
+      "MediaRefs": [
+       {
+        "Id": "99092869"
+       }
+      ]
+     },
+     {
+      "Id": "3881681859",
+      "Name": "Play_Anneaux_Perseverence_Attack_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_Anneaux_Perseverence_Attack_PT1__itemnumber",
+      "GUID": "{528EA50E-5664-4C37-B55C-5DA9DC7DDC2F}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0356174",
+      "DurationMax": "2.0356174",
+      "MediaRefs": [
+       {
+        "Id": "953035216"
+       }
+      ]
+     },
+     {
+      "Id": "551889208",
+      "Name": "Play_Anneaux_Perseverence_Attack_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_Anneaux_Perseverence_Attack_PT2__itemnumber",
+      "GUID": "{2E1711D1-5145-4619-B19C-76C634F10DEA}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.4857373",
+      "DurationMax": "2.4857373",
+      "MediaRefs": [
+       {
+        "Id": "168642711"
+       }
+      ]
+     },
+     {
+      "Id": "680953922",
+      "Name": "Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Base\\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber",
+      "GUID": "{FBF4A4BB-A74C-4CF9-8536-6B29B663E296}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0681951",
+      "DurationMax": "1.0681951",
+      "MediaRefs": [
+       {
+        "Id": "570457252"
+       }
+      ]
+     },
+     {
+      "Id": "1175457881",
+      "Name": "Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Base\\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber",
+      "GUID": "{840BC1D7-6755-4424-B8EB-CCDED985834F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.20826429",
+      "DurationMax": "0.20826429",
+      "MediaRefs": [
+       {
+        "Id": "1046603937"
+       }
+      ]
+     },
+     {
+      "Id": "864848364",
+      "Name": "Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Base\\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber",
+      "GUID": "{ED15A27F-2EE2-45A4-B5B2-486B57954F95}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.49042907",
+      "DurationMax": "0.49042907",
+      "MediaRefs": [
+       {
+        "Id": "913382289"
+       }
+      ]
+     },
+     {
+      "Id": "4083119323",
+      "Name": "Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Base\\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber",
+      "GUID": "{A56831D4-C9B4-4139-81A0-D736A92467DE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5777658",
+      "DurationMax": "0.5777658",
+      "MediaRefs": [
+       {
+        "Id": "182449704"
+       }
+      ]
+     },
+     {
+      "Id": "831071958",
+      "Name": "Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Base\\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber",
+      "GUID": "{8A19C616-2E80-4610-BF82-B3E224680FBE}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2092775",
+      "DurationMax": "1.2092775",
+      "MediaRefs": [
+       {
+        "Id": "764642898"
+       }
+      ]
+     },
+     {
+      "Id": "1106791576",
+      "Name": "Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber",
+      "GUID": "{94E56C48-6765-4C4E-AD57-214F3D133687}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.7420425",
+      "DurationMax": "3.7420425",
+      "MediaRefs": [
+       {
+        "Id": "544681391"
+       }
+      ]
+     },
+     {
+      "Id": "1192075387",
+      "Name": "Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber",
+      "GUID": "{B7F8DF0E-EEA0-417C-8A6B-9BFA9D668F6B}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.734311",
+      "DurationMax": "2.734311",
+      "MediaRefs": [
+       {
+        "Id": "556804157"
+       }
+      ]
+     },
+     {
+      "Id": "77499785",
+      "Name": "Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Actif\\Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber",
+      "GUID": "{F1DF405B-26C3-4E3A-BE4C-1A9A7E4CA6D4}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6997068",
+      "DurationMax": "1.6997068",
+      "MediaRefs": [
+       {
+        "Id": "328737962"
+       }
+      ]
+     },
+     {
+      "Id": "1894354718",
+      "Name": "Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber",
+      "GUID": "{80C3BBCC-26B1-4235-ACF7-85BC47776AB2}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0221808",
+      "DurationMax": "2.0221808",
+      "MediaRefs": [
+       {
+        "Id": "807504013"
+       }
+      ]
+     },
+     {
+      "Id": "3515088067",
+      "Name": "Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber",
+      "GUID": "{F265CC15-D11C-4EDF-8FAE-305FBB2E4ED1}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.8350842",
+      "DurationMax": "2.8350842",
+      "MediaRefs": [
+       {
+        "Id": "923683508"
+       }
+      ]
+     },
+     {
+      "Id": "3461245946",
+      "Name": "Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber",
+      "GUID": "{7C48766A-BF23-4DD9-95C3-8750175AC6C7}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.9301524",
+      "DurationMax": "3.9301524",
+      "MediaRefs": [
+       {
+        "Id": "1000645471"
+       }
+      ]
+     },
+     {
+      "Id": "3190605359",
+      "Name": "Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber",
+      "GUID": "{A0F14EC6-CA62-49DD-8207-E64DFAEC7C9E}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.850547",
+      "DurationMax": "4.850547",
+      "MediaRefs": [
+       {
+        "Id": "855018348"
+       }
+      ]
+     },
+     {
+      "Id": "4271747987",
+      "Name": "Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Attack\\Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber",
+      "GUID": "{83C25C3F-6737-4363-99CA-AE87FADBAA12}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.7679021",
+      "DurationMax": "2.7679021",
+      "MediaRefs": [
+       {
+        "Id": "1001334910"
+       }
+      ]
+     },
+     {
+      "Id": "952051097",
+      "Name": "Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Perseverence\\Base\\Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber",
+      "GUID": "{749CDDE9-CBB1-4D17-B1E2-C8A65A1C9EEC}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3302053",
+      "DurationMax": "1.3302053",
+      "MediaRefs": [
+       {
+        "Id": "798338781"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1D9D8051-D800-EA6C-D0AA-4609C8649C8D}"
+ }
+}
