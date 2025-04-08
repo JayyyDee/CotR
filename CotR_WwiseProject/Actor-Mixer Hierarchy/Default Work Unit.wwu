@@ -2659,8 +2659,8 @@
 											<ChildrenList>
 												<AudioFileSource Name="FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber" ID="{D5D2A5D1-5B8B-4683-9F41-4158EA2513E7}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.34646561543068"/>
 														<Property Name="TrimEnd" Type="Real64" Value="2.76790211628565"/>
 													</PropertyList>
 													<Language>SFX</Language>
