@@ -701,6 +701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   readyButton: {fileID: 661429238}
   roomCode: {fileID: 927813262}
+  differentSprite: {fileID: -6226665981680759704, guid: 3316aabd5dd7e2743ad1214e35350560, type: 3}
 --- !u!1 &1365124078
 GameObject:
   m_ObjectHideFlags: 0

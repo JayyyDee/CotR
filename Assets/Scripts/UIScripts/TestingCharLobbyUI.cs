@@ -8,14 +8,19 @@ public class TestingCharLobbyUI : MonoBehaviour
 {
     [SerializeField] private Button readyButton;
     [SerializeField] public TextMeshProUGUI roomCode;
+    [SerializeField] public Sprite differentSprite;
+    private Image spriteRenderer;
+
+    private void Start() {
+        spriteRenderer = gameObject.GetComponent<Image>();
+    }
 
     private void Awake() {
         readyButton.onClick.AddListener(() =>
         {
             CharacterLobbyReady.Instance.SetPlayerReady();
+            spriteRenderer.sprite = differentSprite;
         });
-
-        //roomCode.text = GameMultiplayer.Instance.GetRoomCode().ToString();
     }
 
     private void Update() {
