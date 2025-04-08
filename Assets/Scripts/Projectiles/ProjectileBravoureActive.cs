@@ -10,6 +10,7 @@ public class ProjectileBravoureActive : NetworkBehaviour
     public GameObject player;
     private void Start()
     {
+        AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber", this.gameObject);
         Destroy(gameObject, deathTimer);
 
     }

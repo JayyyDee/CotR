@@ -92,7 +92,8 @@ public class RingBravoure : Ring
         canFire = false;
 
         playerCharacter.GetComponent<ProjectileBravoure>().Shoot();
-        
+        AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber", this.gameObject);
+
     }
 
     public override void Active()

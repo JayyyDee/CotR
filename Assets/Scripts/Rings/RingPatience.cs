@@ -110,7 +110,8 @@ public class RingPatience : Ring
         GameObject bullet = Instantiate(bulletPrefab,spawnPoint, Quaternion.identity);
         bullet.GetComponent<ZonePatience>().player = playerCharacter;
         zones.Enqueue(bullet);
-        if(zones.Count > 3)
+        AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber", this.gameObject);
+        if (zones.Count > 3)
         {
             Destroy(zones.Dequeue(),0);
         }
@@ -120,7 +121,8 @@ public class RingPatience : Ring
 
     public override void Active()
     {
-        foreach(GameObject zone in zones)
+        AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber", this.gameObject);
+        foreach (GameObject zone in zones)
         {
             zone.GetComponent<ZonePatience>().Detonate();
         }
