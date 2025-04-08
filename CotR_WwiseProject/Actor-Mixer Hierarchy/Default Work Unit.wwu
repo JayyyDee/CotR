@@ -99,6 +99,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Anneaux_Passion_Anneaux_Passion_Attack_Pt1_$itemnumber" ID="{BA030E96-82A9-4091-9087-317C7F29DDB4}" ShortID="51267732">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
@@ -126,6 +133,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Anneaux_Passion_Anneaux_Passion_Attack_Pt2_$itemnumber" ID="{8CF1F7B2-72FF-4D74-96DA-23A93BDB5E5B}" ShortID="187423287">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
@@ -569,6 +583,13 @@
 								<Folder Name="Actif" ID="{B899E9A7-A621-47F4-8F83-4E758E1671D1}" ShortID="1066653619">
 									<ChildrenList>
 										<Sound Name="FULL_Anneaux_Intrépidité_Actif_Full_$itemnumber" ID="{9F217206-3EA2-4D18-9259-54BF15A499CA}" ShortID="958568196">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
@@ -938,6 +959,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Anneaux_Intrépidité_Attack_Throw_TYPE1_$itemnumber" ID="{72100632-5724-42FF-B2A9-3B9850E68CB7}" ShortID="466340001">
+													<PropertyList>
+														<Property Name="OutputBusVolume" Type="Real64">
+															<ValueList>
+																<Value>-15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
@@ -1744,6 +1772,906 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="FULL_Anneaux_Patience_Equipe_FULL_$itemnumber" ID="{194FA553-9FF9-458D-A622-FC3D7D5AE86F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Perseverance" ID="{7373CD68-3FE5-4DC2-BACE-150AF1DE8AA3}" ShortID="413991861">
+							<ChildrenList>
+								<Folder Name="Base" ID="{3B4AFE3A-5505-4058-8E0D-1C25BB2D9BB9}" ShortID="127072683">
+									<ChildrenList>
+										<Sound Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber" ID="{699A6BC8-9E39-4C3C-BEC7-3C23E11A933C}" ShortID="804930247">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber" ID="{528AF583-5368-4C25-8FB6-37C01A43D36D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.06819510457815"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="570457252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber" ID="{528AF583-5368-4C25-8FB6-37C01A43D36D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber" ID="{FDA9C493-D6D3-4BEC-8F07-C06FAEFF328D}" ShortID="637694809">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber" ID="{71792BED-1B05-4793-B4DF-71FEF2A3558E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.208264284425746"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1046603937"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber" ID="{71792BED-1B05-4793-B4DF-71FEF2A3558E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber" ID="{35C9E11A-D1D7-4FB6-86F3-CC1EAC83FA19}" ShortID="201971932">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber" ID="{43331F87-1E66-457E-BADB-BC3289122946}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.490429084788254"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="913382289"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber" ID="{43331F87-1E66-457E-BADB-BC3289122946}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber" ID="{46BBBAE3-79BA-4235-A9F3-389159104FB8}" ShortID="588986159">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber" ID="{9A4F1CAB-72C2-464C-9348-2D8CF4EE7B65}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.577765808709982"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182449704"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber" ID="{9A4F1CAB-72C2-464C-9348-2D8CF4EE7B65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber" ID="{0B580F83-12CE-4C02-8356-12009ED00974}" ShortID="218925372">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber" ID="{5893768D-C4B1-435B-ABC7-62AD2090E736}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.20927750475941"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="764642898"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber" ID="{5893768D-C4B1-435B-ABC7-62AD2090E736}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber" ID="{B779039D-5FF7-42F4-B5FB-BE7D031CACD0}" ShortID="452484364">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber" ID="{B8BD5C61-5975-494A-9123-9A7080B2B08D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.33020527634334"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="798338781"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber" ID="{B8BD5C61-5975-494A-9123-9A7080B2B08D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Actif" ID="{BE8D5FA0-98E4-4CE5-B5A4-FFF50EFB837B}" ShortID="126004270">
+									<ChildrenList>
+										<Sound Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber" ID="{0AD52B44-AAB1-4597-BF86-A8C85C7B83AB}" ShortID="332362665">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber" ID="{3E4A0AF9-51E0-4D31-925D-5E6507C71B2D}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.76790211628565"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="984212802"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber" ID="{3E4A0AF9-51E0-4D31-925D-5E6507C71B2D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber" ID="{481ED7D7-AD78-4473-BB86-DAE7157BAD97}" ShortID="543256754">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber" ID="{824D2F88-0A1E-4C2C-89DA-AAB98AB2E463}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.40511880153385"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="646065622"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber" ID="{824D2F88-0A1E-4C2C-89DA-AAB98AB2E463}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber" ID="{5B16F58A-0922-481F-9A03-0A55C8E8DF8B}" ShortID="9247132">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber" ID="{281C5B7B-C844-4E6B-B923-618CF4193D49}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.06147689504571"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1066925925"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber" ID="{281C5B7B-C844-4E6B-B923-618CF4193D49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber" ID="{EFF25604-9D23-41EA-995C-0821C0B3226F}" ShortID="364786694">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber" ID="{3011E757-5233-4494-9514-6E73BE43BD9B}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.95499876286033"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="613183029"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber" ID="{3011E757-5233-4494-9514-6E73BE43BD9B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber" ID="{8E88D8BB-9861-4F09-B028-58E37EE6AEBB}" ShortID="655721955">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber" ID="{6F97F895-7E1F-4425-B452-F63E36A79B06}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.74673426735467"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="526768663"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber" ID="{6F97F895-7E1F-4425-B452-F63E36A79B06}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber" ID="{F19BAE68-177D-45A6-A8CA-953DA8DB24AE}" ShortID="517448233">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber" ID="{DD609E37-7F6C-40C6-A86F-DA5250D890C4}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.631511484969507"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="56192217"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber" ID="{DD609E37-7F6C-40C6-A86F-DA5250D890C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber" ID="{CE3FB866-7041-4242-8234-84114B67FF52}" ShortID="36950995">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber" ID="{BB89759D-DB0A-48F0-B69B-8437A2E016F6}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.806184932812967"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="363963665"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber" ID="{BB89759D-DB0A-48F0-B69B-8437A2E016F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber" ID="{88D3E922-A548-4CD2-A4E2-86C7A0ED8989}" ShortID="60940596">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber" ID="{C6221FD6-3599-4FCD-B115-BDC96C85B26E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.74204249848955"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="544681391"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber" ID="{C6221FD6-3599-4FCD-B115-BDC96C85B26E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber" ID="{B6578B43-E759-4359-8AF6-6FD6EA56130D}" ShortID="370360602">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber" ID="{E18BF8C0-4DBA-49D0-B166-D2B487E6612B}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.73431106862344"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="556804157"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber" ID="{E18BF8C0-4DBA-49D0-B166-D2B487E6612B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber" ID="{CCF3520E-6B4A-4DD3-A645-B2B2EB7CC528}" ShortID="86260468">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber" ID="{CECD51ED-A421-4B6E-9992-1D4EF76D7B3E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.69970680062758"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="328737962"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber" ID="{CECD51ED-A421-4B6E-9992-1D4EF76D7B3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Attack" ID="{676C30D7-5ED3-4E86-9677-E19D7F24E5AB}" ShortID="883822476">
+									<ChildrenList>
+										<Sound Name="Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber" ID="{5425A4D8-C2FA-4ADC-86CD-2E606C5B56F3}" ShortID="744492536">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber" ID="{748DC80F-E6D5-4545-84FB-D90202F05C4E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.490429084788252"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="326625302"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber" ID="{748DC80F-E6D5-4545-84FB-D90202F05C4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber" ID="{0621A3EB-19BA-4941-B25A-174A3C1F3614}" ShortID="359959571">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber" ID="{5FFAF1AC-F823-463E-8E72-88F7C63E49AB}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.91468950566568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1046782730"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber" ID="{5FFAF1AC-F823-463E-8E72-88F7C63E49AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber" ID="{A308167C-D44E-4179-B9C0-C8E9B2BCEA90}" ShortID="4575306">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber" ID="{54C1A0CC-129D-485D-9733-C053E371EE88}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.45683803712605"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="99092869"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber" ID="{54C1A0CC-129D-485D-9733-C053E371EE88}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Attack_PT1_$itemnumber" ID="{06557C33-AE63-4802-9700-66256D81F39C}" ShortID="268777360">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Attack_PT1_$itemnumber" ID="{C5F4E695-6039-434D-9FE2-E9CD58506D53}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.03561727724961"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Attack_PT1_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="953035216"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Attack_PT1_$itemnumber" ID="{C5F4E695-6039-434D-9FE2-E9CD58506D53}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Anneaux_Perseverence_Attack_PT2_$itemnumber" ID="{DADEBA30-032E-4E7A-94B7-89C8EB41F59F}" ShortID="973758841">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Anneaux_Perseverence_Attack_PT2_$itemnumber" ID="{E7905F14-CDEB-4CA7-8BEC-52DCDA2E13D3}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.48573731592314"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Anneaux_Perseverence_Attack_PT2_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="168642711"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Anneaux_Perseverence_Attack_PT2_$itemnumber" ID="{E7905F14-CDEB-4CA7-8BEC-52DCDA2E13D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber" ID="{150AFC1F-6B75-4B4F-8AF4-AF71C81658E5}" ShortID="782548877">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber" ID="{F1C57B2C-64D6-429B-AF6C-7F7417E9A9BC}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.02218085818474"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="807504013"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber" ID="{F1C57B2C-64D6-429B-AF6C-7F7417E9A9BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber" ID="{3666D0A3-3C62-48C8-87A9-5C99A8517290}" ShortID="546265209">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber" ID="{F95222DA-3C10-4D31-A874-EE361AC830E8}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.83508421161005"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="923683508"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber" ID="{F95222DA-3C10-4D31-A874-EE361AC830E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber" ID="{3B02AEA4-5405-4E4E-A9FB-BB08C4477F7B}" ShortID="804926038">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber" ID="{D3C64748-55C8-4249-97A9-287D122DCF8F}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.93015236539789"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1000645471"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber" ID="{D3C64748-55C8-4249-97A9-287D122DCF8F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber" ID="{5C8E4165-4EE1-4D02-8F37-04DFDAF5F440}" ShortID="610876613">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber" ID="{4D9A1789-C5F1-4190-A924-922DEE561C5A}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.85054707134226"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="855018348"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber" ID="{4D9A1789-C5F1-4190-A924-922DEE561C5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber" ID="{3F51CA93-C662-4E82-83D2-0CBA70B10273}" ShortID="686834889">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber" ID="{D5D2A5D1-5B8B-4683-9F41-4158EA2513E7}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.76790211628565"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1001334910"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber" ID="{D5D2A5D1-5B8B-4683-9F41-4158EA2513E7}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

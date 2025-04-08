@@ -113,6 +113,38 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="SoundBank_Anneaux_Perseverence" ID="{D98C4F86-ED3D-4DCB-896E-B40C1EDB8F13}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber" ID="{A56831D4-C9B4-4139-81A0-D736A92467DE}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber" ID="{DBBCB728-0875-4163-8595-FEF80304DD81}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber" ID="{B7F8DF0E-EEA0-417C-8A6B-9BFA9D668F6B}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber" ID="{80C3BBCC-26B1-4235-ACF7-85BC47776AB2}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber" ID="{83C25C3F-6737-4363-99CA-AE87FADBAA12}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber" ID="{840BC1D7-6755-4424-B8EB-CCDED985834F}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber" ID="{9B3CDC14-5FD0-4523-8718-AC46B400C437}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber" ID="{ED15A27F-2EE2-45A4-B5B2-486B57954F95}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber" ID="{DD8C8F1F-D52A-45B2-985E-59A79949768A}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber" ID="{8A19C616-2E80-4610-BF82-B3E224680FBE}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Attack_PT2__itemnumber" ID="{2E1711D1-5145-4619-B19C-76C634F10DEA}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber" ID="{C3BFD631-0238-47BC-9B6E-D64CA9186C59}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber" ID="{24B18B1A-3950-47FE-A08E-9B11060E00E7}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber" ID="{3C89D609-8514-4877-8D5B-F5B1BDE73EEB}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber" ID="{9F896C1D-F90B-48A9-BAB6-E9118B6F7D88}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber" ID="{EFEE8813-3296-499E-848F-AA57F5C79790}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber" ID="{A0F14EC6-CA62-49DD-8207-E64DFAEC7C9E}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber" ID="{C0DC81E6-EB1D-49EB-8B25-82B9A601F683}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Attack_PT1__itemnumber" ID="{528EA50E-5664-4C37-B55C-5DA9DC7DDC2F}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber" ID="{94E56C48-6765-4C4E-AD57-214F3D133687}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber" ID="{FBF4A4BB-A74C-4CF9-8536-6B29B663E296}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber" ID="{749CDDE9-CBB1-4D17-B1E2-C8A65A1C9EEC}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber" ID="{77F4E35F-FA26-4D9C-8C47-55C318574A3B}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber" ID="{7C48766A-BF23-4DD9-95C3-8750175AC6C7}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber" ID="{F1DF405B-26C3-4E3A-BE4C-1A9A7E4CA6D4}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber" ID="{F265CC15-D11C-4EDF-8FAE-305FBB2E4ED1}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

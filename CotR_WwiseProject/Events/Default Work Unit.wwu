@@ -779,6 +779,308 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Perseverence" ID="{F2E7C04A-0DE0-4702-BF50-A09D9F447DF0}" ShortID="314515605">
+							<ChildrenList>
+								<Folder Name="Base" ID="{C4D4C726-DAA2-4C80-B22D-BC935A1A074E}" ShortID="477686108">
+									<ChildrenList>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber" ID="{749CDDE9-CBB1-4D17-B1E2-C8A65A1C9EEC}">
+											<ChildrenList>
+												<Action Name="" ID="{CDF3092B-2F66-46E9-92AB-C2F233BBF31B}" ShortID="80338935">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber" ID="{B779039D-5FF7-42F4-B5FB-BE7D031CACD0}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber" ID="{840BC1D7-6755-4424-B8EB-CCDED985834F}">
+											<ChildrenList>
+												<Action Name="" ID="{BF8DB154-2B88-4129-B455-540FA4039336}" ShortID="965473921">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber" ID="{FDA9C493-D6D3-4BEC-8F07-C06FAEFF328D}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber" ID="{8A19C616-2E80-4610-BF82-B3E224680FBE}">
+											<ChildrenList>
+												<Action Name="" ID="{6F20737B-BC02-4DD7-AAA5-7DF9C92CB0FF}" ShortID="78526638">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber" ID="{0B580F83-12CE-4C02-8356-12009ED00974}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber" ID="{FBF4A4BB-A74C-4CF9-8536-6B29B663E296}">
+											<ChildrenList>
+												<Action Name="" ID="{83609C8B-3926-4396-A7D2-7F0BD3F7ED9D}" ShortID="380722440">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber" ID="{699A6BC8-9E39-4C3C-BEC7-3C23E11A933C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber" ID="{ED15A27F-2EE2-45A4-B5B2-486B57954F95}">
+											<ChildrenList>
+												<Action Name="" ID="{83E594E1-68F8-467D-B488-2D0B058F44EF}" ShortID="455886379">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber" ID="{35C9E11A-D1D7-4FB6-86F3-CC1EAC83FA19}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber" ID="{A56831D4-C9B4-4139-81A0-D736A92467DE}">
+											<ChildrenList>
+												<Action Name="" ID="{558A0EC3-0206-42D2-B10E-60C59CB8B3B4}" ShortID="123623618">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber" ID="{46BBBAE3-79BA-4235-A9F3-389159104FB8}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Actif" ID="{509B7CF6-6B70-40E2-AD14-E125F166FFF5}" ShortID="50399544">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber" ID="{C0DC81E6-EB1D-49EB-8B25-82B9A601F683}">
+											<ChildrenList>
+												<Action Name="" ID="{9CD0F4E5-2E72-4A62-86C2-17A6837A9488}" ShortID="1041204994">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber" ID="{481ED7D7-AD78-4473-BB86-DAE7157BAD97}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber" ID="{9F896C1D-F90B-48A9-BAB6-E9118B6F7D88}">
+											<ChildrenList>
+												<Action Name="" ID="{DAEC3A54-2186-4E3D-8731-5924F8E37A27}" ShortID="28330238">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber" ID="{F19BAE68-177D-45A6-A8CA-953DA8DB24AE}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber" ID="{9B3CDC14-5FD0-4523-8718-AC46B400C437}">
+											<ChildrenList>
+												<Action Name="" ID="{CE159D9D-1A0D-4817-8032-5908BB2633CA}" ShortID="843109659">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber" ID="{8E88D8BB-9861-4F09-B028-58E37EE6AEBB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber" ID="{C3BFD631-0238-47BC-9B6E-D64CA9186C59}">
+											<ChildrenList>
+												<Action Name="" ID="{E00F4D7A-90B3-436D-B773-01DA0206C2E1}" ShortID="929137051">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber" ID="{0AD52B44-AAB1-4597-BF86-A8C85C7B83AB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber" ID="{DBBCB728-0875-4163-8595-FEF80304DD81}">
+											<ChildrenList>
+												<Action Name="" ID="{37045249-18E1-4DD0-BF04-BF5762E3694B}" ShortID="169131219">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber" ID="{5B16F58A-0922-481F-9A03-0A55C8E8DF8B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber" ID="{77F4E35F-FA26-4D9C-8C47-55C318574A3B}">
+											<ChildrenList>
+												<Action Name="" ID="{C7EB9BB5-422B-4FFF-B59E-89FADF813F75}" ShortID="519777437">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber" ID="{EFF25604-9D23-41EA-995C-0821C0B3226F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber" ID="{DD8C8F1F-D52A-45B2-985E-59A79949768A}">
+											<ChildrenList>
+												<Action Name="" ID="{E79EF3ED-E490-431E-82F9-E2CE680D7919}" ShortID="868976494">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber" ID="{CE3FB866-7041-4242-8234-84114B67FF52}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber" ID="{B7F8DF0E-EEA0-417C-8A6B-9BFA9D668F6B}">
+											<ChildrenList>
+												<Action Name="" ID="{0114F3B7-1406-4E5C-9DAD-FA3E9A1B6CF1}" ShortID="284560108">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber" ID="{B6578B43-E759-4359-8AF6-6FD6EA56130D}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber" ID="{94E56C48-6765-4C4E-AD57-214F3D133687}">
+											<ChildrenList>
+												<Action Name="" ID="{0AC34266-7BA9-4B21-9624-D6A428C091E9}" ShortID="907333487">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber" ID="{88D3E922-A548-4CD2-A4E2-86C7A0ED8989}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber" ID="{F1DF405B-26C3-4E3A-BE4C-1A9A7E4CA6D4}">
+											<ChildrenList>
+												<Action Name="" ID="{37E5BF2D-C620-4D86-83B3-33D8111896FB}" ShortID="1017826589">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber" ID="{CCF3520E-6B4A-4DD3-A645-B2B2EB7CC528}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Attack" ID="{87DBC3A4-3C4F-4F5B-AA5B-3815582FC5B4}" ShortID="480745422">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber" ID="{24B18B1A-3950-47FE-A08E-9B11060E00E7}">
+											<ChildrenList>
+												<Action Name="" ID="{16EAE79E-C328-4626-8ACB-B2FE2C088E1F}" ShortID="372656685">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber" ID="{0621A3EB-19BA-4941-B25A-174A3C1F3614}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber" ID="{3C89D609-8514-4877-8D5B-F5B1BDE73EEB}">
+											<ChildrenList>
+												<Action Name="" ID="{47D58415-3EDB-42A5-96BA-0EB40CE3605B}" ShortID="623025012">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber" ID="{A308167C-D44E-4179-B9C0-C8E9B2BCEA90}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber" ID="{F265CC15-D11C-4EDF-8FAE-305FBB2E4ED1}">
+											<ChildrenList>
+												<Action Name="" ID="{7EE878A6-135C-43E2-A9E6-8DB202168BD5}" ShortID="613826869">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber" ID="{3666D0A3-3C62-48C8-87A9-5C99A8517290}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber" ID="{EFEE8813-3296-499E-848F-AA57F5C79790}">
+											<ChildrenList>
+												<Action Name="" ID="{C8675A1F-A84C-46D3-880B-2EF9F75A6A72}" ShortID="674259949">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber" ID="{5425A4D8-C2FA-4ADC-86CD-2E606C5B56F3}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Attack_PT2__itemnumber" ID="{2E1711D1-5145-4619-B19C-76C634F10DEA}">
+											<ChildrenList>
+												<Action Name="" ID="{DE1089FA-FFBB-4850-9670-3EE80714E8DD}" ShortID="312823245">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Attack_PT2_$itemnumber" ID="{DADEBA30-032E-4E7A-94B7-89C8EB41F59F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber" ID="{7C48766A-BF23-4DD9-95C3-8750175AC6C7}">
+											<ChildrenList>
+												<Action Name="" ID="{07C816F8-1ABD-497A-B90F-C084DF2F029D}" ShortID="151951787">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber" ID="{3B02AEA4-5405-4E4E-A9FB-BB08C4477F7B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber" ID="{A0F14EC6-CA62-49DD-8207-E64DFAEC7C9E}">
+											<ChildrenList>
+												<Action Name="" ID="{32B9C256-675A-4859-9D1E-EC12E4D90D7C}" ShortID="597172813">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber" ID="{5C8E4165-4EE1-4D02-8F37-04DFDAF5F440}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber" ID="{80C3BBCC-26B1-4235-ACF7-85BC47776AB2}">
+											<ChildrenList>
+												<Action Name="" ID="{EAE663BA-A780-4A5C-A704-BD2CC691F50F}" ShortID="15382210">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber" ID="{150AFC1F-6B75-4B4F-8AF4-AF71C81658E5}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Perseverence_Attack_PT1__itemnumber" ID="{528EA50E-5664-4C37-B55C-5DA9DC7DDC2F}">
+											<ChildrenList>
+												<Action Name="" ID="{1D9A0321-EE27-44DF-A0A4-6B33C17C88FD}" ShortID="508211122">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Perseverence_Attack_PT1_$itemnumber" ID="{06557C33-AE63-4802-9700-66256D81F39C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber" ID="{83C25C3F-6737-4363-99CA-AE87FADBAA12}">
+											<ChildrenList>
+												<Action Name="" ID="{EEC614D4-68AE-4724-BB28-2B80DF6F9D4F}" ShortID="92317876">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber" ID="{3F51CA93-C662-4E82-83D2-0CBA70B10273}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Musique" ID="{98A1DA84-849A-43D9-B36A-B035A0C6BC08}" ShortID="690835885">
