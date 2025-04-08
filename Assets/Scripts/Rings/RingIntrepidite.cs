@@ -84,6 +84,7 @@ public class RingIntrepidite : Ring
     {
         for (int i = 0; i < 3; i++)
         {
+            AkUnitySoundEngine.PostEvent("Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber", this.gameObject);
             GameObject bullet = Instantiate(bulletPrefab, pos, rot);
             bullet.GetComponent<NetworkObject>().Spawn();
             yield return new WaitForSeconds(0.05f);
@@ -93,6 +94,7 @@ public class RingIntrepidite : Ring
     public override void Active()
     {
         canActive = false;
+        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber", this.gameObject);
         Vector2 forceDirection = (playerCharacter.GetComponent<Rigidbody2D>().velocity).normalized;
         playerCharacter.GetComponent<Rigidbody2D>().AddForce(forceDirection*dashDistance);
     }

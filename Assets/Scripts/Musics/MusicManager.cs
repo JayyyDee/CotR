@@ -21,7 +21,6 @@ public class MusicManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Start()
@@ -51,7 +50,7 @@ public class MusicManager : MonoBehaviour
             //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
             //    break;
             default:
-                SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
+                //SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
                 break;
         }
     }

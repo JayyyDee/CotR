@@ -75,27 +75,27 @@ public class GameManager : NetworkBehaviour {
                 gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber");
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
-                //gameObject.GetComponent<MusicManager>().SwitchMusic("");
                 countdownToStartTimer.Value -= Time.deltaTime;
                 if (countdownToStartTimer.Value < 0f) {
                     state.Value = State.GemCountdown;
                 }
+                gameObject.GetComponent<MusicManager>().SwitchMusic("");
                 break;
             case State.GemCountdown: //When the countdown finished, switch to game playing
-                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 gemCountdownTimer.Value -= Time.deltaTime;
                 if (gemCountdownTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
                 }
                 break;
             case State.GamePlaying://When the gem is no longer active finished, switch to gem taken state
-                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 if (gem.activeSelf == false) {
                     state.Value = State.GemTaken;
                 }
                 break;
             case State.GemTaken:
-                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 gemTakenTimer.Value -= Time.deltaTime;
                 if (gemTakenTimer.Value < 0f) {
                     state.Value = State.GameOver;
