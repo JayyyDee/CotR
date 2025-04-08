@@ -38,20 +38,20 @@ public class MusicManager : MonoBehaviour
     {
         switch (sceneName)
         {
-            case "MainMenuScene": //Scene1
-                SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-                break;
-            case "LoadingScene": //Scene2
-                SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-                break;
-            case "LobbyScene": //Scene3
-                SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-                break;
-            case "CharacterLobbyScene": //Scene4
-                SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-                break;
+            //case "MainMenuScene": //Scene1
+            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
+            //    break;
+            //case "LoadingScene": //Scene2
+            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
+            //    break;
+            //case "LobbyScene": //Scene3
+            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
+            //    break;
+            //case "CharacterLobbyScene": //Scene4
+            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
+            //    break;
             default:
-                // Tu peux ajouter un event de musique par défaut si nécessaire
+                SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
                 break;
         }
     }

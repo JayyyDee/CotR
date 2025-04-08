@@ -75,6 +75,7 @@ public class GameManager : NetworkBehaviour {
                 gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber");
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
+                //gameObject.GetComponent<MusicManager>().SwitchMusic("");
                 countdownToStartTimer.Value -= Time.deltaTime;
                 if (countdownToStartTimer.Value < 0f) {
                     state.Value = State.GemCountdown;
@@ -105,6 +106,7 @@ public class GameManager : NetworkBehaviour {
                 }
                 break;
             case State.GameOver:
+                //gameObject.GetComponent<MusicManager>().SwitchMusic("");
                 break;
         }
         //Debug.Log(state);
