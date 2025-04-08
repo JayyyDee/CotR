@@ -82,6 +82,7 @@ public class RingPassion : Ring
 
         bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+        AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber", this.gameObject);
         if (activeBoost)
         {
             bullet.GetComponent<SpriteRenderer>().color = new Color(1.00f, 0.65f, 0.00f);
@@ -117,6 +118,7 @@ public class RingPassion : Ring
     {
         activeBoost = true;
         canActive = false;
+        AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber", this.gameObject);
     }
 
     public override void Passive()

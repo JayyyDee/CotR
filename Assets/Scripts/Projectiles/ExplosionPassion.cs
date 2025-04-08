@@ -8,6 +8,7 @@ public class ExplosionPassion : MonoBehaviour
     public int damage;
     private void Start()
     {
+        AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber", this.gameObject);
         Destroy(gameObject, 0.1f);
     }
     private void OnTriggerEnter2D(Collider2D collider)
