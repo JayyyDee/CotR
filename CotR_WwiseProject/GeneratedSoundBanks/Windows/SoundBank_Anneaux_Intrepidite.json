@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{8CD35138-13F2-4AE5-81F7-83B689CEC6A2}",
     "Language": "SFX",
-    "Hash": "{1DC7C7C7-5A11-9500-27AB-D74C3BF4FF0B}",
+    "Hash": "{56CF5CA1-07B2-8BE7-1BBD-1453FB36CB7A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Intrepidite",
     "ShortName": "SoundBank_Anneaux_Intrepidite",
     "Path": "SoundBank_Anneaux_Intrepidite.bnk",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Intrépidité_Actif_Full_$itemnumber.wav",
-      "CachePath": "92/{92C51CF7-4891-27C5-BF5F-201BC23F7132}.wem"
+      "CachePath": "37/{3741A7FE-914D-CE97-64D1-D270EBB6CF51}.wem"
      },
      {
       "Id": "987761691",
@@ -511,8 +511,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Intrépidité\\Actif\\Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber",
       "GUID": "{4AB6C130-E80B-4C07-92D4-0B15CA3B5D91}",
       "DurationType": "OneShot",
-      "DurationMin": "1.8771765",
-      "DurationMax": "1.8771765",
+      "DurationMin": "1.6134174",
+      "DurationMax": "1.6134174",
       "MediaRefs": [
        {
         "Id": "981243878"
@@ -562,6 +562,6 @@
     ]
    }
   ],
-  "FileHash": "{3D57B64A-E748-3C10-4624-551AA113AD34}"
+  "FileHash": "{DF7C7A1B-0B81-96A4-A6B7-236DD9791503}"
  }
 }

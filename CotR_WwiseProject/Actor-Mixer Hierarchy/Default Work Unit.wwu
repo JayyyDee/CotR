@@ -580,8 +580,8 @@
 											<ChildrenList>
 												<AudioFileSource Name="FULL_Anneaux_Intrépidité_Actif_Full_$itemnumber" ID="{626AE3F7-A8B6-4EFB-8422-E0B182EED781}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.263759024841673"/>
 														<Property Name="TrimEnd" Type="Real64" Value="1.8771764651539"/>
 													</PropertyList>
 													<Language>SFX</Language>

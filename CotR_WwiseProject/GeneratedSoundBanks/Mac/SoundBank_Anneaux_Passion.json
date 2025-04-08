@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D0909FAA-8146-4687-8C75-F2D5950BF49E}",
     "Language": "SFX",
-    "Hash": "{CDF8AAF3-7EE9-BF35-EAC3-B375BCACBBCF}",
+    "Hash": "{5656E6AC-45D5-3C2D-4036-C4D75A82EEB8}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Passion",
     "ShortName": "SoundBank_Anneaux_Passion",
     "Path": "SoundBank_Anneaux_Passion.bnk",
@@ -152,6 +152,6 @@
     ]
    }
   ],
-  "FileHash": "{2468C65D-0773-8250-9BD6-214C46C19FB2}"
+  "FileHash": "{F0630E26-62F4-BC9A-1B8E-3FF706E76213}"
  }
 }
