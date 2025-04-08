@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 04dbe3dc954cf04999c0f4a2686209f5
     GuidInternal: 
-    m_lastTime: -8584581509706556569
+    m_lastTime: -8584575308047529502
     List:
     - name: SoundBank_Anneaux_Bravoure
       guid: facc219f29c47846a406c19cff76994a
@@ -124,6 +124,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 5d1db7c170fb584f91db2b0bfcdaedd0
       Path: SoundBanks\Default Work Unit\SoundBank_Anneaux_Patience
+    - name: SoundBank_Anneaux_Perseverence
+      guid: 864f8cd93dedcb4d896eb40c1edb8f13
+      id: 381671057
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 04dbe3dc954cf04999c0f4a2686209f5
+      - ElementName: SoundBank_Anneaux_Perseverence
+        ObjectType: 7
+        guid: 864f8cd93dedcb4d896eb40c1edb8f13
+      Path: SoundBanks\Default Work Unit\SoundBank_Anneaux_Perseverence
     - name: SoundBank_Gemme_Jadeite_Pickup
       guid: 17ec3b43fb1f104bb9eaaa381f02a407
       id: 2811913676
@@ -178,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 604df3ab7243064eadf8b44faad8fe60
     GuidInternal: 
-    m_lastTime: -8584581509721579400
+    m_lastTime: -8584575308047615142
     List:
     - name: Actif
       guid: 04b6a2ff639fa042a8f181c8db18862f
@@ -204,29 +218,6 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Actif
-      guid: 510b46a3760c5a429eb2ad960d387c0a
-      id: 2247125562
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 604df3ab7243064eadf8b44faad8fe60
-      - ElementName: Anneaux
-        ObjectType: 4
-        guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: Patience
-        ObjectType: 4
-        guid: c1f1734f1cfa444cad0a23ba748c152d
-      - ElementName: Actif
-        ObjectType: 4
-        guid: 510b46a3760c5a429eb2ad960d387c0a
-      Path: Events\Default Work Unit\Anneaux\Patience\Actif
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Actif
       guid: 61462fe9c0653b44ad993082667d96a4
       id: 2247125562
       PathAndIcons:
@@ -246,6 +237,52 @@ MonoBehaviour:
         ObjectType: 4
         guid: 61462fe9c0653b44ad993082667d96a4
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Actif
+      guid: f67c9b50706be240ad14e125f166fff5
+      id: 2247125562
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Actif
+      guid: 510b46a3760c5a429eb2ad960d387c0a
+      id: 2247125562
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Patience
+        ObjectType: 4
+        guid: c1f1734f1cfa444cad0a23ba748c152d
+      - ElementName: Actif
+        ObjectType: 4
+        guid: 510b46a3760c5a429eb2ad960d387c0a
+      Path: Events\Default Work Unit\Anneaux\Patience\Actif
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -290,6 +327,52 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Attack
+      guid: 2236cea1d6591044a433e457dc0cbcf4
+      id: 180661997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Patience
+        ObjectType: 4
+        guid: c1f1734f1cfa444cad0a23ba748c152d
+      - ElementName: Attack
+        ObjectType: 4
+        guid: 2236cea1d6591044a433e457dc0cbcf4
+      Path: Events\Default Work Unit\Anneaux\Patience\Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Attack
+      guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      id: 180661997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Attack
       guid: 6fa1fdd2ddda9d4c9a2c47cc9cf2445e
       id: 180661997
       PathAndIcons:
@@ -312,9 +395,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Attack
-      guid: 2236cea1d6591044a433e457dc0cbcf4
-      id: 180661997
+    - name: Base
+      guid: e24f4811d5416840b92ad84d0a4d2d9e
+      id: 1291433366
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -325,13 +408,13 @@ MonoBehaviour:
       - ElementName: Anneaux
         ObjectType: 4
         guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: Patience
+      - ElementName: Bravoure
         ObjectType: 4
-        guid: c1f1734f1cfa444cad0a23ba748c152d
-      - ElementName: Attack
+        guid: 6402d6950c267945aa54e88fa72ba9af
+      - ElementName: Base
         ObjectType: 4
-        guid: 2236cea1d6591044a433e457dc0cbcf4
-      Path: Events\Default Work Unit\Anneaux\Patience\Attack
+        guid: e24f4811d5416840b92ad84d0a4d2d9e
+      Path: Events\Default Work Unit\Anneaux\Bravoure\Base
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -382,7 +465,7 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Base
-      guid: e24f4811d5416840b92ad84d0a4d2d9e
+      guid: 26c7d4c4a2da804cb22dbc935a1a074e
       id: 1291433366
       PathAndIcons:
       - ElementName: Events
@@ -394,13 +477,13 @@ MonoBehaviour:
       - ElementName: Anneaux
         ObjectType: 4
         guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: Bravoure
+      - ElementName: Perseverence
         ObjectType: 4
-        guid: 6402d6950c267945aa54e88fa72ba9af
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
       - ElementName: Base
         ObjectType: 4
-        guid: e24f4811d5416840b92ad84d0a4d2d9e
-      Path: Events\Default Work Unit\Anneaux\Bravoure\Base
+        guid: 26c7d4c4a2da804cb22dbc935a1a074e
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Base
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -736,6 +819,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: c1f1734f1cfa444cad0a23ba748c152d
       Path: Events\Default Work Unit\Anneaux\Patience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Perseverence
+      guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      id: 2035627588
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      Path: Events\Default Work Unit\Anneaux\Perseverence
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2113,6 +2216,448 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.4817531
       minDuration: 0.4817531
+    - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
+      guid: 31d6bfc33802bc479b6ed64ca9186c59
+      id: 2505770584
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
+        ObjectType: 3
+        guid: 31d6bfc33802bc479b6ed64ca9186c59
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.7679021
+      minDuration: 2.7679021
+    - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
+      guid: e681dcc01debeb498b2582b9a601f683
+      id: 69287139
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
+        ObjectType: 3
+        guid: e681dcc01debeb498b2582b9a601f683
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.4051187
+      minDuration: 2.4051187
+    - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
+      guid: 28b7bcdb750863418595fef80304dd81
+      id: 2375100894
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
+        ObjectType: 3
+        guid: 28b7bcdb750863418595fef80304dd81
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.061477
+      minDuration: 1.061477
+    - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
+      guid: 5fe3f47726fa9c4d8c4755c318574a3b
+      id: 349381281
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
+        ObjectType: 3
+        guid: 5fe3f47726fa9c4d8c4755c318574a3b
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.9549987
+      minDuration: 1.9549987
+    - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
+      guid: 14dc3c9bd05f23458718ac46b400c437
+      id: 2350078742
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
+        ObjectType: 3
+        guid: 14dc3c9bd05f23458718ac46b400c437
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.7467343
+      minDuration: 1.7467343
+    - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
+      guid: 1d6c899f0bf9a948bab6e9118b6f7d88
+      id: 1083529149
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
+        ObjectType: 3
+        guid: 1d6c899f0bf9a948bab6e9118b6f7d88
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.6315115
+      minDuration: 0.6315115
+    - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
+      guid: 1f8f8cdd2ad5b245985e59a79949768a
+      id: 415217232
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
+        ObjectType: 3
+        guid: 1f8f8cdd2ad5b245985e59a79949768a
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.80618495
+      minDuration: 0.80618495
+    - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
+      guid: 1388eeef96329e49848faa57f5c79790
+      id: 4121344809
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
+        ObjectType: 3
+        guid: 1388eeef96329e49848faa57f5c79790
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.49042907
+      minDuration: 0.49042907
+    - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
+      guid: 1a8bb1245039fe47a08e9b11060e00e7
+      id: 3898489234
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
+        ObjectType: 3
+        guid: 1a8bb1245039fe47a08e9b11060e00e7
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.9146895
+      minDuration: 1.9146895
+    - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
+      guid: 09d6893c148577488d5bf5b1bde73eeb
+      id: 659293366
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
+        ObjectType: 3
+        guid: 09d6893c148577488d5bf5b1bde73eeb
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.45683804
+      minDuration: 0.45683804
+    - name: Play_Anneaux_Perseverence_Attack_PT1__itemnumber
+      guid: 0ea58e526456374cb55c5da9dc7ddc2f
+      id: 3881681859
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_Anneaux_Perseverence_Attack_PT1__itemnumber
+        ObjectType: 3
+        guid: 0ea58e526456374cb55c5da9dc7ddc2f
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.0356174
+      minDuration: 2.0356174
+    - name: Play_Anneaux_Perseverence_Attack_PT2__itemnumber
+      guid: d111172e45511946b19c76c634f10dea
+      id: 551889208
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_Anneaux_Perseverence_Attack_PT2__itemnumber
+        ObjectType: 3
+        guid: d111172e45511946b19c76c634f10dea
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_PT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.4857373
+      minDuration: 2.4857373
+    - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
+      guid: bba4f4fb4ca7f94c85366b29b663e296
+      id: 680953922
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Base
+        ObjectType: 4
+        guid: 26c7d4c4a2da804cb22dbc935a1a074e
+      - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
+        ObjectType: 3
+        guid: bba4f4fb4ca7f94c85366b29b663e296
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.0681951
+      minDuration: 1.0681951
+    - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
+      guid: d7c10b8455672444b8ebccded985834f
+      id: 1175457881
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Base
+        ObjectType: 4
+        guid: 26c7d4c4a2da804cb22dbc935a1a074e
+      - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
+        ObjectType: 3
+        guid: d7c10b8455672444b8ebccded985834f
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.20826429
+      minDuration: 0.20826429
+    - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
+      guid: 7fa215ede22ea445b5b2486b57954f95
+      id: 864848364
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Base
+        ObjectType: 4
+        guid: 26c7d4c4a2da804cb22dbc935a1a074e
+      - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
+        ObjectType: 3
+        guid: 7fa215ede22ea445b5b2486b57954f95
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.49042907
+      minDuration: 0.49042907
+    - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
+      guid: d43168a5b4c9394181a0d736a92467de
+      id: 4083119323
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Base
+        ObjectType: 4
+        guid: 26c7d4c4a2da804cb22dbc935a1a074e
+      - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
+        ObjectType: 3
+        guid: d43168a5b4c9394181a0d736a92467de
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.5777658
+      minDuration: 0.5777658
+    - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
+      guid: 16c6198a802e1046bf82b3e224680fbe
+      id: 831071958
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Base
+        ObjectType: 4
+        guid: 26c7d4c4a2da804cb22dbc935a1a074e
+      - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
+        ObjectType: 3
+        guid: 16c6198a802e1046bf82b3e224680fbe
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.2092775
+      minDuration: 1.2092775
     - name: Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber
       guid: 30c1b64a0be8074c92d40b15ca3b5d91
       id: 3822052572
@@ -2137,8 +2682,8 @@ MonoBehaviour:
         guid: 30c1b64a0be8074c92d40b15ca3b5d91
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Actif\\Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.8771765
-      minDuration: 1.8771765
+      maxDuration: 1.6134174
+      minDuration: 1.6134174
     - name: Play_FULL_Anneaux_Intr_pidit__Attack_Blades_Flying_Full__itemnumber
       guid: 307d1118701806478d371f2c42ac6677
       id: 3931346177
@@ -2353,6 +2898,240 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.0964038
       minDuration: 1.0964038
+    - name: Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
+      guid: 486ce59465674e4cad57214f3d133687
+      id: 1106791576
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
+        ObjectType: 3
+        guid: 486ce59465674e4cad57214f3d133687
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 3.7420425
+      minDuration: 3.7420425
+    - name: Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
+      guid: 0edff8b7a0ee7c418a6b9bfa9d668f6b
+      id: 1192075387
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
+        ObjectType: 3
+        guid: 0edff8b7a0ee7c418a6b9bfa9d668f6b
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.734311
+      minDuration: 2.734311
+    - name: Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
+      guid: 5b40dff1c3263a4ebe4c1a9a7e4ca6d4
+      id: 77499785
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Actif
+        ObjectType: 4
+        guid: f67c9b50706be240ad14e125f166fff5
+      - ElementName: Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
+        ObjectType: 3
+        guid: 5b40dff1c3263a4ebe4c1a9a7e4ca6d4
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.6997068
+      minDuration: 1.6997068
+    - name: Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
+      guid: ccbbc380b1263542acf785bc47776ab2
+      id: 1894354718
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
+        ObjectType: 3
+        guid: ccbbc380b1263542acf785bc47776ab2
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.0221808
+      minDuration: 2.0221808
+    - name: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
+      guid: 15cc65f21cd1df4e8fae305fbb2e4ed1
+      id: 3515088067
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
+        ObjectType: 3
+        guid: 15cc65f21cd1df4e8fae305fbb2e4ed1
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.8350842
+      minDuration: 2.8350842
+    - name: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
+      guid: 6a76487c23bfd94d95c38750175ac6c7
+      id: 3461245946
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
+        ObjectType: 3
+        guid: 6a76487c23bfd94d95c38750175ac6c7
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 3.9301524
+      minDuration: 3.9301524
+    - name: Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
+      guid: c64ef1a062cadd498207e64dfaec7c9e
+      id: 3190605359
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
+        ObjectType: 3
+        guid: c64ef1a062cadd498207e64dfaec7c9e
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 4.850547
+      minDuration: 4.850547
+    - name: Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
+      guid: 3f5cc2833767634399caae87fadbaa12
+      id: 4271747987
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Attack
+        ObjectType: 4
+        guid: a4c3db874f3c5b4faa5b3815582fc5b4
+      - ElementName: Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
+        ObjectType: 3
+        guid: 3f5cc2833767634399caae87fadbaa12
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.7679021
+      minDuration: 2.7679021
+    - name: Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
+      guid: e9dd9c74b1cb174db1e2c8a65a1c9eec
+      id: 952051097
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Perseverence
+        ObjectType: 4
+        guid: 4ac0e7f2e00d0247bf50a09d9f447df0
+      - ElementName: Base
+        ObjectType: 4
+        guid: 26c7d4c4a2da804cb22dbc935a1a074e
+      - ElementName: Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
+        ObjectType: 3
+        guid: e9dd9c74b1cb174db1e2c8a65a1c9eec
+      Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.3302053
+      minDuration: 1.3302053
     - name: Play_Musique_Combat_Full_Onetime__itemnumber
       guid: 29beea24919c2d468cf0d8df5f7bc2b2
       id: 54626728
@@ -2686,7 +3465,7 @@ MonoBehaviour:
     m_lastTime: -8584584996837241503
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000000e00000021000000240000002500000026000000270000002f00000057000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000000e0000002500000026000000270000002f0000003f00000057000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
