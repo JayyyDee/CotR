@@ -12,24 +12,21 @@ public class PassiveBienveillance : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
-        gameObject.transform.position = player.transform.position;
     }
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(player.transform.position);
-        Debug.Log(gameObject.transform.position);
-        //gameObject.transform.position = player.transform.position;
         MoveZoneServerRpc();
     }
 
     private void OnTriggerStay2D(Collider2D collider)
-    {
+    { 
         if (collider.CompareTag("Enemy") && collider.gameObject != player)
         {
-            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc((int)(damage * Time.deltaTime));
+            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
             Debug.Log("Dmg");
         }
+
     }
 
 
@@ -42,6 +39,6 @@ public class PassiveBienveillance : NetworkBehaviour
     [ClientRpc]
     public void MoveZoneClientRpc()
     {
-        //gameObject.transform.position = player.transform.position;
+        gameObject.transform.position = player.transform.position;
     }
 }

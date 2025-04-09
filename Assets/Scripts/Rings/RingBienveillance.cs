@@ -69,7 +69,6 @@ public class RingBienveillance : Ring
 
     public override void Shoot()
     {
-        Debug.Log("shoot");
         canFire = false;
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = bulletPrefab.transform.rotation * firePoint.transform.rotation;
@@ -91,6 +90,7 @@ public class RingBienveillance : Ring
     {
         
         GameObject passive = Instantiate(passivePrefab);
+        passive.GetComponent<NetworkObject>().Spawn();  
         passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
     }
 
