@@ -7,7 +7,6 @@ using static UnityEditor.PlayerSettings;
 public class RingPassion : Ring
 {
     public GameObject bulletPrefab;
-    public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
     
@@ -80,7 +79,6 @@ public class RingPassion : Ring
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
 
-        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber", this.gameObject);
         if (activeBoost)

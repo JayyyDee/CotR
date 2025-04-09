@@ -7,7 +7,6 @@ using UnityEngine;
 public class RingBravoure : Ring
 {
     public GameObject bulletPrefab;
-    public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
    

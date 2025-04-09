@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3941606833616493208}
   - component: {fileID: 8844916952524714173}
   - component: {fileID: 5998872824063775341}
+  - component: {fileID: 4812781221203854188}
   - component: {fileID: 8782390004562234573}
   - component: {fileID: 7109889420872058943}
   - component: {fileID: 319271994829919081}
@@ -118,8 +119,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6427438303624268056}
   - {fileID: 1564491521876218721}
+  - {fileID: 6427438303624268056}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8844916952524714173
@@ -190,6 +191,24 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &4812781221203854188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3159590127669332145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d31d8021935704b82abaa439efbf3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7341376028447311915, guid: 01ad91e593a093d4186a6031cce505f6, type: 3}
+  fireForce: 1
+  cooldown: 1
+  activePrefab: {fileID: 3112047679733544124, guid: 5ec4a303a63b7644fb3062f298f5131d, type: 3}
+  activeCooldown: 5
+  passivePrefab: {fileID: 8105793773151713233, guid: e07539f34ef72fa499702b13a60def87, type: 3}
 --- !u!58 &8782390004562234573
 CircleCollider2D:
   m_ObjectHideFlags: 0

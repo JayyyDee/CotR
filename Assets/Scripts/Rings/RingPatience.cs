@@ -38,8 +38,6 @@ public class RingPatience : Ring
     // Update is called once per frame
     void Update()
     {
-
-        Debug.Log(activeCooldown + " " + activeTimer + " " + canActive);
         if (equiped)
         {
             playerCharacter.transform.Find("RangePatience").gameObject.GetComponent<SpriteRenderer>().enabled = true;

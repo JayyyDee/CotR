@@ -8,7 +8,6 @@ using UnityEngine;
 public class RingIntrepidite : Ring
 {
     public GameObject bulletPrefab;
-    public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
    
@@ -76,7 +75,6 @@ public class RingIntrepidite : Ring
 
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
-        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         StartCoroutine(TripleShot(pos, rot));
     }
 
