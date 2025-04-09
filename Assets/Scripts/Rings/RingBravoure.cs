@@ -177,4 +177,9 @@ public class RingBravoure : Ring
         Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
         DropServerRpc(pos);
     }
+
+    public override int GetForm()
+    {
+        return 2;
+    }
 }

@@ -37,7 +37,7 @@ public class RingIntrepidite : Ring
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(timer + " Intrépidité");
+        //Debug.Log(timer + " Intrï¿½piditï¿½");
 
         if (!canFire)
         {
@@ -156,5 +156,10 @@ public class RingIntrepidite : Ring
     {
         Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
         DropServerRpc(pos);
+    }
+
+    public override int GetForm()
+    {
+        return 3;
     }
 }

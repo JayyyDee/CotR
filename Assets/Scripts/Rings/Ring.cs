@@ -26,5 +26,7 @@ public abstract class Ring: NetworkBehaviour
 
     public abstract void Drop();
 
+    public abstract int GetForm();
+
 }
 

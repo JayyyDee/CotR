@@ -191,4 +191,9 @@ public class RingPatience : Ring
     {
         cam = camera;
     }
+
+    public override int GetForm()
+    {
+        return 5;
+    }
 }

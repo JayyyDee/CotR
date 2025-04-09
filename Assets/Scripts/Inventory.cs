@@ -114,6 +114,7 @@ public class Inventory : NetworkBehaviour
             equipedRing.SetEquiped(false);
             equipedRing = inventory[i];
             inventory[i].SetEquiped(true);
+            gameObject.GetComponent<Animator>().SetInteger("Form", equipedRing.GetComponent<Ring>().GetForm());
         }
         
     }

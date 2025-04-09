@@ -162,4 +162,8 @@ public class RingPassion : Ring
         DropServerRpc(pos);
     }
 
+    public override int GetForm()
+    {
+        return 4;
+    }
 }
