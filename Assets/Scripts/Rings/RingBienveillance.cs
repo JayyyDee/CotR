@@ -82,16 +82,19 @@ public class RingBienveillance : Ring
         Quaternion rot = firePoint.transform.rotation;
         GameObject active = Instantiate(activePrefab, pos, rot);
         active.GetComponent<NetworkObject>().Spawn();
-        active.GetComponent<ProjectileBravoureActive>().player = playerCharacter;
+        active.GetComponent<ActiveBienveillance>().player = playerCharacter;
         canActive = false;
     }
 
     public override void Passive()
     {
+        if (playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        {
+            GameObject passive = Instantiate(passivePrefab);
+            passive.GetComponent<NetworkObject>().Spawn();
+            passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
+        }
         
-        GameObject passive = Instantiate(passivePrefab);
-        passive.GetComponent<NetworkObject>().Spawn();  
-        passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
     }
 
     public override void SetEquiped(bool boole)

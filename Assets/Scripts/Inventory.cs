@@ -29,8 +29,10 @@ public class Inventory : NetworkBehaviour
             
         if (collision.CompareTag("Ring"))
         {
-            collision.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false; //GetComponentInChildren<SpriteRenderer>().enabled = false;
+            collision.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.transform.GetChild(1).gameObject.SetActive(false);
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+
            
             if (inventory.Count <= 0)
             {
@@ -41,8 +43,11 @@ public class Inventory : NetworkBehaviour
 
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
-            collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);    
-            collision.gameObject.GetComponent<Ring>().Passive();
+            collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
+            if (gameObject.GetComponent<NetworkObject>().IsOwner)
+            {
+                collision.gameObject.GetComponent<Ring>().Passive();
+            }
             collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
             
             if(collision.gameObject.name == "Patience")
@@ -132,6 +137,7 @@ public class Inventory : NetworkBehaviour
         foreach (Ring ring in inventory)
         {
             ring.Drop();
+            ring.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
 }

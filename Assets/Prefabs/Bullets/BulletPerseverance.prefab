@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTimer: 0.35
   damage: 150
+  player: {fileID: 0}
 --- !u!114 &-5505411169746500317
 MonoBehaviour:
   m_ObjectHideFlags: 0

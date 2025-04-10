@@ -36,8 +36,6 @@ public class RingPerseverance : Ring
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(timer + " Patience");
-
         if (!canFire)
         {
             timer += (Time.deltaTime);
@@ -49,7 +47,7 @@ public class RingPerseverance : Ring
         }
         if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
-            Shoot();
+            ShootServerRpc();
         }
 
         if (!canActive)
@@ -64,7 +62,7 @@ public class RingPerseverance : Ring
 
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
-            Active();
+            ActiveServerRpc();
         }
     }
 
@@ -122,6 +120,30 @@ public class RingPerseverance : Ring
     public override void SetAttackSpeed(float speed)
     {
         attackSpeed = speed;
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ShootServerRpc()
+    {
+        ShootClientRpc();
+    }
+
+    [ClientRpc]
+    public void ShootClientRpc()
+    {
+        Shoot();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ActiveServerRpc()
+    {
+        ActiveClientRpc();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ActiveClientRpc()
+    {
+        Active();
     }
 
     [ServerRpc(RequireOwnership = false)]
