@@ -74,6 +74,7 @@ public class RingPerseverance : Ring
         Quaternion rot = firePoint.transform.rotation  ;
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber", this.gameObject);
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+        bullet.GetComponent<ProjectilePerseverance>().player = playerCharacter;
         bullet.GetComponent<NetworkObject>().Spawn();
         
     }
@@ -85,16 +86,18 @@ public class RingPerseverance : Ring
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber", this.gameObject);
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber", this.gameObject);
         GameObject activeHitbox = Instantiate(activePrefab, pos, rot);
-        activeHitbox.GetComponent<NetworkObject>().Spawn();
         activeHitbox.GetComponent<ActivePerseverance>().player = playerCharacter;
+        activeHitbox.GetComponent<NetworkObject>().Spawn();
+        
         canActive = false;
     }
 
     public override void Passive()
     {
         GameObject passiveHitbox = playerCharacter.transform.Find("PassivePerseverance").gameObject;
-        passiveHitbox.SetActive(true);
         passiveHitbox.GetComponent<PassivePerseverance>().player = playerCharacter;
+        passiveHitbox.SetActive(true);
+        
     }
 
     public override void SetEquiped(bool boole)
