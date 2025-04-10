@@ -23,16 +23,14 @@ public class ProjectilePassion : NetworkBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
         {
 
-            if (collider.CompareTag("Enemy") && collider.gameObject != player)
+            if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
             {
 
                 DespawnServerRpc();
                 collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
-
-                //Damage
             }
             if(collider.CompareTag("Walls")){
-            DespawnServerRpc();
+                DespawnServerRpc();
         }
 
 

@@ -16,7 +16,6 @@ public class ExplosionPassion : NetworkBehaviour
     {
         if (collider.CompareTag("Enemy"))
         {
-            DespawnServerRpc();
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
         }
     }
