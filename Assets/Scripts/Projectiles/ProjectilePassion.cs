@@ -15,7 +15,7 @@ public class ProjectilePassion : NetworkBehaviour
     public float fireForce;
         private void Start()
         {
-            Destroy(gameObject, deathTimer);
+            StartCoroutine(Despawn(deathTimer));
             StartCoroutine(Explosion());
         }
 
@@ -25,15 +25,15 @@ public class ProjectilePassion : NetworkBehaviour
             if (collider.CompareTag("Enemy"))
             {
 
-                Destroy(gameObject);
+                StartCoroutine(Despawn(0)); 
                 Debug.Log("HIT");
                 collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
 
                 //Damage
             }
             if(collider.CompareTag("Walls")){
-                Destroy(gameObject);
-            }
+                StartCoroutine(Despawn(0));
+        }
 
 
         }
@@ -87,6 +87,13 @@ public class ProjectilePassion : NetworkBehaviour
         }
         explosion.GetComponent<NetworkObject>().Spawn();
 
+    }
+
+    IEnumerator Despawn(float time)
+    {
+        yield return new WaitForSeconds(time);
+        GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject, 0f);
     }
 
 }

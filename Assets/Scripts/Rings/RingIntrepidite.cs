@@ -85,6 +85,7 @@ public class RingIntrepidite : Ring
             AkUnitySoundEngine.PostEvent("Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber", this.gameObject);
             GameObject bullet = Instantiate(bulletPrefab, pos, rot);
             bullet.GetComponent<NetworkObject>().Spawn();
+            bullet.GetComponent<Projectile>().player = gameObject;
             yield return new WaitForSeconds(0.05f);
         }
     }

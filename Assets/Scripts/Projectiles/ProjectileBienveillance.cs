@@ -12,7 +12,7 @@ public class ProjectileBienveillance : NetworkBehaviour
     public float scale = 1f;
     private void Start()
     {
-        Destroy(gameObject, deathTimer);
+        StartCoroutine(Despawn());
     }
 
     public override void OnNetworkSpawn()
@@ -30,12 +30,13 @@ public class ProjectileBienveillance : NetworkBehaviour
     {
         if (collider.CompareTag("Enemy") && collider.gameObject != player)
         {
-
-            Destroy(gameObject);
-            Debug.Log("HIT");
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
-
-            //Damage
         }
+    }
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(deathTimer);
+        GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject, 0f);
     }
 }

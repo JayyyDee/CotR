@@ -7,9 +7,10 @@ public class Projectile : NetworkBehaviour
 {
     public float deathTimer;
     public int damage;
+    public GameObject player;
     private void Start()
     {
-        Destroy(gameObject, deathTimer);
+        StartCoroutine(Despawn());
     }
     public override void OnNetworkSpawn()
     {
@@ -20,7 +21,7 @@ public class Projectile : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy") && collider.gameObject != player)
         {
             
             Destroy(gameObject);
@@ -34,5 +35,11 @@ public class Projectile : NetworkBehaviour
         }
         
 
+    }
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(deathTimer);
+        GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject, 0f);
     }
 }

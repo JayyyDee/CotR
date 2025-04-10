@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 public class ExplosionPassion : MonoBehaviour
@@ -9,7 +10,7 @@ public class ExplosionPassion : MonoBehaviour
     private void Start()
     {
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber", this.gameObject);
-        Destroy(gameObject, 0.1f);
+        StartCoroutine(Despawn());
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -18,5 +19,12 @@ public class ExplosionPassion : MonoBehaviour
                 Debug.Log("HIT");
                 collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
         }
+    }
+
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject, 0.1f);
     }
 }

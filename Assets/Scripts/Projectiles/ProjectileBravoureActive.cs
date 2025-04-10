@@ -11,7 +11,7 @@ public class ProjectileBravoureActive : NetworkBehaviour
     private void Start()
     {
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber", this.gameObject);
-        Destroy(gameObject, deathTimer);
+        StartCoroutine(Despawn());
 
     }
 
@@ -25,12 +25,14 @@ public class ProjectileBravoureActive : NetworkBehaviour
         if (collider.CompareTag("Enemy") && collider.gameObject != player)
         {
             collider.gameObject.GetComponent<PlayerMovement>().SlowServerRpc();
-
-            Debug.Log("HIT");
-
-
-
         }
+    }
+
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(deathTimer);
+        GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject, 0f);
     }
 }
         

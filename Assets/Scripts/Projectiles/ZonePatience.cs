@@ -20,7 +20,7 @@ public class ZonePatience : NetworkBehaviour
     {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
         explode = true;
-        Destroy(gameObject, 0.1f);
+        StartCoroutine(Despawn());
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -43,5 +43,12 @@ public class ZonePatience : NetworkBehaviour
             explode = false;
         }
     }
-    
+
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject, 0f);
+    }
+
 }

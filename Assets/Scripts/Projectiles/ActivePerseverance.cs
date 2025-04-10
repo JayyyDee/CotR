@@ -10,8 +10,7 @@ public class ActivePerseverance : NetworkBehaviour
     public GameObject player;
     private void Start()
     {
-        Destroy(gameObject, deathTimer);
-
+        StartCoroutine(Despawn());
     }
 
     public override void OnNetworkSpawn()
@@ -28,5 +27,12 @@ public class ActivePerseverance : NetworkBehaviour
 
             Debug.Log("HIT");
         }
+    }
+
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(deathTimer);
+        GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject, 0f);
     }
 }
