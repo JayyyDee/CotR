@@ -12,7 +12,7 @@ public class ProjectileBienveillance : NetworkBehaviour
     public float scale = 1f;
     private void Start()
     {
-        StartCoroutine(Despawn());
+        StartCoroutine(Despawn(deathTimer));
     }
 
     public override void OnNetworkSpawn()
@@ -33,10 +33,17 @@ public class ProjectileBienveillance : NetworkBehaviour
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
         }
     }
-    IEnumerator Despawn()
+    IEnumerator Despawn(float time)
     {
-        yield return new WaitForSeconds(deathTimer);
-        GetComponent<NetworkObject>().Despawn();
-        Destroy(gameObject, 0f);
+        yield return new WaitForSeconds(time);
+        DespawnServerRpc();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void DespawnServerRpc()
+    {
+        gameObject.GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject);
+
     }
 }

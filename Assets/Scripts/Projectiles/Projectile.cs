@@ -10,7 +10,7 @@ public class Projectile : NetworkBehaviour
     public GameObject player;
     private void Start()
     {
-        StartCoroutine(Despawn());
+        StartCoroutine(Despawn(deathTimer));
     }
     public override void OnNetworkSpawn()
     {
@@ -21,25 +21,29 @@ public class Projectile : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Enemy") && collider.gameObject != player)
-        {
-            
-            Destroy(gameObject);
+        if (collider.gameObject.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner )
+        {    
+            DespawnServerRpc();
             Debug.Log("HIT");
-            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
-            
-            //Damage
+            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);   
         }
         if(collider.gameObject.CompareTag("Walls")){
-            Destroy(gameObject);
+            DespawnServerRpc();
         }
         
 
     }
-    IEnumerator Despawn()
+    IEnumerator Despawn(float time)
     {
-        yield return new WaitForSeconds(deathTimer);
-        GetComponent<NetworkObject>().Despawn();
-        Destroy(gameObject, 0f);
+        yield return new WaitForSeconds(time);
+        DespawnServerRpc();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void DespawnServerRpc()
+    {
+        gameObject.GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject);
+
     }
 }

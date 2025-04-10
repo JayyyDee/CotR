@@ -7,7 +7,6 @@ using static UnityEditor.PlayerSettings;
 public class RingPerseverance : Ring
 {
     public GameObject bulletPrefab;
-    public Color bulletColor;
     private GameObject firePoint;
     private GameObject playerCharacter;
 
@@ -69,12 +68,11 @@ public class RingPerseverance : Ring
 
     public override void Shoot()
     {
-        Debug.Log("shoot");
         canFire = false;
         Vector3 pos = firePoint.transform.position;
-        Quaternion rot = bulletPrefab.transform.rotation* firePoint.transform.rotation  ;
+        //bulletPrefab.transform.rotation
+        Quaternion rot = firePoint.transform.rotation  ;
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber", this.gameObject);
-        bulletPrefab.GetComponent<SpriteRenderer>().color = bulletColor;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<NetworkObject>().Spawn();
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.transform.right * fireForce, ForceMode2D.Impulse);
@@ -139,13 +137,13 @@ public class RingPerseverance : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ActiveServerRpc()
     {
-        ActiveClientRpc();
+        Active();
     }
 
     [ClientRpc]
     public void ActiveClientRpc()
     {
-        Active();
+        
     }
 
     [ServerRpc(RequireOwnership = false)]

@@ -10,7 +10,7 @@ public class ActivePerseverance : NetworkBehaviour
     public GameObject player;
     private void Start()
     {
-        StartCoroutine(Despawn());
+        StartCoroutine(Despawn(deathTimer));
     }
 
     public override void OnNetworkSpawn()
@@ -20,7 +20,7 @@ public class ActivePerseverance : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy") && collider.gameObject != player)
+        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
         {
             Vector2 forceDirection = collider.gameObject.transform.position - gameObject.transform.position;
             collider.gameObject.GetComponent<Rigidbody2D>().AddForce(forceDirection * 3000f);
@@ -29,10 +29,17 @@ public class ActivePerseverance : NetworkBehaviour
         }
     }
 
-    IEnumerator Despawn()
+    IEnumerator Despawn(float time)
     {
-        yield return new WaitForSeconds(deathTimer);
-        GetComponent<NetworkObject>().Despawn();
-        Destroy(gameObject, 0f);
+        yield return new WaitForSeconds(time);
+        DespawnServerRpc();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void DespawnServerRpc()
+    {
+        gameObject.GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject);
+
     }
 }

@@ -10,7 +10,7 @@ public class ExplosionPassion : NetworkBehaviour
     private void Start()
     {
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber", this.gameObject);
-        StartCoroutine(Despawn());
+        StartCoroutine(Despawn(0.1f));
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -20,9 +20,9 @@ public class ExplosionPassion : NetworkBehaviour
         }
     }
 
-    IEnumerator Despawn()
+    IEnumerator Despawn(float time)
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(time);
         DespawnServerRpc();
     }
 
@@ -30,13 +30,7 @@ public class ExplosionPassion : NetworkBehaviour
     public void DespawnServerRpc()
     {
         gameObject.GetComponent<NetworkObject>().Despawn();
-        DespawnClientRpc();
-    }
-
-    [ClientRpc]
-    public void DespawnClientRpc()
-    {
-
-        Destroy(gameObject, 0.1f);
+        Destroy(gameObject);
+        //DespawnClientRpc();
     }
 }
