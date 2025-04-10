@@ -474,33 +474,6 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-<<<<<<< HEAD
-  
-    m_State: {fileID: 5143280393263501018}
-    m_Position: {x: -320, y: 130, z: 0}
-
-  - serializedVersion: 1
-    m_State: {fileID: 1256093637169616128}
-    m_Position: {x: -530, y: 370, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -2886580388076856973}
-    m_Position: {x: -530, y: 530, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 6212260548383289880}
-    m_Position: {x: -530, y: 720, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -8522588755045471088}
-    m_Position: {x: -520, y: 860, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -410426092572284516}
-    m_Position: {x: -520, y: 980, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 124898527602228556}
-    m_Position: {x: -520, y: 1090, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 2437855830541757452}
-    m_Position: {x: -520, y: 1240, z: 0}
-=======
     m_State: {fileID: -112991163405436691}
     m_Position: {x: -220, y: 360, z: 0}
   - serializedVersion: 1
@@ -587,7 +560,6 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 5143280393263501018}
     m_Position: {x: -320, y: 130, z: 0}
->>>>>>> parent of eff1f2d (Animation selon la forme)
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -1482824383040090966}
