@@ -512,10 +512,10 @@ GameObject:
   - component: {fileID: 804191196876815011}
   - component: {fileID: -5078443122011580822}
   - component: {fileID: -7695022764903982875}
-  - component: {fileID: 9037729673891706064}
   - component: {fileID: 8509975520393243399}
   - component: {fileID: 6165612374240500858}
   - component: {fileID: 8457053170429327023}
+  - component: {fileID: 9037729673891706064}
   - component: {fileID: 3837097530615776467}
   m_Layer: 7
   m_Name: Player
@@ -783,20 +783,6 @@ MonoBehaviour:
   deathScreen: {fileID: 0}
   healthBar: {fileID: 4514664683419283216}
   maxHealth: 1000
---- !u!114 &9037729673891706064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6908946048115158358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6949dae56667f3459167707e99a3414, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitbox: {fileID: 4752894721825789567}
-  preHitbox: {fileID: 4946602368027753621}
 --- !u!114 &8509975520393243399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,6 +868,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &9037729673891706064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6908946048115158358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6949dae56667f3459167707e99a3414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitbox: {fileID: 4752894721825789567}
+  preHitbox: {fileID: 4946602368027753621}
 --- !u!95 &3837097530615776467
 Animator:
   serializedVersion: 5
@@ -1205,14 +1205,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6143157664559421963, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6143157664559421963, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6143157664559421963, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1250,10 +1242,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6143157664559421963, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6218932783422151626, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
