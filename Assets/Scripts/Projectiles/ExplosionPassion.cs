@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-public class ExplosionPassion : MonoBehaviour
+public class ExplosionPassion : NetworkBehaviour
 {
 
     public int damage;
@@ -14,10 +14,11 @@ public class ExplosionPassion : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.CompareTag("Enemy")){
+        if (collider.CompareTag("Enemy"))
+        {
             Destroy(gameObject);
-                Debug.Log("HIT");
-                collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
+            Debug.Log("HIT");
+            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
         }
     }
 
@@ -25,12 +26,19 @@ public class ExplosionPassion : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         DespawnServerRpc();
-        Destroy(gameObject, 0.1f);
+        //Destroy(gameObject, 0.1f);
     }
 
-    [ServerRpc(RequireOwnership =false)]
+    [ServerRpc(RequireOwnership = false)]
     public void DespawnServerRpc()
     {
         gameObject.GetComponent<NetworkObject>().Despawn();
+    }
+
+    [ClientRpc]
+    public void DespawnClientRpc()
+    {
+
+        Destroy(gameObject, 0.1f);
     }
 }
