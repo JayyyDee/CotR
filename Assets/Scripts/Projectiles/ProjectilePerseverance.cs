@@ -3,33 +3,38 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-public class ActivePerseverance : NetworkBehaviour
+public class ProjectilePerseverance : NetworkBehaviour
 {
     public float deathTimer;
     public int damage;
     public GameObject player;
+    public float force;
     private void Start()
     {
         StartCoroutine(Despawn(deathTimer));
     }
-
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
+
+        GetComponent<Rigidbody2D>().AddForce(transform.right * force, ForceMode2D.Impulse);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
-    {   // && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner
-        if (collider.CompareTag("Enemy"))
+    {
+        if (collider.gameObject.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
         {
-            Vector2 forceDirection = collider.gameObject.transform.position - gameObject.transform.position;
-            
-            collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1,1) * 3000f);
-
+            DespawnServerRpc();
             Debug.Log("HIT");
+            collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
         }
-    }
+        if (collider.gameObject.CompareTag("Walls"))
+        {
+            DespawnServerRpc();
+        }
 
+
+    }
     IEnumerator Despawn(float time)
     {
         yield return new WaitForSeconds(time);
