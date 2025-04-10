@@ -16,8 +16,7 @@ public class ExplosionPassion : NetworkBehaviour
     {
         if (collider.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
-            Debug.Log("HIT");
+            DespawnServerRpc();
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
         }
     }
@@ -26,7 +25,6 @@ public class ExplosionPassion : NetworkBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         DespawnServerRpc();
-        //Destroy(gameObject, 0.1f);
     }
 
     [ServerRpc(RequireOwnership = false)]

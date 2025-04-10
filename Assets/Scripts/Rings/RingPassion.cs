@@ -86,6 +86,7 @@ public class RingPassion : Ring
             bullet.GetComponent<SpriteRenderer>().color = new Color(1.00f, 0.65f, 0.00f);
             bullet.GetComponent<ProjectilePassion>().SetBoost(true);
             bullet.GetComponent<ProjectilePassion>().fireForce = fireForce;
+            bullet.GetComponent<ProjectilePassion>().player = playerCharacter;
             activeBoost = false;
         }
         bullet.GetComponent<NetworkObject>().Spawn();
@@ -131,11 +132,8 @@ public class RingPassion : Ring
 
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
-    {
-       
-            Shoot();
-       
-        
+    {  
+            Shoot(); 
     }
 
     [ServerRpc(RequireOwnership = false)]

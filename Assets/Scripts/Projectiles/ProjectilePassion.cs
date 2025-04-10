@@ -11,6 +11,7 @@ public class ProjectilePassion : NetworkBehaviour
         public GameObject explosionPrefab;
         private int damage = 50;
         private bool boost = false;
+        public GameObject player;
 
     public float fireForce;
         private void Start()
@@ -22,17 +23,16 @@ public class ProjectilePassion : NetworkBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
         {
 
-            if (collider.CompareTag("Enemy"))
+            if (collider.CompareTag("Enemy") && collider.gameObject != player)
             {
 
-                StartCoroutine(Despawn(0)); 
-                Debug.Log("HIT");
+                DespawnServerRpc();
                 collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
 
                 //Damage
             }
             if(collider.CompareTag("Walls")){
-                StartCoroutine(Despawn(0));
+            DespawnServerRpc();
         }
 
 
@@ -78,18 +78,25 @@ public class ProjectilePassion : NetworkBehaviour
         //ExplosionClientRpc();
     }
 
-    [ClientRpc]
-    private void ExplosionClientRpc()
-    {
-        
-
-    }
 
     IEnumerator Despawn(float time)
     {
         yield return new WaitForSeconds(time);
-        GetComponent<NetworkObject>().Despawn();
-        Destroy(gameObject, 0f);
+        DespawnServerRpc();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void DespawnServerRpc()
+    {
+        gameObject.GetComponent<NetworkObject>().Despawn();
+        Destroy(gameObject);
+        //DespawnClientRpc();
+    }
+
+    [ClientRpc]
+    public void DespawnClientRpc()
+    {
+        Destroy(gameObject);
     }
 
 }
