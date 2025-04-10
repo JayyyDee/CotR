@@ -11,8 +11,8 @@ public class ProjectileBravoure : MonoBehaviour
 
     public void Shoot()
     {
-        hitbox = gameObject.transform.Find("BravoureHitbox").gameObject;
-        preHitbox = gameObject.transform.Find("BravourePreHitbox").gameObject;
+        hitbox = gameObject.transform.Find("Rotation").Find("BravoureHitbox").gameObject;
+        preHitbox = gameObject.transform.Find("Rotation").Find("BravourePreHitbox").gameObject;
         StartCoroutine(Shooting());
     }
 
