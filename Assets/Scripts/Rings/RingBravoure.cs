@@ -86,8 +86,6 @@ public class RingBravoure : Ring
 
     public override void Shoot()
     {
-        Debug.Log("shoot");
-        
         canFire = false;
 
         playerCharacter.GetComponent<ProjectileBravoure>().Shoot();
@@ -149,8 +147,15 @@ public class RingBravoure : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-            Shoot();
+        ShootClientRpc();
         
+    }
+
+    [ClientRpc]
+    public void ShootClientRpc()
+    {
+        Shoot();
+
     }
 
     [ServerRpc(RequireOwnership = false)]

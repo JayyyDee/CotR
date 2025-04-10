@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class ProjectileBravoure : MonoBehaviour
 {
-    public GameObject hitbox;
-    public GameObject preHitbox;
+    private GameObject hitbox;
+    private GameObject preHitbox;
     
    
 
     public void Shoot()
-    { 
+    {
+        hitbox = gameObject.transform.Find("BravoureHitbox").gameObject;
+        preHitbox = gameObject.transform.Find("BravourePreHitbox").gameObject;
         StartCoroutine(Shooting());
     }
 
@@ -20,7 +22,6 @@ public class ProjectileBravoure : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         hitbox.SetActive(true);
         preHitbox.SetActive(false);
-
         yield return new WaitForSeconds(0.1f);
         hitbox.SetActive(false);
     }
