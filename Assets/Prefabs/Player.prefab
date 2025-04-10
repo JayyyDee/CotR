@@ -880,8 +880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6949dae56667f3459167707e99a3414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitbox: {fileID: 4752894721825789567}
-  preHitbox: {fileID: 4946602368027753621}
 --- !u!95 &3837097530615776467
 Animator:
   serializedVersion: 5
@@ -1407,16 +1405,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
---- !u!1 &4752894721825789567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3182937139335839411, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
-  m_PrefabInstance: {fileID: 7915565522849360076}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4946602368027753621 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2989370092181361753, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
-  m_PrefabInstance: {fileID: 7915565522849360076}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8255465235801129438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2254316608992356626, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
