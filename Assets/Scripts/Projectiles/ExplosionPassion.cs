@@ -24,7 +24,13 @@ public class ExplosionPassion : MonoBehaviour
     IEnumerator Despawn()
     {
         yield return new WaitForSeconds(0.1f);
-        GetComponent<NetworkObject>().Despawn();
+        DespawnServerRpc();
         Destroy(gameObject, 0.1f);
+    }
+
+    [ServerRpc(RequireOwnership =false)]
+    public void DespawnServerRpc()
+    {
+        gameObject.GetComponent<NetworkObject>().Despawn();
     }
 }

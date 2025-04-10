@@ -142,7 +142,8 @@ public class RingBienveillance : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        ShootClientRpc();
+        Shoot();
+        //ShootClientRpc();
     }
 
     [ClientRpc]

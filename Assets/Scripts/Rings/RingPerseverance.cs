@@ -126,13 +126,14 @@ public class RingPerseverance : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        ShootClientRpc();
+        Shoot();
+       // ShootClientRpc();
     }
 
     [ClientRpc]
     public void ShootClientRpc()
     {
-        Shoot();
+        //Shoot();
     }
 
     [ServerRpc(RequireOwnership = false)]

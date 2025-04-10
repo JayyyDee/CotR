@@ -161,7 +161,7 @@ public class RingPatience : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        ShootClientRpc();
+        Shoot();
     }
 
     [ClientRpc]
