@@ -7,7 +7,7 @@ public class HitboxBravoure : MonoBehaviour
     public int damage;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Collider>().CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);    
         }
