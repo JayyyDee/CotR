@@ -49,6 +49,7 @@ public class PlayerMovement : NetworkBehaviour
 
     void Update() 
     {
+        Debug.Log("Test Branch");
         //If the game state is not in the GamePlaying state, the player can't move. (From GameManager)
         if (GameManager.Instance.isGamePlaying() || GameManager.Instance.IsGemCountdownActive() || GameManager.Instance.IsGemTakenActive())
         {
