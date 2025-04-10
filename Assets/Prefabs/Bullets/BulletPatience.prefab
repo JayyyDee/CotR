@@ -179,6 +179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionDamage: 75
-  damage: 100
+  damage: 150
   healing: 100
   player: {fileID: 0}

@@ -48,22 +48,7 @@ public class RingPatience : Ring
             
             playerCharacter.transform.Find("RangePatience").gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
-        if(cam && playerCharacter.GetComponent<NetworkObject>().IsOwner && equiped)
-        {
-            mousePos = new Vector2(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y);
-            Vector2 playerPos = new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y);
-            Vector2 direction = mousePos - playerPos;
-            
-            if (direction.magnitude > range)
-            {
-                spawnPoint = direction.normalized * range + playerPos;
-                
-            }
-            else
-            {
-                spawnPoint = mousePos;
-            }
-        }
+        
         
 
 
@@ -92,7 +77,6 @@ public class RingPatience : Ring
 
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
-            Debug.Log("ACTIVE");
             Active();
         }
     }
@@ -100,7 +84,23 @@ public class RingPatience : Ring
 
     public override void Shoot()
     {
-        
+        if (cam && playerCharacter.GetComponent<NetworkObject>().IsOwner && equiped)
+        {
+            mousePos = new Vector2(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y);
+            Vector2 playerPos = new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y);
+            Vector2 direction = mousePos - playerPos;
+
+            if (direction.magnitude > range)
+            {
+                spawnPoint = direction.normalized * range + playerPos;
+
+            }
+            else
+            {
+                spawnPoint = mousePos;
+            }
+        }
+
         canFire = false;
         GameObject bullet = Instantiate(bulletPrefab,spawnPoint, Quaternion.identity);
         bullet.GetComponent<ZonePatience>().player = playerCharacter;
@@ -162,6 +162,7 @@ public class RingPatience : Ring
     {
         ShootClientRpc();
     }
+
     [ClientRpc]
     private void ShootClientRpc()
     {
