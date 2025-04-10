@@ -19,8 +19,8 @@ public class ActivePerseverance : NetworkBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
+    {   // && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner
+        if (collider.CompareTag("Enemy") )
         {
             Vector2 forceDirection = collider.gameObject.transform.position - gameObject.transform.position;
             collider.gameObject.GetComponent<Rigidbody2D>().AddForce(forceDirection * 3000f);

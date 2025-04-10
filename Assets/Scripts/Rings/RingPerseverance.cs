@@ -70,8 +70,8 @@ public class RingPerseverance : Ring
     {
         canFire = false;
         Vector3 pos = firePoint.transform.position;
-        //bulletPrefab.transform.rotation
-        Quaternion rot = firePoint.transform.rotation  ;
+        
+        Quaternion rot = bulletPrefab.transform.rotation*firePoint.transform.rotation  ;
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber", this.gameObject);
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<NetworkObject>().Spawn();

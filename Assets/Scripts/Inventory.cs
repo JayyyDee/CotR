@@ -43,7 +43,7 @@ public class Inventory : NetworkBehaviour
 
             inventory.Add(collision.gameObject.GetComponent<Ring>());
             collision.gameObject.GetComponent<Ring>().SetFirePoint(firePoint);
-            collision.gameObject.GetComponent<Ring>().SetPlayer(this.gameObject);
+            collision.gameObject.GetComponent<Ring>().SetPlayer(gameObject);
             if (gameObject.GetComponent<NetworkObject>().IsOwner)
             {
                 collision.gameObject.GetComponent<Ring>().Passive();
@@ -140,4 +140,15 @@ public class Inventory : NetworkBehaviour
             ring.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
+    [ServerRpc(RequireOwnership = false)]
+    public void SetPlayerServerRpc()
+    {
+        SetPlayerClientRpc();
+    }
+    [ClientRpc]
+    public void SetPlayerClientRpc()
+    {
+        //a.GetComponent<Ring>().SetPlayer();
+    }
+
 }
