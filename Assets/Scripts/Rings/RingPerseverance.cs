@@ -140,7 +140,7 @@ public class RingPerseverance : Ring
         ActiveClientRpc();
     }
 
-    [ServerRpc(RequireOwnership = false)]
+    [ClientRpc]
     public void ActiveClientRpc()
     {
         Active();
