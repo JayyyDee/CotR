@@ -47,7 +47,7 @@ public class RingBienveillance : Ring
         }
         if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
-            Shoot();
+            ShootServerRpc();
         }
 
         if (!canActive)
@@ -62,7 +62,7 @@ public class RingBienveillance : Ring
 
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
-            Active();
+            ActiveServerRpc();
         }
     }
 
@@ -138,6 +138,30 @@ public class RingBienveillance : Ring
 
     }
 
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ShootServerRpc()
+    {
+        ShootClientRpc();
+    }
+
+    [ClientRpc]
+    public void ShootClientRpc()
+    {
+        Shoot();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ActiveServerRpc()
+    {
+        ActiveClientRpc();
+    }
+
+    [ClientRpc]
+    public void ActiveClientRpc()
+    {
+        Active();
+    }
 
     public override void Drop()
     {

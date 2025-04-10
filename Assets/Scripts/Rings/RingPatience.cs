@@ -104,6 +104,7 @@ public class RingPatience : Ring
         canFire = false;
         GameObject bullet = Instantiate(bulletPrefab,spawnPoint, Quaternion.identity);
         bullet.GetComponent<ZonePatience>().player = playerCharacter;
+        bullet.GetComponent<NetworkObject>().Spawn();
         zones.Enqueue(bullet);
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber", this.gameObject);
         if (zones.Count > 3)
