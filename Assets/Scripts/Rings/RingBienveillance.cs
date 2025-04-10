@@ -45,7 +45,7 @@ public class RingBienveillance : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire)
+        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
             Shoot();
         }
@@ -60,7 +60,7 @@ public class RingBienveillance : Ring
             }
         }
 
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
             Active();
         }
