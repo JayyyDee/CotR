@@ -33,6 +33,7 @@ public class ExplosionPassion : NetworkBehaviour
     public void DespawnServerRpc()
     {
         gameObject.GetComponent<NetworkObject>().Despawn();
+        DespawnClientRpc();
     }
 
     [ClientRpc]

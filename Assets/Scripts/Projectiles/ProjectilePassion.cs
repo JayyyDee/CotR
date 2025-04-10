@@ -66,26 +66,22 @@ public class ProjectilePassion : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void ExplosionServerRpc()
     {
-        ExplosionClientRpc();
+        GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+
+        if (boost)
+        {
+            explosion.transform.localScale = new Vector3(3, 3, 1);
+            explosion.GetComponent<SpriteRenderer>().color = Color.yellow;
+        }
+        
+        explosion.GetComponent<NetworkObject>().Spawn();
+        //ExplosionClientRpc();
     }
 
     [ClientRpc]
     private void ExplosionClientRpc()
     {
-        GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-
-        if (boost)
-        {
-            //explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-            explosion.transform.localScale = new Vector3(3, 3, 1);
-            explosion.GetComponent<SpriteRenderer>().color = Color.yellow;
-        }
-        else
-        {
-
-            //explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-        }
-        explosion.GetComponent<NetworkObject>().Spawn();
+        
 
     }
 
