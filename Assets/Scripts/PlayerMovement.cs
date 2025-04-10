@@ -36,6 +36,7 @@ public class PlayerMovement : NetworkBehaviour
     public float footstepsSpeed = 0.2f; //BASE Time between playing each Footsteps sound //How fast we walk //will have to modif to match selon le speed animation
 
     private Rigidbody2D rb;
+    private Animator animator;
 
    
     void Start() {
@@ -43,6 +44,7 @@ public class PlayerMovement : NetworkBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
         inventory = gameObject.GetComponent<Inventory>();
+        animator = gameObject.GetComponent<Animator>(); 
         
 
     }
@@ -88,6 +90,13 @@ public class PlayerMovement : NetworkBehaviour
             //If the player is not the owner of the playable, can't access the movement.
             if (!IsOwner) {
                 return;
+            }
+            animator.SetFloat("XVelocity", rb.velocity.x);
+            animator.SetFloat("YVelocity", rb.velocity.y);
+            if(rb.velocity.x<0){
+                GetComponent<SpriteRenderer>().flipX = true;
+            }else{
+                GetComponent<SpriteRenderer>().flipX = false;
             }
             PlayerMov();
         }
