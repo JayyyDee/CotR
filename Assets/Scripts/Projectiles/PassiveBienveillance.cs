@@ -30,7 +30,7 @@ public class PassiveBienveillance : NetworkBehaviour
     }
 
 
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     public void MoveZoneServerRpc( )
     {
         MoveZoneClientRpc();
