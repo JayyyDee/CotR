@@ -38,7 +38,6 @@ public class RingPassion : Ring
     // Update is called once per frame
     void Update()
     {
-        /*Debug.Log(timer + " Passion");*/
         
         if (!canFire)
         {
@@ -81,12 +80,13 @@ public class RingPassion : Ring
 
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber", this.gameObject);
+        bullet.GetComponent<ProjectilePassion>().fireForce = fireForce;
+        bullet.GetComponent<ProjectilePassion>().player = playerCharacter;
         if (activeBoost)
         {
             bullet.GetComponent<SpriteRenderer>().color = new Color(1.00f, 0.65f, 0.00f);
             bullet.GetComponent<ProjectilePassion>().SetBoost(true);
-            bullet.GetComponent<ProjectilePassion>().fireForce = fireForce;
-            bullet.GetComponent<ProjectilePassion>().player = playerCharacter;
+            
             activeBoost = false;
         }
         bullet.GetComponent<NetworkObject>().Spawn();

@@ -34,7 +34,6 @@ public class RingBienveillance : Ring
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(timer + " Patience");
 
         if (!canFire)
         {
@@ -73,6 +72,7 @@ public class RingBienveillance : Ring
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = bulletPrefab.transform.rotation * firePoint.transform.rotation;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
+        bullet.GetComponent<ProjectileBienveillance>().player = playerCharacter;
         bullet.GetComponent<NetworkObject>().Spawn();
     }
 
@@ -81,20 +81,17 @@ public class RingBienveillance : Ring
         Vector3 pos = firePoint.transform.position + (firePoint.transform.right * 3f);
         Quaternion rot = firePoint.transform.rotation;
         GameObject active = Instantiate(activePrefab, pos, rot);
-        active.GetComponent<NetworkObject>().Spawn();
         active.GetComponent<ActiveBienveillance>().player = playerCharacter;
+        active.GetComponent<NetworkObject>().Spawn();
+        
         canActive = false;
     }
 
     public override void Passive()
-    {
-        if (playerCharacter.GetComponent<NetworkObject>().IsOwner)
-        {
-            GameObject passive = Instantiate(passivePrefab);
-            passive.GetComponent<NetworkObject>().Spawn();
-            passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
-        }
-        
+    {   
+        GameObject passive = Instantiate(passivePrefab);
+        passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
+        passive.GetComponent<NetworkObject>().Spawn();   
     }
 
     public override void SetEquiped(bool boole)
@@ -146,23 +143,13 @@ public class RingBienveillance : Ring
         //ShootClientRpc();
     }
 
-    [ClientRpc]
-    public void ShootClientRpc()
-    {
-        Shoot();
-    }
-
     [ServerRpc(RequireOwnership = false)]
     public void ActiveServerRpc()
     {
-        ActiveClientRpc();
-    }
-
-    [ClientRpc]
-    public void ActiveClientRpc()
-    {
         Active();
     }
+
+    
 
     public override void Drop()
     {
