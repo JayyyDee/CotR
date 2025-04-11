@@ -129,10 +129,10 @@ public class RingIntrepidite : Ring
         ShootClientRpc();
     }
 
-    [ClientRpc]
-    public void ShootClientRpc() {
-        Shoot();
-    }
+    //[ClientRpc]
+    //public void ShootClientRpc() {
+    //    Shoot();
+    //}
 
     [ServerRpc(RequireOwnership = false)]
     public void DropServerRpc(Vector2 pos)
