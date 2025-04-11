@@ -19,7 +19,7 @@ public class ProjectileBravoure : MonoBehaviour
     IEnumerator Shooting()
     {
         preHitbox.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         hitbox.SetActive(true);
         preHitbox.SetActive(false);
         yield return new WaitForSeconds(0.1f);
