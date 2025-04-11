@@ -88,10 +88,16 @@ public class RingBienveillance : Ring
     }
 
     public override void Passive()
-    {   
+    {
+        PassiveServerRpc();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void PassiveServerRpc()
+    {
         GameObject passive = Instantiate(passivePrefab);
         passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
-        passive.GetComponent<NetworkObject>().Spawn();   
+        passive.GetComponent<NetworkObject>().Spawn();
     }
 
     public override void SetEquiped(bool boole)

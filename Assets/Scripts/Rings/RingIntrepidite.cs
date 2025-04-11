@@ -130,7 +130,6 @@ public class RingIntrepidite : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-
         Shoot();
     }
 
