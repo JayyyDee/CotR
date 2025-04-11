@@ -123,7 +123,7 @@ public class RingIntrepidite : Ring
         attackSpeed = speed;
     }
 
-    [ServerRpc(RequireOwnership = false)]
+    [ServerRpc]
     public void ShootServerRpc()
     {
         ShootClientRpc();

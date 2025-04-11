@@ -42,6 +42,11 @@ public class Projectile : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     public void DespawnServerRpc()
     {
+        DespawnClientRpc();
+    }
+
+    [ClientRpc]
+    public void DespawnClientRpc() {
         gameObject.GetComponent<NetworkObject>().Despawn();
         Destroy(gameObject);
 
