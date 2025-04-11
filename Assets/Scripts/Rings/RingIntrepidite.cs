@@ -32,9 +32,6 @@ public class RingIntrepidite : Ring
     */
     private float attackSpeed =1f;
 
-
-
-    // Update is called once per frame
     void Update()
     {
         //Debug.Log(timer + " Intr�pidit�");
@@ -72,7 +69,6 @@ public class RingIntrepidite : Ring
 
     public override void Shoot()
     {
-
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = firePoint.transform.rotation;
         StartCoroutine(TripleShot(pos, rot));
@@ -130,9 +126,13 @@ public class RingIntrepidite : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        Shoot();
+        ShootClientRpc();
     }
 
+    [ClientRpc]
+    public void ShootClientRpc() {
+        Shoot();
+    }
 
     [ServerRpc(RequireOwnership = false)]
     public void DropServerRpc(Vector2 pos)

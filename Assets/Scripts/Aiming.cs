@@ -11,7 +11,7 @@ public class Aiming : NetworkBehaviour {
    
 
     void FixedUpdate() {
-        if (!playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (!IsOwner)
         {
             return;
         }
