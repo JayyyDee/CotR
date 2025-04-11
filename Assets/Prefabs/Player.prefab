@@ -1213,10 +1213,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivePerseverance
       objectReference: {fileID: 0}
-    - target: {fileID: 1615494897302446803, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6143157664559421963, guid: 23ddfa151be677c429b5da21c03d8855, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
