@@ -177,6 +177,17 @@ public class PlayerMovement : NetworkBehaviour
     }
 
     [ServerRpc(RequireOwnership = false)]
+    public void AddForceServerRpc(Vector2 direction, float force)
+    {
+        AddForceClientRpc(direction, force);
+    }
+    [ClientRpc]
+    public void AddForceClientRpc(Vector2 direction, float force)
+    {
+        GetComponent<Rigidbody2D>().AddForce(direction * force, ForceMode2D.Impulse);
+    }
+
+    [ServerRpc(RequireOwnership = false)]
     public void RemoveSlowServerRpc() {
         RemoveSlowClientRpc();
     }

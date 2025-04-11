@@ -16,7 +16,8 @@ public class PassiveBienveillance : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveZoneServerRpc();
+        Vector2 playerPos = player.transform.position;
+        MoveZoneServerRpc(playerPos);
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -31,14 +32,15 @@ public class PassiveBienveillance : NetworkBehaviour
 
 
     [ServerRpc(RequireOwnership = false)]
-    public void MoveZoneServerRpc( )
+    public void MoveZoneServerRpc(Vector2 pos)
     {
-        MoveZoneClientRpc();
+        
+        MoveZoneClientRpc(pos);
     }
 
     [ClientRpc]
-    public void MoveZoneClientRpc()
+    public void MoveZoneClientRpc(Vector2 pos)
     {
-        gameObject.transform.position = player.transform.position;
+        gameObject.transform.position = pos;
     }
 }

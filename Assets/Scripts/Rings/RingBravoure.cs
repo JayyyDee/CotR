@@ -67,7 +67,7 @@ public class RingBravoure : Ring
         
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
-            Active();
+            ActiveServerRpc();
         }
 
         if (startPassive)
@@ -136,11 +136,6 @@ public class RingBravoure : Ring
 
     [ServerRpc(RequireOwnership = false)]
     public void ActiveServerRpc() {
-        ActiveClientRpc();
-    }
-
-    [ClientRpc]
-    public void ActiveClientRpc() {
         Active();
     }
 

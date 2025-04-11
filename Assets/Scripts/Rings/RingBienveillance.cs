@@ -100,6 +100,12 @@ public class RingBienveillance : Ring
         passive.GetComponent<NetworkObject>().Spawn();
     }
 
+    [ClientRpc]
+    public void PassiveClientRpc()
+    {
+
+    }
+
     public override void SetEquiped(bool boole)
     {
         equiped = boole;

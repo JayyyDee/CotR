@@ -23,10 +23,8 @@ public class ActivePerseverance : NetworkBehaviour
         if (collider.CompareTag("Enemy"))
         {
             Vector2 forceDirection = collider.gameObject.transform.position - gameObject.transform.position;
-            
-            collider.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1,1) * 3000f);
 
-            Debug.Log("HIT");
+            collider.gameObject.GetComponent<PlayerMovement>().AddForceServerRpc(forceDirection, 3000f); 
         }
     }
 
