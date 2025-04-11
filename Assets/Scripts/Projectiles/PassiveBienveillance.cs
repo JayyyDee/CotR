@@ -22,7 +22,7 @@ public class PassiveBienveillance : NetworkBehaviour
 
     private void OnTriggerStay2D(Collider2D collider)
     { 
-        if (collider.CompareTag("Enemy") && collider.gameObject != player)
+        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
         {
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
             Debug.Log("Dmg");
