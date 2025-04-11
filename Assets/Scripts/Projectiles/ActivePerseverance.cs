@@ -20,11 +20,11 @@ public class ActivePerseverance : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {   // && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner
-        if (collider.CompareTag("Enemy"))
+        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
         {
-            Vector2 forceDirection = collider.gameObject.transform.position - gameObject.transform.position;
-
-            collider.gameObject.GetComponent<PlayerMovement>().AddForceServerRpc(forceDirection, 3000f); 
+            Vector2 forceDirection = (collider.gameObject.transform.position - gameObject.transform.position).normalized;
+            
+            collider.gameObject.GetComponent<PlayerMovement>().AddForceServerRpc(forceDirection, 150f); 
         }
     }
 
