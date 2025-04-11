@@ -23,7 +23,7 @@ public class ActiveBienveillance : NetworkBehaviour
         if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
         {
             Vector2 forceDirection = (collider.gameObject.transform.position - gameObject.transform.position)*(-1);
-            collider.gameObject.GetComponent<PlayerMovement>().AddForceServerRpc(forceDirection , 3000f);
+            collider.gameObject.GetComponent<PlayerMovement>().AddForce(forceDirection , 3000f);
 
             Debug.Log("HIT");
         }

@@ -24,7 +24,7 @@ public class ActivePerseverance : NetworkBehaviour
         {
             Vector2 forceDirection = (collider.gameObject.transform.position - gameObject.transform.position).normalized;
             
-            collider.gameObject.GetComponent<PlayerMovement>().AddForceServerRpc(forceDirection, 150f); 
+            collider.gameObject.GetComponent<PlayerMovement>().AddForce(forceDirection, 150f); 
         }
     }
 
