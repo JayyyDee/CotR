@@ -71,7 +71,9 @@ public class Inventory : NetworkBehaviour
                 foreach (Ring ring in inventory)
             {
                 ring.SetAttackSpeed(attackSpeed);
+                GameObject.Find("Slot" + i).GetComponent<Image>().color = Color.white;
                 GameObject.Find("Slot" + i).GetComponent<Image>().sprite = inventory[i].GetComponent<SpriteRenderer>().sprite;
+                
                 fullInv += (ring.name + " ");
                 i++;
             }

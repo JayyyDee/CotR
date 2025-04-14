@@ -81089,21 +81089,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Collect the green gem in the middle and survive 20 seconds with it!
-
-    (Also
-    don''t die, you''ll lose otherwise...)
+  m_text: '
 
 
+    Collect the green gem in the middle and survive 20 seconds with
+    it!
+
+    (Also don''t die, you''ll lose otherwise...)
+
+
+
+    Each rIng has an
+    attack, an active, and a passive. A ring''s passive
+
+    will always remain active
+    once you pick that ring up!
 
 
 
     WASD = Move
 
-    Left-click =
-    Use weapon
+    Left-click = Attack
 
-    E = Use active ability
+    Left
+    Shift = Active ability
 
     1, 2, 3, 4, 5 = Switch between rings
 
