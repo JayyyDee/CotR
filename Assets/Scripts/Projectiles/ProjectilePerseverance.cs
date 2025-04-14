@@ -17,7 +17,7 @@ public class ProjectilePerseverance : NetworkBehaviour
     {
         base.OnNetworkSpawn();
 
-        GetComponent<Rigidbody2D>().AddForce(transform.right * force, ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.right.y*-1,transform.right.x) * force, ForceMode2D.Impulse);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
