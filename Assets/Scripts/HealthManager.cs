@@ -10,6 +10,14 @@ public class HealthManager : NetworkBehaviour
     public int maxHealth = 1000;
     private int currentHealth;
 
+    //Passive healing
+    private float healCooldown = 0.05f;
+    private float healTimer;
+
+    public float hitCooldown = 5f;
+    private float hitTimer;
+    private bool isHit = false;
+
     public void Start()
     {
         currentHealth = maxHealth;
@@ -19,8 +27,7 @@ public class HealthManager : NetworkBehaviour
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))
-        {
-            
+        {           
             TakeDamageServerRpc(100);
         }
 
@@ -29,8 +36,18 @@ public class HealthManager : NetworkBehaviour
         {
             HealingServerRpc(100);
         }
-    }
 
+        PassiveHealingRecovery();
+
+        //Passive heal overtime when not hit for 5 seconds
+        if (isHit == false)
+            healTimer += (Time.deltaTime);
+            if (healTimer > healCooldown) {
+                HealingServerRpc(5);
+                healTimer = 0;
+            }
+     
+    }
 
 
     [ServerRpc(RequireOwnership = false)]
@@ -48,6 +65,10 @@ public class HealthManager : NetworkBehaviour
     {
         if (currentHealth > 0)
         {
+            //Reset passive healing
+            isHit = true;
+            hitTimer = 0;
+
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
             Debug.Log(currentHealth);
@@ -85,5 +106,15 @@ public class HealthManager : NetworkBehaviour
         //gameObject.GetComponent<DeathScreenUI>().Death();
         gameObject.SetActive(false);
         deathScreen.gameObject.SetActive(true);
+    }
+
+    private void PassiveHealingRecovery() {
+        if (isHit == true) {
+            hitTimer += (Time.deltaTime);
+            if (hitTimer > hitCooldown) {
+                isHit = false;
+                hitTimer = 0;
+            }
+        }
     }
 }
