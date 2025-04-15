@@ -7,6 +7,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using Unity.Netcode;
 
+
 public class Inventory : NetworkBehaviour
 {
     private List<Ring> inventory = new List<Ring>();
@@ -29,12 +30,15 @@ public class Inventory : NetworkBehaviour
             
         if (collision.CompareTag("Ring"))
         {
-            collision.gameObject.GetComponent<NetworkObject>().ChangeOwnership(NetworkManager.Singleton.LocalClientId);
+
+            Debug.Log("Collision " +this.OwnerClientId);
+            SetOwnershipServerRpc(collision.GetComponent<NetworkObject>().NetworkObjectId, this.OwnerClientId);
             collision.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.transform.GetChild(1).gameObject.SetActive(false);
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            
 
-           
+
             if (inventory.Count <= 0)
             {
                 equipedRing = collision.gameObject.GetComponent<Ring>();
@@ -181,14 +185,17 @@ public class Inventory : NetworkBehaviour
         }
     }
     [ServerRpc(RequireOwnership = false)]
-    public void SetPlayerServerRpc()
+    public void SetOwnershipServerRpc(ulong ringId, ulong playerId)
     {
-        SetPlayerClientRpc();
+        Debug.Log(this.OwnerClientId);
+        Debug.Log(playerId);
+        if (NetworkManager.Singleton.SpawnManager.SpawnedObjects.TryGetValue(ringId, out var netObj))
+        {
+            
+            netObj.ChangeOwnership(playerId);
+
+        }
     }
-    [ClientRpc]
-    public void SetPlayerClientRpc()
-    {
-        //a.GetComponent<Ring>().SetPlayer();
-    }
+    
 
 }

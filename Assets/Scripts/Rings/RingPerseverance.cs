@@ -46,6 +46,7 @@ public class RingPerseverance : Ring
         }
         if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
         {
+            canFire = false;
             ShootServerRpc();
         }
 
