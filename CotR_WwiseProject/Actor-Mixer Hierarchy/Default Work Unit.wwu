@@ -3723,6 +3723,13 @@
 				<Folder Name="OTHER" ID="{502DB252-8C0F-4493-B91C-717415F90DE1}" ShortID="51391558">
 					<ChildrenList>
 						<SwitchContainer Name="Switch_Footsteps" ID="{B03350EF-8F17-4DD8-B630-D913070D9C4B}" ShortID="304605297">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
@@ -5412,6 +5419,214 @@
 								<ActiveSource Name="SFX_SelectRing_Type9_$itemnumber" ID="{EEAA7200-7094-407C-A3A0-C722A8F5444E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="SFX_SelectRing_Random" ID="{961BE391-2592-44D8-8B9D-81646659A4FF}" ShortID="724131141">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_SelectRing_Type9_$itemnumber" ID="{BE8EF499-C57F-4F7C-A9D1-95DD5BB2BFE4}" ShortID="348965231">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_SelectRing_Type9_$itemnumber" ID="{EAB9EC45-48AD-4460-98C9-785909F8B111}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.414631096723941"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.760790956115261"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_SelectRing_Type9_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="771166883"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_SelectRing_Type9_$itemnumber" ID="{EAB9EC45-48AD-4460-98C9-785909F8B111}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_SelectRing_Type5_$itemnumber" ID="{B05A6196-44C6-4BEC-81C2-1D04492F51AB}" ShortID="3360726">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_SelectRing_Type5_$itemnumber" ID="{FB941253-195E-4867-A04E-80CE825220EF}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.737967273068299"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.2705209282346"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_SelectRing_Type5_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="655524017"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_SelectRing_Type5_$itemnumber" ID="{FB941253-195E-4867-A04E-80CE825220EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_SelectRing_Type6_$itemnumber" ID="{7C50C653-2F28-4B9B-B0AE-890046AA18DC}" ShortID="509169415">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_SelectRing_Type6_$itemnumber" ID="{9273BDD0-EC43-4051-A3ED-692F8BDA9E54}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.669496082783612"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.10695086255451"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_SelectRing_Type6_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="647561455"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_SelectRing_Type6_$itemnumber" ID="{9273BDD0-EC43-4051-A3ED-692F8BDA9E54}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_SelectRing_Type7_$itemnumber" ID="{52ECC35A-DAC1-4FBC-9FE0-D4C4ED4C2050}" ShortID="368328846">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_SelectRing_Type7_$itemnumber" ID="{8357AD2B-E831-46C2-868E-7FA74249DD3F}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.357571771486701"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.77981073119434"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_SelectRing_Type7_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="690661442"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_SelectRing_Type7_$itemnumber" ID="{8357AD2B-E831-46C2-868E-7FA74249DD3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_SelectRing_Type8_$itemnumber" ID="{DAC4E7DD-44F3-4B36-B2C7-FFA9214343B7}" ShortID="1058832620">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A2FC763-26FA-4FD3-984F-9D0C219EC583}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{914B070E-3BAE-476F-A389-A2064C1667A8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_SelectRing_Type8_$itemnumber" ID="{555823CD-F380-4349-BC0C-54CE01965DD8}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.399415276660677"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.391807366629045"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.764594911131077"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_SelectRing_Type8_$itemnumber.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="459332862"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_SelectRing_Type8_$itemnumber" ID="{555823CD-F380-4349-BC0C-54CE01965DD8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

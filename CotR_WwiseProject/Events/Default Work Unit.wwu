@@ -1743,6 +1743,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFX_SelectRing_Random" ID="{7E2ED4C1-3DAE-4DBF-85ED-D1B726A7C7F4}">
+							<ChildrenList>
+								<Action Name="" ID="{19CCCA5E-1DF8-4C5E-98FB-1E929F60EDBC}" ShortID="49199441">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Random" ID="{961BE391-2592-44D8-8B9D-81646659A4FF}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Death" ID="{113F0A9E-8D9B-40B5-8E64-21A0E393EC62}" ShortID="708758796">

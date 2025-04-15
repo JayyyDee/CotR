@@ -56,10 +56,36 @@ public class Inventory : NetworkBehaviour
                 Debug.Log("patience");
                 collision.gameObject.GetComponent<RingPatience>().SetCamera(gameObject.transform.Find("PlayerCamera").gameObject.GetComponent<Camera>());
             }
-            
 
-            
+            if (collision.gameObject.name == "Passion") //J'ai ajouter les IF suivant pour activer les sons lorsqu'on récupère les anneaux 
+            {
+                AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber", this.gameObject);
+            }
 
+            if (collision.gameObject.name == "Bravoure")
+            {
+                AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber", this.gameObject);
+            }
+
+            if (collision.gameObject.name == "Intrépidité")
+            {
+                AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Intr_pidit__Equipe_FULL__itemnumber", this.gameObject);
+            }
+
+            if (collision.gameObject.name == "Bienveillance")
+            {
+                AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber", this.gameObject);
+            }
+
+            if (collision.gameObject.name == "Patience")
+            {
+                AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Patience_Equipe_FULL__itemnumber", this.gameObject);
+            }
+
+            if (collision.gameObject.name == "Perseverance")
+            {
+                AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber", this.gameObject);
+            }
 
             string fullInv = "";
             int i = 0;
@@ -91,22 +117,33 @@ public class Inventory : NetworkBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             ChangeEquiped(0);
+            AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Random", this.gameObject);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             ChangeEquiped(1);
+            AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Random", this.gameObject);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             ChangeEquiped(2);
+            AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Random", this.gameObject);
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             ChangeEquiped(3);
+            AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Random", this.gameObject);
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             ChangeEquiped(4);
+            AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Random", this.gameObject);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            ChangeEquiped(5);
+            AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Random", this.gameObject);
         }
 
     }

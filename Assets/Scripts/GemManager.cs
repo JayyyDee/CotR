@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using UnityEngine.UI;
 
 public class GemManager : MonoBehaviour
 {
+    public GameManager GameManager;
     [SerializeField] public Image gemIcon;
     private int gemCounter = 0;
     private GameObject gem;
@@ -40,6 +42,7 @@ public class GemManager : MonoBehaviour
     {
         if (gem)
         {
+            AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Type4__itemnumber", this.gameObject);
             DropGemServerRpc();
         }
         
@@ -49,6 +52,7 @@ public class GemManager : MonoBehaviour
     private void DropGemServerRpc()
     {
         DropGemClientRpc();
+
     }
 
     [ServerRpc]
@@ -56,6 +60,6 @@ public class GemManager : MonoBehaviour
     {
         gem.transform.position = transform.position;
         gem.gameObject.SetActive(true);
-        
+
     }
 }

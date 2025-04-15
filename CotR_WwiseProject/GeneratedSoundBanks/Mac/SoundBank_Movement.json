@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{57AB60DA-A6F4-4B2B-BFAC-3C4279A4B7E3}",
     "Language": "SFX",
-    "Hash": "{8A250DDF-E570-9DC0-1A6D-8559F56B498F}",
+    "Hash": "{308652B2-03CB-EB51-6051-B89E7912F2C2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Movement",
     "ShortName": "SoundBank_Movement",
     "Path": "SoundBank_Movement.bnk",
@@ -124,6 +124,6 @@
     ]
    }
   ],
-  "FileHash": "{DC570A7C-D112-0BD1-ADB5-8B9DC8347F43}"
+  "FileHash": "{D1F38708-2CE0-27DB-6DA8-7AFE89C53A09}"
  }
 }

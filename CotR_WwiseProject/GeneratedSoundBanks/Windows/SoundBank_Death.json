@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{81C2CDA1-D199-4B46-B658-C782E2E4B19E}",
     "Language": "SFX",
-    "Hash": "{92C6A62D-AB33-3DC0-EFAF-98D5F722A60B}",
+    "Hash": "{FF3D2A5F-E13E-0DBC-8A25-A6406FC7F84D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Death",
     "ShortName": "SoundBank_Death",
     "Path": "SoundBank_Death.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Death_$itemnumber.wav",
-      "CachePath": "D8/{D831CFC1-F670-C8EC-0E25-52336E445A8F}.wem"
+      "CachePath": "33/{33146734-856F-DE4F-46FE-D0F481982E3D}.wem"
      },
      {
       "Id": "482170759",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_DropLoot_$itemnumber.wav",
-      "CachePath": "05/{05E543F7-0398-D201-A3A5-42A1DBCF60FD}.wem"
+      "CachePath": "CE/{CEBC63C6-9473-0C25-CFDD-B7D9952BB4AF}.wem"
      },
      {
       "Id": "507270087",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_SFX_Death_Type1_$itemnumber.wav",
-      "CachePath": "2A/{2A1714A7-0FAD-637F-9BC6-5A4988A6B1F4}.wem"
+      "CachePath": "56/{56ABB6D2-5290-C772-C817-F3B5A4C7878A}.wem"
      },
      {
       "Id": "541896313",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_SFX_Death_Type2_$itemnumber.wav",
-      "CachePath": "BF/{BF63EDD1-B3E5-B5FA-1693-1F4EBA01A3B6}.wem"
+      "CachePath": "D9/{D9CCE9FB-EBEF-5E1A-14D8-F531440409D9}.wem"
      },
      {
       "Id": "542496800",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Death4_$itemnumber.wav",
-      "CachePath": "1B/{1B33067A-D992-AEEF-A3D6-AA786EDA5A1B}.wem"
+      "CachePath": "55/{55ED2676-18BE-2257-E551-68D5A6B42721}.wem"
      },
      {
       "Id": "905667814",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Death2_$itemnumber.wav",
-      "CachePath": "B6/{B61B9DBE-ED2F-FDD2-CFDC-41B254C489E1}.wem"
+      "CachePath": "5E/{5E6BF783-9419-4B92-1BAE-39901A044245}.wem"
      },
      {
       "Id": "1048739788",
@@ -174,6 +174,6 @@
     ]
    }
   ],
-  "FileHash": "{83E62D56-07D0-7EC9-7352-AF90B966D2E3}"
+  "FileHash": "{22B92E20-F5DB-3D5D-4211-F2CA0DD5FFCC}"
  }
 }

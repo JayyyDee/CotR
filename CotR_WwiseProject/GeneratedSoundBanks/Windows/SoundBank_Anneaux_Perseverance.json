@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B6CEF4CD-56E2-4401-8CF3-AA37CA6C3D67}",
     "Language": "SFX",
-    "Hash": "{D2841855-540A-D4F8-C712-8868D95F4E4A}",
+    "Hash": "{438E1034-7114-2EFF-0E3B-EABF719F74DA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Perseverance",
     "ShortName": "SoundBank_Anneaux_Perseverance",
     "Path": "SoundBank_Anneaux_Perseverance.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber.wav",
-      "CachePath": "D7/{D7C960F9-2B4E-8A72-0F77-DA0A5C082F29}.wem"
+      "CachePath": "67/{67B05AA7-5B3F-32D6-7918-C5DD26785946}.wem"
      },
      {
       "Id": "99092869",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber.wav",
-      "CachePath": "E9/{E94DAC1E-0140-7EFA-AC41-3435F48249B5}.wem"
+      "CachePath": "22/{22C46238-5A5E-E09A-0A9A-117006E95856}.wem"
      },
      {
       "Id": "168642711",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Attack_PT2_$itemnumber.wav",
-      "CachePath": "78/{78B85B98-21B4-8789-8373-6E7CCDB3D939}.wem"
+      "CachePath": "4A/{4AB63884-966D-3C47-1C73-691AFCA04170}.wem"
      },
      {
       "Id": "182449704",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber.wav",
-      "CachePath": "03/{031EA952-F0A1-2208-38E2-CB4BFBE2E8F6}.wem"
+      "CachePath": "D1/{D1253052-83B8-BF0E-CF39-3B7DA1A2B2B6}.wem"
      },
      {
       "Id": "326625302",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber.wav",
-      "CachePath": "11/{11A0F91A-542E-253E-E210-8A2C80294867}.wem"
+      "CachePath": "E5/{E572AB30-7A89-7F92-F2E6-BF30D4E4DDAC}.wem"
      },
      {
       "Id": "328737962",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber.wav",
-      "CachePath": "3E/{3E02294F-C44F-792E-CE51-3E3EFCDDA975}.wem"
+      "CachePath": "8C/{8C85AEB5-CA7D-8FCB-5BE7-45ADC85647BD}.wem"
      },
      {
       "Id": "363963665",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber.wav",
-      "CachePath": "D4/{D4D3A714-0C90-EA56-438A-55745488B207}.wem"
+      "CachePath": "D0/{D07146A1-821B-8096-4310-DDD3CDF8BF80}.wem"
      },
      {
       "Id": "526768663",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber.wav",
-      "CachePath": "A9/{A923ED21-037C-A7E2-84B5-D73E76555CD5}.wem"
+      "CachePath": "D3/{D3276EEA-7E7E-8A27-B59A-B328CAADA99B}.wem"
      },
      {
       "Id": "544681391",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber.wav",
-      "CachePath": "82/{82411C05-7844-7D37-F846-A85B6EE915BD}.wem"
+      "CachePath": "9B/{9B0F9E15-7B36-4803-ECC6-51C2C5CAE646}.wem"
      },
      {
       "Id": "556804157",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber.wav",
-      "CachePath": "4F/{4FC81AF0-3206-C3D1-8A42-39434A6DF5D8}.wem"
+      "CachePath": "E9/{E90584C6-4716-933C-BDDE-ECDCECBCCAA9}.wem"
      },
      {
       "Id": "570457252",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber.wav",
-      "CachePath": "7D/{7DAB43C5-DE18-0B01-B16F-C5548D7319CC}.wem"
+      "CachePath": "1C/{1C85AD3B-59AC-C87B-445A-01A25349B49E}.wem"
      },
      {
       "Id": "613183029",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber.wav",
-      "CachePath": "9B/{9B9BD850-1CCE-7D7E-6A47-46EEE0E7FA75}.wem"
+      "CachePath": "01/{012A9A34-8211-2D5E-855F-89E7E7D7E441}.wem"
      },
      {
       "Id": "646065622",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber.wav",
-      "CachePath": "B5/{B53F2D8C-6282-3316-15F6-03FD30EBA4AF}.wem"
+      "CachePath": "07/{07C463FC-89FC-7CFA-124C-DDEB8DD1D067}.wem"
      },
      {
       "Id": "764642898",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber.wav",
-      "CachePath": "47/{472603FA-0542-1403-8FA0-688C7C0BE78D}.wem"
+      "CachePath": "9A/{9A581186-174D-D6D8-1057-FC20DE950108}.wem"
      },
      {
       "Id": "807504013",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber.wav",
-      "CachePath": "75/{75FAF37C-7F77-35DD-853E-E35EE1B1C259}.wem"
+      "CachePath": "6E/{6E2EF4B5-B679-EBA7-74BA-A9791442BE7F}.wem"
      },
      {
       "Id": "855018348",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber.wav",
-      "CachePath": "CC/{CCC1F8FF-B6E1-725B-CFFA-6CF071F2B4EE}.wem"
+      "CachePath": "39/{393D7CD9-0D8F-3D25-789E-60F74EF5ABB9}.wem"
      },
      {
       "Id": "913382289",
@@ -157,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber.wav",
-      "CachePath": "F2/{F2B6AC83-1FE9-331F-E866-13E3BD92FFD4}.wem"
+      "CachePath": "CB/{CB43BDDA-8468-F97B-0BA9-9970AF44217D}.wem"
      },
      {
       "Id": "923683508",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber.wav",
-      "CachePath": "29/{296EF818-9B07-FB63-3609-AC07690B01A4}.wem"
+      "CachePath": "A1/{A1B637D9-3C06-F860-E99F-FC35EEEDEBA4}.wem"
      },
      {
       "Id": "953035216",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Attack_PT1_$itemnumber.wav",
-      "CachePath": "A3/{A363C7E6-DB24-3511-2683-8034BD16AB3E}.wem"
+      "CachePath": "F6/{F68969F7-B2D9-0676-00BE-F6A409094739}.wem"
      },
      {
       "Id": "984212802",
@@ -181,7 +181,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber.wav",
-      "CachePath": "82/{826D1DBF-50B6-8F71-507F-A0818FA765FB}.wem"
+      "CachePath": "59/{59EE1987-34ED-AFE1-BFBE-8787F92F05DE}.wem"
      },
      {
       "Id": "1000645471",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber.wav",
-      "CachePath": "F6/{F671E2AA-0C18-79AE-218B-1EB40B9E6F94}.wem"
+      "CachePath": "E7/{E7A7D403-D002-5CDC-DC08-931C46447282}.wem"
      },
      {
       "Id": "1001334910",
@@ -197,7 +197,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber.wav",
-      "CachePath": "EF/{EF64064D-3D77-FB2C-92A0-822F43F3335E}.wem"
+      "CachePath": "20/{20E6DC0B-7DFF-1768-AACE-4A856A81EE42}.wem"
      },
      {
       "Id": "1046603937",
@@ -205,7 +205,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber.wav",
-      "CachePath": "99/{994C0BD5-C4AC-29E5-7B47-614403331EF8}.wem"
+      "CachePath": "C3/{C399F862-5AA9-71D2-616F-1FE4D5DCFBAF}.wem"
      },
      {
       "Id": "1046782730",
@@ -213,7 +213,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber.wav",
-      "CachePath": "A7/{A75A06E6-E1D1-4DD5-CF64-2FD0F5FB06F1}.wem"
+      "CachePath": "E9/{E96C9C8B-09AE-CF6A-D4A4-032B93981871}.wem"
      },
      {
       "Id": "1066925925",
@@ -221,7 +221,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber.wav",
-      "CachePath": "44/{445F8A6D-46F2-86C0-9E2D-F50742AEB74E}.wem"
+      "CachePath": "58/{584D24C1-DFDE-0A55-9571-92A77634DF95}.wem"
      }
     ],
     "Events": [
@@ -592,6 +592,6 @@
     ]
    }
   ],
-  "FileHash": "{74609DB2-E95C-1EFF-69CC-C28208B87E21}"
+  "FileHash": "{F7E8132C-B281-6FCB-0456-72546895E82E}"
  }
 }

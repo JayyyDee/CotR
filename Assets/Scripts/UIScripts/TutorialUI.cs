@@ -11,6 +11,7 @@ public class TutorialUI : MonoBehaviour
 
     private void GameManager_OnLocalPlayerReadyChanged(object sender, System.EventArgs e) {
         if (GameManager.Instance.IsLocalPlayerReady()) {
+            AkUnitySoundEngine.PostEvent("Play_2MENU_SELECT__itemnumber", this.gameObject);
             Hide();
         }
     }

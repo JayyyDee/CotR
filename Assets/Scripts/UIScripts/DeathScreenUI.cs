@@ -12,6 +12,7 @@ public class DeathScreenUI : MonoBehaviour
 
         mainMenuButton.onClick.AddListener(() =>
         {
+            AkUnitySoundEngine.PostEvent("Play_1MENU_BACK__itemnumber", this.gameObject);
             gameObject.SetActive(false);
             Loader.Load(Loader.Scene.MainMenuScene);
         });

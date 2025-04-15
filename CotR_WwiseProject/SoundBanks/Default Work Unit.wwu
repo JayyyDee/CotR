@@ -226,6 +226,7 @@
 						<ObjectRef Name="Play_SFX_SelectRing_Type6__itemnumber" ID="{E588AA6D-033D-48A9-80EB-C8313F32E0E9}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_SelectRing_Type4__itemnumber" ID="{F24B8826-827A-4D49-BDF6-FBC6989F4116}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_SelectRing_Type8__itemnumber" ID="{2B93C6E0-17FC-4D92-A5D4-B23F0BB6DA66}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_SelectRing_Random" ID="{7E2ED4C1-3DAE-4DBF-85ED-D1B726A7C7F4}" WorkUnitID="{ABF34D60-4372-4E06-ADF8-B44FAAD8FE60}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

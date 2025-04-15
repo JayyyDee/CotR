@@ -8,11 +8,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	4014803068	Play_SFX_Death4__itemnumber			\Default Work Unit\Death\Play_SFX_Death4__itemnumber	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	167771395	SFX_Death_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\D8\{D831CFC1-F670-C8EC-0E25-52336E445A8F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_$itemnumber		135212
-	482170759	SFX_DropLoot_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\05\{05E543F7-0398-D201-A3A5-42A1DBCF60FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_DropLoot_$itemnumber		110746
-	507270087	FULL_SFX_Death_Type1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\2A\{2A1714A7-0FAD-637F-9BC6-5A4988A6B1F4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\FULL_SFX_Death_Type1_$itemnumber		123528
-	541896313	FULL_SFX_Death_Type2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\BF\{BF63EDD1-B3E5-B5FA-1693-1F4EBA01A3B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\FULL_SFX_Death_Type2_$itemnumber		146898
-	542496800	SFX_Death4_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1B\{1B33067A-D992-AEEF-A3D6-AA786EDA5A1B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death4_$itemnumber		62542
-	905667814	SFX_Death2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\B6\{B61B9DBE-ED2F-FDD2-CFDC-41B254C489E1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death2_$itemnumber		137404
+	167771395	SFX_Death_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\33\{33146734-856F-DE4F-46FE-D0F481982E3D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death_$itemnumber		135212
+	482170759	SFX_DropLoot_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\CE\{CEBC63C6-9473-0C25-CFDD-B7D9952BB4AF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_DropLoot_$itemnumber		110746
+	507270087	FULL_SFX_Death_Type1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\56\{56ABB6D2-5290-C772-C817-F3B5A4C7878A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\FULL_SFX_Death_Type1_$itemnumber		123528
+	541896313	FULL_SFX_Death_Type2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\D9\{D9CCE9FB-EBEF-5E1A-14D8-F531440409D9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\FULL_SFX_Death_Type2_$itemnumber		146898
+	542496800	SFX_Death4_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\55\{55ED2676-18BE-2257-E551-68D5A6B42721}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death4_$itemnumber		62542
+	905667814	SFX_Death2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\5E\{5E6BF783-9419-4B92-1BAE-39901A044245}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death2_$itemnumber		137404
 	1048739788	SFX_Death3_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\5D\{5DE7FDEC-5482-DE6D-9C7A-3F749EF4F378}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Death\SFX_Death3_$itemnumber		201310
 

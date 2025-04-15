@@ -6,17 +6,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	1219670470	Play_SFX_SelectRing_Type7__itemnumber			\Default Work Unit\Switch\Play_SFX_SelectRing_Type7__itemnumber	
 	1487608498	Play_SFX_SelectRing_Type3__itemnumber			\Default Work Unit\Switch\Play_SFX_SelectRing_Type3__itemnumber	
 	1541507328	Play_SFX_SelectRing_Type5__itemnumber			\Default Work Unit\Switch\Play_SFX_SelectRing_Type5__itemnumber	
+	2364136414	Play_SFX_SelectRing_Random			\Default Work Unit\Switch\Play_SFX_SelectRing_Random	
 	2560371015	Play_SFX_SelectRing_Type2__itemnumber			\Default Work Unit\Switch\Play_SFX_SelectRing_Type2__itemnumber	
 	3938999371	Play_SFX_SelectRing_Type6__itemnumber			\Default Work Unit\Switch\Play_SFX_SelectRing_Type6__itemnumber	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	334285022	SFX_SelectRing_Type2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1F\{1F2D095F-D315-72AD-11EC-EB225BDF0D2D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type2_$itemnumber		67288
-	459332862	SFX_SelectRing_Type8_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\5D\{5DC2FC01-ED1A-FC61-0508-73353D08AE56}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type8_$itemnumber		71720
-	647561455	SFX_SelectRing_Type6_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\CB\{CB69BD13-4261-59B8-D2D4-0F119E8CF024}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type6_$itemnumber		84088
-	655524017	SFX_SelectRing_Type5_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\C7\{C70BD8A9-8B25-60BA-CD94-029CE84C4E97}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type5_$itemnumber		102348
-	690661442	SFX_SelectRing_Type7_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\67\{676958E9-19DE-C15D-35F5-38EF7B3539E8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type7_$itemnumber		81168
-	771166883	SFX_SelectRing_Type9_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\75\{7512FBC6-316B-A0E2-DAE2-E4484D8B7729}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type9_$itemnumber		66560
-	838653210	SFX_SelectRing_Type1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\D5\{D51D142E-008F-4A11-F70B-B4059C24D9F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type1_$itemnumber		66556
-	850105993	SFX_SelectRing_Type4_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\07\{0742091D-8E3D-B2BE-4CE8-964370F239B5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type4_$itemnumber		102344
-	1022210140	SFX_SelectRing_Type3_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\68\{68BBC4D7-D98B-FBFA-1A14-5ED04B385781}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type3_$itemnumber		149092
+	334285022	SFX_SelectRing_Type2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1F\{1FF7EC78-C120-BE6E-9600-60465F17C060}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type2_$itemnumber		67288
+	459332862	SFX_SelectRing_Type8_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\00\{002A9DAB-B71E-8599-66B8-8403DEBAE628}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Random\SFX_SelectRing_Type8_$itemnumber		71720
+	647561455	SFX_SelectRing_Type6_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\CD\{CD6C0864-0AC3-16F9-3965-0E128F65733E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Random\SFX_SelectRing_Type6_$itemnumber		84088
+	655524017	SFX_SelectRing_Type5_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1C\{1C21F0AC-6C84-F005-F858-EA66DFC5B981}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Random\SFX_SelectRing_Type5_$itemnumber		102348
+	690661442	SFX_SelectRing_Type7_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\CE\{CE5E801F-F8DB-9D12-223A-DC5F8B07F631}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type7_$itemnumber		81168
+	771166883	SFX_SelectRing_Type9_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\AE\{AE34AEF2-4A87-7BD7-2542-F9C61DCE5B0C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type9_$itemnumber		66560
+	838653210	SFX_SelectRing_Type1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1C\{1CA8F69F-E3FD-6DE3-1E6A-A2E6F079250C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type1_$itemnumber		66556
+	850105993	SFX_SelectRing_Type4_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\2B\{2B2D7869-5859-60FC-98B7-01ABAB02F733}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type4_$itemnumber		102344
+	1022210140	SFX_SelectRing_Type3_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\25\{258B96AB-CBAB-40BB-BF48-8377162F48DC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Switch\SFX_SelectRing_Type3_$itemnumber		149092
 

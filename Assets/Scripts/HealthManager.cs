@@ -37,8 +37,10 @@ public class HealthManager : NetworkBehaviour
     public void TakeDamageServerRpc(int damage)
     {
         TakeDamageClientRpc(damage);
+        AkUnitySoundEngine.PostEvent("Play_SFX_Hit2__itemnumber", this.gameObject);
 
-      
+
+
     }
 
     [ClientRpc]
@@ -52,7 +54,9 @@ public class HealthManager : NetworkBehaviour
         }
 
         if (currentHealth <= 0) {
+            AkUnitySoundEngine.PostEvent("Play_FULL_SFX_Death_Type1__itemnumber", this.gameObject);
             Death();
+            
         }
     }
     [ServerRpc(RequireOwnership = false)]

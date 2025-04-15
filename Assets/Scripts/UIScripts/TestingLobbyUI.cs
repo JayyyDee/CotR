@@ -14,6 +14,7 @@ public class TestingLobbyUI : MonoBehaviour {
         //When clicking on the HOST button, start hosting a game.
         createGameButton.onClick.AddListener(() =>
         {
+            AkUnitySoundEngine.PostEvent("Play_3MENU_SELECT__itemnumber", this.gameObject);
             GameMultiplayer.Instance.StartHost();
         });
 
@@ -23,6 +24,7 @@ public class TestingLobbyUI : MonoBehaviour {
         //When clicking on the CLIENT button, join a game.
         joinGameButton.onClick.AddListener(() =>
         {
+            AkUnitySoundEngine.PostEvent("Play_3MENU_SELECT__itemnumber", this.gameObject);
             GameMultiplayer.Instance.StartClient(codeRoomText.text);
         });
     }

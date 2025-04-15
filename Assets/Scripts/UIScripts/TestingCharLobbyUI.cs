@@ -18,6 +18,7 @@ public class TestingCharLobbyUI : MonoBehaviour
     private void Awake() {
         readyButton.onClick.AddListener(() =>
         {
+            AkUnitySoundEngine.PostEvent("Play_4MENU_SELECT2__itemnumber", this.gameObject);
             CharacterLobbyReady.Instance.SetPlayerReady();
             spriteRenderer.sprite = differentSprite;
         });

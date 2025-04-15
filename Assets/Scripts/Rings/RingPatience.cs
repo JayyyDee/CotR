@@ -188,6 +188,7 @@ public class RingPatience : Ring
     {
         playerCharacter.transform.Find("RangePatience").gameObject.SetActive(true);
         Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
+        AkUnitySoundEngine.PostEvent("Play_SFX_DropLoot__itemnumber", this.gameObject);
         DropServerRpc(pos);
     }
     public void SetCamera(Camera camera)

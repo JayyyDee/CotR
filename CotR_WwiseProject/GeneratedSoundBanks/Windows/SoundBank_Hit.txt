@@ -3,6 +3,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3231612006	Play_SFX_Hit1__itemnumber			\Default Work Unit\Hit\Play_SFX_Hit1__itemnumber	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	299676561	SFX_Hit1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\D3\{D38BB2DC-5FD9-9EB9-669C-81A3847DAFF1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit\SFX_Hit1_$itemnumber		54872
-	356531239	SFX_Hit2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\14\{14DC39BB-6EC7-2B6B-18F6-144E9A50125F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit\SFX_Hit2_$itemnumber		55238
+	299676561	SFX_Hit1_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\CB\{CBFCC40F-77EC-106C-BDF1-AFF26094AD12}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit\SFX_Hit1_$itemnumber		54872
+	356531239	SFX_Hit2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\AA\{AA6B02DE-6199-4949-450C-3EC270D044C6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit\SFX_Hit2_$itemnumber		55238
 

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{91C0EBC3-CE22-4AEC-87D7-951548DB2AB4}",
     "Language": "SFX",
-    "Hash": "{AD512524-34FA-3E33-B2DE-E9E84D7C6AC6}",
+    "Hash": "{8FBF5A51-4E5E-5210-ED71-A3AA060535B1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Hit",
     "ShortName": "SoundBank_Hit",
     "Path": "SoundBank_Hit.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Hit1_$itemnumber.wav",
-      "CachePath": "D3/{D38BB2DC-5FD9-9EB9-669C-81A3847DAFF1}.wem"
+      "CachePath": "CB/{CBFCC40F-77EC-106C-BDF1-AFF26094AD12}.wem"
      },
      {
       "Id": "356531239",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Hit2_$itemnumber.wav",
-      "CachePath": "14/{14DC39BB-6EC7-2B6B-18F6-144E9A50125F}.wem"
+      "CachePath": "AA/{AA6B02DE-6199-4949-450C-3EC270D044C6}.wem"
      }
     ],
     "Events": [
@@ -64,6 +64,6 @@
     ]
    }
   ],
-  "FileHash": "{C02EDC42-7B33-2ABA-0364-840E80F6DFE2}"
+  "FileHash": "{50D174CB-F42A-C810-B23C-FF9ED642C18A}"
  }
 }

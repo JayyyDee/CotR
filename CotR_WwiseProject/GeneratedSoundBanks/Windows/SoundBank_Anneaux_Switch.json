@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5C26CBEC-D43B-4DDD-BD30-18E58B07E23A}",
     "Language": "SFX",
-    "Hash": "{216708E9-6D0E-4AB3-2A4D-55FB104632A2}",
+    "Hash": "{E6D19834-53AA-40AB-CC66-CE83249FBC17}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Switch",
     "ShortName": "SoundBank_Anneaux_Switch",
     "Path": "SoundBank_Anneaux_Switch.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type2_$itemnumber.wav",
-      "CachePath": "1F/{1F2D095F-D315-72AD-11EC-EB225BDF0D2D}.wem"
+      "CachePath": "1F/{1FF7EC78-C120-BE6E-9600-60465F17C060}.wem"
      },
      {
       "Id": "459332862",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type8_$itemnumber.wav",
-      "CachePath": "5D/{5DC2FC01-ED1A-FC61-0508-73353D08AE56}.wem"
+      "CachePath": "00/{002A9DAB-B71E-8599-66B8-8403DEBAE628}.wem"
      },
      {
       "Id": "647561455",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type6_$itemnumber.wav",
-      "CachePath": "CB/{CB69BD13-4261-59B8-D2D4-0F119E8CF024}.wem"
+      "CachePath": "CD/{CD6C0864-0AC3-16F9-3965-0E128F65733E}.wem"
      },
      {
       "Id": "655524017",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type5_$itemnumber.wav",
-      "CachePath": "C7/{C70BD8A9-8B25-60BA-CD94-029CE84C4E97}.wem"
+      "CachePath": "1C/{1C21F0AC-6C84-F005-F858-EA66DFC5B981}.wem"
      },
      {
       "Id": "690661442",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type7_$itemnumber.wav",
-      "CachePath": "67/{676958E9-19DE-C15D-35F5-38EF7B3539E8}.wem"
+      "CachePath": "CE/{CE5E801F-F8DB-9D12-223A-DC5F8B07F631}.wem"
      },
      {
       "Id": "771166883",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type9_$itemnumber.wav",
-      "CachePath": "75/{7512FBC6-316B-A0E2-DAE2-E4484D8B7729}.wem"
+      "CachePath": "AE/{AE34AEF2-4A87-7BD7-2542-F9C61DCE5B0C}.wem"
      },
      {
       "Id": "838653210",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type1_$itemnumber.wav",
-      "CachePath": "D5/{D51D142E-008F-4A11-F70B-B4059C24D9F6}.wem"
+      "CachePath": "1C/{1CA8F69F-E3FD-6DE3-1E6A-A2E6F079250C}.wem"
      },
      {
       "Id": "850105993",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type4_$itemnumber.wav",
-      "CachePath": "07/{0742091D-8E3D-B2BE-4CE8-964370F239B5}.wem"
+      "CachePath": "2B/{2B2D7869-5859-60FC-98B7-01ABAB02F733}.wem"
      },
      {
       "Id": "1022210140",
@@ -85,10 +85,36 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_SelectRing_Type3_$itemnumber.wav",
-      "CachePath": "68/{68BBC4D7-D98B-FBFA-1A14-5ED04B385781}.wem"
+      "CachePath": "25/{258B96AB-CBAB-40BB-BF48-8377162F48DC}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "2364136414",
+      "Name": "Play_SFX_SelectRing_Random",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Random",
+      "GUID": "{7E2ED4C1-3DAE-4DBF-85ED-D1B726A7C7F4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.34615985",
+      "DurationMax": "0.5325537",
+      "MediaRefs": [
+       {
+        "Id": "459332862"
+       },
+       {
+        "Id": "647561455"
+       },
+       {
+        "Id": "655524017"
+       },
+       {
+        "Id": "690661442"
+       },
+       {
+        "Id": "771166883"
+       }
+      ]
+     },
      {
       "Id": "379622684",
       "Name": "Play_SFX_SelectRing_Type1__itemnumber",
@@ -218,6 +244,6 @@
     ]
    }
   ],
-  "FileHash": "{923CC71B-DBEC-7C0A-14DE-3D223E2C834A}"
+  "FileHash": "{CD1E4F76-934B-8819-3184-27D0D51FC435}"
  }
 }

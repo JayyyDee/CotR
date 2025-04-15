@@ -31,6 +31,8 @@ public class GameManager : NetworkBehaviour {
     private bool isGamePaused = false;
     private Dictionary<ulong, bool> playerReadyDictionary;
 
+    private bool PlayingGemTimer = false;
+
     private uint musicPlayingID;
     private string currentMusicEvent = "";
 
@@ -72,14 +74,14 @@ public class GameManager : NetworkBehaviour {
 
         switch (state.Value) {
             case State.WaitingToStart: //When all of the players in the lobby is ready, change state to start countdown
-                gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber");
+                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber");
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
                 if (countdownToStartTimer.Value < 0f) {
                     state.Value = State.GemCountdown;
                 }
-                gameObject.GetComponent<MusicManager>().SwitchMusic("");
+                //gameObject.GetComponent<MusicManager>().SwitchMusic("");
                 break;
             case State.GemCountdown: //When the countdown finished, switch to game playing
                 //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
@@ -97,8 +99,11 @@ public class GameManager : NetworkBehaviour {
             case State.GemTaken:
                 //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
                 gemTakenTimer.Value -= Time.deltaTime;
+                if (!PlayingGemTimer)
+                    //StarGemTimer(); COMMENT BECAUSE IDK WHERE TO PUT THE STOP SOO IT DOESNT STOP UNLESS GAME ENDS
                 if (gemTakenTimer.Value < 0f) {
                     state.Value = State.GameOver;
+                    StopGemTimer();
                 }
                 if (gem.activeSelf == true) {
                     gemTakenTimer.Value = 20f; //Reset value when active
@@ -110,6 +115,25 @@ public class GameManager : NetworkBehaviour {
                 break;
         }
         //Debug.Log(state);
+    }
+
+    void StarGemTimer() 
+    {
+        PlayingGemTimer = true;
+        InvokeRepeating(nameof(PlayGemTimer), 0f, 1f);
+    
+    
+    }
+  public void StopGemTimer() 
+    { 
+        PlayingGemTimer = false;
+        CancelInvoke(nameof(PlayGemTimer));
+    
+    }
+
+    void PlayGemTimer()
+    {
+        AkUnitySoundEngine.PostEvent("Play_3MENU_BACK2__itemnumber", this.gameObject);
     }
 
     //This creates a new playerID when entering a server. It then checks if that dictionnary has content

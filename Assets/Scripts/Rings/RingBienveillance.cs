@@ -74,6 +74,7 @@ public class RingBienveillance : Ring
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<ProjectileBienveillance>().player = playerCharacter;
         bullet.GetComponent<NetworkObject>().Spawn();
+        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber", this.gameObject);
     }
 
     public override void Active()
@@ -83,7 +84,7 @@ public class RingBienveillance : Ring
         GameObject active = Instantiate(activePrefab, pos, rot);
         active.GetComponent<ActiveBienveillance>().player = playerCharacter;
         active.GetComponent<NetworkObject>().Spawn();
-        
+        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber", this.gameObject);
         canActive = false;
     }
 
@@ -98,6 +99,7 @@ public class RingBienveillance : Ring
         GameObject passive = Instantiate(passivePrefab);
         passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
         passive.GetComponent<NetworkObject>().Spawn();
+        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber", this.gameObject);
     }
 
     [ClientRpc]
@@ -166,6 +168,7 @@ public class RingBienveillance : Ring
     public override void Drop()
     {
         Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
+        AkUnitySoundEngine.PostEvent("Play_SFX_DropLoot__itemnumber", this.gameObject);
         DropServerRpc(pos);
     }
 

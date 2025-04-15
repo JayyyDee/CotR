@@ -17,6 +17,7 @@ public class MatchOverUI : MonoBehaviour
 
         createGameButton.onClick.AddListener(() =>
         {
+            AkUnitySoundEngine.PostEvent("Play_1MENU_BACK__itemnumber", this.gameObject);
             Loader.Load(Loader.Scene.MainMenuScene);
         });
     }

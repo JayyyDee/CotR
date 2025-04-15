@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BE4CE5B8-8F27-4066-B2D4-A5046170264B}",
     "Language": "SFX",
-    "Hash": "{9D821B42-5910-4FB4-CECC-A10C7FD59952}",
+    "Hash": "{DCBABD8C-0F92-2FD5-F7E1-87C0C648627C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Bienveillance",
     "ShortName": "SoundBank_Anneaux_Bienveillance",
     "Path": "SoundBank_Anneaux_Bienveillance.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Actif_PT5_$itemnumber.wav",
-      "CachePath": "AD/{AD521B64-F658-B30E-8474-751EE78FFE51}.wem"
+      "CachePath": "99/{99E7293E-851A-C532-46C6-6C3734388F4B}.wem"
      },
      {
       "Id": "226431273",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Bienveillance_Actif_FULL_$itemnumber.wav",
-      "CachePath": "D3/{D399C571-241F-1B0B-399D-873E778130C9}.wem"
+      "CachePath": "C7/{C7E3EBB2-710E-91A0-E247-63F8DDCE77D4}.wem"
      },
      {
       "Id": "255126568",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Attack_PT3_$itemnumber.wav",
-      "CachePath": "D2/{D2CE135F-13F8-16C7-9378-CB1BF7D39D03}.wem"
+      "CachePath": "CB/{CB905615-FA6B-17DE-CBD7-E8B62292C821}.wem"
      },
      {
       "Id": "321409394",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Attack_PT2_$itemnumber-01.wav",
-      "CachePath": "4C/{4CA155E2-0026-BBF0-9432-E8CEA51A863F}.wem"
+      "CachePath": "A8/{A8821227-354D-5B30-8B62-A411FFEC46DC}.wem"
      },
      {
       "Id": "423415685",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Attack_PT2_$itemnumber.wav",
-      "CachePath": "8F/{8F40C109-C5AF-3198-CBA6-BEFC07DD54C1}.wem"
+      "CachePath": "B6/{B6E4E415-9877-C45E-E567-37D0EA58316A}.wem"
      },
      {
       "Id": "473334753",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Attack_PT5_$itemnumber.wav",
-      "CachePath": "4A/{4A704F6C-DFD6-88DF-9DA9-518E37DF4868}.wem"
+      "CachePath": "12/{129B82CA-D4DE-ABB7-BD48-AB2F447B5D89}.wem"
      },
      {
       "Id": "477729187",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Actif_PT1_$itemnumber.wav",
-      "CachePath": "0B/{0B4E37B1-1D4C-0720-8F62-EC219382B416}.wem"
+      "CachePath": "79/{79AFBE61-BABC-5EBA-8322-57D63FE7A947}.wem"
      },
      {
       "Id": "552411277",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Attack_PT1_$itemnumber.wav",
-      "CachePath": "06/{06191479-F7CE-1E5B-91F8-708E46B89FAD}.wem"
+      "CachePath": "81/{81E90B42-B6D1-45E7-79E0-60D1B855896C}.wem"
      },
      {
       "Id": "584937517",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Actif_PT4_$itemnumber.wav",
-      "CachePath": "6D/{6D44DE88-251C-FBA2-536C-B8878B96E887}.wem"
+      "CachePath": "30/{3014830C-9A73-76A0-904C-1B4A0A812060}.wem"
      },
      {
       "Id": "622776085",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Attack_PT4_$itemnumber.wav",
-      "CachePath": "7D/{7D88D503-FC0C-2FB8-9584-EDE692FCD4D0}.wem"
+      "CachePath": "42/{42A689A4-F92B-E590-D774-BC70D4E7073B}.wem"
      },
      {
       "Id": "682744797",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_Attack_PT3_$itemnumber-01.wav",
-      "CachePath": "39/{39551A58-7340-475F-2ED8-F0CD42210D36}.wem"
+      "CachePath": "1C/{1CE6BCB5-7456-0027-1A7A-F5AE7695D10E}.wem"
      },
      {
       "Id": "712067107",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_EQUIP_PT2_$itemnumber.wav",
-      "CachePath": "E5/{E5EF5B0E-B856-D7A5-484D-CFBA5C0FC13E}.wem"
+      "CachePath": "FE/{FE5A07DF-124E-7655-B50C-8CE1BB8E8ED7}.wem"
      },
      {
       "Id": "759347589",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_EQUIP_PT3_$itemnumber.wav",
-      "CachePath": "64/{64F82D37-DF9C-1583-043C-7BD9C9409358}.wem"
+      "CachePath": "45/{45AAA7DF-2B2B-C8A1-6230-73864940EA36}.wem"
      },
      {
       "Id": "760698792",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Bienveillance_Attack_FULL_$itemnumber.wav",
-      "CachePath": "85/{85EAE536-20F7-C247-1649-719D53ABD6A0}.wem"
+      "CachePath": "4E/{4E75B4E9-1E94-33F8-54DA-1091ACE4058A}.wem"
      },
      {
       "Id": "807888677",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_EQUIP_PT4_$itemnumber.wav",
-      "CachePath": "72/{7211FE40-026D-09C3-EF23-01BE39763510}.wem"
+      "CachePath": "20/{20BDE517-0631-36F8-9998-DCCD17618E0F}.wem"
      },
      {
       "Id": "810326488",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Bienveillance_Passif_FULL_$itemnumber.wav",
-      "CachePath": "5E/{5EBA8516-2041-6326-18CC-4910BB2D0DE7}.wem"
+      "CachePath": "C4/{C4308B52-6283-E2B4-7E3C-21EAA6076761}.wem"
      },
      {
       "Id": "883311901",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Bienveillance_EQUIP_FULL_$itemnumber.wav",
-      "CachePath": "E7/{E7303D0C-A862-DBEF-B52D-585F5D019FCE}.wem"
+      "CachePath": "38/{38328743-776A-3FD1-2B26-12705FC26243}.wem"
      },
      {
       "Id": "947216832",
@@ -157,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_EQUIP_PT5_$itemnumber.wav",
-      "CachePath": "ED/{EDCA9232-51AB-2622-C049-D9ACDA049156}.wem"
+      "CachePath": "21/{21AFD91F-38E7-B78A-4E66-F8E546C1CA7A}.wem"
      },
      {
       "Id": "1054522239",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Anneaux_Bienveillance_EQUIP_PT1_$itemnumber.wav",
-      "CachePath": "24/{24FE32E2-8C68-070C-C1DB-62A9B966EFE6}.wem"
+      "CachePath": "30/{30364FDE-04F7-2373-2AB6-D4B9AAAC1F07}.wem"
      }
     ],
     "Events": [
@@ -436,6 +436,6 @@
     ]
    }
   ],
-  "FileHash": "{AA9B970E-7442-5C62-5993-2A6AD64F5FDD}"
+  "FileHash": "{A97375E6-9248-457E-FEB1-9AC585847409}"
  }
 }
