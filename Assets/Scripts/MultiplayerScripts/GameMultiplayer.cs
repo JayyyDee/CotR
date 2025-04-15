@@ -91,4 +91,7 @@ public class GameMultiplayer : NetworkBehaviour
     public string GetRoomCode() {
       return codeText;
     }
+    public string GetPlayerCount() {
+        return "Players in your lobby : " + NetworkManager.Singleton.ConnectedClientsIds.Count;
+    }
 }

@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestingCharLobbyUI : MonoBehaviour
+public class TestingCharLobbyUI : NetworkBehaviour
 {
     [SerializeField] private Button readyButton;
     [SerializeField] public TextMeshProUGUI roomCode;
+    [SerializeField] public TextMeshProUGUI players;
     [SerializeField] public Sprite differentSprite;
     private Image spriteRenderer;
 
@@ -26,6 +28,7 @@ public class TestingCharLobbyUI : MonoBehaviour
 
     private void Update() {
         roomCode.text = GameMultiplayer.Instance.GetRoomCode().ToString();
+        players.text = GameMultiplayer.Instance.GetPlayerCount().ToString();
     }
 
 }
