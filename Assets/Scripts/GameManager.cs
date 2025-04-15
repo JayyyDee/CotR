@@ -25,7 +25,7 @@ public class GameManager : NetworkBehaviour {
 
     private NetworkVariable<State> state = new NetworkVariable<State>(State.WaitingToStart);
     private NetworkVariable<float> countdownToStartTimer = new NetworkVariable<float>(3f);
-    private NetworkVariable<float> gemCountdownTimer = new NetworkVariable<float>(15f);
+    private NetworkVariable<float> gemCountdownTimer = new NetworkVariable<float>(30f);
     private NetworkVariable<float> gemTakenTimer = new NetworkVariable<float>(20f);
     private bool isLocalPlayerReady;
     private bool isGamePaused = false;
@@ -74,35 +74,36 @@ public class GameManager : NetworkBehaviour {
 
         switch (state.Value) {
             case State.WaitingToStart: //When all of the players in the lobby is ready, change state to start countdown
-                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber");
                 break;
             case State.CountdownToStart: //When the countdown finished, switch to game playing
                 countdownToStartTimer.Value -= Time.deltaTime;
                 if (countdownToStartTimer.Value < 0f) {
                     state.Value = State.GemCountdown;
                 }
-                //gameObject.GetComponent<MusicManager>().SwitchMusic("");
                 break;
             case State.GemCountdown: //When the countdown finished, switch to game playing
-                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                //PUT AGAIN WHEN GAME IS READY
+                //if (NetworkManager.Singleton.ConnectedClientsIds.Count == 1) {
+                //    state.Value = State.GameOver;
+                //}
                 gemCountdownTimer.Value -= Time.deltaTime;
                 if (gemCountdownTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
                 }
                 break;
             case State.GamePlaying://When the gem is no longer active finished, switch to gem taken state
-                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                //PUT AGAIN WHEN GAME IS READY
+                //if (NetworkManager.Singleton.ConnectedClientsIds.Count == 1) {
+                //    state.Value = State.GameOver;
+                //}
                 if (gem.activeSelf == false) {
                     state.Value = State.GemTaken;
                 }
                 break;
-            case State.GemTaken:
-                //gameObject.GetComponent<MusicManager>().SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+            case State.GemTaken:              
                 gemTakenTimer.Value -= Time.deltaTime;
-                if (!PlayingGemTimer)
-                    //StarGemTimer(); COMMENT BECAUSE IDK WHERE TO PUT THE STOP SOO IT DOESNT STOP UNLESS GAME ENDS
-                if (gemTakenTimer.Value < 0f) {
-                    state.Value = State.GameOver;
+                if (gemTakenTimer.Value < 0f /*|| NetworkManager.Singleton.ConnectedClientsIds.Count == 1*/) { //PUT AGAIN WHEN GAME IS READY
+                        state.Value = State.GameOver;
                     StopGemTimer();
                 }
                 if (gem.activeSelf == true) {
