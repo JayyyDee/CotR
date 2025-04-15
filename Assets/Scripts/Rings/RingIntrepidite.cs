@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using Unity.Netcode;
 using UnityEngine;
-//using static UnityEditor.PlayerSettings;
 
 public class RingIntrepidite : Ring
 {
@@ -55,7 +54,7 @@ public class RingIntrepidite : Ring
                 activeTimer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
             ShootServerRpc();
             canFire = false;
@@ -80,8 +79,7 @@ public class RingIntrepidite : Ring
         {
             AkUnitySoundEngine.PostEvent("Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber", this.gameObject);
             GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-            bullet.GetComponent<NetworkObject>().Spawn();
-            bullet.GetComponent<Projectile>().player = gameObject;
+            bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
             yield return new WaitForSeconds(0.05f);
         }
     }
@@ -126,12 +124,12 @@ public class RingIntrepidite : Ring
     [ServerRpc(RequireOwnership = false)]
     public void ShootServerRpc()
     {
-        ShootClientRpc();
+        Shoot();
     }
 
     [ClientRpc]
     public void ShootClientRpc() {
-        Shoot();
+        
     }
 
     [ServerRpc(RequireOwnership = false)]

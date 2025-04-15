@@ -29,6 +29,7 @@ public class Inventory : NetworkBehaviour
             
         if (collision.CompareTag("Ring"))
         {
+            collision.gameObject.GetComponent<NetworkObject>().ChangeOwnership(NetworkManager.Singleton.LocalClientId);
             collision.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.transform.GetChild(1).gameObject.SetActive(false);
             collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
