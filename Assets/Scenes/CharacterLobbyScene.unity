@@ -1622,8 +1622,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ATTACK = Throw a liquid that\npierce through everything\n\nactive = throw
-    a liquid that\npull enemies to you\n\npassive = create a zone around \nyou that
+  m_text: "ATTACK = Throw a liquid that\npierces through everything\n\nactive = throw
+    a liquid that\npulls enemies to you\n\npassive = create a zone around \nyou that
     deals damage overtime\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
