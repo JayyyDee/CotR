@@ -1,0 +1,441 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "694500003",
+    "Type": "User",
+    "GUID": "{BE4CE5B8-8F27-4066-B2D4-A5046170264B}",
+    "Language": "SFX",
+    "Hash": "{9D821B42-5910-4FB4-CECC-A10C7FD59952}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Bienveillance",
+    "ShortName": "SoundBank_Anneaux_Bienveillance",
+    "Path": "SoundBank_Anneaux_Bienveillance.bnk",
+    "Media": [
+     {
+      "Id": "191424825",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Actif_PT5_$itemnumber.wav",
+      "CachePath": "AD/{AD521B64-F658-B30E-8474-751EE78FFE51}.wem"
+     },
+     {
+      "Id": "226431273",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Bienveillance_Actif_FULL_$itemnumber.wav",
+      "CachePath": "D3/{D399C571-241F-1B0B-399D-873E778130C9}.wem"
+     },
+     {
+      "Id": "255126568",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Attack_PT3_$itemnumber.wav",
+      "CachePath": "D2/{D2CE135F-13F8-16C7-9378-CB1BF7D39D03}.wem"
+     },
+     {
+      "Id": "321409394",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Attack_PT2_$itemnumber-01.wav",
+      "CachePath": "4C/{4CA155E2-0026-BBF0-9432-E8CEA51A863F}.wem"
+     },
+     {
+      "Id": "423415685",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Attack_PT2_$itemnumber.wav",
+      "CachePath": "8F/{8F40C109-C5AF-3198-CBA6-BEFC07DD54C1}.wem"
+     },
+     {
+      "Id": "473334753",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Attack_PT5_$itemnumber.wav",
+      "CachePath": "4A/{4A704F6C-DFD6-88DF-9DA9-518E37DF4868}.wem"
+     },
+     {
+      "Id": "477729187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Actif_PT1_$itemnumber.wav",
+      "CachePath": "0B/{0B4E37B1-1D4C-0720-8F62-EC219382B416}.wem"
+     },
+     {
+      "Id": "552411277",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Attack_PT1_$itemnumber.wav",
+      "CachePath": "06/{06191479-F7CE-1E5B-91F8-708E46B89FAD}.wem"
+     },
+     {
+      "Id": "584937517",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Actif_PT4_$itemnumber.wav",
+      "CachePath": "6D/{6D44DE88-251C-FBA2-536C-B8878B96E887}.wem"
+     },
+     {
+      "Id": "622776085",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Attack_PT4_$itemnumber.wav",
+      "CachePath": "7D/{7D88D503-FC0C-2FB8-9584-EDE692FCD4D0}.wem"
+     },
+     {
+      "Id": "682744797",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_Attack_PT3_$itemnumber-01.wav",
+      "CachePath": "39/{39551A58-7340-475F-2ED8-F0CD42210D36}.wem"
+     },
+     {
+      "Id": "712067107",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_EQUIP_PT2_$itemnumber.wav",
+      "CachePath": "E5/{E5EF5B0E-B856-D7A5-484D-CFBA5C0FC13E}.wem"
+     },
+     {
+      "Id": "759347589",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_EQUIP_PT3_$itemnumber.wav",
+      "CachePath": "64/{64F82D37-DF9C-1583-043C-7BD9C9409358}.wem"
+     },
+     {
+      "Id": "760698792",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Bienveillance_Attack_FULL_$itemnumber.wav",
+      "CachePath": "85/{85EAE536-20F7-C247-1649-719D53ABD6A0}.wem"
+     },
+     {
+      "Id": "807888677",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_EQUIP_PT4_$itemnumber.wav",
+      "CachePath": "72/{7211FE40-026D-09C3-EF23-01BE39763510}.wem"
+     },
+     {
+      "Id": "810326488",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Bienveillance_Passif_FULL_$itemnumber.wav",
+      "CachePath": "5E/{5EBA8516-2041-6326-18CC-4910BB2D0DE7}.wem"
+     },
+     {
+      "Id": "883311901",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_Anneaux_Bienveillance_EQUIP_FULL_$itemnumber.wav",
+      "CachePath": "E7/{E7303D0C-A862-DBEF-B52D-585F5D019FCE}.wem"
+     },
+     {
+      "Id": "947216832",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_EQUIP_PT5_$itemnumber.wav",
+      "CachePath": "ED/{EDCA9232-51AB-2622-C049-D9ACDA049156}.wem"
+     },
+     {
+      "Id": "1054522239",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Anneaux_Bienveillance_EQUIP_PT1_$itemnumber.wav",
+      "CachePath": "24/{24FE32E2-8C68-070C-C1DB-62A9B966EFE6}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2783235952",
+      "Name": "Play_Anneaux_Bienveillance_Actif_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Actif\\Play_Anneaux_Bienveillance_Actif_PT1__itemnumber",
+      "GUID": "{D033B939-DFE6-4308-9B91-E0F9B46FCED9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.536188",
+      "DurationMax": "0.536188",
+      "MediaRefs": [
+       {
+        "Id": "477729187"
+       }
+      ]
+     },
+     {
+      "Id": "3278177977",
+      "Name": "Play_Anneaux_Bienveillance_Actif_PT4__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Actif\\Play_Anneaux_Bienveillance_Actif_PT4__itemnumber",
+      "GUID": "{4BAB3541-02B0-4F9C-ADA0-EF8AC0C926BA}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.811446",
+      "DurationMax": "1.811446",
+      "MediaRefs": [
+       {
+        "Id": "584937517"
+       }
+      ]
+     },
+     {
+      "Id": "1828759756",
+      "Name": "Play_Anneaux_Bienveillance_Actif_PT5__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Actif\\Play_Anneaux_Bienveillance_Actif_PT5__itemnumber",
+      "GUID": "{1EA6EF2B-7E82-43C0-81B4-F2F5508D9956}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1882267",
+      "DurationMax": "2.1882267",
+      "MediaRefs": [
+       {
+        "Id": "191424825"
+       }
+      ]
+     },
+     {
+      "Id": "1534784675",
+      "Name": "Play_Anneaux_Bienveillance_Attack_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_Anneaux_Bienveillance_Attack_PT1__itemnumber",
+      "GUID": "{22CCFD0F-4F27-4500-9674-CC8E0D61F384}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.49271327",
+      "DurationMax": "0.49271327",
+      "MediaRefs": [
+       {
+        "Id": "552411277"
+       }
+      ]
+     },
+     {
+      "Id": "2387987480",
+      "Name": "Play_Anneaux_Bienveillance_Attack_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_Anneaux_Bienveillance_Attack_PT2__itemnumber",
+      "GUID": "{B4B2266B-E51C-4269-85EF-397555EC4A08}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.44923857",
+      "DurationMax": "0.44923857",
+      "MediaRefs": [
+       {
+        "Id": "423415685"
+       }
+      ]
+     },
+     {
+      "Id": "1743640942",
+      "Name": "Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01",
+      "GUID": "{C58A7821-1AFB-4195-8A4D-4BA864A38F86}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1302605",
+      "DurationMax": "2.1302605",
+      "MediaRefs": [
+       {
+        "Id": "321409394"
+       }
+      ]
+     },
+     {
+      "Id": "975694469",
+      "Name": "Play_Anneaux_Bienveillance_Attack_PT3__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_Anneaux_Bienveillance_Attack_PT3__itemnumber",
+      "GUID": "{DD2029D3-D9DD-4C4E-8C11-7FD2CB6AD66A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.333306",
+      "DurationMax": "0.333306",
+      "MediaRefs": [
+       {
+        "Id": "255126568"
+       }
+      ]
+     },
+     {
+      "Id": "4047475361",
+      "Name": "Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01",
+      "GUID": "{76903873-F425-4BA8-9E73-57023AD771A5}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.115769",
+      "DurationMax": "2.115769",
+      "MediaRefs": [
+       {
+        "Id": "682744797"
+       }
+      ]
+     },
+     {
+      "Id": "936363018",
+      "Name": "Play_Anneaux_Bienveillance_Attack_PT4__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_Anneaux_Bienveillance_Attack_PT4__itemnumber",
+      "GUID": "{A95E4DD3-377C-469D-84AE-A58F13E17B78}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.40576386",
+      "DurationMax": "0.40576386",
+      "MediaRefs": [
+       {
+        "Id": "622776085"
+       }
+      ]
+     },
+     {
+      "Id": "398773119",
+      "Name": "Play_Anneaux_Bienveillance_Attack_PT5__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_Anneaux_Bienveillance_Attack_PT5__itemnumber",
+      "GUID": "{D888390B-C649-42E2-83DF-F2BC46C1DEA8}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.44923857",
+      "DurationMax": "0.44923857",
+      "MediaRefs": [
+       {
+        "Id": "473334753"
+       }
+      ]
+     },
+     {
+      "Id": "4020966477",
+      "Name": "Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Base\\Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber",
+      "GUID": "{B77BCAC1-F097-4A39-844B-972CC9A96C53}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.76805305",
+      "DurationMax": "0.76805305",
+      "MediaRefs": [
+       {
+        "Id": "1054522239"
+       }
+      ]
+     },
+     {
+      "Id": "756478054",
+      "Name": "Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Base\\Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber",
+      "GUID": "{048D45C6-4C24-4757-A01F-D981AEC61ADC}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.536188",
+      "DurationMax": "0.536188",
+      "MediaRefs": [
+       {
+        "Id": "712067107"
+       }
+      ]
+     },
+     {
+      "Id": "4245976043",
+      "Name": "Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Base\\Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber",
+      "GUID": "{F738C5BD-45BB-480E-B4E8-291E5CEE85DA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.637629",
+      "DurationMax": "0.637629",
+      "MediaRefs": [
+       {
+        "Id": "759347589"
+       }
+      ]
+     },
+     {
+      "Id": "2083265212",
+      "Name": "Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Base\\Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber",
+      "GUID": "{4E199FDE-7F1D-4433-A1F6-CB53A17C7702}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5651711",
+      "DurationMax": "0.5651711",
+      "MediaRefs": [
+       {
+        "Id": "807888677"
+       }
+      ]
+     },
+     {
+      "Id": "4292055273",
+      "Name": "Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Base\\Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber",
+      "GUID": "{AB24206D-C0AC-41CA-98D0-7A0DD5AE12BB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8115278",
+      "DurationMax": "0.8115278",
+      "MediaRefs": [
+       {
+        "Id": "947216832"
+       }
+      ]
+     },
+     {
+      "Id": "1504976930",
+      "Name": "Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Actif\\Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber",
+      "GUID": "{90720243-6DBB-4A5A-9CB4-C92A1C03BE3D}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.115769",
+      "DurationMax": "2.115769",
+      "MediaRefs": [
+       {
+        "Id": "226431273"
+       }
+      ]
+     },
+     {
+      "Id": "1476587787",
+      "Name": "Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Attack\\Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber",
+      "GUID": "{203C4088-618D-48F7-AE89-FD5250171DD0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.536188",
+      "DurationMax": "0.536188",
+      "MediaRefs": [
+       {
+        "Id": "760698792"
+       }
+      ]
+     },
+     {
+      "Id": "3631972377",
+      "Name": "Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Base\\Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber",
+      "GUID": "{D9ADCD11-9C66-4600-8213-15D783C0B583}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8115278",
+      "DurationMax": "0.8115278",
+      "MediaRefs": [
+       {
+        "Id": "883311901"
+       }
+      ]
+     },
+     {
+      "Id": "4122009797",
+      "Name": "Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Anneaux\\Bienveillance\\Passif\\Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber",
+      "GUID": "{5DF8FAE8-BF27-4C4A-83A9-C09E4211747F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "810326488"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AA9B970E-7442-5C62-5993-2A6AD64F5FDD}"
+ }
+}

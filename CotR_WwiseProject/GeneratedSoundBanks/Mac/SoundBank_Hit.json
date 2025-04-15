@@ -1,0 +1,69 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2007928262",
+    "Type": "User",
+    "GUID": "{91C0EBC3-CE22-4AEC-87D7-951548DB2AB4}",
+    "Language": "SFX",
+    "Hash": "{AD512524-34FA-3E33-B2DE-E9E84D7C6AC6}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Hit",
+    "ShortName": "SoundBank_Hit",
+    "Path": "SoundBank_Hit.bnk",
+    "Media": [
+     {
+      "Id": "299676561",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Hit1_$itemnumber.wav",
+      "CachePath": "D3/{D38BB2DC-5FD9-9EB9-669C-81A3847DAFF1}.wem"
+     },
+     {
+      "Id": "356531239",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Hit2_$itemnumber.wav",
+      "CachePath": "14/{14DC39BB-6EC7-2B6B-18F6-144E9A50125F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3231612006",
+      "Name": "Play_SFX_Hit1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Hit\\Play_SFX_Hit1__itemnumber",
+      "GUID": "{F7D93FDB-A9D4-4583-B63E-FE9B56FB3A60}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2852966",
+      "DurationMax": "0.2852966",
+      "MediaRefs": [
+       {
+        "Id": "299676561"
+       }
+      ]
+     },
+     {
+      "Id": "2201133133",
+      "Name": "Play_SFX_Hit2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Hit\\Play_SFX_Hit2__itemnumber",
+      "GUID": "{0B9049DD-3E07-4DF2-B7C5-3839FAFA3500}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.57439715",
+      "DurationMax": "0.57439715",
+      "MediaRefs": [
+       {
+        "Id": "356531239"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C02EDC42-7B33-2ABA-0364-840E80F6DFE2}"
+ }
+}

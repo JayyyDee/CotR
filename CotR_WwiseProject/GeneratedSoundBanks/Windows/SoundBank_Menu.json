@@ -1,0 +1,421 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "80410982",
+    "Type": "User",
+    "GUID": "{BB7BACA7-625F-453C-AC0D-16273917D10F}",
+    "Language": "SFX",
+    "Hash": "{221C4F2F-76CD-2102-FDBF-0EE443B55968}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Menu",
+    "ShortName": "SoundBank_Menu",
+    "Path": "SoundBank_Menu.bnk",
+    "Media": [
+     {
+      "Id": "56713241",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "1MENU_BACK_$itemnumber.wav",
+      "CachePath": "3D/{3D35B544-75DC-A5E1-AAE9-103AED41DCDB}.wem"
+     },
+     {
+      "Id": "90936465",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "4MENU_SELECT2_$itemnumber.wav",
+      "CachePath": "D7/{D78CFE5C-25E4-6AD3-1573-C099FD046637}.wem"
+     },
+     {
+      "Id": "184406489",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "5MENU_SELECT_$itemnumber.wav",
+      "CachePath": "D2/{D2074B98-0DA8-3A78-AF44-3DA5DC6B7363}.wem"
+     },
+     {
+      "Id": "195367467",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "4MENU_HOVER_$itemnumber.wav",
+      "CachePath": "F2/{F2111934-7386-204D-5D13-A6A88B67CB9C}.wem"
+     },
+     {
+      "Id": "223709970",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "2MENU_BACK_$itemnumber.wav",
+      "CachePath": "97/{975A943F-665B-C57E-BC9F-9F01E03CE6B7}.wem"
+     },
+     {
+      "Id": "226456147",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "3MENU_HOVER_$itemnumber.wav",
+      "CachePath": "96/{96CC1349-44B7-6666-D9C4-DA8FAF17BF65}.wem"
+     },
+     {
+      "Id": "317661372",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "1MENU_SELECT_$itemnumber.wav",
+      "CachePath": "EC/{EC89CC27-2537-44AB-8BFE-E8CDD0D4F80D}.wem"
+     },
+     {
+      "Id": "538599615",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "2MENU_HOVER_$itemnumber.wav",
+      "CachePath": "8B/{8BC0E1C4-328B-C061-1BDF-54704761DDB9}.wem"
+     },
+     {
+      "Id": "573648388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "5MENU_BACK_$itemnumber.wav",
+      "CachePath": "C3/{C375B963-92CF-1F86-74FB-47A1FEA97EEA}.wem"
+     },
+     {
+      "Id": "575666935",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "4MENU_SELECT_$itemnumber.wav",
+      "CachePath": "06/{066F4573-45AD-87D7-7BAC-40E9F6A4C594}.wem"
+     },
+     {
+      "Id": "625160381",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "3MENU_BACK_$itemnumber.wav",
+      "CachePath": "8A/{8AF8FE02-DBCB-E689-D298-71CD6AF86F79}.wem"
+     },
+     {
+      "Id": "640036262",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "4MENU_BACK_$itemnumber.wav",
+      "CachePath": "0E/{0E8C85A8-7777-8C8E-059F-B9C169E418C0}.wem"
+     },
+     {
+      "Id": "694652592",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "3MENU_BACK2_$itemnumber.wav",
+      "CachePath": "E2/{E2B795CC-0500-39BE-4DDA-4F51FC60A83D}.wem"
+     },
+     {
+      "Id": "714621579",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "2MENU_SELECT_$itemnumber.wav",
+      "CachePath": "2B/{2B16FA36-56EE-0516-49F6-79C0FB8B0DC9}.wem"
+     },
+     {
+      "Id": "782914406",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "2MENU_BACKT2_$itemnumber.wav",
+      "CachePath": "3C/{3CC9ECBB-54AF-9835-BBC6-129D3591B85B}.wem"
+     },
+     {
+      "Id": "831037404",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "5MENU_HOVER_$itemnumber.wav",
+      "CachePath": "F3/{F3E56339-41E6-2D03-73B8-9D394CEE71A8}.wem"
+     },
+     {
+      "Id": "960357035",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "1MENU_HOVER_$itemnumber.wav",
+      "CachePath": "1D/{1D5AD25D-C47B-6DEB-7D03-A06225E2DA90}.wem"
+     },
+     {
+      "Id": "1048549257",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "3MENU_SELECT_$itemnumber.wav",
+      "CachePath": "BE/{BE5DE6D4-1ED6-BE9F-D613-0C0BDEEAAFD3}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "70593976",
+      "Name": "Play_1MENU_BACK__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V1\\Play_1MENU_BACK__itemnumber",
+      "GUID": "{C1C96852-E52D-45D0-B92F-0C1D0C852E39}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.51883376",
+      "DurationMax": "0.51883376",
+      "MediaRefs": [
+       {
+        "Id": "56713241"
+       }
+      ]
+     },
+     {
+      "Id": "2297224441",
+      "Name": "Play_1MENU_HOVER__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V1\\Play_1MENU_HOVER__itemnumber",
+      "GUID": "{29A287D0-1545-461B-A682-154F8615365F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.15849102",
+      "DurationMax": "0.15849102",
+      "MediaRefs": [
+       {
+        "Id": "960357035"
+       }
+      ]
+     },
+     {
+      "Id": "790975177",
+      "Name": "Play_1MENU_SELECT__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V1\\Play_1MENU_SELECT__itemnumber",
+      "GUID": "{8670F045-FAC1-4503-B409-444B12992038}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.324458",
+      "DurationMax": "0.324458",
+      "MediaRefs": [
+       {
+        "Id": "317661372"
+       }
+      ]
+     },
+     {
+      "Id": "1898861817",
+      "Name": "Play_2MENU_BACK__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V2\\Play_2MENU_BACK__itemnumber",
+      "GUID": "{A960B41C-E1FB-4F33-9DB0-BC8FBE68C7F6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.08522631",
+      "DurationMax": "0.08522631",
+      "MediaRefs": [
+       {
+        "Id": "223709970"
+       }
+      ]
+     },
+     {
+      "Id": "3319439483",
+      "Name": "Play_2MENU_BACKT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V2\\Play_2MENU_BACKT2__itemnumber",
+      "GUID": "{0063B895-3309-43CF-849C-38DB8B84605E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.15998621",
+      "DurationMax": "0.15998621",
+      "MediaRefs": [
+       {
+        "Id": "782914406"
+       }
+      ]
+     },
+     {
+      "Id": "4054149942",
+      "Name": "Play_2MENU_HOVER__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V2\\Play_2MENU_HOVER__itemnumber",
+      "GUID": "{6ED9191F-B43D-49BA-A739-D91CA03480DF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.067283936",
+      "DurationMax": "0.067283936",
+      "MediaRefs": [
+       {
+        "Id": "538599615"
+       }
+      ]
+     },
+     {
+      "Id": "3761818220",
+      "Name": "Play_2MENU_SELECT__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V2\\Play_2MENU_SELECT__itemnumber",
+      "GUID": "{9E4D979D-6528-4750-ADF6-B4454415EE3A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30053484",
+      "DurationMax": "0.30053484",
+      "MediaRefs": [
+       {
+        "Id": "714621579"
+       }
+      ]
+     },
+     {
+      "Id": "1194865992",
+      "Name": "Play_3MENU_BACK2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V3\\Play_3MENU_BACK2__itemnumber",
+      "GUID": "{E0086535-449A-43E7-92C0-5BA261A1B2E3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.82385415",
+      "DurationMax": "0.82385415",
+      "MediaRefs": [
+       {
+        "Id": "694652592"
+       }
+      ]
+     },
+     {
+      "Id": "1850585002",
+      "Name": "Play_3MENU_BACK__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V3\\Play_3MENU_BACK__itemnumber",
+      "GUID": "{56A1A9C3-0C7D-4621-A16D-7C78A0EBABC2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.35137156",
+      "DurationMax": "0.35137156",
+      "MediaRefs": [
+       {
+        "Id": "625160381"
+       }
+      ]
+     },
+     {
+      "Id": "2530256839",
+      "Name": "Play_3MENU_HOVER__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V3\\Play_3MENU_HOVER__itemnumber",
+      "GUID": "{9206AF20-D818-47EA-807C-380DAE1C1889}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.11812067",
+      "DurationMax": "0.11812067",
+      "MediaRefs": [
+       {
+        "Id": "226456147"
+       }
+      ]
+     },
+     {
+      "Id": "2576267239",
+      "Name": "Play_3MENU_SELECT__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V3\\Play_3MENU_SELECT__itemnumber",
+      "GUID": "{22D14DCC-7DF8-4089-9752-375E54577278}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.35286677",
+      "DurationMax": "0.35286677",
+      "MediaRefs": [
+       {
+        "Id": "1048549257"
+       }
+      ]
+     },
+     {
+      "Id": "967650755",
+      "Name": "Play_4MENU_BACK__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V4\\Play_4MENU_BACK__itemnumber",
+      "GUID": "{059DF825-2629-4F79-992E-33B126F34D1A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.1644718",
+      "DurationMax": "0.1644718",
+      "MediaRefs": [
+       {
+        "Id": "640036262"
+       }
+      ]
+     },
+     {
+      "Id": "165751236",
+      "Name": "Play_4MENU_HOVER__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V4\\Play_4MENU_HOVER__itemnumber",
+      "GUID": "{9649C74D-A4B2-4018-91B5-109F976590CF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.04485596",
+      "DurationMax": "0.04485596",
+      "MediaRefs": [
+       {
+        "Id": "195367467"
+       }
+      ]
+     },
+     {
+      "Id": "736391848",
+      "Name": "Play_4MENU_SELECT2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V4\\Play_4MENU_SELECT2__itemnumber",
+      "GUID": "{1511CA16-097B-4304-B549-11904FA76B93}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.29903963",
+      "DurationMax": "0.29903963",
+      "MediaRefs": [
+       {
+        "Id": "90936465"
+       }
+      ]
+     },
+     {
+      "Id": "2122796938",
+      "Name": "Play_4MENU_SELECT__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V4\\Play_4MENU_SELECT__itemnumber",
+      "GUID": "{6E0C97CA-B61B-4FF9-92E0-76CDF6F515E0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.28857324",
+      "DurationMax": "0.28857324",
+      "MediaRefs": [
+       {
+        "Id": "575666935"
+       }
+      ]
+     },
+     {
+      "Id": "4048517708",
+      "Name": "Play_5MENU_BACK__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V5\\Play_5MENU_BACK__itemnumber",
+      "GUID": "{0E403834-B320-425D-9933-EE75E90F4E8F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.15251023",
+      "DurationMax": "0.15251023",
+      "MediaRefs": [
+       {
+        "Id": "573648388"
+       }
+      ]
+     },
+     {
+      "Id": "2768269117",
+      "Name": "Play_5MENU_HOVER__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V5\\Play_5MENU_HOVER__itemnumber",
+      "GUID": "{815766C6-26BD-4B1D-B137-417BEC0BB525}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.040370367",
+      "DurationMax": "0.040370367",
+      "MediaRefs": [
+       {
+        "Id": "831037404"
+       }
+      ]
+     },
+     {
+      "Id": "3320033789",
+      "Name": "Play_5MENU_SELECT__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Menu\\V5\\Play_5MENU_SELECT__itemnumber",
+      "GUID": "{3C71F735-1B0D-440E-84D6-244E6FFCADC1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.06877913",
+      "DurationMax": "0.06877913",
+      "MediaRefs": [
+       {
+        "Id": "184406489"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B6C92271-09E5-BC69-B770-ADF6A6BC1495}"
+ }
+}

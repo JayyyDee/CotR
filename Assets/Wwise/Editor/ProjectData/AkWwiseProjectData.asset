@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 04dbe3dc954cf04999c0f4a2686209f5
     GuidInternal: 
-    m_lastTime: -8584573724626383135
+    m_lastTime: -8584569110033392059
     List:
+    - name: SoundBank_Anneaux_Bienveillance
+      guid: b8e54cbe278f6640b2d4a5046170264b
+      id: 694500003
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 04dbe3dc954cf04999c0f4a2686209f5
+      - ElementName: SoundBank_Anneaux_Bienveillance
+        ObjectType: 7
+        guid: b8e54cbe278f6640b2d4a5046170264b
+      Path: SoundBanks\Default Work Unit\SoundBank_Anneaux_Bienveillance
     - name: SoundBank_Anneaux_Bravoure
       guid: facc219f29c47846a406c19cff76994a
       id: 2084984678
@@ -124,9 +138,9 @@ MonoBehaviour:
         ObjectType: 7
         guid: 5d1db7c170fb584f91db2b0bfcdaedd0
       Path: SoundBanks\Default Work Unit\SoundBank_Anneaux_Patience
-    - name: SoundBank_Anneaux_Perseverence
-      guid: 864f8cd93dedcb4d896eb40c1edb8f13
-      id: 381671057
+    - name: SoundBank_Anneaux_Perseverance
+      guid: cdf4ceb6e25601448cf3aa37ca6c3d67
+      id: 3282859277
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -134,10 +148,38 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 04dbe3dc954cf04999c0f4a2686209f5
-      - ElementName: SoundBank_Anneaux_Perseverence
+      - ElementName: SoundBank_Anneaux_Perseverance
         ObjectType: 7
-        guid: 864f8cd93dedcb4d896eb40c1edb8f13
-      Path: SoundBanks\Default Work Unit\SoundBank_Anneaux_Perseverence
+        guid: cdf4ceb6e25601448cf3aa37ca6c3d67
+      Path: SoundBanks\Default Work Unit\SoundBank_Anneaux_Perseverance
+    - name: SoundBank_Anneaux_Switch
+      guid: eccb265c3bd4dd4dbd3018e58b07e23a
+      id: 893414436
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 04dbe3dc954cf04999c0f4a2686209f5
+      - ElementName: SoundBank_Anneaux_Switch
+        ObjectType: 7
+        guid: eccb265c3bd4dd4dbd3018e58b07e23a
+      Path: SoundBanks\Default Work Unit\SoundBank_Anneaux_Switch
+    - name: SoundBank_Death
+      guid: a1cdc28199d1464bb658c782e2e4b19e
+      id: 1744594055
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 04dbe3dc954cf04999c0f4a2686209f5
+      - ElementName: SoundBank_Death
+        ObjectType: 7
+        guid: a1cdc28199d1464bb658c782e2e4b19e
+      Path: SoundBanks\Default Work Unit\SoundBank_Death
     - name: SoundBank_Gemme_Jadeite_Pickup
       guid: 17ec3b43fb1f104bb9eaaa381f02a407
       id: 2811913676
@@ -152,6 +194,34 @@ MonoBehaviour:
         ObjectType: 7
         guid: 17ec3b43fb1f104bb9eaaa381f02a407
       Path: SoundBanks\Default Work Unit\SoundBank_Gemme_Jadeite_Pickup
+    - name: SoundBank_Hit
+      guid: c3ebc09122ceec4a87d7951548db2ab4
+      id: 2007928262
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 04dbe3dc954cf04999c0f4a2686209f5
+      - ElementName: SoundBank_Hit
+        ObjectType: 7
+        guid: c3ebc09122ceec4a87d7951548db2ab4
+      Path: SoundBanks\Default Work Unit\SoundBank_Hit
+    - name: SoundBank_Menu
+      guid: a7ac7bbb5f623c45ac0d16273917d10f
+      id: 80410982
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 04dbe3dc954cf04999c0f4a2686209f5
+      - ElementName: SoundBank_Menu
+        ObjectType: 7
+        guid: a7ac7bbb5f623c45ac0d16273917d10f
+      Path: SoundBanks\Default Work Unit\SoundBank_Menu
     - name: SoundBank_Movement
       guid: da60ab57f4a62b4bbfac3c4279a4b7e3
       id: 486013808
@@ -192,8 +262,31 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 604df3ab7243064eadf8b44faad8fe60
     GuidInternal: 
-    m_lastTime: -8584573724639717071
+    m_lastTime: -8584569110033296187
     List:
+    - name: Actif
+      guid: 510b46a3760c5a429eb2ad960d387c0a
+      id: 2247125562
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Patience
+        ObjectType: 4
+        guid: c1f1734f1cfa444cad0a23ba748c152d
+      - ElementName: Actif
+        ObjectType: 4
+        guid: 510b46a3760c5a429eb2ad960d387c0a
+      Path: Events\Default Work Unit\Anneaux\Patience\Actif
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Actif
       guid: 04b6a2ff639fa042a8f181c8db18862f
       id: 2247125562
@@ -214,6 +307,29 @@ MonoBehaviour:
         ObjectType: 4
         guid: 04b6a2ff639fa042a8f181c8db18862f
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Actif"
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Actif
+      guid: 94900566f1d89a418fa80969930e2684
+      id: 2247125562
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Actif
+        ObjectType: 4
+        guid: 94900566f1d89a418fa80969930e2684
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -263,29 +379,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Actif
-      guid: 510b46a3760c5a429eb2ad960d387c0a
-      id: 2247125562
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 604df3ab7243064eadf8b44faad8fe60
-      - ElementName: Anneaux
-        ObjectType: 4
-        guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: Patience
-        ObjectType: 4
-        guid: c1f1734f1cfa444cad0a23ba748c152d
-      - ElementName: Actif
-        ObjectType: 4
-        guid: 510b46a3760c5a429eb2ad960d387c0a
-      Path: Events\Default Work Unit\Anneaux\Patience\Actif
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Anneaux
       guid: ce0f910575d876458354bbb379ca6db9
       id: 3580452911
@@ -300,6 +393,52 @@ MonoBehaviour:
         ObjectType: 4
         guid: ce0f910575d876458354bbb379ca6db9
       Path: Events\Default Work Unit\Anneaux
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Attack
+      guid: 6fa1fdd2ddda9d4c9a2c47cc9cf2445e
+      id: 180661997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: "Intr\xE9pidit\xE9"
+        ObjectType: 4
+        guid: 6a58b8575354f14e91be6f0fa9e905f5
+      - ElementName: Attack
+        ObjectType: 4
+        guid: 6fa1fdd2ddda9d4c9a2c47cc9cf2445e
+      Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack"
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Attack
+      guid: bad96af0b0453b47a3ede54254e807ee
+      id: 180661997
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -372,29 +511,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Attack
-      guid: 6fa1fdd2ddda9d4c9a2c47cc9cf2445e
-      id: 180661997
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 604df3ab7243064eadf8b44faad8fe60
-      - ElementName: Anneaux
-        ObjectType: 4
-        guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: "Intr\xE9pidit\xE9"
-        ObjectType: 4
-        guid: 6a58b8575354f14e91be6f0fa9e905f5
-      - ElementName: Attack
-        ObjectType: 4
-        guid: 6fa1fdd2ddda9d4c9a2c47cc9cf2445e
-      Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack"
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Base
       guid: e24f4811d5416840b92ad84d0a4d2d9e
       id: 1291433366
@@ -419,7 +535,7 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Base
-      guid: d3a6bf54e7369e45883538d1460c0959
+      guid: df9d441258ed8e409487d19cdf588927
       id: 1291433366
       PathAndIcons:
       - ElementName: Events
@@ -431,13 +547,13 @@ MonoBehaviour:
       - ElementName: Anneaux
         ObjectType: 4
         guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: "Intr\xE9pidit\xE9"
+      - ElementName: Bienveillance
         ObjectType: 4
-        guid: 6a58b8575354f14e91be6f0fa9e905f5
+        guid: b2dd6ef3b171d443b471181692e33739
       - ElementName: Base
         ObjectType: 4
-        guid: d3a6bf54e7369e45883538d1460c0959
-      Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Base"
+        guid: df9d441258ed8e409487d19cdf588927
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Base
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -484,6 +600,49 @@ MonoBehaviour:
         ObjectType: 4
         guid: 26c7d4c4a2da804cb22dbc935a1a074e
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Base
+      guid: d3a6bf54e7369e45883538d1460c0959
+      id: 1291433366
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: "Intr\xE9pidit\xE9"
+        ObjectType: 4
+        guid: 6a58b8575354f14e91be6f0fa9e905f5
+      - ElementName: Base
+        ObjectType: 4
+        guid: d3a6bf54e7369e45883538d1460c0959
+      Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Base"
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Bienveillance
+      guid: b2dd6ef3b171d443b471181692e33739
+      id: 254524420
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      Path: Events\Default Work Unit\Anneaux\Bienveillance
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -553,6 +712,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Death
+      guid: 9e0a3f119b8db5408e6421a0e393ec62
+      id: 779278001
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      Path: Events\Default Work Unit\Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Event_Footstep
       guid: 43e4f4946bb312449325cca687fbb9a6
       id: 3618206844
@@ -619,6 +795,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Hit
+      guid: 4c9f3ff301fc3c4499fc20ba21b4009a
+      id: 1116398592
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Hit
+        ObjectType: 4
+        guid: 4c9f3ff301fc3c4499fc20ba21b4009a
+      Path: Events\Default Work Unit\Hit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: "Intr\xE9pidit\xE9"
       guid: 6a58b8575354f14e91be6f0fa9e905f5
       id: 335630790
@@ -679,6 +872,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Menu
+      guid: 5becf82f283bf94aa08e95dbdb1f125c
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      Path: Events\Default Work Unit\Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Musique
       guid: 84daa1989a84d943b36ab035a0c6bc08
       id: 69765534
@@ -710,29 +920,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: 4a5f5262dfd85047b6f1cb485573fe10
       Path: Events\Default Work Unit\OTHER
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Passif
-      guid: b14be9fd81e4e647997aa26a67b41856
-      id: 2831715831
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 604df3ab7243064eadf8b44faad8fe60
-      - ElementName: Anneaux
-        ObjectType: 4
-        guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: Patience
-        ObjectType: 4
-        guid: c1f1734f1cfa444cad0a23ba748c152d
-      - ElementName: Passif
-        ObjectType: 4
-        guid: b14be9fd81e4e647997aa26a67b41856
-      Path: Events\Default Work Unit\Anneaux\Patience\Passif
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -779,6 +966,52 @@ MonoBehaviour:
         ObjectType: 4
         guid: e04d5b720ea8fe40ae79d1dce18bbc79
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Passif"
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Passif
+      guid: e461bc9efe56d94d8541c0a468b74bd7
+      id: 2831715831
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Passif
+        ObjectType: 4
+        guid: e461bc9efe56d94d8541c0a468b74bd7
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Passif
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Passif
+      guid: b14be9fd81e4e647997aa26a67b41856
+      id: 2831715831
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Patience
+        ObjectType: 4
+        guid: c1f1734f1cfa444cad0a23ba748c152d
+      - ElementName: Passif
+        ObjectType: 4
+        guid: b14be9fd81e4e647997aa26a67b41856
+      Path: Events\Default Work Unit\Anneaux\Patience\Passif
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -842,6 +1075,810 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_1MENU_BACK__itemnumber
+      guid: 5268c9c12de5d045b92f0c1d0c852e39
+      id: 70593976
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V1
+        ObjectType: 4
+        guid: aa2e573298eb524a8b130091ecef187a
+      - ElementName: Play_1MENU_BACK__itemnumber
+        ObjectType: 3
+        guid: 5268c9c12de5d045b92f0c1d0c852e39
+      Path: Events\Default Work Unit\Menu\V1\Play_1MENU_BACK__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.51883376
+      minDuration: 0.51883376
+    - name: Play_1MENU_HOVER__itemnumber
+      guid: d087a22945151b46a682154f8615365f
+      id: 2297224441
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V1
+        ObjectType: 4
+        guid: aa2e573298eb524a8b130091ecef187a
+      - ElementName: Play_1MENU_HOVER__itemnumber
+        ObjectType: 3
+        guid: d087a22945151b46a682154f8615365f
+      Path: Events\Default Work Unit\Menu\V1\Play_1MENU_HOVER__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.15849102
+      minDuration: 0.15849102
+    - name: Play_1MENU_SELECT__itemnumber
+      guid: 45f07086c1fa0345b409444b12992038
+      id: 790975177
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V1
+        ObjectType: 4
+        guid: aa2e573298eb524a8b130091ecef187a
+      - ElementName: Play_1MENU_SELECT__itemnumber
+        ObjectType: 3
+        guid: 45f07086c1fa0345b409444b12992038
+      Path: Events\Default Work Unit\Menu\V1\Play_1MENU_SELECT__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.324458
+      minDuration: 0.324458
+    - name: Play_2MENU_BACK__itemnumber
+      guid: 1cb460a9fbe1334f9db0bc8fbe68c7f6
+      id: 1898861817
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V2
+        ObjectType: 4
+        guid: 2771f564aa5c1044afb0f3106fc3fa96
+      - ElementName: Play_2MENU_BACK__itemnumber
+        ObjectType: 3
+        guid: 1cb460a9fbe1334f9db0bc8fbe68c7f6
+      Path: Events\Default Work Unit\Menu\V2\Play_2MENU_BACK__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.08522631
+      minDuration: 0.08522631
+    - name: Play_2MENU_BACKT2__itemnumber
+      guid: 95b863000933cf43849c38db8b84605e
+      id: 3319439483
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V2
+        ObjectType: 4
+        guid: 2771f564aa5c1044afb0f3106fc3fa96
+      - ElementName: Play_2MENU_BACKT2__itemnumber
+        ObjectType: 3
+        guid: 95b863000933cf43849c38db8b84605e
+      Path: Events\Default Work Unit\Menu\V2\Play_2MENU_BACKT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.15998621
+      minDuration: 0.15998621
+    - name: Play_2MENU_HOVER__itemnumber
+      guid: 1f19d96e3db4ba49a739d91ca03480df
+      id: 4054149942
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V2
+        ObjectType: 4
+        guid: 2771f564aa5c1044afb0f3106fc3fa96
+      - ElementName: Play_2MENU_HOVER__itemnumber
+        ObjectType: 3
+        guid: 1f19d96e3db4ba49a739d91ca03480df
+      Path: Events\Default Work Unit\Menu\V2\Play_2MENU_HOVER__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.067283936
+      minDuration: 0.067283936
+    - name: Play_2MENU_SELECT__itemnumber
+      guid: 9d974d9e28655047adf6b4454415ee3a
+      id: 3761818220
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V2
+        ObjectType: 4
+        guid: 2771f564aa5c1044afb0f3106fc3fa96
+      - ElementName: Play_2MENU_SELECT__itemnumber
+        ObjectType: 3
+        guid: 9d974d9e28655047adf6b4454415ee3a
+      Path: Events\Default Work Unit\Menu\V2\Play_2MENU_SELECT__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.30053484
+      minDuration: 0.30053484
+    - name: Play_3MENU_BACK__itemnumber
+      guid: c3a9a1567d0c2146a16d7c78a0ebabc2
+      id: 1850585002
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V3
+        ObjectType: 4
+        guid: 1f4a9c013b308c409cc54268d6f8adc7
+      - ElementName: Play_3MENU_BACK__itemnumber
+        ObjectType: 3
+        guid: c3a9a1567d0c2146a16d7c78a0ebabc2
+      Path: Events\Default Work Unit\Menu\V3\Play_3MENU_BACK__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.35137156
+      minDuration: 0.35137156
+    - name: Play_3MENU_BACK2__itemnumber
+      guid: 356508e09a44e74392c05ba261a1b2e3
+      id: 1194865992
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V3
+        ObjectType: 4
+        guid: 1f4a9c013b308c409cc54268d6f8adc7
+      - ElementName: Play_3MENU_BACK2__itemnumber
+        ObjectType: 3
+        guid: 356508e09a44e74392c05ba261a1b2e3
+      Path: Events\Default Work Unit\Menu\V3\Play_3MENU_BACK2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.82385415
+      minDuration: 0.82385415
+    - name: Play_3MENU_HOVER__itemnumber
+      guid: 20af069218d8ea47807c380dae1c1889
+      id: 2530256839
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V3
+        ObjectType: 4
+        guid: 1f4a9c013b308c409cc54268d6f8adc7
+      - ElementName: Play_3MENU_HOVER__itemnumber
+        ObjectType: 3
+        guid: 20af069218d8ea47807c380dae1c1889
+      Path: Events\Default Work Unit\Menu\V3\Play_3MENU_HOVER__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.11812067
+      minDuration: 0.11812067
+    - name: Play_3MENU_SELECT__itemnumber
+      guid: cc4dd122f87d89409752375e54577278
+      id: 2576267239
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V3
+        ObjectType: 4
+        guid: 1f4a9c013b308c409cc54268d6f8adc7
+      - ElementName: Play_3MENU_SELECT__itemnumber
+        ObjectType: 3
+        guid: cc4dd122f87d89409752375e54577278
+      Path: Events\Default Work Unit\Menu\V3\Play_3MENU_SELECT__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.35286677
+      minDuration: 0.35286677
+    - name: Play_4MENU_BACK__itemnumber
+      guid: 25f89d052926794f992e33b126f34d1a
+      id: 967650755
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V4
+        ObjectType: 4
+        guid: cd89ef3cdabb7944a39a620c1363db19
+      - ElementName: Play_4MENU_BACK__itemnumber
+        ObjectType: 3
+        guid: 25f89d052926794f992e33b126f34d1a
+      Path: Events\Default Work Unit\Menu\V4\Play_4MENU_BACK__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.1644718
+      minDuration: 0.1644718
+    - name: Play_4MENU_HOVER__itemnumber
+      guid: 4dc74996b2a4184091b5109f976590cf
+      id: 165751236
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V4
+        ObjectType: 4
+        guid: cd89ef3cdabb7944a39a620c1363db19
+      - ElementName: Play_4MENU_HOVER__itemnumber
+        ObjectType: 3
+        guid: 4dc74996b2a4184091b5109f976590cf
+      Path: Events\Default Work Unit\Menu\V4\Play_4MENU_HOVER__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.04485596
+      minDuration: 0.04485596
+    - name: Play_4MENU_SELECT__itemnumber
+      guid: ca970c6e1bb6f94f92e076cdf6f515e0
+      id: 2122796938
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V4
+        ObjectType: 4
+        guid: cd89ef3cdabb7944a39a620c1363db19
+      - ElementName: Play_4MENU_SELECT__itemnumber
+        ObjectType: 3
+        guid: ca970c6e1bb6f94f92e076cdf6f515e0
+      Path: Events\Default Work Unit\Menu\V4\Play_4MENU_SELECT__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.28857324
+      minDuration: 0.28857324
+    - name: Play_4MENU_SELECT2__itemnumber
+      guid: 16ca11157b090443b54911904fa76b93
+      id: 736391848
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V4
+        ObjectType: 4
+        guid: cd89ef3cdabb7944a39a620c1363db19
+      - ElementName: Play_4MENU_SELECT2__itemnumber
+        ObjectType: 3
+        guid: 16ca11157b090443b54911904fa76b93
+      Path: Events\Default Work Unit\Menu\V4\Play_4MENU_SELECT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.29903963
+      minDuration: 0.29903963
+    - name: Play_5MENU_BACK__itemnumber
+      guid: 3438400e20b35d429933ee75e90f4e8f
+      id: 4048517708
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V5
+        ObjectType: 4
+        guid: 05e7cca1f76e8c43a8dd97774bc5533c
+      - ElementName: Play_5MENU_BACK__itemnumber
+        ObjectType: 3
+        guid: 3438400e20b35d429933ee75e90f4e8f
+      Path: Events\Default Work Unit\Menu\V5\Play_5MENU_BACK__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.15251023
+      minDuration: 0.15251023
+    - name: Play_5MENU_HOVER__itemnumber
+      guid: c6665781bd261d4bb137417bec0bb525
+      id: 2768269117
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V5
+        ObjectType: 4
+        guid: 05e7cca1f76e8c43a8dd97774bc5533c
+      - ElementName: Play_5MENU_HOVER__itemnumber
+        ObjectType: 3
+        guid: c6665781bd261d4bb137417bec0bb525
+      Path: Events\Default Work Unit\Menu\V5\Play_5MENU_HOVER__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.040370367
+      minDuration: 0.040370367
+    - name: Play_5MENU_SELECT__itemnumber
+      guid: 35f7713c0d1b0e4484d6244e6ffcadc1
+      id: 3320033789
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V5
+        ObjectType: 4
+        guid: 05e7cca1f76e8c43a8dd97774bc5533c
+      - ElementName: Play_5MENU_SELECT__itemnumber
+        ObjectType: 3
+        guid: 35f7713c0d1b0e4484d6244e6ffcadc1
+      Path: Events\Default Work Unit\Menu\V5\Play_5MENU_SELECT__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.06877913
+      minDuration: 0.06877913
+    - name: Play_Anneaux_Bienveillance_Actif_PT1__itemnumber
+      guid: 39b933d0e6df08439b91e0f9b46fced9
+      id: 2783235952
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Actif
+        ObjectType: 4
+        guid: 94900566f1d89a418fa80969930e2684
+      - ElementName: Play_Anneaux_Bienveillance_Actif_PT1__itemnumber
+        ObjectType: 3
+        guid: 39b933d0e6df08439b91e0f9b46fced9
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_Anneaux_Bienveillance_Actif_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.536188
+      minDuration: 0.536188
+    - name: Play_Anneaux_Bienveillance_Actif_PT4__itemnumber
+      guid: 4135ab4bb0029c4fada0ef8ac0c926ba
+      id: 3278177977
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Actif
+        ObjectType: 4
+        guid: 94900566f1d89a418fa80969930e2684
+      - ElementName: Play_Anneaux_Bienveillance_Actif_PT4__itemnumber
+        ObjectType: 3
+        guid: 4135ab4bb0029c4fada0ef8ac0c926ba
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_Anneaux_Bienveillance_Actif_PT4__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.811446
+      minDuration: 1.811446
+    - name: Play_Anneaux_Bienveillance_Actif_PT5__itemnumber
+      guid: 2befa61e827ec04381b4f2f5508d9956
+      id: 1828759756
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Actif
+        ObjectType: 4
+        guid: 94900566f1d89a418fa80969930e2684
+      - ElementName: Play_Anneaux_Bienveillance_Actif_PT5__itemnumber
+        ObjectType: 3
+        guid: 2befa61e827ec04381b4f2f5508d9956
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_Anneaux_Bienveillance_Actif_PT5__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.1882267
+      minDuration: 2.1882267
+    - name: Play_Anneaux_Bienveillance_Attack_PT1__itemnumber
+      guid: 0ffdcc22274f00459674cc8e0d61f384
+      id: 1534784675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_Anneaux_Bienveillance_Attack_PT1__itemnumber
+        ObjectType: 3
+        guid: 0ffdcc22274f00459674cc8e0d61f384
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.49271327
+      minDuration: 0.49271327
+    - name: Play_Anneaux_Bienveillance_Attack_PT2__itemnumber
+      guid: 6b26b2b41ce5694285ef397555ec4a08
+      id: 2387987480
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_Anneaux_Bienveillance_Attack_PT2__itemnumber
+        ObjectType: 3
+        guid: 6b26b2b41ce5694285ef397555ec4a08
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.44923857
+      minDuration: 0.44923857
+    - name: Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01
+      guid: 21788ac5fb1a95418a4d4ba864a38f86
+      id: 1743640942
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01
+        ObjectType: 3
+        guid: 21788ac5fb1a95418a4d4ba864a38f86
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01
+      maxAttenuation: 0
+      maxDuration: 2.1302605
+      minDuration: 2.1302605
+    - name: Play_Anneaux_Bienveillance_Attack_PT3__itemnumber
+      guid: d32920ddddd94e4c8c117fd2cb6ad66a
+      id: 975694469
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_Anneaux_Bienveillance_Attack_PT3__itemnumber
+        ObjectType: 3
+        guid: d32920ddddd94e4c8c117fd2cb6ad66a
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT3__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.333306
+      minDuration: 0.333306
+    - name: Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01
+      guid: 7338907625f4a84b9e7357023ad771a5
+      id: 4047475361
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01
+        ObjectType: 3
+        guid: 7338907625f4a84b9e7357023ad771a5
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01
+      maxAttenuation: 0
+      maxDuration: 2.115769
+      minDuration: 2.115769
+    - name: Play_Anneaux_Bienveillance_Attack_PT4__itemnumber
+      guid: d34d5ea97c379d4684aea58f13e17b78
+      id: 936363018
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_Anneaux_Bienveillance_Attack_PT4__itemnumber
+        ObjectType: 3
+        guid: d34d5ea97c379d4684aea58f13e17b78
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT4__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.40576386
+      minDuration: 0.40576386
+    - name: Play_Anneaux_Bienveillance_Attack_PT5__itemnumber
+      guid: 0b3988d849c6e24283dff2bc46c1dea8
+      id: 398773119
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_Anneaux_Bienveillance_Attack_PT5__itemnumber
+        ObjectType: 3
+        guid: 0b3988d849c6e24283dff2bc46c1dea8
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT5__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.44923857
+      minDuration: 0.44923857
+    - name: Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber
+      guid: c1ca7bb797f0394a844b972cc9a96c53
+      id: 4020966477
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Base
+        ObjectType: 4
+        guid: df9d441258ed8e409487d19cdf588927
+      - ElementName: Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber
+        ObjectType: 3
+        guid: c1ca7bb797f0394a844b972cc9a96c53
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.76805305
+      minDuration: 0.76805305
+    - name: Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber
+      guid: c6458d04244c5747a01fd981aec61adc
+      id: 756478054
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Base
+        ObjectType: 4
+        guid: df9d441258ed8e409487d19cdf588927
+      - ElementName: Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber
+        ObjectType: 3
+        guid: c6458d04244c5747a01fd981aec61adc
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.536188
+      minDuration: 0.536188
+    - name: Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber
+      guid: bdc538f7bb450e48b4e8291e5cee85da
+      id: 4245976043
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Base
+        ObjectType: 4
+        guid: df9d441258ed8e409487d19cdf588927
+      - ElementName: Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber
+        ObjectType: 3
+        guid: bdc538f7bb450e48b4e8291e5cee85da
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.637629
+      minDuration: 0.637629
+    - name: Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber
+      guid: de9f194e1d7f3344a1f6cb53a17c7702
+      id: 2083265212
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Base
+        ObjectType: 4
+        guid: df9d441258ed8e409487d19cdf588927
+      - ElementName: Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber
+        ObjectType: 3
+        guid: de9f194e1d7f3344a1f6cb53a17c7702
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.5651711
+      minDuration: 0.5651711
+    - name: Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber
+      guid: 6d2024abacc0ca4198d07a0dd5ae12bb
+      id: 4292055273
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Base
+        ObjectType: 4
+        guid: df9d441258ed8e409487d19cdf588927
+      - ElementName: Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber
+        ObjectType: 3
+        guid: 6d2024abacc0ca4198d07a0dd5ae12bb
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.8115278
+      minDuration: 0.8115278
     - name: Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber
       guid: f0f6d5297997c944974b4f662550d195
       id: 1311394723
@@ -2217,7 +3254,7 @@ MonoBehaviour:
       maxDuration: 0.4817531
       minDuration: 0.4817531
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
-      guid: 31d6bfc33802bc479b6ed64ca9186c59
+      guid: 03da6e7d04d308428cf87a0adbba3b32
       id: 2505770584
       PathAndIcons:
       - ElementName: Events
@@ -2237,13 +3274,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
         ObjectType: 3
-        guid: 31d6bfc33802bc479b6ed64ca9186c59
+        guid: 03da6e7d04d308428cf87a0adbba3b32
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.7679021
-      minDuration: 2.7679021
+      maxDuration: 2.6596792
+      minDuration: 2.6596792
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
-      guid: e681dcc01debeb498b2582b9a601f683
+      guid: bb96c64ee2b5b046a75378949747a6d1
       id: 69287139
       PathAndIcons:
       - ElementName: Events
@@ -2263,13 +3300,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
         ObjectType: 3
-        guid: e681dcc01debeb498b2582b9a601f683
+        guid: bb96c64ee2b5b046a75378949747a6d1
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.4051187
-      minDuration: 2.4051187
+      maxDuration: 2.4276266
+      minDuration: 2.4276266
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
-      guid: 28b7bcdb750863418595fef80304dd81
+      guid: 20e6b1d205a16d4d9c1b749aa42cfce3
       id: 2375100894
       PathAndIcons:
       - ElementName: Events
@@ -2289,13 +3326,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
         ObjectType: 3
-        guid: 28b7bcdb750863418595fef80304dd81
+        guid: 20e6b1d205a16d4d9c1b749aa42cfce3
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.061477
-      minDuration: 1.061477
+      maxDuration: 0.91035986
+      minDuration: 0.91035986
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
-      guid: 5fe3f47726fa9c4d8c4755c318574a3b
+      guid: ab8561533e1e4e408d3c562dd83d7d97
       id: 349381281
       PathAndIcons:
       - ElementName: Events
@@ -2315,13 +3352,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
         ObjectType: 3
-        guid: 5fe3f47726fa9c4d8c4755c318574a3b
+        guid: ab8561533e1e4e408d3c562dd83d7d97
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.9549987
-      minDuration: 1.9549987
+      maxDuration: 2.195574
+      minDuration: 2.195574
     - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
-      guid: 14dc3c9bd05f23458718ac46b400c437
+      guid: 44aefd5b54a12d4b8cb9d65056df6af4
       id: 2350078742
       PathAndIcons:
       - ElementName: Events
@@ -2341,13 +3378,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
         ObjectType: 3
-        guid: 14dc3c9bd05f23458718ac46b400c437
+        guid: 44aefd5b54a12d4b8cb9d65056df6af4
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.7467343
-      minDuration: 1.7467343
+      maxDuration: 1.7314689
+      minDuration: 1.7314689
     - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
-      guid: 1d6c899f0bf9a948bab6e9118b6f7d88
+      guid: 426c82b7b518c04a970e6be6f69d1119
       id: 1083529149
       PathAndIcons:
       - ElementName: Events
@@ -2367,13 +3404,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
         ObjectType: 3
-        guid: 1d6c899f0bf9a948bab6e9118b6f7d88
+        guid: 426c82b7b518c04a970e6be6f69d1119
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.6315115
-      minDuration: 0.6315115
+      maxDuration: 0.55335593
+      minDuration: 0.55335593
     - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
-      guid: 1f8f8cdd2ad5b245985e59a79949768a
+      guid: 2cecd1695aa87d4cb24f4dfb171ac593
       id: 415217232
       PathAndIcons:
       - ElementName: Events
@@ -2393,13 +3430,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
         ObjectType: 3
-        guid: 1f8f8cdd2ad5b245985e59a79949768a
+        guid: 2cecd1695aa87d4cb24f4dfb171ac593
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.80618495
-      minDuration: 0.80618495
+      maxDuration: 0.7586332
+      minDuration: 0.7586332
     - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
-      guid: 1388eeef96329e49848faa57f5c79790
+      guid: c8c0f382ef57e741b29577926c03ed85
       id: 4121344809
       PathAndIcons:
       - ElementName: Events
@@ -2419,13 +3456,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
         ObjectType: 3
-        guid: 1388eeef96329e49848faa57f5c79790
+        guid: c8c0f382ef57e741b29577926c03ed85
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.49042907
-      minDuration: 0.49042907
+      maxDuration: 0.47303003
+      minDuration: 0.47303003
     - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
-      guid: 1a8bb1245039fe47a08e9b11060e00e7
+      guid: 51b4033d671ed847a7053e6d295f888d
       id: 3898489234
       PathAndIcons:
       - ElementName: Events
@@ -2445,13 +3482,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
         ObjectType: 3
-        guid: 1a8bb1245039fe47a08e9b11060e00e7
+        guid: 51b4033d671ed847a7053e6d295f888d
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.9146895
-      minDuration: 1.9146895
+      maxDuration: 1.8921207
+      minDuration: 1.8921207
     - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
-      guid: 09d6893c148577488d5bf5b1bde73eeb
+      guid: 21a1e5e523d62b4eb79a4287751b855a
       id: 659293366
       PathAndIcons:
       - ElementName: Events
@@ -2471,13 +3508,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
         ObjectType: 3
-        guid: 09d6893c148577488d5bf5b1bde73eeb
+        guid: 21a1e5e523d62b4eb79a4287751b855a
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.45683804
-      minDuration: 0.45683804
+      maxDuration: 0.39270413
+      minDuration: 0.39270413
     - name: Play_Anneaux_Perseverence_Attack_PT1__itemnumber
-      guid: 0ea58e526456374cb55c5da9dc7ddc2f
+      guid: 4fd4c8124ebcae46ad105f33991168ad
       id: 3881681859
       PathAndIcons:
       - ElementName: Events
@@ -2497,13 +3534,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_Anneaux_Perseverence_Attack_PT1__itemnumber
         ObjectType: 3
-        guid: 0ea58e526456374cb55c5da9dc7ddc2f
+        guid: 4fd4c8124ebcae46ad105f33991168ad
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.0356174
-      minDuration: 2.0356174
+      maxDuration: 2.0706227
+      minDuration: 2.0706227
     - name: Play_Anneaux_Perseverence_Attack_PT2__itemnumber
-      guid: d111172e45511946b19c76c634f10dea
+      guid: eb210500b9625540b3d2694bf4b33beb
       id: 551889208
       PathAndIcons:
       - ElementName: Events
@@ -2523,13 +3560,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_Anneaux_Perseverence_Attack_PT2__itemnumber
         ObjectType: 3
-        guid: d111172e45511946b19c76c634f10dea
+        guid: eb210500b9625540b3d2694bf4b33beb
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.4857373
-      minDuration: 2.4857373
+      maxDuration: 2.4365518
+      minDuration: 2.4365518
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
-      guid: bba4f4fb4ca7f94c85366b29b663e296
+      guid: 9c7f86c0a3608c438da242fee7e4c976
       id: 680953922
       PathAndIcons:
       - ElementName: Events
@@ -2549,13 +3586,13 @@ MonoBehaviour:
         guid: 26c7d4c4a2da804cb22dbc935a1a074e
       - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
         ObjectType: 3
-        guid: bba4f4fb4ca7f94c85366b29b663e296
+        guid: 9c7f86c0a3608c438da242fee7e4c976
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.0681951
-      minDuration: 1.0681951
+      maxDuration: 1.0977869
+      minDuration: 1.0977869
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
-      guid: d7c10b8455672444b8ebccded985834f
+      guid: df8b9c9b5aa9b042b36dc1154ed984e9
       id: 1175457881
       PathAndIcons:
       - ElementName: Events
@@ -2575,13 +3612,13 @@ MonoBehaviour:
         guid: 26c7d4c4a2da804cb22dbc935a1a074e
       - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
         ObjectType: 3
-        guid: d7c10b8455672444b8ebccded985834f
+        guid: df8b9c9b5aa9b042b36dc1154ed984e9
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.20826429
-      minDuration: 0.20826429
+      maxDuration: 0.23205236
+      minDuration: 0.23205236
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
-      guid: 7fa215ede22ea445b5b2486b57954f95
+      guid: 5a5921846af20d44aba1e17863293c51
       id: 864848364
       PathAndIcons:
       - ElementName: Events
@@ -2601,13 +3638,13 @@ MonoBehaviour:
         guid: 26c7d4c4a2da804cb22dbc935a1a074e
       - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
         ObjectType: 3
-        guid: 7fa215ede22ea445b5b2486b57954f95
+        guid: 5a5921846af20d44aba1e17863293c51
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.49042907
-      minDuration: 0.49042907
+      maxDuration: 0.4998053
+      minDuration: 0.4998053
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
-      guid: d43168a5b4c9394181a0d736a92467de
+      guid: ca3d79adf219a34cb45cee22a5d0b6be
       id: 4083119323
       PathAndIcons:
       - ElementName: Events
@@ -2627,13 +3664,13 @@ MonoBehaviour:
         guid: 26c7d4c4a2da804cb22dbc935a1a074e
       - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
         ObjectType: 3
-        guid: d43168a5b4c9394181a0d736a92467de
+        guid: ca3d79adf219a34cb45cee22a5d0b6be
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.5777658
-      minDuration: 0.5777658
+      maxDuration: 0.49088022
+      minDuration: 0.49088022
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
-      guid: 16c6198a802e1046bf82b3e224680fbe
+      guid: 54fd7f8c183cc048bd6a3f1579b5610e
       id: 831071958
       PathAndIcons:
       - ElementName: Events
@@ -2653,11 +3690,115 @@ MonoBehaviour:
         guid: 26c7d4c4a2da804cb22dbc935a1a074e
       - ElementName: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
         ObjectType: 3
-        guid: 16c6198a802e1046bf82b3e224680fbe
+        guid: 54fd7f8c183cc048bd6a3f1579b5610e
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.2092775
-      minDuration: 1.2092775
+      maxDuration: 1.1781129
+      minDuration: 1.1781129
+    - name: Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber
+      guid: 43027290bb6d5a4a9cb4c92a1c03be3d
+      id: 1504976930
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Actif
+        ObjectType: 4
+        guid: 94900566f1d89a418fa80969930e2684
+      - ElementName: Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber
+        ObjectType: 3
+        guid: 43027290bb6d5a4a9cb4c92a1c03be3d
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.115769
+      minDuration: 2.115769
+    - name: Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber
+      guid: 88403c208d61f748ae89fd5250171dd0
+      id: 1476587787
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Attack
+        ObjectType: 4
+        guid: bad96af0b0453b47a3ede54254e807ee
+      - ElementName: Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber
+        ObjectType: 3
+        guid: 88403c208d61f748ae89fd5250171dd0
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.536188
+      minDuration: 0.536188
+    - name: Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber
+      guid: 11cdadd9669c0046821315d783c0b583
+      id: 3631972377
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Base
+        ObjectType: 4
+        guid: df9d441258ed8e409487d19cdf588927
+      - ElementName: Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber
+        ObjectType: 3
+        guid: 11cdadd9669c0046821315d783c0b583
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.8115278
+      minDuration: 0.8115278
+    - name: Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber
+      guid: e8faf85d27bf4a4c83a9c09e4211747f
+      id: 4122009797
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Bienveillance
+        ObjectType: 4
+        guid: b2dd6ef3b171d443b471181692e33739
+      - ElementName: Passif
+        ObjectType: 4
+        guid: e461bc9efe56d94d8541c0a468b74bd7
+      - ElementName: Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber
+        ObjectType: 3
+        guid: e8faf85d27bf4a4c83a9c09e4211747f
+      Path: Events\Default Work Unit\Anneaux\Bienveillance\Passif\Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber
       guid: 30c1b64a0be8074c92d40b15ca3b5d91
       id: 3822052572
@@ -2899,7 +4040,7 @@ MonoBehaviour:
       maxDuration: 1.0964038
       minDuration: 1.0964038
     - name: Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
-      guid: 486ce59465674e4cad57214f3d133687
+      guid: d37155be158521418d933c039e36422f
       id: 1106791576
       PathAndIcons:
       - ElementName: Events
@@ -2919,13 +4060,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
         ObjectType: 3
-        guid: 486ce59465674e4cad57214f3d133687
+        guid: d37155be158521418d933c039e36422f
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 3.7420425
-      minDuration: 3.7420425
+      maxDuration: 3.3826122
+      minDuration: 3.3826122
     - name: Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
-      guid: 0edff8b7a0ee7c418a6b9bfa9d668f6b
+      guid: ac8c4bf4ad327249aec7c0030bccce5b
       id: 1192075387
       PathAndIcons:
       - ElementName: Events
@@ -2945,13 +4086,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
         ObjectType: 3
-        guid: 0edff8b7a0ee7c418a6b9bfa9d668f6b
+        guid: ac8c4bf4ad327249aec7c0030bccce5b
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.734311
-      minDuration: 2.734311
+      maxDuration: 2.6686044
+      minDuration: 2.6686044
     - name: Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
-      guid: 5b40dff1c3263a4ebe4c1a9a7e4ca6d4
+      guid: cad24643f724cc40b795e4a4996cb008
       id: 77499785
       PathAndIcons:
       - ElementName: Events
@@ -2971,13 +4112,13 @@ MonoBehaviour:
         guid: f67c9b50706be240ad14e125f166fff5
       - ElementName: Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
         ObjectType: 3
-        guid: 5b40dff1c3263a4ebe4c1a9a7e4ca6d4
+        guid: cad24643f724cc40b795e4a4996cb008
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.6997068
-      minDuration: 1.6997068
+      maxDuration: 1.6600682
+      minDuration: 1.6600682
     - name: Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
-      guid: ccbbc380b1263542acf785bc47776ab2
+      guid: 811831d2afeea7429e2f7032413c4f82
       id: 1894354718
       PathAndIcons:
       - ElementName: Events
@@ -2997,13 +4138,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
         ObjectType: 3
-        guid: ccbbc380b1263542acf785bc47776ab2
+        guid: 811831d2afeea7429e2f7032413c4f82
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.0221808
-      minDuration: 2.0221808
+      maxDuration: 2.008147
+      minDuration: 2.008147
     - name: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
-      guid: 15cc65f21cd1df4e8fae305fbb2e4ed1
+      guid: 9c3b0ad17f573f4b996f52300d2f6701
       id: 3515088067
       PathAndIcons:
       - ElementName: Events
@@ -3023,13 +4164,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
         ObjectType: 3
-        guid: 15cc65f21cd1df4e8fae305fbb2e4ed1
+        guid: 9c3b0ad17f573f4b996f52300d2f6701
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.8350842
-      minDuration: 2.8350842
+      maxDuration: 2.4365518
+      minDuration: 2.4365518
     - name: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
-      guid: 6a76487c23bfd94d95c38750175ac6c7
+      guid: bb16e745d55f9842ab04abfbdf02b029
       id: 3461245946
       PathAndIcons:
       - ElementName: Events
@@ -3049,13 +4190,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
         ObjectType: 3
-        guid: 6a76487c23bfd94d95c38750175ac6c7
+        guid: bb16e745d55f9842ab04abfbdf02b029
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 3.9301524
-      minDuration: 3.9301524
+      maxDuration: 3.6146648
+      minDuration: 3.6146648
     - name: Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
-      guid: c64ef1a062cadd498207e64dfaec7c9e
+      guid: b33ed5299cba89458a7f76f1d355664a
       id: 3190605359
       PathAndIcons:
       - ElementName: Events
@@ -3075,13 +4216,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
         ObjectType: 3
-        guid: c64ef1a062cadd498207e64dfaec7c9e
+        guid: b33ed5299cba89458a7f76f1d355664a
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 4.850547
-      minDuration: 4.850547
+      maxDuration: 4.5964255
+      minDuration: 4.5964255
     - name: Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
-      guid: 3f5cc2833767634399caae87fadbaa12
+      guid: d8eb0523e32a48428740545f17276087
       id: 4271747987
       PathAndIcons:
       - ElementName: Events
@@ -3101,13 +4242,13 @@ MonoBehaviour:
         guid: a4c3db874f3c5b4faa5b3815582fc5b4
       - ElementName: Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
         ObjectType: 3
-        guid: 3f5cc2833767634399caae87fadbaa12
+        guid: d8eb0523e32a48428740545f17276087
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.7679021
-      minDuration: 2.7679021
+      maxDuration: 2.4454768
+      minDuration: 2.4454768
     - name: Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
-      guid: e9dd9c74b1cb174db1e2c8a65a1c9eec
+      guid: c9cd3f7510cd8a4aa654f07d0d18d7d8
       id: 952051097
       PathAndIcons:
       - ElementName: Events
@@ -3127,11 +4268,51 @@ MonoBehaviour:
         guid: 26c7d4c4a2da804cb22dbc935a1a074e
       - ElementName: Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
         ObjectType: 3
-        guid: e9dd9c74b1cb174db1e2c8a65a1c9eec
+        guid: c9cd3f7510cd8a4aa654f07d0d18d7d8
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.3302053
-      minDuration: 1.3302053
+      maxDuration: 1.5708171
+      minDuration: 1.5708171
+    - name: Play_FULL_SFX_Death_Type1__itemnumber
+      guid: fcd3fb198c3f8742a75430ccbe284165
+      id: 3397440394
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      - ElementName: Play_FULL_SFX_Death_Type1__itemnumber
+        ObjectType: 3
+        guid: fcd3fb198c3f8742a75430ccbe284165
+      Path: Events\Default Work Unit\Death\Play_FULL_SFX_Death_Type1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.64286834
+      minDuration: 0.64286834
+    - name: Play_FULL_SFX_Death_Type2__itemnumber
+      guid: ef832de7ff7ecb40bdde1ac265cbb9e6
+      id: 3014696417
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      - ElementName: Play_FULL_SFX_Death_Type2__itemnumber
+        ObjectType: 3
+        guid: ef832de7ff7ecb40bdde1ac265cbb9e6
+      Path: Events\Default Work Unit\Death\Play_FULL_SFX_Death_Type2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.5291898
+      minDuration: 1.5291898
     - name: Play_Musique_Combat_Full_Onetime__itemnumber
       guid: 29beea24919c2d468cf0d8df5f7bc2b2
       id: 54626728
@@ -3270,6 +4451,326 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_SFX_Death__itemnumber
+      guid: 99f17ca7ddd3f64789e26e5444f1ad5c
+      id: 3168053200
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      - ElementName: Play_SFX_Death__itemnumber
+        ObjectType: 3
+        guid: 99f17ca7ddd3f64789e26e5444f1ad5c
+      Path: Events\Default Work Unit\Death\Play_SFX_Death__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.70373166
+      minDuration: 0.70373166
+    - name: Play_SFX_Death2__itemnumber
+      guid: 995b959019e67640a6912db915eded83
+      id: 2806877478
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      - ElementName: Play_SFX_Death2__itemnumber
+        ObjectType: 3
+        guid: 995b959019e67640a6912db915eded83
+      Path: Events\Default Work Unit\Death\Play_SFX_Death2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.430287
+      minDuration: 1.430287
+    - name: Play_SFX_Death3__itemnumber
+      guid: bf36c973caa6ab49ba1cc52bc88a50c3
+      id: 3547076779
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      - ElementName: Play_SFX_Death3__itemnumber
+        ObjectType: 3
+        guid: bf36c973caa6ab49ba1cc52bc88a50c3
+      Path: Events\Default Work Unit\Death\Play_SFX_Death3__itemnumber
+      maxAttenuation: 0
+      maxDuration: 2.0959792
+      minDuration: 2.0959792
+    - name: Play_SFX_Death4__itemnumber
+      guid: 57dcbcfa7bd03f43ad4e2556abad063d
+      id: 4014803068
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      - ElementName: Play_SFX_Death4__itemnumber
+        ObjectType: 3
+        guid: 57dcbcfa7bd03f43ad4e2556abad063d
+      Path: Events\Default Work Unit\Death\Play_SFX_Death4__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.6504763
+      minDuration: 0.6504763
+    - name: Play_SFX_DropLoot__itemnumber
+      guid: e6bf81d638737d4aaf877cae9c28968d
+      id: 665791251
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Death
+        ObjectType: 4
+        guid: 9e0a3f119b8db5408e6421a0e393ec62
+      - ElementName: Play_SFX_DropLoot__itemnumber
+        ObjectType: 3
+        guid: e6bf81d638737d4aaf877cae9c28968d
+      Path: Events\Default Work Unit\Death\Play_SFX_DropLoot__itemnumber
+      maxAttenuation: 0
+      maxDuration: 1.1525984
+      minDuration: 1.1525984
+    - name: Play_SFX_Hit1__itemnumber
+      guid: db3fd9f7d4a98345b63efe9b56fb3a60
+      id: 3231612006
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Hit
+        ObjectType: 4
+        guid: 4c9f3ff301fc3c4499fc20ba21b4009a
+      - ElementName: Play_SFX_Hit1__itemnumber
+        ObjectType: 3
+        guid: db3fd9f7d4a98345b63efe9b56fb3a60
+      Path: Events\Default Work Unit\Hit\Play_SFX_Hit1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.2852966
+      minDuration: 0.2852966
+    - name: Play_SFX_Hit2__itemnumber
+      guid: dd49900b073ef24db7c53839fafa3500
+      id: 2201133133
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Hit
+        ObjectType: 4
+        guid: 4c9f3ff301fc3c4499fc20ba21b4009a
+      - ElementName: Play_SFX_Hit2__itemnumber
+        ObjectType: 3
+        guid: dd49900b073ef24db7c53839fafa3500
+      Path: Events\Default Work Unit\Hit\Play_SFX_Hit2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.57439715
+      minDuration: 0.57439715
+    - name: Play_SFX_SelectRing_Type1__itemnumber
+      guid: 52b4e7cfc10e9847b2cd49d5d2a171a7
+      id: 379622684
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type1__itemnumber
+        ObjectType: 3
+        guid: 52b4e7cfc10e9847b2cd49d5d2a171a7
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type1__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.34615985
+      minDuration: 0.34615985
+    - name: Play_SFX_SelectRing_Type2__itemnumber
+      guid: 872cd1f936722248af981f8cc1f7b146
+      id: 2560371015
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type2__itemnumber
+        ObjectType: 3
+        guid: 872cd1f936722248af981f8cc1f7b146
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type2__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.3499638
+      minDuration: 0.3499638
+    - name: Play_SFX_SelectRing_Type3__itemnumber
+      guid: 66b9fe9e3a4872479024498f3159fd97
+      id: 1487608498
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type3__itemnumber
+        ObjectType: 3
+        guid: 66b9fe9e3a4872479024498f3159fd97
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type3__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.77600676
+      minDuration: 0.77600676
+    - name: Play_SFX_SelectRing_Type4__itemnumber
+      guid: 26884bf27a82494dbdf6fbc6989f4116
+      id: 959648813
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type4__itemnumber
+        ObjectType: 3
+        guid: 26884bf27a82494dbdf6fbc6989f4116
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type4__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.5325537
+      minDuration: 0.5325537
+    - name: Play_SFX_SelectRing_Type5__itemnumber
+      guid: 28d444054511a748a7d7bd1b922026fc
+      id: 1541507328
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type5__itemnumber
+        ObjectType: 3
+        guid: 28d444054511a748a7d7bd1b922026fc
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type5__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.5325537
+      minDuration: 0.5325537
+    - name: Play_SFX_SelectRing_Type6__itemnumber
+      guid: 6daa88e53d03a94880ebc8313f32e0e9
+      id: 3938999371
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type6__itemnumber
+        ObjectType: 3
+        guid: 6daa88e53d03a94880ebc8313f32e0e9
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type6__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.4374548
+      minDuration: 0.4374548
+    - name: Play_SFX_SelectRing_Type7__itemnumber
+      guid: c0c2a3519fa9d0439f918f518c79e240
+      id: 1219670470
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type7__itemnumber
+        ObjectType: 3
+        guid: c0c2a3519fa9d0439f918f518c79e240
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type7__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.42223895
+      minDuration: 0.42223895
+    - name: Play_SFX_SelectRing_Type8__itemnumber
+      guid: e0c6932bfc17924da5d4b23f0bb6da66
+      id: 305339473
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type8__itemnumber
+        ObjectType: 3
+        guid: e0c6932bfc17924da5d4b23f0bb6da66
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type8__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.37278754
+      minDuration: 0.37278754
+    - name: Play_SFX_SelectRing_Type9__itemnumber
+      guid: fd920a2ccde7b442ad1f1803f69ff080
+      id: 539202276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Switch
+        ObjectType: 4
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      - ElementName: Play_SFX_SelectRing_Type9__itemnumber
+        ObjectType: 3
+        guid: fd920a2ccde7b442ad1f1803f69ff080
+      Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type9__itemnumber
+      maxAttenuation: 0
+      maxDuration: 0.34615985
+      minDuration: 0.34615985
     - name: Stay
       guid: 4e103f7d64a0924183e3214ca3c7ead1
       id: 553997914
@@ -3296,9 +4797,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Throw
-      guid: b0c08be8f25375438242cba9d7bfe9c4
-      id: 745179803
+    - name: Switch
+      guid: 11ff10fa3bebaa458d6f680f510e1c45
+      id: 3202316517
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -3306,19 +4807,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 604df3ab7243064eadf8b44faad8fe60
-      - ElementName: Anneaux
+      - ElementName: Switch
         ObjectType: 4
-        guid: ce0f910575d876458354bbb379ca6db9
-      - ElementName: Patience
-        ObjectType: 4
-        guid: c1f1734f1cfa444cad0a23ba748c152d
-      - ElementName: Attack
-        ObjectType: 4
-        guid: 2236cea1d6591044a433e457dc0cbcf4
-      - ElementName: Throw
-        ObjectType: 4
-        guid: b0c08be8f25375438242cba9d7bfe9c4
-      Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw
+        guid: 11ff10fa3bebaa458d6f680f510e1c45
+      Path: Events\Default Work Unit\Switch
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3348,6 +4840,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Throw
+      guid: b0c08be8f25375438242cba9d7bfe9c4
+      id: 745179803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Anneaux
+        ObjectType: 4
+        guid: ce0f910575d876458354bbb379ca6db9
+      - ElementName: Patience
+        ObjectType: 4
+        guid: c1f1734f1cfa444cad0a23ba748c152d
+      - ElementName: Attack
+        ObjectType: 4
+        guid: 2236cea1d6591044a433e457dc0cbcf4
+      - ElementName: Throw
+        ObjectType: 4
+        guid: b0c08be8f25375438242cba9d7bfe9c4
+      Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TNT
       guid: 1b97bccbc966cb4aa41e2748a64a8c53
       id: 1097649593
@@ -3371,6 +4889,106 @@ MonoBehaviour:
         ObjectType: 4
         guid: 1b97bccbc966cb4aa41e2748a64a8c53
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\TNT
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: V1
+      guid: aa2e573298eb524a8b130091ecef187a
+      id: 1534528634
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V1
+        ObjectType: 4
+        guid: aa2e573298eb524a8b130091ecef187a
+      Path: Events\Default Work Unit\Menu\V1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: V2
+      guid: 2771f564aa5c1044afb0f3106fc3fa96
+      id: 1534528633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V2
+        ObjectType: 4
+        guid: 2771f564aa5c1044afb0f3106fc3fa96
+      Path: Events\Default Work Unit\Menu\V2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: V3
+      guid: 1f4a9c013b308c409cc54268d6f8adc7
+      id: 1534528632
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V3
+        ObjectType: 4
+        guid: 1f4a9c013b308c409cc54268d6f8adc7
+      Path: Events\Default Work Unit\Menu\V3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: V4
+      guid: cd89ef3cdabb7944a39a620c1363db19
+      id: 1534528639
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V4
+        ObjectType: 4
+        guid: cd89ef3cdabb7944a39a620c1363db19
+      Path: Events\Default Work Unit\Menu\V4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: V5
+      guid: 05e7cca1f76e8c43a8dd97774bc5533c
+      id: 1534528638
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 604df3ab7243064eadf8b44faad8fe60
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 5becf82f283bf94aa08e95dbdb1f125c
+      - ElementName: V5
+        ObjectType: 4
+        guid: 05e7cca1f76e8c43a8dd97774bc5533c
+      Path: Events\Default Work Unit\Menu\V5
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3465,7 +5083,7 @@ MonoBehaviour:
     m_lastTime: -8584584996837241503
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000d0000000e0000002500000026000000270000002f0000003f00000057000000
+  ExpandedWaapiItemIds: 05000000060000000b0000000e0000002500000026000000270000002f0000004000000057000000d8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

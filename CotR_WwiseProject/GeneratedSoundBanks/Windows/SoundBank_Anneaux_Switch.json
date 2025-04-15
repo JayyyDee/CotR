@@ -1,0 +1,223 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "893414436",
+    "Type": "User",
+    "GUID": "{5C26CBEC-D43B-4DDD-BD30-18E58B07E23A}",
+    "Language": "SFX",
+    "Hash": "{216708E9-6D0E-4AB3-2A4D-55FB104632A2}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Switch",
+    "ShortName": "SoundBank_Anneaux_Switch",
+    "Path": "SoundBank_Anneaux_Switch.bnk",
+    "Media": [
+     {
+      "Id": "334285022",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type2_$itemnumber.wav",
+      "CachePath": "1F/{1F2D095F-D315-72AD-11EC-EB225BDF0D2D}.wem"
+     },
+     {
+      "Id": "459332862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type8_$itemnumber.wav",
+      "CachePath": "5D/{5DC2FC01-ED1A-FC61-0508-73353D08AE56}.wem"
+     },
+     {
+      "Id": "647561455",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type6_$itemnumber.wav",
+      "CachePath": "CB/{CB69BD13-4261-59B8-D2D4-0F119E8CF024}.wem"
+     },
+     {
+      "Id": "655524017",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type5_$itemnumber.wav",
+      "CachePath": "C7/{C70BD8A9-8B25-60BA-CD94-029CE84C4E97}.wem"
+     },
+     {
+      "Id": "690661442",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type7_$itemnumber.wav",
+      "CachePath": "67/{676958E9-19DE-C15D-35F5-38EF7B3539E8}.wem"
+     },
+     {
+      "Id": "771166883",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type9_$itemnumber.wav",
+      "CachePath": "75/{7512FBC6-316B-A0E2-DAE2-E4484D8B7729}.wem"
+     },
+     {
+      "Id": "838653210",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type1_$itemnumber.wav",
+      "CachePath": "D5/{D51D142E-008F-4A11-F70B-B4059C24D9F6}.wem"
+     },
+     {
+      "Id": "850105993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type4_$itemnumber.wav",
+      "CachePath": "07/{0742091D-8E3D-B2BE-4CE8-964370F239B5}.wem"
+     },
+     {
+      "Id": "1022210140",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_SelectRing_Type3_$itemnumber.wav",
+      "CachePath": "68/{68BBC4D7-D98B-FBFA-1A14-5ED04B385781}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "379622684",
+      "Name": "Play_SFX_SelectRing_Type1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type1__itemnumber",
+      "GUID": "{CFE7B452-0EC1-4798-B2CD-49D5D2A171A7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.34615985",
+      "DurationMax": "0.34615985",
+      "MediaRefs": [
+       {
+        "Id": "838653210"
+       }
+      ]
+     },
+     {
+      "Id": "2560371015",
+      "Name": "Play_SFX_SelectRing_Type2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type2__itemnumber",
+      "GUID": "{F9D12C87-7236-4822-AF98-1F8CC1F7B146}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3499638",
+      "DurationMax": "0.3499638",
+      "MediaRefs": [
+       {
+        "Id": "334285022"
+       }
+      ]
+     },
+     {
+      "Id": "1487608498",
+      "Name": "Play_SFX_SelectRing_Type3__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type3__itemnumber",
+      "GUID": "{9EFEB966-483A-4772-9024-498F3159FD97}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77600676",
+      "DurationMax": "0.77600676",
+      "MediaRefs": [
+       {
+        "Id": "1022210140"
+       }
+      ]
+     },
+     {
+      "Id": "959648813",
+      "Name": "Play_SFX_SelectRing_Type4__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type4__itemnumber",
+      "GUID": "{F24B8826-827A-4D49-BDF6-FBC6989F4116}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5325537",
+      "DurationMax": "0.5325537",
+      "MediaRefs": [
+       {
+        "Id": "850105993"
+       }
+      ]
+     },
+     {
+      "Id": "1541507328",
+      "Name": "Play_SFX_SelectRing_Type5__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type5__itemnumber",
+      "GUID": "{0544D428-1145-48A7-A7D7-BD1B922026FC}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5325537",
+      "DurationMax": "0.5325537",
+      "MediaRefs": [
+       {
+        "Id": "655524017"
+       }
+      ]
+     },
+     {
+      "Id": "3938999371",
+      "Name": "Play_SFX_SelectRing_Type6__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type6__itemnumber",
+      "GUID": "{E588AA6D-033D-48A9-80EB-C8313F32E0E9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4374548",
+      "DurationMax": "0.4374548",
+      "MediaRefs": [
+       {
+        "Id": "647561455"
+       }
+      ]
+     },
+     {
+      "Id": "1219670470",
+      "Name": "Play_SFX_SelectRing_Type7__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type7__itemnumber",
+      "GUID": "{51A3C2C0-A99F-43D0-9F91-8F518C79E240}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.42223895",
+      "DurationMax": "0.42223895",
+      "MediaRefs": [
+       {
+        "Id": "690661442"
+       }
+      ]
+     },
+     {
+      "Id": "305339473",
+      "Name": "Play_SFX_SelectRing_Type8__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type8__itemnumber",
+      "GUID": "{2B93C6E0-17FC-4D92-A5D4-B23F0BB6DA66}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.37278754",
+      "DurationMax": "0.37278754",
+      "MediaRefs": [
+       {
+        "Id": "459332862"
+       }
+      ]
+     },
+     {
+      "Id": "539202276",
+      "Name": "Play_SFX_SelectRing_Type9__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Switch\\Play_SFX_SelectRing_Type9__itemnumber",
+      "GUID": "{2C0A92FD-E7CD-42B4-AD1F-1803F69FF080}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.34615985",
+      "DurationMax": "0.34615985",
+      "MediaRefs": [
+       {
+        "Id": "771166883"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{923CC71B-DBEC-7C0A-14DE-3D223E2C834A}"
+ }
+}

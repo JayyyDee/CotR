@@ -1,0 +1,179 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1744594055",
+    "Type": "User",
+    "GUID": "{81C2CDA1-D199-4B46-B658-C782E2E4B19E}",
+    "Language": "SFX",
+    "Hash": "{92C6A62D-AB33-3DC0-EFAF-98D5F722A60B}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Death",
+    "ShortName": "SoundBank_Death",
+    "Path": "SoundBank_Death.bnk",
+    "Media": [
+     {
+      "Id": "167771395",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Death_$itemnumber.wav",
+      "CachePath": "D8/{D831CFC1-F670-C8EC-0E25-52336E445A8F}.wem"
+     },
+     {
+      "Id": "482170759",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_DropLoot_$itemnumber.wav",
+      "CachePath": "05/{05E543F7-0398-D201-A3A5-42A1DBCF60FD}.wem"
+     },
+     {
+      "Id": "507270087",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_SFX_Death_Type1_$itemnumber.wav",
+      "CachePath": "2A/{2A1714A7-0FAD-637F-9BC6-5A4988A6B1F4}.wem"
+     },
+     {
+      "Id": "541896313",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FULL_SFX_Death_Type2_$itemnumber.wav",
+      "CachePath": "BF/{BF63EDD1-B3E5-B5FA-1693-1F4EBA01A3B6}.wem"
+     },
+     {
+      "Id": "542496800",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Death4_$itemnumber.wav",
+      "CachePath": "1B/{1B33067A-D992-AEEF-A3D6-AA786EDA5A1B}.wem"
+     },
+     {
+      "Id": "905667814",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Death2_$itemnumber.wav",
+      "CachePath": "B6/{B61B9DBE-ED2F-FDD2-CFDC-41B254C489E1}.wem"
+     },
+     {
+      "Id": "1048739788",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Death3_$itemnumber.wav",
+      "CachePath": "5D/{5DE7FDEC-5482-DE6D-9C7A-3F749EF4F378}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3397440394",
+      "Name": "Play_FULL_SFX_Death_Type1__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Death\\Play_FULL_SFX_Death_Type1__itemnumber",
+      "GUID": "{19FBD3FC-3F8C-4287-A754-30CCBE284165}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.64286834",
+      "DurationMax": "0.64286834",
+      "MediaRefs": [
+       {
+        "Id": "507270087"
+       }
+      ]
+     },
+     {
+      "Id": "3014696417",
+      "Name": "Play_FULL_SFX_Death_Type2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Death\\Play_FULL_SFX_Death_Type2__itemnumber",
+      "GUID": "{E72D83EF-7EFF-40CB-BDDE-1AC265CBB9E6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5291898",
+      "DurationMax": "1.5291898",
+      "MediaRefs": [
+       {
+        "Id": "541896313"
+       }
+      ]
+     },
+     {
+      "Id": "2806877478",
+      "Name": "Play_SFX_Death2__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Death\\Play_SFX_Death2__itemnumber",
+      "GUID": "{90955B99-E619-4076-A691-2DB915EDED83}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.430287",
+      "DurationMax": "1.430287",
+      "MediaRefs": [
+       {
+        "Id": "905667814"
+       }
+      ]
+     },
+     {
+      "Id": "3547076779",
+      "Name": "Play_SFX_Death3__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Death\\Play_SFX_Death3__itemnumber",
+      "GUID": "{73C936BF-A6CA-49AB-BA1C-C52BC88A50C3}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0959792",
+      "DurationMax": "2.0959792",
+      "MediaRefs": [
+       {
+        "Id": "1048739788"
+       }
+      ]
+     },
+     {
+      "Id": "4014803068",
+      "Name": "Play_SFX_Death4__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Death\\Play_SFX_Death4__itemnumber",
+      "GUID": "{FABCDC57-D07B-433F-AD4E-2556ABAD063D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6504763",
+      "DurationMax": "0.6504763",
+      "MediaRefs": [
+       {
+        "Id": "542496800"
+       }
+      ]
+     },
+     {
+      "Id": "3168053200",
+      "Name": "Play_SFX_Death__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Death\\Play_SFX_Death__itemnumber",
+      "GUID": "{A77CF199-D3DD-47F6-89E2-6E5444F1AD5C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.70373166",
+      "DurationMax": "0.70373166",
+      "MediaRefs": [
+       {
+        "Id": "167771395"
+       }
+      ]
+     },
+     {
+      "Id": "665791251",
+      "Name": "Play_SFX_DropLoot__itemnumber",
+      "ObjectPath": "\\Events\\Default Work Unit\\Death\\Play_SFX_DropLoot__itemnumber",
+      "GUID": "{D681BFE6-7338-4A7D-AF87-7CAE9C28968D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1525984",
+      "DurationMax": "1.1525984",
+      "MediaRefs": [
+       {
+        "Id": "482170759"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{91F7E610-DF42-493F-B4E9-225A6E8BA424}"
+ }
+}

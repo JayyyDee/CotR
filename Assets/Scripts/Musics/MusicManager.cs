@@ -21,6 +21,7 @@ public class MusicManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Start()
@@ -37,25 +38,26 @@ public class MusicManager : MonoBehaviour
     {
         switch (sceneName)
         {
-            //case "MainMenuScene": //Scene1
-            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-            //    break;
-            //case "LoadingScene": //Scene2
-            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-            //    break;
-            //case "LobbyScene": //Scene3
-            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-            //    break;
-            //case "CharacterLobbyScene": //Scene4
-            //    SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
-            //    break;
+            case "MainMenuScene": //Scene1
+                SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
+                break;
+
+            case "LobbyScene": //Scene2
+            case "CharacterLobbyScene": //Scene3
+                SwitchMusic("Play_Musique_Lobby_Full_Onetime__itemnumber"); //Musique2
+                break;
+
+            case "GameScene": //Scene4
+                SwitchMusic("Play_Musique_Combat_Full_Onetime__itemnumber"); //Musique3
+                break;
+
             default:
-                //SwitchMusic("Play_Musique_Menu_Loop__itemnumber"); //Musique1
+
                 break;
         }
     }
 
-    public void SwitchMusic(string newMusicEvent)
+        public void SwitchMusic(string newMusicEvent)
     {
         if (currentMusicEvent == newMusicEvent)
             return;

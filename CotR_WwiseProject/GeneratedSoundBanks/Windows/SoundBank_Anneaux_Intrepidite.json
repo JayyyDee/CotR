@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{8CD35138-13F2-4AE5-81F7-83B689CEC6A2}",
     "Language": "SFX",
-    "Hash": "{56CF5CA1-07B2-8BE7-1BBD-1453FB36CB7A}",
+    "Hash": "{4158A478-4223-DC82-FECE-FCB7E8262AED}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Intrepidite",
     "ShortName": "SoundBank_Anneaux_Intrepidite",
     "Path": "SoundBank_Anneaux_Intrepidite.bnk",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "FULL_Anneaux_Intrépidité_Actif_Full_$itemnumber.wav",
-      "CachePath": "37/{3741A7FE-914D-CE97-64D1-D270EBB6CF51}.wem"
+      "CachePath": "F0/{F0087226-5E45-602B-DF33-23E53192C630}.wem"
      },
      {
       "Id": "987761691",
@@ -562,6 +562,6 @@
     ]
    }
   ],
-  "FileHash": "{DF7C7A1B-0B81-96A4-A6B7-236DD9791503}"
+  "FileHash": "{612DCE4D-7D05-8913-8C24-E75EA2FE7AD1}"
  }
 }

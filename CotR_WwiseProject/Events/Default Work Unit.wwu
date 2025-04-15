@@ -783,67 +783,67 @@
 							<ChildrenList>
 								<Folder Name="Base" ID="{C4D4C726-DAA2-4C80-B22D-BC935A1A074E}" ShortID="477686108">
 									<ChildrenList>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber" ID="{749CDDE9-CBB1-4D17-B1E2-C8A65A1C9EEC}">
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber" ID="{8421595A-F26A-440D-ABA1-E17863293C51}">
 											<ChildrenList>
-												<Action Name="" ID="{CDF3092B-2F66-46E9-92AB-C2F233BBF31B}" ShortID="80338935">
+												<Action Name="" ID="{A4EB98C3-3D82-4A74-B569-E3A16A5FD8DC}" ShortID="319410924">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber" ID="{B779039D-5FF7-42F4-B5FB-BE7D031CACD0}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber" ID="{8DA73204-69CA-49C9-8D38-7E7318852214}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber" ID="{840BC1D7-6755-4424-B8EB-CCDED985834F}">
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber" ID="{9B9C8BDF-A95A-42B0-B36D-C1154ED984E9}">
 											<ChildrenList>
-												<Action Name="" ID="{BF8DB154-2B88-4129-B455-540FA4039336}" ShortID="965473921">
+												<Action Name="" ID="{98D0B3FD-5209-4322-9639-5F1E0BE7921E}" ShortID="925308645">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber" ID="{FDA9C493-D6D3-4BEC-8F07-C06FAEFF328D}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2_$itemnumber" ID="{8B5D6F30-7454-40B3-8EC7-17CF52BFCA2F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber" ID="{8A19C616-2E80-4610-BF82-B3E224680FBE}">
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber" ID="{8C7FFD54-3C18-48C0-BD6A-3F1579B5610E}">
 											<ChildrenList>
-												<Action Name="" ID="{6F20737B-BC02-4DD7-AAA5-7DF9C92CB0FF}" ShortID="78526638">
+												<Action Name="" ID="{779BE740-EFD6-4273-90BA-CBC9511C8392}" ShortID="758892213">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber" ID="{0B580F83-12CE-4C02-8356-12009ED00974}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5_$itemnumber" ID="{42F91AE4-2B26-4DC9-8E4A-9FC68779D4F8}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber" ID="{FBF4A4BB-A74C-4CF9-8536-6B29B663E296}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber" ID="{753FCDC9-CD10-4A8A-A654-F07D0D18D7D8}">
 											<ChildrenList>
-												<Action Name="" ID="{83609C8B-3926-4396-A7D2-7F0BD3F7ED9D}" ShortID="380722440">
+												<Action Name="" ID="{E8B9BFCB-B233-4C1E-8258-23079B93546A}" ShortID="378526479">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber" ID="{699A6BC8-9E39-4C3C-BEC7-3C23E11A933C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Equip_FULL_$itemnumber" ID="{48D54F08-54DB-4A86-B909-2C9D399812FD}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber" ID="{ED15A27F-2EE2-45A4-B5B2-486B57954F95}">
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber" ID="{AD793DCA-19F2-4CA3-B45C-EE22A5D0B6BE}">
 											<ChildrenList>
-												<Action Name="" ID="{83E594E1-68F8-467D-B488-2D0B058F44EF}" ShortID="455886379">
+												<Action Name="" ID="{3DB06864-C3C3-496A-9C02-19AED0CAD2D6}" ShortID="891454984">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3_$itemnumber" ID="{35C9E11A-D1D7-4FB6-86F3-CC1EAC83FA19}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber" ID="{DAA5C7D6-4001-4FB3-8D6F-84AAAD87C4E8}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber" ID="{A56831D4-C9B4-4139-81A0-D736A92467DE}">
+										<Event Name="Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber" ID="{C0867F9C-60A3-438C-8DA2-42FEE7E4C976}">
 											<ChildrenList>
-												<Action Name="" ID="{558A0EC3-0206-42D2-B10E-60C59CB8B3B4}" ShortID="123623618">
+												<Action Name="" ID="{003659BF-B124-4243-82FC-121FC33FA39D}" ShortID="289235009">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4_$itemnumber" ID="{46BBBAE3-79BA-4235-A9F3-389159104FB8}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1_$itemnumber" ID="{57AED4D3-E2A8-439B-B2F3-CDB2247B572C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -853,111 +853,111 @@
 								</Folder>
 								<Folder Name="Actif" ID="{509B7CF6-6B70-40E2-AD14-E125F166FFF5}" ShortID="50399544">
 									<ChildrenList>
-										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber" ID="{C0DC81E6-EB1D-49EB-8B25-82B9A601F683}">
+										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber" ID="{B7826C42-18B5-4AC0-970E-6BE6F69D1119}">
 											<ChildrenList>
-												<Action Name="" ID="{9CD0F4E5-2E72-4A62-86C2-17A6837A9488}" ShortID="1041204994">
+												<Action Name="" ID="{42518BE4-A839-413D-840F-0DA4126A10E2}" ShortID="378309289">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber" ID="{481ED7D7-AD78-4473-BB86-DAE7157BAD97}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber" ID="{E0720001-84B2-443F-B9DF-9E3A09F1E059}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber" ID="{9F896C1D-F90B-48A9-BAB6-E9118B6F7D88}">
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber" ID="{536185AB-1E3E-404E-8D3C-562DD83D7D97}">
 											<ChildrenList>
-												<Action Name="" ID="{DAEC3A54-2186-4E3D-8731-5924F8E37A27}" ShortID="28330238">
+												<Action Name="" ID="{E24408EF-2BB1-42EE-9A94-6D9A3F46682E}" ShortID="452012929">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2_$itemnumber" ID="{F19BAE68-177D-45A6-A8CA-953DA8DB24AE}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber" ID="{0E012EB1-4279-44B0-98AC-EEEB50115FC4}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber" ID="{9B3CDC14-5FD0-4523-8718-AC46B400C437}">
+										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber" ID="{69D1EC2C-A85A-4C7D-B24F-4DFB171AC593}">
 											<ChildrenList>
-												<Action Name="" ID="{CE159D9D-1A0D-4817-8032-5908BB2633CA}" ShortID="843109659">
+												<Action Name="" ID="{93DE5F28-9526-499D-98F2-DC16D7D76C28}" ShortID="779076509">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber" ID="{8E88D8BB-9861-4F09-B028-58E37EE6AEBB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber" ID="{E5F03563-85C4-4BE1-828F-B696A64ADC4E}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber" ID="{C3BFD631-0238-47BC-9B6E-D64CA9186C59}">
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber" ID="{4EC696BB-B5E2-46B0-A753-78949747A6D1}">
 											<ChildrenList>
-												<Action Name="" ID="{E00F4D7A-90B3-436D-B773-01DA0206C2E1}" ShortID="929137051">
+												<Action Name="" ID="{24F76E79-E562-4D9D-A6E3-284611C0F9D4}" ShortID="231324316">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber" ID="{0AD52B44-AAB1-4597-BF86-A8C85C7B83AB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2_$itemnumber" ID="{B50F40CE-A86F-4DB3-BBB5-6891646E59A1}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber" ID="{DBBCB728-0875-4163-8595-FEF80304DD81}">
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber" ID="{7D6EDA03-D304-4208-8CF8-7A0ADBBA3B32}">
 											<ChildrenList>
-												<Action Name="" ID="{37045249-18E1-4DD0-BF04-BF5762E3694B}" ShortID="169131219">
+												<Action Name="" ID="{0D719715-E257-4363-82DF-DAFEFAFA0502}" ShortID="1068927043">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber" ID="{5B16F58A-0922-481F-9A03-0A55C8E8DF8B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1_$itemnumber" ID="{C0F15A5A-5E7E-41AF-8B14-16528E3B7712}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber" ID="{77F4E35F-FA26-4D9C-8C47-55C318574A3B}">
+										<Event Name="Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber" ID="{D2B1E620-A105-4D6D-9C1B-749AA42CFCE3}">
 											<ChildrenList>
-												<Action Name="" ID="{C7EB9BB5-422B-4FFF-B59E-89FADF813F75}" ShortID="519777437">
+												<Action Name="" ID="{71E9200B-671F-4C21-A49E-6A9438898C16}" ShortID="505498249">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4_$itemnumber" ID="{EFF25604-9D23-41EA-995C-0821C0B3226F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3_$itemnumber" ID="{BF80FB10-5A0D-4149-B0F4-AF168381AFEB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber" ID="{DD8C8F1F-D52A-45B2-985E-59A79949768A}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber" ID="{BE5571D3-8515-4121-8D93-3C039E36422F}">
 											<ChildrenList>
-												<Action Name="" ID="{E79EF3ED-E490-431E-82F9-E2CE680D7919}" ShortID="868976494">
+												<Action Name="" ID="{D3062285-4B2B-4CB3-9C6B-492013342244}" ShortID="718594528">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3_$itemnumber" ID="{CE3FB866-7041-4242-8234-84114B67FF52}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber" ID="{970EDC79-3A0B-4ED2-B29E-5941DF437F6C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber" ID="{B7F8DF0E-EEA0-417C-8A6B-9BFA9D668F6B}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber" ID="{F44B8CAC-32AD-4972-AEC7-C0030BCCCE5B}">
 											<ChildrenList>
-												<Action Name="" ID="{0114F3B7-1406-4E5C-9DAD-FA3E9A1B6CF1}" ShortID="284560108">
+												<Action Name="" ID="{66600FF9-27A2-477B-95E8-62BBA811CE9C}" ShortID="838728146">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber" ID="{B6578B43-E759-4359-8AF6-6FD6EA56130D}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_Push_FULL_$itemnumber" ID="{22B2DD2D-6C52-4C3D-86D0-9340A9BBFFBA}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber" ID="{94E56C48-6765-4C4E-AD57-214F3D133687}">
+										<Event Name="Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber" ID="{5BFDAE44-A154-4B2D-8CB9-D65056DF6AF4}">
 											<ChildrenList>
-												<Action Name="" ID="{0AC34266-7BA9-4B21-9624-D6A428C091E9}" ShortID="907333487">
+												<Action Name="" ID="{797008F5-537E-4E84-AEC6-3F6419559796}" ShortID="898990083">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL_$itemnumber" ID="{88D3E922-A548-4CD2-A4E2-86C7A0ED8989}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1_$itemnumber" ID="{BF59C1F3-3C0F-416A-8904-167307791547}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber" ID="{F1DF405B-26C3-4E3A-BE4C-1A9A7E4CA6D4}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber" ID="{4346D2CA-24F7-40CC-B795-E4A4996CB008}">
 											<ChildrenList>
-												<Action Name="" ID="{37E5BF2D-C620-4D86-83B3-33D8111896FB}" ShortID="1017826589">
+												<Action Name="" ID="{64627914-99B2-4895-9C57-3DDB8763FB1E}" ShortID="482221880">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber" ID="{CCF3520E-6B4A-4DD3-A645-B2B2EB7CC528}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Actif_Start_FULL_$itemnumber" ID="{6A19446C-1784-442B-A12F-1D8DCDF9FAA3}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -967,111 +967,340 @@
 								</Folder>
 								<Folder Name="Attack" ID="{87DBC3A4-3C4F-4F5B-AA5B-3815582FC5B4}" ShortID="480745422">
 									<ChildrenList>
-										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber" ID="{24B18B1A-3950-47FE-A08E-9B11060E00E7}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber" ID="{D10A3B9C-577F-4B3F-996F-52300D2F6701}">
 											<ChildrenList>
-												<Action Name="" ID="{16EAE79E-C328-4626-8ACB-B2FE2C088E1F}" ShortID="372656685">
+												<Action Name="" ID="{E22D39C2-B539-4B47-9E88-A7F9A12E0E6B}" ShortID="670223879">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber" ID="{0621A3EB-19BA-4941-B25A-174A3C1F3614}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber" ID="{ED53A20C-C45D-4838-A1BA-1E597BF1D219}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber" ID="{3C89D609-8514-4877-8D5B-F5B1BDE73EEB}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber" ID="{2305EBD8-2AE3-4248-8740-545F17276087}">
 											<ChildrenList>
-												<Action Name="" ID="{47D58415-3EDB-42A5-96BA-0EB40CE3605B}" ShortID="623025012">
+												<Action Name="" ID="{B6EDF82A-80C8-43B2-AA4B-1A996356A763}" ShortID="179829610">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber" ID="{A308167C-D44E-4179-B9C0-C8E9B2BCEA90}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber" ID="{734E50BC-618C-46C2-8C7F-1E00DF6CD09A}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber" ID="{F265CC15-D11C-4EDF-8FAE-305FBB2E4ED1}">
+										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber" ID="{82F3C0C8-57EF-41E7-B295-77926C03ED85}">
 											<ChildrenList>
-												<Action Name="" ID="{7EE878A6-135C-43E2-A9E6-8DB202168BD5}" ShortID="613826869">
+												<Action Name="" ID="{A06C03EE-E002-4098-8D32-975D1F91C967}" ShortID="718749323">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL_$itemnumber" ID="{3666D0A3-3C62-48C8-87A9-5C99A8517290}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber" ID="{201D6008-F33E-45AF-9959-837AC8E1A898}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber" ID="{EFEE8813-3296-499E-848F-AA57F5C79790}">
+										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber" ID="{E5E5A121-D623-4E2B-B79A-4287751B855A}">
 											<ChildrenList>
-												<Action Name="" ID="{C8675A1F-A84C-46D3-880B-2EF9F75A6A72}" ShortID="674259949">
+												<Action Name="" ID="{9757684C-718F-4659-AF0F-BEB6FFA34188}" ShortID="123097823">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT1_$itemnumber" ID="{5425A4D8-C2FA-4ADC-86CD-2E606C5B56F3}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT3_DONE_$itemnumber" ID="{D496BD89-46D1-4E32-9009-252B9567392B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Attack_PT2__itemnumber" ID="{2E1711D1-5145-4619-B19C-76C634F10DEA}">
+										<Event Name="Play_Anneaux_Perseverence_Attack_PT2__itemnumber" ID="{000521EB-62B9-4055-B3D2-694BF4B33BEB}">
 											<ChildrenList>
-												<Action Name="" ID="{DE1089FA-FFBB-4850-9670-3EE80714E8DD}" ShortID="312823245">
+												<Action Name="" ID="{DEB00A2E-9666-49A6-9CDC-77F5EDE45E18}" ShortID="1073138007">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Attack_PT2_$itemnumber" ID="{DADEBA30-032E-4E7A-94B7-89C8EB41F59F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Attack_PT2_$itemnumber" ID="{1EA9A24A-AE9E-4A01-B4DD-2CBA958654E3}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber" ID="{7C48766A-BF23-4DD9-95C3-8750175AC6C7}">
+										<Event Name="Play_Anneaux_Perseverence_Attack_PT1__itemnumber" ID="{12C8D44F-BC4E-46AE-AD10-5F33991168AD}">
 											<ChildrenList>
-												<Action Name="" ID="{07C816F8-1ABD-497A-B90F-C084DF2F029D}" ShortID="151951787">
+												<Action Name="" ID="{3090DFC2-FE47-4409-A660-310EDFF8E438}" ShortID="417153731">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber" ID="{3B02AEA4-5405-4E4E-A9FB-BB08C4477F7B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Attack_PT1_$itemnumber" ID="{75F31DDC-8A3B-460A-9739-470D6428EE6E}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber" ID="{A0F14EC6-CA62-49DD-8207-E64DFAEC7C9E}">
+										<Event Name="Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber" ID="{3D03B451-1E67-47D8-A705-3E6D295F888D}">
 											<ChildrenList>
-												<Action Name="" ID="{32B9C256-675A-4859-9D1E-EC12E4D90D7C}" ShortID="597172813">
+												<Action Name="" ID="{BF5CD34E-0FAF-4087-8070-68A42657DA03}" ShortID="174556864">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber" ID="{5C8E4165-4EE1-4D02-8F37-04DFDAF5F440}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="Anneaux_Perseverence_Attack_Cooldown_PT2_$itemnumber" ID="{AD3B407E-688C-44D0-904D-9D52E0B2917F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber" ID="{80C3BBCC-26B1-4235-ACF7-85BC47776AB2}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber" ID="{D2311881-EEAF-42A7-9E2F-7032413C4F82}">
 											<ChildrenList>
-												<Action Name="" ID="{EAE663BA-A780-4A5C-A704-BD2CC691F50F}" ShortID="15382210">
+												<Action Name="" ID="{DC492EC1-7E33-4986-9ABA-E31889CF8965}" ShortID="221227287">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber" ID="{150AFC1F-6B75-4B4F-8AF4-AF71C81658E5}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_Coldown_FULL_$itemnumber" ID="{ADAE71D7-3C0D-4941-8FC4-FF4C18D18DEC}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_Anneaux_Perseverence_Attack_PT1__itemnumber" ID="{528EA50E-5664-4C37-B55C-5DA9DC7DDC2F}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber" ID="{45E716BB-5FD5-4298-AB04-ABFBDF02B029}">
 											<ChildrenList>
-												<Action Name="" ID="{1D9A0321-EE27-44DF-A0A4-6B33C17C88FD}" ShortID="508211122">
+												<Action Name="" ID="{03F0BE57-D52C-4591-9856-6ACF942D1FFB}" ShortID="1041484707">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Anneaux_Perseverence_Attack_PT1_$itemnumber" ID="{06557C33-AE63-4802-9700-66256D81F39C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL_$itemnumber" ID="{F1EC8A05-FE9D-4E8E-ADAB-390AC21032FD}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber" ID="{83C25C3F-6737-4363-99CA-AE87FADBAA12}">
+										<Event Name="Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber" ID="{29D53EB3-BA9C-4589-8A7F-76F1D355664A}">
 											<ChildrenList>
-												<Action Name="" ID="{EEC614D4-68AE-4724-BB28-2B80DF6F9D4F}" ShortID="92317876">
+												<Action Name="" ID="{43CD0631-FDE1-4167-AA43-E2996CCF7B8E}" ShortID="245027144">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_TIR_FULL_$itemnumber" ID="{3F51CA93-C662-4E82-83D2-0CBA70B10273}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+															<ObjectRef Name="FULL_Anneaux_Perseverence_Attack_Normal_FULL_$itemnumber" ID="{DE6D2476-933F-4E30-85D5-902E8C2566D5}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Bienveillance" ID="{F36EDDB2-71B1-43D4-B471-181692E33739}" ShortID="1011341778">
+							<ChildrenList>
+								<Folder Name="Attack" ID="{F06AD9BA-45B0-473B-A3ED-E54254E807EE}" ShortID="987058294">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Bienveillance_Attack_PT2__itemnumber" ID="{B4B2266B-E51C-4269-85EF-397555EC4A08}">
+											<ChildrenList>
+												<Action Name="" ID="{11EF31D7-8BE4-480B-BF7C-8352405CBA9E}" ShortID="798866916">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Attack_PT2_$itemnumber" ID="{3F51017D-83FF-46E3-BBDB-F863C7C34E19}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01" ID="{C58A7821-1AFB-4195-8A4D-4BA864A38F86}">
+											<ChildrenList>
+												<Action Name="" ID="{CB9F8A02-CE9D-4201-9925-4AEB3370AA90}" ShortID="516696673">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Attack_PT2_$itemnumber-01" ID="{C944B371-429A-456B-AFAA-1A546FBD33DE}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01" ID="{76903873-F425-4BA8-9E73-57023AD771A5}">
+											<ChildrenList>
+												<Action Name="" ID="{5CEFACBB-B710-454D-B301-6F28BA62804A}" ShortID="872251143">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Attack_PT3_$itemnumber-01" ID="{F7E82F6A-BE97-4BD7-B1AE-1CCCFD869152}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Attack_PT5__itemnumber" ID="{D888390B-C649-42E2-83DF-F2BC46C1DEA8}">
+											<ChildrenList>
+												<Action Name="" ID="{19FA8261-B1EA-4E42-A1B3-2BB96C81573D}" ShortID="650902859">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Attack_PT5_$itemnumber" ID="{DF03CDC2-B7E6-4E7C-B579-2D359B6DEDFF}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber" ID="{203C4088-618D-48F7-AE89-FD5250171DD0}">
+											<ChildrenList>
+												<Action Name="" ID="{3C628E24-B257-479C-956C-812104655684}" ShortID="1045979702">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Bienveillance_Attack_FULL_$itemnumber" ID="{277A12F1-097D-42B3-8E4A-8C9567EA60B2}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Attack_PT3__itemnumber" ID="{DD2029D3-D9DD-4C4E-8C11-7FD2CB6AD66A}">
+											<ChildrenList>
+												<Action Name="" ID="{34E60D10-C654-4CB1-8C4B-BDA8E5DAF3FE}" ShortID="495336247">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Attack_PT3_$itemnumber" ID="{727D21D5-8024-44DE-AEB4-A1D5A43E57CE}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Attack_PT4__itemnumber" ID="{A95E4DD3-377C-469D-84AE-A58F13E17B78}">
+											<ChildrenList>
+												<Action Name="" ID="{F18BAC0E-6840-4D01-89B4-6826E73A0AD6}" ShortID="701964970">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Attack_PT4_$itemnumber" ID="{42ACEC4A-038F-46DC-9B8D-AC7F84714999}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Attack_PT1__itemnumber" ID="{22CCFD0F-4F27-4500-9674-CC8E0D61F384}">
+											<ChildrenList>
+												<Action Name="" ID="{E2C340ED-FF84-40DD-BA99-ACB5A153ABB3}" ShortID="432416700">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Attack_PT1_$itemnumber" ID="{85F383F2-09A1-42B2-BA29-B539878C2668}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Base" ID="{12449DDF-ED58-408E-9487-D19CDF588927}" ShortID="213912332">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber" ID="{048D45C6-4C24-4757-A01F-D981AEC61ADC}">
+											<ChildrenList>
+												<Action Name="" ID="{9CB510AC-590D-4231-9AD0-59C8573468AB}" ShortID="618028333">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_EQUIP_PT2_$itemnumber" ID="{35C09A1C-D80C-420C-9460-B19A494772CF}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber" ID="{B77BCAC1-F097-4A39-844B-972CC9A96C53}">
+											<ChildrenList>
+												<Action Name="" ID="{3C095FEC-949C-4ADA-A0C8-D57643DAC18C}" ShortID="766708735">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_EQUIP_PT1_$itemnumber" ID="{AD8B8BCA-A5F8-4F24-94FC-878B0ADC9F13}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber" ID="{D9ADCD11-9C66-4600-8213-15D783C0B583}">
+											<ChildrenList>
+												<Action Name="" ID="{C4414E3F-29B8-4598-8E93-44582E9473B2}" ShortID="913843274">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Bienveillance_EQUIP_FULL_$itemnumber" ID="{CD98D775-8A48-4ED4-93F2-F9F919E3181F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber" ID="{F738C5BD-45BB-480E-B4E8-291E5CEE85DA}">
+											<ChildrenList>
+												<Action Name="" ID="{52DD1632-0204-47FE-BCFB-60B3C824A933}" ShortID="550315425">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_EQUIP_PT3_$itemnumber" ID="{CD773CCC-4DA4-4D7E-A947-66DE95DB761B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber" ID="{4E199FDE-7F1D-4433-A1F6-CB53A17C7702}">
+											<ChildrenList>
+												<Action Name="" ID="{ACC683AE-2D26-4D74-A31B-738C0CF33C4A}" ShortID="846794658">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_EQUIP_PT4_$itemnumber" ID="{417D4EE4-DD8A-471B-8709-BE5079E3ADD9}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber" ID="{AB24206D-C0AC-41CA-98D0-7A0DD5AE12BB}">
+											<ChildrenList>
+												<Action Name="" ID="{C6B65B58-1BE4-4FE4-8FFC-6CE9498AA600}" ShortID="892523103">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_EQUIP_PT5_$itemnumber" ID="{D568D44C-8BDB-438A-81C6-584B34003BEB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Passif" ID="{9EBC61E4-56FE-4DD9-8541-C0A468B74BD7}" ShortID="428144133">
+									<ChildrenList>
+										<Event Name="Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber" ID="{5DF8FAE8-BF27-4C4A-83A9-C09E4211747F}">
+											<ChildrenList>
+												<Action Name="" ID="{0226AE4C-6C6E-4EA2-BABC-2A7D0E781801}" ShortID="414195615">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Bienveillance_Passif_FULL_$itemnumber" ID="{CA8E693E-F1E4-468D-A67D-3E4CE8A8210F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Actif" ID="{66059094-D8F1-419A-8FA8-0969930E2684}" ShortID="811428226">
+									<ChildrenList>
+										<Event Name="Play_Anneaux_Bienveillance_Actif_PT1__itemnumber" ID="{D033B939-DFE6-4308-9B91-E0F9B46FCED9}">
+											<ChildrenList>
+												<Action Name="" ID="{A0CDDAE0-3F72-428A-9CC8-1BD9FEBFE1F3}" ShortID="959367044">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Actif_PT1_$itemnumber" ID="{34F77FF8-39CD-408A-A5EB-5BBF4D127B8F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Actif_PT5__itemnumber" ID="{1EA6EF2B-7E82-43C0-81B4-F2F5508D9956}">
+											<ChildrenList>
+												<Action Name="" ID="{5E44131F-6EB7-4D5A-9835-9F5B27FD1D2D}" ShortID="276011706">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Actif_PT5_$itemnumber" ID="{A68456CC-8881-4F22-8690-0C372EB317B3}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber" ID="{90720243-6DBB-4A5A-9CB4-C92A1C03BE3D}">
+											<ChildrenList>
+												<Action Name="" ID="{56FB7238-E5F3-4257-830B-2C77BA213BBE}" ShortID="277867699">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="FULL_Anneaux_Bienveillance_Actif_FULL_$itemnumber" ID="{3F6ECCFB-FAE7-418F-947A-980DE6325C8F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Play_Anneaux_Bienveillance_Actif_PT4__itemnumber" ID="{4BAB3541-02B0-4F9C-ADA0-EF8AC0C926BA}">
+											<ChildrenList>
+												<Action Name="" ID="{2B1CCCD9-F363-466D-9EEF-3BCE2B314FA8}" ShortID="100248273">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Anneaux_Bienveillance_Actif_PT4_$itemnumber" ID="{9E781AC4-F453-4FF9-A181-96A0CDEC57C9}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -1163,6 +1392,438 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Menu" ID="{2FF8EC5B-3B28-4AF9-A08E-95DBDB1F125C}" ShortID="148139625">
+					<ChildrenList>
+						<Folder Name="V1" ID="{32572EAA-EB98-4A52-8B13-0091ECEF187A}" ShortID="629540047">
+							<ChildrenList>
+								<Event Name="Play_1MENU_SELECT__itemnumber" ID="{8670F045-FAC1-4503-B409-444B12992038}">
+									<ChildrenList>
+										<Action Name="" ID="{DEFA661C-4377-451D-B2A4-0E03C3B1B76A}" ShortID="962516490">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="1MENU_SELECT_$itemnumber" ID="{A5BCA4BE-7B79-462A-982A-BD3B73C9DFEA}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_1MENU_HOVER__itemnumber" ID="{29A287D0-1545-461B-A682-154F8615365F}">
+									<ChildrenList>
+										<Action Name="" ID="{92A7DFAB-CD1E-434A-8703-BF1B56B12766}" ShortID="302718131">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="1MENU_HOVER_$itemnumber" ID="{C0814790-33DF-4C66-85AC-BC52012D3C2C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_1MENU_BACK__itemnumber" ID="{C1C96852-E52D-45D0-B92F-0C1D0C852E39}">
+									<ChildrenList>
+										<Action Name="" ID="{09D70949-539F-4FE2-B218-6299D560C6EC}" ShortID="602765002">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="1MENU_BACK_$itemnumber" ID="{4814AB30-9404-4561-A27C-99C672BC815A}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="V2" ID="{64F57127-5CAA-4410-AFB0-F3106FC3FA96}" ShortID="103503544">
+							<ChildrenList>
+								<Event Name="Play_2MENU_BACK__itemnumber" ID="{A960B41C-E1FB-4F33-9DB0-BC8FBE68C7F6}">
+									<ChildrenList>
+										<Action Name="" ID="{26D8B157-B87B-44C1-B0FC-3EAA971B8ACD}" ShortID="117512240">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="2MENU_BACK_$itemnumber" ID="{3FDCCF9D-3FED-425C-AE48-4841E30BDD15}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_2MENU_HOVER__itemnumber" ID="{6ED9191F-B43D-49BA-A739-D91CA03480DF}">
+									<ChildrenList>
+										<Action Name="" ID="{9EE1FA4E-7C6B-44B6-BF87-8260DC310398}" ShortID="940331931">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="2MENU_HOVER_$itemnumber" ID="{F7BF2A46-96A0-4004-BA7F-B9AF577D5C49}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_2MENU_BACKT2__itemnumber" ID="{0063B895-3309-43CF-849C-38DB8B84605E}">
+									<ChildrenList>
+										<Action Name="" ID="{E8F9D953-90F0-4A3B-A730-C9A434A50206}" ShortID="974392382">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="2MENU_BACKT2_$itemnumber" ID="{6E65334B-AFC3-4553-9D5F-A82CE01E9683}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_2MENU_SELECT__itemnumber" ID="{9E4D979D-6528-4750-ADF6-B4454415EE3A}">
+									<ChildrenList>
+										<Action Name="" ID="{2E49EE4C-B0BA-449E-96B2-CA03ADF3FD98}" ShortID="580314068">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="2MENU_SELECT_$itemnumber" ID="{74EA970A-4D1A-45B7-B446-977951FB196D}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="V3" ID="{019C4A1F-303B-408C-9CC5-4268D6F8ADC7}" ShortID="240239033">
+							<ChildrenList>
+								<Event Name="Play_3MENU_BACK__itemnumber" ID="{56A1A9C3-0C7D-4621-A16D-7C78A0EBABC2}">
+									<ChildrenList>
+										<Action Name="" ID="{3C481E1A-8E23-4855-9A93-56096AC4BD75}" ShortID="1011319130">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="3MENU_BACK_$itemnumber" ID="{D7D311E7-B0AA-4D96-BED8-0A137522F42A}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_3MENU_HOVER__itemnumber" ID="{9206AF20-D818-47EA-807C-380DAE1C1889}">
+									<ChildrenList>
+										<Action Name="" ID="{C769F7E1-7A6F-43D9-A2D3-7825BDA7BE67}" ShortID="698249405">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="3MENU_HOVER_$itemnumber" ID="{103809D7-8165-4F02-9440-13D14F1B527C}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_3MENU_BACK2__itemnumber" ID="{E0086535-449A-43E7-92C0-5BA261A1B2E3}">
+									<ChildrenList>
+										<Action Name="" ID="{CD449D3E-0AED-4233-AA14-30761D905440}" ShortID="793733352">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="3MENU_BACK2_$itemnumber" ID="{E7BD21A6-A86E-414B-AF86-A5F7FEB0CBAB}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_3MENU_SELECT__itemnumber" ID="{22D14DCC-7DF8-4089-9752-375E54577278}">
+									<ChildrenList>
+										<Action Name="" ID="{A2F08946-E8A3-4664-8FA4-356866FC7C20}" ShortID="444856690">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="3MENU_SELECT_$itemnumber" ID="{86E8987E-5484-4FEE-8E86-3CB71CE41827}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="V4" ID="{3CEF89CD-BBDA-4479-A39A-620C1363DB19}" ShortID="927042395">
+							<ChildrenList>
+								<Event Name="Play_4MENU_HOVER__itemnumber" ID="{9649C74D-A4B2-4018-91B5-109F976590CF}">
+									<ChildrenList>
+										<Action Name="" ID="{C6E9EB59-FB7A-4403-8939-5D4A0E86B47B}" ShortID="867610183">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="4MENU_HOVER_$itemnumber" ID="{E99A51D0-F5AF-4DB7-BD0F-25AD786A4556}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_4MENU_BACK__itemnumber" ID="{059DF825-2629-4F79-992E-33B126F34D1A}">
+									<ChildrenList>
+										<Action Name="" ID="{73F3A3F8-3FF1-45E7-8E26-86FDA5A0517E}" ShortID="1008060910">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="4MENU_BACK_$itemnumber" ID="{CD493A8A-5D57-47F6-B00C-8F4C5482E44D}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_4MENU_SELECT2__itemnumber" ID="{1511CA16-097B-4304-B549-11904FA76B93}">
+									<ChildrenList>
+										<Action Name="" ID="{7EF7B5C0-FF76-4C6F-A5F2-EF57B92E97A6}" ShortID="294412835">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="4MENU_SELECT2_$itemnumber" ID="{F6FE87B3-A552-44A8-A0FE-9725AF6C30AC}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_4MENU_SELECT__itemnumber" ID="{6E0C97CA-B61B-4FF9-92E0-76CDF6F515E0}">
+									<ChildrenList>
+										<Action Name="" ID="{61FCABE4-67AE-4D50-98B5-88243262B036}" ShortID="395510027">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="4MENU_SELECT_$itemnumber" ID="{3E42FD40-3CB7-4026-9ED0-C06FDC2A84BF}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="V5" ID="{A1CCE705-6EF7-438C-A8DD-97774BC5533C}" ShortID="918479678">
+							<ChildrenList>
+								<Event Name="Play_5MENU_BACK__itemnumber" ID="{0E403834-B320-425D-9933-EE75E90F4E8F}">
+									<ChildrenList>
+										<Action Name="" ID="{07786916-12EC-48FE-B9AD-23BCE11EC7E8}" ShortID="110212422">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="5MENU_BACK_$itemnumber" ID="{B8664705-94F0-42D9-B5DE-65136D9367A1}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_5MENU_HOVER__itemnumber" ID="{815766C6-26BD-4B1D-B137-417BEC0BB525}">
+									<ChildrenList>
+										<Action Name="" ID="{BA011605-5365-4040-A440-4C4731967F6D}" ShortID="93216091">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="5MENU_HOVER_$itemnumber" ID="{4736E69E-23E6-4E64-B7EF-F36281F09837}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_5MENU_SELECT__itemnumber" ID="{3C71F735-1B0D-440E-84D6-244E6FFCADC1}">
+									<ChildrenList>
+										<Action Name="" ID="{A8A38AD9-D257-4788-A6FA-882756E8C8AD}" ShortID="545605141">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="5MENU_SELECT_$itemnumber" ID="{08FEC39F-6E62-4475-BE4F-29778372A932}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Hit" ID="{F33F9F4C-FC01-443C-99FC-20BA21B4009A}" ShortID="1038368478">
+					<ChildrenList>
+						<Event Name="Play_SFX_Hit1__itemnumber" ID="{F7D93FDB-A9D4-4583-B63E-FE9B56FB3A60}">
+							<ChildrenList>
+								<Action Name="" ID="{98301832-B95C-4727-94CC-702C0971DE51}" ShortID="1057144851">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Hit1_$itemnumber" ID="{3521FF45-A83A-4953-AA3D-CA503E2B815F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Hit2__itemnumber" ID="{0B9049DD-3E07-4DF2-B7C5-3839FAFA3500}">
+							<ChildrenList>
+								<Action Name="" ID="{7AF79002-5083-480D-BDCB-AAD360D4474C}" ShortID="413475761">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Hit2_$itemnumber" ID="{9232D550-F180-4A25-909A-8E0BB9458327}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Switch" ID="{FA10FF11-EB3B-45AA-8D6F-680F510E1C45}" ShortID="1039429423">
+					<ChildrenList>
+						<Event Name="Play_SFX_SelectRing_Type5__itemnumber" ID="{0544D428-1145-48A7-A7D7-BD1B922026FC}">
+							<ChildrenList>
+								<Action Name="" ID="{AEA1C718-CD17-4316-AFE2-BCC0C810BC31}" ShortID="291327003">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type5_$itemnumber" ID="{467F21FA-57C7-4C15-B731-83223C13E64F}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type9__itemnumber" ID="{2C0A92FD-E7CD-42B4-AD1F-1803F69FF080}">
+							<ChildrenList>
+								<Action Name="" ID="{90BD0813-FADA-40E9-8479-E3FE278007D4}" ShortID="1020120190">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type9_$itemnumber" ID="{E42FC006-B9F3-4A65-862B-DB227F122ED2}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type1__itemnumber" ID="{CFE7B452-0EC1-4798-B2CD-49D5D2A171A7}">
+							<ChildrenList>
+								<Action Name="" ID="{3925A546-87B0-4578-B1DB-E97121F2619F}" ShortID="103154988">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type1_$itemnumber" ID="{B9651838-F533-4833-8F05-1409D3D9B6FE}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type3__itemnumber" ID="{9EFEB966-483A-4772-9024-498F3159FD97}">
+							<ChildrenList>
+								<Action Name="" ID="{053BC743-EF3E-4741-8DB3-559F1BA04D4E}" ShortID="160216976">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type3_$itemnumber" ID="{DEE5DBDA-0C0F-40F1-8851-7B186AAC48C7}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type7__itemnumber" ID="{51A3C2C0-A99F-43D0-9F91-8F518C79E240}">
+							<ChildrenList>
+								<Action Name="" ID="{E28D6EF5-7097-4636-BF00-04C6A75EFD9E}" ShortID="750153327">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type7_$itemnumber" ID="{B8796424-D561-4D65-B8C7-EF869713BA26}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type4__itemnumber" ID="{F24B8826-827A-4D49-BDF6-FBC6989F4116}">
+							<ChildrenList>
+								<Action Name="" ID="{2BE122C2-6911-47C3-8489-4EBDF24660D7}" ShortID="70305005">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type4_$itemnumber" ID="{54572615-691C-4828-9C61-C7AC41EBC378}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type8__itemnumber" ID="{2B93C6E0-17FC-4D92-A5D4-B23F0BB6DA66}">
+							<ChildrenList>
+								<Action Name="" ID="{375538DF-A759-4423-9CD7-2517636E85D8}" ShortID="968824957">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type8_$itemnumber" ID="{06D2B39C-0C4C-4DE7-84D1-93684EB8BAE7}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type6__itemnumber" ID="{E588AA6D-033D-48A9-80EB-C8313F32E0E9}">
+							<ChildrenList>
+								<Action Name="" ID="{BDE33084-F120-487E-8337-E0463E7F32EB}" ShortID="354692214">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type6_$itemnumber" ID="{2692DBB7-24E3-4D74-BC4F-F67590E0EB8A}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_SelectRing_Type2__itemnumber" ID="{F9D12C87-7236-4822-AF98-1F8CC1F7B146}">
+							<ChildrenList>
+								<Action Name="" ID="{4B54E030-C1E3-4DC9-92B7-1EB07AB388BE}" ShortID="161182438">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_SelectRing_Type2_$itemnumber" ID="{768871CD-FE68-4B73-A89C-0975962AD624}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Death" ID="{113F0A9E-8D9B-40B5-8E64-21A0E393EC62}" ShortID="708758796">
+					<ChildrenList>
+						<Event Name="Play_SFX_Death2__itemnumber" ID="{90955B99-E619-4076-A691-2DB915EDED83}">
+							<ChildrenList>
+								<Action Name="" ID="{25679972-CCC4-4025-9446-5772B1DDAF1E}" ShortID="122062024">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Death2_$itemnumber" ID="{627F87B7-8BD3-4CBE-BB83-1B0F471EB66B}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_FULL_SFX_Death_Type2__itemnumber" ID="{E72D83EF-7EFF-40CB-BDDE-1AC265CBB9E6}">
+							<ChildrenList>
+								<Action Name="" ID="{40705900-53A0-4287-9EFD-3EFFB3A9A8DA}" ShortID="1026469575">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FULL_SFX_Death_Type2_$itemnumber" ID="{9FDC2918-44C3-4F35-81CB-7CCFD8726010}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_FULL_SFX_Death_Type1__itemnumber" ID="{19FBD3FC-3F8C-4287-A754-30CCBE284165}">
+							<ChildrenList>
+								<Action Name="" ID="{35896740-E858-4439-92E4-2F9CBD9F3345}" ShortID="336291381">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FULL_SFX_Death_Type1_$itemnumber" ID="{4F51F2F9-2358-4FDA-8825-61196DE5D35D}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Death3__itemnumber" ID="{73C936BF-A6CA-49AB-BA1C-C52BC88A50C3}">
+							<ChildrenList>
+								<Action Name="" ID="{838B8367-19C1-48EA-8636-2FF72587252F}" ShortID="337850968">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Death3_$itemnumber" ID="{3F2BB1CF-44B5-44B4-83FD-080097AD1444}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Death4__itemnumber" ID="{FABCDC57-D07B-433F-AD4E-2556ABAD063D}">
+							<ChildrenList>
+								<Action Name="" ID="{465BB663-09EE-417B-9850-A193EB68E696}" ShortID="749035777">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Death4_$itemnumber" ID="{FB167F28-9290-4F8F-B352-943F3E5B36E2}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Death__itemnumber" ID="{A77CF199-D3DD-47F6-89E2-6E5444F1AD5C}">
+							<ChildrenList>
+								<Action Name="" ID="{44138898-C1F5-4AFB-8EAE-10E151C392C8}" ShortID="53539759">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Death_$itemnumber" ID="{19356B0F-7744-4DD0-8B3E-2B364608B38A}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_DropLoot__itemnumber" ID="{D681BFE6-7338-4A7D-AF87-7CAE9C28968D}">
+							<ChildrenList>
+								<Action Name="" ID="{0C5D3116-77CB-47EB-BEDB-DCA0D14EE212}" ShortID="471198492">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_DropLoot_$itemnumber" ID="{6653217B-4970-4DCF-B759-D0F30DEBBDAE}" WorkUnitID="{D75C1D18-E465-4E8B-A521-51F65B28F45F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

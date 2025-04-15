@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1B71D5D-FB70-4F58-91DB-2B0BFCDAEDD0}",
     "Language": "SFX",
-    "Hash": "{FB7EA8D2-A349-B6AE-9E2F-EB46C8D46997}",
+    "Hash": "{322D0753-D42A-5016-6EA0-B3EE4E6DB535}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Patience",
     "ShortName": "SoundBank_Anneaux_Patience",
     "Path": "SoundBank_Anneaux_Patience.bnk",
@@ -388,6 +388,6 @@
     ]
    }
   ],
-  "FileHash": "{C366E91F-85E7-DA71-0519-522B4EF57906}"
+  "FileHash": "{89110A43-AF45-3303-2D3F-B79F6E3C1A78}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{9F21CCFA-C429-4678-A406-C19CFF76994A}",
     "Language": "SFX",
-    "Hash": "{BB96D86E-01B8-C573-080D-679442CABCF2}",
+    "Hash": "{BAB6CF2C-A648-183E-1B1C-36FD02C1F45B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SoundBank_Anneaux_Bravoure",
     "ShortName": "SoundBank_Anneaux_Bravoure",
     "Path": "SoundBank_Anneaux_Bravoure.bnk",
@@ -282,6 +282,6 @@
     ]
    }
   ],
-  "FileHash": "{157AC255-C6C6-59E1-CB9B-D3E4A735F557}"
+  "FileHash": "{8FE25F03-B06E-2B2D-2947-428E6B019E35}"
  }
 }

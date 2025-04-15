@@ -1,0 +1,40 @@
+Event	ID	Name			Wwise Object Path	Notes
+	70593976	Play_1MENU_BACK__itemnumber			\Default Work Unit\Menu\V1\Play_1MENU_BACK__itemnumber	
+	165751236	Play_4MENU_HOVER__itemnumber			\Default Work Unit\Menu\V4\Play_4MENU_HOVER__itemnumber	
+	736391848	Play_4MENU_SELECT2__itemnumber			\Default Work Unit\Menu\V4\Play_4MENU_SELECT2__itemnumber	
+	790975177	Play_1MENU_SELECT__itemnumber			\Default Work Unit\Menu\V1\Play_1MENU_SELECT__itemnumber	
+	967650755	Play_4MENU_BACK__itemnumber			\Default Work Unit\Menu\V4\Play_4MENU_BACK__itemnumber	
+	1194865992	Play_3MENU_BACK2__itemnumber			\Default Work Unit\Menu\V3\Play_3MENU_BACK2__itemnumber	
+	1850585002	Play_3MENU_BACK__itemnumber			\Default Work Unit\Menu\V3\Play_3MENU_BACK__itemnumber	
+	1898861817	Play_2MENU_BACK__itemnumber			\Default Work Unit\Menu\V2\Play_2MENU_BACK__itemnumber	
+	2122796938	Play_4MENU_SELECT__itemnumber			\Default Work Unit\Menu\V4\Play_4MENU_SELECT__itemnumber	
+	2297224441	Play_1MENU_HOVER__itemnumber			\Default Work Unit\Menu\V1\Play_1MENU_HOVER__itemnumber	
+	2530256839	Play_3MENU_HOVER__itemnumber			\Default Work Unit\Menu\V3\Play_3MENU_HOVER__itemnumber	
+	2576267239	Play_3MENU_SELECT__itemnumber			\Default Work Unit\Menu\V3\Play_3MENU_SELECT__itemnumber	
+	2768269117	Play_5MENU_HOVER__itemnumber			\Default Work Unit\Menu\V5\Play_5MENU_HOVER__itemnumber	
+	3319439483	Play_2MENU_BACKT2__itemnumber			\Default Work Unit\Menu\V2\Play_2MENU_BACKT2__itemnumber	
+	3320033789	Play_5MENU_SELECT__itemnumber			\Default Work Unit\Menu\V5\Play_5MENU_SELECT__itemnumber	
+	3761818220	Play_2MENU_SELECT__itemnumber			\Default Work Unit\Menu\V2\Play_2MENU_SELECT__itemnumber	
+	4048517708	Play_5MENU_BACK__itemnumber			\Default Work Unit\Menu\V5\Play_5MENU_BACK__itemnumber	
+	4054149942	Play_2MENU_HOVER__itemnumber			\Default Work Unit\Menu\V2\Play_2MENU_HOVER__itemnumber	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	56713241	1MENU_BACK_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\3D\{3D35B544-75DC-A5E1-AAE9-103AED41DCDB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\1MENU_BACK_$itemnumber		99712
+	90936465	4MENU_SELECT2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\D7\{D78CFE5C-25E4-6AD3-1573-C099FD046637}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\4MENU_SELECT2_$itemnumber		57512
+	184406489	5MENU_SELECT_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\D2\{D2074B98-0DA8-3A78-AF44-3DA5DC6B7363}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\5MENU_SELECT_$itemnumber		13300
+	195367467	4MENU_HOVER_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\F2\{F2111934-7386-204D-5D13-A6A88B67CB9C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\4MENU_HOVER_$itemnumber		8708
+	223709970	2MENU_BACK_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\97\{975A943F-665B-C57E-BC9F-9F01E03CE6B7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\2MENU_BACK_$itemnumber		8278
+	226456147	3MENU_HOVER_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\96\{96CC1349-44B7-6666-D9C4-DA8FAF17BF65}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\3MENU_HOVER_$itemnumber		22776
+	317661372	1MENU_SELECT_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\EC\{EC89CC27-2537-44AB-8BFE-E8CDD0D4F80D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\1MENU_SELECT_$itemnumber		62392
+	538599615	2MENU_HOVER_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\8B\{8BC0E1C4-328B-C061-1BDF-54704761DDB9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\2MENU_HOVER_$itemnumber		13016
+	573648388	5MENU_BACK_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\C3\{C375B963-92CF-1F86-74FB-47A1FEA97EEA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\5MENU_BACK_$itemnumber		29380
+	575666935	4MENU_SELECT_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\06\{066F4573-45AD-87D7-7BAC-40E9F6A4C594}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\4MENU_SELECT_$itemnumber		55504
+	625160381	3MENU_BACK_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\8A\{8AF8FE02-DBCB-E689-D298-71CD6AF86F79}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\3MENU_BACK_$itemnumber		67560
+	640036262	4MENU_BACK_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\0E\{0E8C85A8-7777-8C8E-059F-B9C169E418C0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\4MENU_BACK_$itemnumber		15886
+	694652592	3MENU_BACK2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\E2\{E2B795CC-0500-39BE-4DDA-4F51FC60A83D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\3MENU_BACK2_$itemnumber		158276
+	714621579	2MENU_SELECT_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\2B\{2B16FA36-56EE-0516-49F6-79C0FB8B0DC9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\2MENU_SELECT_$itemnumber		57800
+	782914406	2MENU_BACKT2_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\3C\{3CC9ECBB-54AF-9835-BBC6-129D3591B85B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\2MENU_BACKT2_$itemnumber		15454
+	831037404	5MENU_HOVER_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\F3\{F3E56339-41E6-2D03-73B8-9D394CEE71A8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\5MENU_HOVER_$itemnumber		7848
+	960357035	1MENU_HOVER_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\1D\{1D5AD25D-C47B-6DEB-7D03-A06225E2DA90}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\1MENU_HOVER_$itemnumber		30528
+	1048549257	3MENU_SELECT_$itemnumber	C:\Users\Bonjour\Documents\GitHub\CotR\CotR_WwiseProject\.cache\BE\{BE5DE6D4-1ED6-BE9F-D613-0C0BDEEAAFD3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\3MENU_SELECT_$itemnumber		67844
+
