@@ -54,10 +54,10 @@ public class GameManager : NetworkBehaviour {
 
     private void SceneManager_OnLoadEventCompleted(string sceneName, UnityEngine.SceneManagement.LoadSceneMode loadSceneMode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut) {
         foreach (ulong clientID in NetworkManager.Singleton.ConnectedClientsIds) {
-            int randomRange = (int)(Random.Range(0f, 5f));
-            Vector2 position = spawnPositionList[randomRange];
-            spawnPositionList.RemoveAt(randomRange);
-            Transform playerTransform = Instantiate(playerPrefab, position, Quaternion.identity);
+            //int randomRange = (int)(Random.Range(0f, 5f));
+            //Vector2 position = spawnPositionList[randomRange];
+            //spawnPositionList.RemoveAt(randomRange);
+            Transform playerTransform = Instantiate(playerPrefab/*,*/ /*position, Quaternion.identity*/);
             playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientID, true);
         }
     }
