@@ -23,7 +23,6 @@ public class Projectile : NetworkBehaviour
     {
         if (collider.gameObject.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {    
-            
             Debug.Log("HIT");
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
             DespawnServerRpc();

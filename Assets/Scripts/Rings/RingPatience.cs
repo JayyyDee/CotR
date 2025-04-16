@@ -61,7 +61,7 @@ public class RingPatience : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
             ShootServerRpc();
         }
@@ -75,7 +75,7 @@ public class RingPatience : Ring
             }
         }
 
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             Active();
         }
@@ -84,8 +84,9 @@ public class RingPatience : Ring
 
     public override void Shoot()
     {
-        if (cam && playerCharacter.GetComponent<NetworkObject>().IsOwner && equiped)
+        if (cam && IsOwner && equiped)
         {
+            Debug.Log(cam.ScreenToWorldPoint(Input.mousePosition));
             mousePos = new Vector2(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y);
             Vector2 playerPos = new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y);
             Vector2 direction = mousePos - playerPos;
@@ -103,13 +104,14 @@ public class RingPatience : Ring
 
         canFire = false;
         GameObject bullet = Instantiate(bulletPrefab,spawnPoint, Quaternion.identity);
-        bullet.GetComponent<ZonePatience>().player = playerCharacter;
-        bullet.GetComponent<NetworkObject>().Spawn();
+        bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         zones.Enqueue(bullet);
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber", this.gameObject);
         if (zones.Count > 3)
         {
-            Destroy(zones.Dequeue(),0);
+            GameObject toDestroy = zones.Dequeue();
+            toDestroy.GetComponent<NetworkObject>().Despawn();
+            Destroy(toDestroy);
         }
 
         
@@ -164,11 +166,6 @@ public class RingPatience : Ring
         Shoot();
     }
 
-    [ClientRpc]
-    private void ShootClientRpc()
-    {
-        Shoot();
-    }
     [ServerRpc(RequireOwnership = false)]
     public void DropServerRpc(Vector2 pos)
     {

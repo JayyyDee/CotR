@@ -81,7 +81,7 @@ public class RingPassion : Ring
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber", this.gameObject);
         bullet.GetComponent<ProjectilePassion>().fireForce = fireForce;
-        bullet.GetComponent<ProjectilePassion>().player = playerCharacter;
+        
         if (activeBoost)
         {
             bullet.GetComponent<SpriteRenderer>().color = new Color(1.00f, 0.65f, 0.00f);
@@ -89,8 +89,7 @@ public class RingPassion : Ring
             
             activeBoost = false;
         }
-        bullet.GetComponent<NetworkObject>().Spawn();
-
+        bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
     }
     
 

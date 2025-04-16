@@ -768,6 +768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e1d5363062d8645b787aceb241ec73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameManager: {fileID: 0}
   gemIcon: {fileID: 5179075842583951021}
 --- !u!114 &-7695022764903982875
 MonoBehaviour:
@@ -784,6 +785,7 @@ MonoBehaviour:
   deathScreen: {fileID: 0}
   healthBar: {fileID: 4514664683419283216}
   maxHealth: 1000
+  hitCooldown: 5
 --- !u!114 &8509975520393243399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,14 +1405,34 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 951099334
       objectReference: {fileID: 0}
+    - target: {fileID: 5503098542116965665, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
+      propertyPath: SyncScaleX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503098542116965665, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
+      propertyPath: SyncScaleY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503098542116965665, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
+      propertyPath: SyncScaleZ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503098542116965665, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
+      propertyPath: SyncPositionZ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503098542116965665, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
+      propertyPath: SyncRotAngleX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503098542116965665, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
+      propertyPath: SyncRotAngleY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6902201888817699634, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 5770422159226431148}
-    - target: {fileID: 6902201888817699634, guid: 0a4188e95545b8c48991162fa51b622c, type: 3}
-      propertyPath: playerCharacter
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

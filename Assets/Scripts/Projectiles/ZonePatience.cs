@@ -8,7 +8,6 @@ public class ZonePatience : NetworkBehaviour
     public int explosionDamage;
     public int damage;
     public int healing;
-    public GameObject player;
     private bool explode= false;
 
 
@@ -16,6 +15,7 @@ public class ZonePatience : NetworkBehaviour
     {
         base.OnNetworkSpawn();
     }
+
     public void Detonate()
     {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
@@ -24,15 +24,16 @@ public class ZonePatience : NetworkBehaviour
     }
 
     private void OnTriggerStay2D(Collider2D collider)
+        //&& collider.gameObject == NetworkManager.OwnerClient.PlayerObject
     {
-        if (collider.CompareTag("Player") && collider.gameObject == player)
+        if (collider.CompareTag("Player")  && IsOwner)
         {
             //AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Passif_Inside_Full__itemnumber", this.gameObject);
             //yield return new WaitForSeconds(3f);
-            collider.gameObject.GetComponent<HealthManager>().HealingServerRpc((int)(healing*Time.deltaTime));
+            collider.gameObject.GetComponent<HealthManager>().HealingServerRpc((int)(healing* Time.deltaTime));
             Debug.Log("HEAL");
         }
-        if (collider.CompareTag("Enemy") && collider.gameObject != player)
+        if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc((int)(damage * Time.deltaTime));
             Debug.Log("Dmg");

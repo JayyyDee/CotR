@@ -22,6 +22,7 @@ public class Inventory : NetworkBehaviour
         GetComponentInChildren<Aiming>().SetPlayer(gameObject);
         firePoint = transform.GetChild(2).gameObject.transform.GetChild(0).gameObject;
         
+        
     }
     
 
@@ -30,8 +31,6 @@ public class Inventory : NetworkBehaviour
             
         if (collision.CompareTag("Ring"))
         {
-
-            Debug.Log("Collision " +this.OwnerClientId);
             SetOwnershipServerRpc(collision.GetComponent<NetworkObject>().NetworkObjectId, this.OwnerClientId);
             collision.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.transform.GetChild(1).gameObject.SetActive(false);
@@ -187,8 +186,6 @@ public class Inventory : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     public void SetOwnershipServerRpc(ulong ringId, ulong playerId)
     {
-        Debug.Log(this.OwnerClientId);
-        Debug.Log(playerId);
         if (NetworkManager.Singleton.SpawnManager.SpawnedObjects.TryGetValue(ringId, out var netObj))
         {
             

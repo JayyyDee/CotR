@@ -11,9 +11,8 @@ public class ProjectilePassion : NetworkBehaviour
         public GameObject explosionPrefab;
         private int damage = 50;
         private bool boost = false;
-        public GameObject player;
 
-    public float fireForce;
+        public float fireForce;
         private void Start()
         {
             StartCoroutine(Despawn(deathTimer));
@@ -23,7 +22,7 @@ public class ProjectilePassion : NetworkBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
         {
 
-            if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
+            if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
             {
 
                 DespawnServerRpc();
