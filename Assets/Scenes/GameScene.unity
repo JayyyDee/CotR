@@ -16129,6 +16129,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 7908967025190568213, guid: 8ad930bff828a9c4da736f81b37d748c, type: 3}
   gem: {fileID: 993104150}
+  spawnPositionList:
+  - {x: -19, y: -1, z: 0}
+  - {x: 18, y: 21, z: 0}
+  - {x: 18, y: -21, z: 0}
+  - {x: -10, y: 21, z: 0}
+  - {x: 26, y: -1, z: 0}
+  - {x: -10, y: -21, z: 0}
 --- !u!114 &1007112213
 MonoBehaviour:
   m_ObjectHideFlags: 0

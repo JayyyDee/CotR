@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Unity.Netcode;
+using Random = UnityEngine.Random;
 
 public class GameManager : NetworkBehaviour {
     
@@ -36,6 +37,8 @@ public class GameManager : NetworkBehaviour {
     private uint musicPlayingID;
     private string currentMusicEvent = "";
 
+    [SerializeField] public List<Vector3> spawnPositionList;
+
     private void Awake() {
         Instance = this;
         playerReadyDictionary = new Dictionary<ulong, bool>();
@@ -51,7 +54,10 @@ public class GameManager : NetworkBehaviour {
 
     private void SceneManager_OnLoadEventCompleted(string sceneName, UnityEngine.SceneManagement.LoadSceneMode loadSceneMode, List<ulong> clientsCompleted, List<ulong> clientsTimedOut) {
         foreach (ulong clientID in NetworkManager.Singleton.ConnectedClientsIds) {
-            Transform playerTransform = Instantiate(playerPrefab);
+            int randomRange = (int)(Random.Range(0f, 5f));
+            Vector2 position = spawnPositionList[randomRange];
+            spawnPositionList.RemoveAt(randomRange);
+            Transform playerTransform = Instantiate(playerPrefab, position, Quaternion.identity);
             playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientID, true);
         }
     }
