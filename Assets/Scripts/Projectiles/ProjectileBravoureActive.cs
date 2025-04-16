@@ -7,7 +7,6 @@ public class ProjectileBravoureActive : NetworkBehaviour
 {
     public float deathTimer;
     public int damage;
-    public GameObject player;
     private void Start()
     {
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber", this.gameObject);
@@ -22,7 +21,7 @@ public class ProjectileBravoureActive : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
+        if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
             collider.gameObject.GetComponent<PlayerMovement>().SlowServerRpc();
         }

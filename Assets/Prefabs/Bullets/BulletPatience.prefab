@@ -147,7 +147,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &-1091540498032181028
@@ -181,4 +181,3 @@ MonoBehaviour:
   explosionDamage: 75
   damage: 150
   healing: 100
-  player: {fileID: 0}

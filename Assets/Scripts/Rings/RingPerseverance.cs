@@ -44,7 +44,7 @@ public class RingPerseverance : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
             canFire = false;
             ShootServerRpc();
@@ -60,9 +60,11 @@ public class RingPerseverance : Ring
             }
         }
 
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
+            canActive = false;
             ActiveServerRpc();
+            
         }
     }
 
@@ -74,9 +76,8 @@ public class RingPerseverance : Ring
         
         Quaternion rot = bulletPrefab.transform.rotation*firePoint.transform.rotation;
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber", this.gameObject);
-        GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-        bullet.GetComponent<ProjectilePerseverance>().player = playerCharacter;
-        bullet.GetComponent<NetworkObject>().Spawn();
+        GameObject bullet = Instantiate(bulletPrefab, pos, rot);   
+        bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         
     }
 
@@ -87,16 +88,13 @@ public class RingPerseverance : Ring
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber", this.gameObject);
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber", this.gameObject);
         GameObject activeHitbox = Instantiate(activePrefab, pos, rot);
-        activeHitbox.GetComponent<ActivePerseverance>().player = playerCharacter;
-        activeHitbox.GetComponent<NetworkObject>().Spawn();
-        
+        activeHitbox.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         canActive = false;
     }
 
     public override void Passive()
     {
         GameObject passiveHitbox = playerCharacter.transform.Find("PassivePerseverance").gameObject;
-        passiveHitbox.GetComponent<PassivePerseverance>().player = playerCharacter;
         passiveHitbox.SetActive(true);
         
     }
@@ -129,25 +127,20 @@ public class RingPerseverance : Ring
     public void ShootServerRpc()
     {
         Shoot();
-       // ShootClientRpc();
+       
     }
 
-    [ClientRpc]
-    public void ShootClientRpc()
-    {
-        //Shoot();
-    }
 
     [ServerRpc(RequireOwnership = false)]
     public void ActiveServerRpc()
     {
-        ActiveClientRpc();
+        Active();
     }
 
     [ClientRpc]
     public void ActiveClientRpc()
     {
-        Active();
+        
     }
 
     [ServerRpc(RequireOwnership = false)]

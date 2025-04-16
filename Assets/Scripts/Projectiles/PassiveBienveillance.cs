@@ -6,7 +6,6 @@ using UnityEngine;
 public class PassiveBienveillance : NetworkBehaviour
 {
     public int damage;
-    public GameObject player;
 
     public override void OnNetworkSpawn()
     {
@@ -15,13 +14,14 @@ public class PassiveBienveillance : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 playerPos = player.transform.position;
+        if (!IsOwner) return;
+        Vector2 playerPos = NetworkManager.LocalClient.PlayerObject.transform.position;
         MoveZoneServerRpc(playerPos);
     }
 
     private void OnTriggerStay2D(Collider2D collider)
     { 
-        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
+        if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
             Debug.Log("Dmg");

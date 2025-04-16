@@ -176,16 +176,18 @@ public class PlayerMovement : NetworkBehaviour
         movementSpeed *= 0.5f;
     }
 
-    
-    public void AddForce(Vector2 direction, float force)
+    [ServerRpc(RequireOwnership = false)]
+    public void AddForceServerRpc(Vector2 direction, float force)
     {
-        GetComponent<Rigidbody2D>().AddForce(direction * force, ForceMode2D.Impulse);
+        AddForceClientRpc(direction, force);
     }
-    //[ClientRpc]
-    //public void AddForceClientRpc(Vector2 direction, float force)
-    //{
-       
-    //}
+
+
+    [ClientRpc]
+    public void AddForceClientRpc(Vector2 direction, float force)
+    {
+        rb.AddForce(direction * force, ForceMode2D.Impulse);
+    }
 
     [ServerRpc(RequireOwnership = false)]
     public void RemoveSlowServerRpc() {

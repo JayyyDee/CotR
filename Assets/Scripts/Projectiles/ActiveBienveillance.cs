@@ -20,10 +20,10 @@ public class ActiveBienveillance : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
+        if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
             Vector2 forceDirection = (collider.gameObject.transform.position - gameObject.transform.position)*(-1);
-            collider.gameObject.GetComponent<PlayerMovement>().AddForce(forceDirection , 3000f);
+            collider.gameObject.GetComponent<PlayerMovement>().AddForceServerRpc(forceDirection , 25f);
 
             Debug.Log("HIT");
         }

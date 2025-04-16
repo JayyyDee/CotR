@@ -59,13 +59,13 @@ public class RingPassion : Ring
             }
         }
        
-            if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+            if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
             ShootServerRpc();
             canFire = false;
         }
 
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             Active();
         }

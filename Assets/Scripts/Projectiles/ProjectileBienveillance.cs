@@ -7,7 +7,6 @@ public class ProjectileBienveillance : NetworkBehaviour
 {
     public float deathTimer;
     public int damage;
-    public GameObject player;
     public float force = 15f;
     public float scale = 1f;
     private void Start()
@@ -28,7 +27,7 @@ public class ProjectileBienveillance : NetworkBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
+        if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
         }

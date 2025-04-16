@@ -59,7 +59,7 @@ public class RingIntrepidite : Ring
             ShootServerRpc();
             canFire = false;
         }
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             Active();
         }

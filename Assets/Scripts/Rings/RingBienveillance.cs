@@ -44,9 +44,10 @@ public class RingBienveillance : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
             ShootServerRpc();
+            canFire = false;
         }
 
         if (!canActive)
@@ -59,9 +60,10 @@ public class RingBienveillance : Ring
             }
         }
 
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             ActiveServerRpc();
+            canActive = false;
         }
     }
 
@@ -72,8 +74,7 @@ public class RingBienveillance : Ring
         Vector3 pos = firePoint.transform.position;
         Quaternion rot = bulletPrefab.transform.rotation * firePoint.transform.rotation;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-        bullet.GetComponent<ProjectileBienveillance>().player = playerCharacter;
-        bullet.GetComponent<NetworkObject>().Spawn();
+        bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber", this.gameObject);
     }
 
@@ -82,8 +83,7 @@ public class RingBienveillance : Ring
         Vector3 pos = firePoint.transform.position + (firePoint.transform.right * 3f);
         Quaternion rot = firePoint.transform.rotation;
         GameObject active = Instantiate(activePrefab, pos, rot);
-        active.GetComponent<ActiveBienveillance>().player = playerCharacter;
-        active.GetComponent<NetworkObject>().Spawn();
+        active.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber", this.gameObject);
         canActive = false;
     }
@@ -97,8 +97,7 @@ public class RingBienveillance : Ring
     public void PassiveServerRpc()
     {
         GameObject passive = Instantiate(passivePrefab);
-        passive.GetComponent<PassiveBienveillance>().player = playerCharacter;
-        passive.GetComponent<NetworkObject>().Spawn();
+        passive.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber", this.gameObject);
     }
 

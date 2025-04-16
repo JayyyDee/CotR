@@ -7,7 +7,6 @@ public class ProjectilePerseverance : NetworkBehaviour
 {
     public float deathTimer;
     public int damage;
-    public GameObject player;
     public float force;
     private void Start()
     {
@@ -17,16 +16,17 @@ public class ProjectilePerseverance : NetworkBehaviour
     {
         base.OnNetworkSpawn();
 
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.right.y*-1,transform.right.x) * force, ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().AddForce(transform.up * force, ForceMode2D.Impulse);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Enemy") && collider.gameObject != player && player.GetComponent<NetworkObject>().IsOwner)
+        if (collider.gameObject.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
-            DespawnServerRpc();
+            
             Debug.Log("HIT");
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
+            DespawnServerRpc();
         }
         if (collider.gameObject.CompareTag("Walls"))
         {

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1564491521876218721}
   - component: {fileID: 4845667945370044715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 8782390004562234573}
   - component: {fileID: 7109889420872058943}
   - component: {fileID: 319271994829919081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bienveillance
   m_TagString: Ring
   m_Icon: {fileID: 0}

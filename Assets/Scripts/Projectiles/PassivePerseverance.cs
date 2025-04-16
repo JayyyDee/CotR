@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PassivePerseverance : MonoBehaviour
 {
-    public GameObject player;
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy") /*&& collider.gameObject != player*/)
+        if (collider.CompareTag("Enemy"))
         {
             Debug.Log(collider);
             collider.gameObject.transform.Find("Target").gameObject.SetActive(true);
@@ -15,7 +14,7 @@ public class PassivePerseverance : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy") /*&& collider.gameObject != player*/)
+        if (collider.CompareTag("Enemy"))
         {
             collider.gameObject.transform.Find("Target").gameObject.SetActive(false);
         }

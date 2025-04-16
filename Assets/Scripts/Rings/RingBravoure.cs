@@ -50,7 +50,7 @@ public class RingBravoure : Ring
                 timer = 0;
             }
         }
-        if (equiped && Input.GetMouseButton(0) && canFire && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
             ShootServerRpc();
         }
@@ -65,7 +65,7 @@ public class RingBravoure : Ring
             }
         }
         
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && playerCharacter.GetComponent<NetworkObject>().IsOwner)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             ActiveServerRpc();
         }
@@ -98,8 +98,7 @@ public class RingBravoure : Ring
         Vector3 pos = firePoint.transform.position + (firePoint.transform.right * 4f);
         Quaternion rot = firePoint.transform.rotation;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-        bullet.GetComponent<NetworkObject>().Spawn();
-        bullet.GetComponent<ProjectileBravoureActive>().player = playerCharacter;
+        bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         canActive = false;
         
     }
@@ -149,6 +148,7 @@ public class RingBravoure : Ring
     [ClientRpc]
     public void ShootClientRpc()
     {
+        
         Shoot();
 
     }
