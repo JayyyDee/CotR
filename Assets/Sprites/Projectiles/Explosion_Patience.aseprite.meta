@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2609bec0f0dcb214d86ea76fdf1c3f14
+guid: ef79d2fdc7667584bb5ade0999917d8c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Cratere_Perseverance_Frame_3
+  - name: Explosion_Patience_Frame_0
     originalName: 
-    pivot: {x: 0.5023148, y: -0.1459854}
+    pivot: {x: 0.5555556, y: -4.1428576}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 524
-      y: 4
-      width: 432
-      height: 411
-    spriteID: c53cc0688ab8e704a81d0f96a718a712
+      x: 32
+      y: 211
+      width: 9
+      height: 7
+    spriteID: 9730cb0c9df68784984a0dc865d9a668
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +140,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 524, y: 4}
-  - name: Cratere_Perseverance_Frame_4
+    uvTransform: {x: 32, y: 211}
+  - name: Explosion_Patience_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.007874016}
+    pivot: {x: 0.5, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 211
+      width: 20
+      height: 22
+    spriteID: 149e4e434863c624ca799ec46e4a206b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 211}
+  - name: Explosion_Patience_Frame_2
+    originalName: 
+    pivot: {x: 0.5090909, y: -0.016393442}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 512
-      height: 508
-    spriteID: a0cc37930a91975468fc1d0ba8e79b9d
+      width: 55
+      height: 61
+    spriteID: 327ae3f72726dd34c896d5adbd11d7a9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,18 +181,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Cratere_Perseverance_Frame_5
+  - name: Explosion_Patience_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: -0.011904763}
+    pivot: {x: 0.5090909, y: -0.016393442}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 520
-      width: 512
-      height: 504
-    spriteID: 43cdcfb451ac4fa4c84822fa25204d9c
+      y: 73
+      width: 55
+      height: 61
+    spriteID: 51c6cadf10ee0334d9f16ec48df23d77
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,39 +200,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 520}
-  - name: Cratere_Perseverance_Frame_0
+    uvTransform: {x: 4, y: 73}
+  - name: Explosion_Patience_Frame_4
     originalName: 
-    pivot: {x: 0.9375, y: -14.222222}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 388
-      y: 1032
-      width: 16
-      height: 18
-    spriteID: 732c03cf523560a4498694c76f73589f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 388, y: 1032}
-  - name: Cratere_Perseverance_Frame_1
-    originalName: 
-    pivot: {x: 0.5217391, y: -0.6478261}
+    pivot: {x: 0.5090909, y: -0.016393442}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 1416
-      width: 230
-      height: 230
-    spriteID: c422269457979194caa177daa64218a2
+      y: 142
+      width: 55
+      height: 61
+    spriteID: 472f6057d3c0b0c49a1d31710065cc01
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,19 +220,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1416}
-  - name: Cratere_Perseverance_Frame_2
+    uvTransform: {x: 4, y: 142}
+  - name: Explosion_Patience_Frame_5
     originalName: 
-    pivot: {x: 0.51861703, y: -0.21010637}
+    pivot: {x: 0.5, y: -0.03508772}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1032
-      width: 376
-      height: 376
-    spriteID: 29875cf5788dde34ba01403641b601dc
+      x: 67
+      y: 4
+      width: 52
+      height: 57
+    spriteID: a3e4f6cfda4c17b4689cbbb7ba500fd0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,74 +240,74 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1032}
+    uvTransform: {x: 67, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1551419758
-    name: Cratere_Perseverance
+    guid: 827385059
+    name: Explosion_Patience
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cratere_Perseverance_Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 39
-        y: 60
-        width: 432
-        height: 411
-      spriteId: c53cc0688ab8e704a81d0f96a718a712
-    - name: Cratere_Perseverance_Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 4
-        width: 512
-        height: 508
-      spriteId: a0cc37930a91975468fc1d0ba8e79b9d
-    - name: Cratere_Perseverance_Frame_5
-      frameIndex: 5
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 6
-        width: 512
-        height: 504
-      spriteId: 43cdcfb451ac4fa4c84822fa25204d9c
-    - name: Cratere_Perseverance_Frame_0
+    - name: Explosion_Patience_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 241
-        y: 256
-        width: 16
-        height: 18
-      spriteId: 732c03cf523560a4498694c76f73589f
-    - name: Cratere_Perseverance_Frame_1
+        x: 27
+        y: 29
+        width: 9
+        height: 7
+      spriteId: 9730cb0c9df68784984a0dc865d9a668
+    - name: Explosion_Patience_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 136
-        y: 149
-        width: 230
-        height: 230
-      spriteId: c422269457979194caa177daa64218a2
-    - name: Cratere_Perseverance_Frame_2
+        x: 22
+        y: 22
+        width: 20
+        height: 22
+      spriteId: 149e4e434863c624ca799ec46e4a206b
+    - name: Explosion_Patience_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 61
-        y: 79
-        width: 376
-        height: 376
-      spriteId: 29875cf5788dde34ba01403641b601dc
+        x: 4
+        y: 1
+        width: 55
+        height: 61
+      spriteId: 327ae3f72726dd34c896d5adbd11d7a9
+    - name: Explosion_Patience_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 4
+        y: 1
+        width: 55
+        height: 61
+      spriteId: 51c6cadf10ee0334d9f16ec48df23d77
+    - name: Explosion_Patience_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 4
+        y: 1
+        width: 55
+        height: 61
+      spriteId: 472f6057d3c0b0c49a1d31710065cc01
+    - name: Explosion_Patience_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 2
+        width: 52
+        height: 57
+      spriteId: a3e4f6cfda4c17b4689cbbb7ba500fd0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 512, y: 512}
+  canvasSize: {x: 64, y: 64}
