@@ -18,7 +18,7 @@ public class ZonePatience : NetworkBehaviour
 
     public void Detonate()
     {
-        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        DetonateServerRpc();
         explode = true;
         StartCoroutine(Despawn());
     }
@@ -43,6 +43,19 @@ public class ZonePatience : NetworkBehaviour
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(explosionDamage);
             explode = false;
         }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void DetonateServerRpc()
+    {
+        DetonateClientRpc();
+        
+    }
+
+    [ClientRpc]
+    private void DetonateClientRpc()
+    {
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
     }
 
     IEnumerator Despawn()

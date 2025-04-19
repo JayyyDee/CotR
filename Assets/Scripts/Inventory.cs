@@ -54,10 +54,11 @@ public class Inventory : NetworkBehaviour
             }
             collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
             
-            if(collision.gameObject.name == "Patience")
+            if(collision.gameObject.name == "Patience" && IsOwner)
             {
                 Debug.Log("patience");
-                collision.gameObject.GetComponent<RingPatience>().SetCamera(gameObject.transform.Find("PlayerCamera").gameObject.GetComponent<Camera>());
+                //collision.gameObject.GetComponent<RingPatience>().SetCamera(gameObject.transform.Find("PlayerCamera").gameObject.GetComponent<Camera>());
+
             }
 
             if (collision.gameObject.name == "Passion") //J'ai ajouter les IF suivant pour activer les sons lorsqu'on récupère les anneaux 
@@ -90,7 +91,6 @@ public class Inventory : NetworkBehaviour
                 AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber", this.gameObject);
             }
 
-            string fullInv = "";
             int i = 0;
 
             if (!IsOwner)
@@ -103,8 +103,7 @@ public class Inventory : NetworkBehaviour
                 ring.SetAttackSpeed(attackSpeed);
                 GameObject.Find("Slot" + i).GetComponent<Image>().color = Color.white;
                 GameObject.Find("Slot" + i).GetComponent<Image>().sprite = inventory[i].GetComponent<SpriteRenderer>().sprite;
-                
-                fullInv += (ring.name + " ");
+               
                 i++;
             }
 
@@ -193,6 +192,7 @@ public class Inventory : NetworkBehaviour
 
         }
     }
+
     
 
 }
