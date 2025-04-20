@@ -175,4 +175,9 @@ public class RingBienveillance : Ring
     {
         return 1;
     }
+
+    public override float GetActiveCooldown()
+    {
+        return activeCooldown - activeTimer;
+    }
 }

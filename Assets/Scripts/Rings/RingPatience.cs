@@ -229,4 +229,9 @@ public class RingPatience : Ring
     {
         return 5;
     }
+
+    public override float GetActiveCooldown()
+    {
+        return activeCooldown - activeTimer;
+    }
 }

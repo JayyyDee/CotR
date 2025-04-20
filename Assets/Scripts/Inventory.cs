@@ -53,13 +53,7 @@ public class Inventory : NetworkBehaviour
                 collision.gameObject.GetComponent<Ring>().Passive();
             }
             collision.gameObject.GetComponent<Ring>().SetAttackSpeed(attackSpeed);
-            
-            if(collision.gameObject.name == "Patience" && IsOwner)
-            {
-                Debug.Log("patience");
-                //collision.gameObject.GetComponent<RingPatience>().SetCamera(gameObject.transform.Find("PlayerCamera").gameObject.GetComponent<Camera>());
-
-            }
+           
 
             if (collision.gameObject.name == "Passion") //J'ai ajouter les IF suivant pour activer les sons lorsqu'on récupère les anneaux 
             {
@@ -103,7 +97,8 @@ public class Inventory : NetworkBehaviour
                 ring.SetAttackSpeed(attackSpeed);
                 GameObject.Find("Slot" + i).GetComponent<Image>().color = Color.white;
                 GameObject.Find("Slot" + i).GetComponent<Image>().sprite = inventory[i].GetComponent<SpriteRenderer>().sprite;
-               
+                //GameObject.Find()
+
                 i++;
             }
 

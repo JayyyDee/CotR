@@ -17,7 +17,7 @@ public class HealthBarManager : NetworkBehaviour
 
             //The gradient will start at the beginning, so the health will be green.
             fill.color = gradient.Evaluate(1f);
-            Debug.Log("MaxHealth has beem set.");
+            Debug.Log("MaxHealth has been set.");
 
     }
    public void SetHealth(int health)

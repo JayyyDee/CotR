@@ -28,5 +28,7 @@ public abstract class Ring: NetworkBehaviour
 
     public abstract int GetForm();
 
+    public abstract float GetActiveCooldown();
+
 }
 

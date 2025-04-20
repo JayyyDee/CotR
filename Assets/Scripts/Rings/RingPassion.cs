@@ -164,4 +164,9 @@ public class RingPassion : Ring
     {
         return 4;
     }
+
+    public override float GetActiveCooldown()
+    {
+        return activeCooldown - activeTimer;
+    }
 }

@@ -161,4 +161,9 @@ public class RingIntrepidite : Ring
     {
         return 3;
     }
+
+    public override float GetActiveCooldown()
+    {
+        return activeCooldown - activeTimer;
+    }
 }

@@ -183,4 +183,9 @@ public class RingBravoure : Ring
     {
         return 2;
     }
+
+    public override float GetActiveCooldown()
+    {
+        return activeCooldown - activeTimer;
+    }
 }

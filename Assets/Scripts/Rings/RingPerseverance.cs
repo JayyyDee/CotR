@@ -173,4 +173,9 @@ public class RingPerseverance : Ring
     {
         return 6;
     }
+
+    public override float GetActiveCooldown()
+    {
+        return activeCooldown - activeTimer;
+    }
 }
