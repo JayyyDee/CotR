@@ -188,4 +188,9 @@ public class RingBravoure : Ring
     {
         return activeCooldown - activeTimer;
     }
+
+    public override float GetActiveMaxCooldown()
+    {
+        return activeCooldown;
+    }
 }

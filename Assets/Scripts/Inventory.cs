@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
 using Unity.Netcode;
+using TMPro;
+using System;
 
 
 public class Inventory : NetworkBehaviour
@@ -15,6 +17,8 @@ public class Inventory : NetworkBehaviour
     public List<GameObject> UISlots = new List<GameObject>();
     private GameObject firePoint;
     private float attackSpeed =1f;
+    private Slider slider;
+    private TextMeshPro text;
    
 
     public override void OnNetworkSpawn()
@@ -97,7 +101,8 @@ public class Inventory : NetworkBehaviour
                 ring.SetAttackSpeed(attackSpeed);
                 GameObject.Find("Slot" + i).GetComponent<Image>().color = Color.white;
                 GameObject.Find("Slot" + i).GetComponent<Image>().sprite = inventory[i].GetComponent<SpriteRenderer>().sprite;
-                //GameObject.Find()
+                slider = GameObject.Find("Slot" + i + "CD").GetComponent<Slider>();
+                slider.maxValue = ring.GetActiveMaxCooldown();
 
                 i++;
             }
@@ -143,6 +148,34 @@ public class Inventory : NetworkBehaviour
             AkUnitySoundEngine.PostEvent("Play_SFX_SelectRing_Random", this.gameObject);
         }
 
+        int i = 0;
+        foreach (Ring ring in inventory)
+        {
+            slider = GameObject.Find("Slot" + i + "CD").GetComponent<Slider>();
+            
+            
+            float cooldown = ring.GetActiveCooldown();
+            if (cooldown <= 0 || cooldown == ring.GetActiveMaxCooldown())
+            {
+                GameObject.Find("Slot0CD").gameObject.transform.Find("TextCD").GetComponent<TextMeshPro>().SetText(""); 
+                slider.value = 0;
+            }
+            else
+            {
+                if(cooldown > 1)
+                {
+                    //text.GetComponent<TextMeshPro>().SetText(""  + (int)cooldown);
+                }
+                else
+                {
+                    //text.GetComponent<TextMeshPro>().SetText(String.Format("%.2f", cooldown));
+
+                }
+                slider.value = ring.GetActiveCooldown();
+            }
+                
+            i++;
+        }
     }
 
     public Ring GetEquipped()

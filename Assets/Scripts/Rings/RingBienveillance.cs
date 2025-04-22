@@ -180,4 +180,9 @@ public class RingBienveillance : Ring
     {
         return activeCooldown - activeTimer;
     }
+
+    public override float GetActiveMaxCooldown()
+    {
+        return activeCooldown;
+    }
 }

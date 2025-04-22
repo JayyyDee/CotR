@@ -30,5 +30,7 @@ public abstract class Ring: NetworkBehaviour
 
     public abstract float GetActiveCooldown();
 
+    public abstract float GetActiveMaxCooldown();
+
 }
 

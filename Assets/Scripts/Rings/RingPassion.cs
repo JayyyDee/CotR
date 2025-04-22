@@ -169,4 +169,9 @@ public class RingPassion : Ring
     {
         return activeCooldown - activeTimer;
     }
+
+    public override float GetActiveMaxCooldown()
+    {
+        return activeCooldown;
+    }
 }
