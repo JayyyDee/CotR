@@ -33,6 +33,7 @@ public class RingPatience : Ring
     >1 is faster
     */
     private float attackSpeed = 1f;
+    private int zonesCount = 0;
 
     
 
@@ -64,9 +65,9 @@ public class RingPatience : Ring
         }
         if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
-            canFire = false;
-             mousePos = new Vector2(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y);
-             Vector2 playerPos = new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y);
+            
+            mousePos = new Vector2(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y);
+            Vector2 playerPos = new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y);
             Vector2 direction = mousePos - playerPos;
             Debug.Log(mousePos);
             if (direction.magnitude > range)
@@ -81,6 +82,8 @@ public class RingPatience : Ring
             Debug.Log(spawnPoint);
             
             ShootServerRpc(spawnPoint);
+            canFire = false;
+
         }
         if (!canActive)
         {
@@ -92,9 +95,10 @@ public class RingPatience : Ring
             }
         }
 
-        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
+        if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner && zonesCount > 0)
         {
             ActiveServerRpc();
+            canActive = false;
         }
     }
 
@@ -104,6 +108,10 @@ public class RingPatience : Ring
         GameObject bullet = Instantiate(bulletPrefab, spawnPoint, Quaternion.identity);
         bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         zones.Enqueue(bullet);
+        if(zones.Count < 3)
+        {
+            ZonesAddClientRpc();
+        }
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber", this.gameObject);
         if (zones.Count > 3)
         {
@@ -115,15 +123,15 @@ public class RingPatience : Ring
 
     public override void Active()
     {
-        //if (zones.Count > 0 && IsOwner)
-        //{
+        
             AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber", this.gameObject);
             foreach (GameObject zone in zones)
             {
                 zone.GetComponent<ZonePatience>().Detonate();
             }
             zones.Clear();
-        //}
+            ZonesDeleteClientRpc();
+        
         
     }
 
@@ -140,14 +148,8 @@ public class RingPatience : Ring
     }
 
     public override void Passive()
-    {
-        
-            cam = NetworkManager.LocalClient.PlayerObject.gameObject.transform.Find("PlayerCamera").GetComponent<Camera>();
-            Debug.Log(cam);
-            Debug.Log("Camera");
-           // cam = playerCharacter.transform.Find("PlayerCamera").GetComponent<Camera>();
-           
-
+    { 
+        cam = NetworkManager.LocalClient.PlayerObject.gameObject.transform.Find("PlayerCamera").GetComponent<Camera>();
     }
     
 
@@ -185,20 +187,6 @@ public class RingPatience : Ring
     }
 
     [ServerRpc(RequireOwnership = false)]
-    public void PassiveServerRpc()
-    {
-        //NetworkManager.Singleton.ConnectedClients[OwnerClientId].PlayerObject;
-        PassiveClientRpc(OwnerClientId);
-    }
-
-    [ClientRpc]
-    public void PassiveClientRpc(ulong playerId)
-    {
-        //player = 
-        //cam = player.transform.Find("PlayerCamera").GetComponent<Camera>();
-    }
-
-    [ServerRpc(RequireOwnership = false)]
     public void DropServerRpc(Vector2 pos)
     {
         DropClientRpc(pos);
@@ -212,6 +200,17 @@ public class RingPatience : Ring
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
         gameObject.GetComponent<Ring>().SetEquiped(false);
 
+    }
+
+    [ClientRpc]
+    public void ZonesAddClientRpc()
+    {
+        zonesCount++;
+    }
+    [ClientRpc]
+    public void ZonesDeleteClientRpc()
+    {
+        zonesCount = 0;
     }
     public override void Drop()
     {

@@ -53,6 +53,7 @@ public class RingBravoure : Ring
         if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
         {
             ShootServerRpc();
+            canFire = false;
         }
 
         if (!canActive)
@@ -68,6 +69,7 @@ public class RingBravoure : Ring
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             ActiveServerRpc();
+            canActive = false;
         }
 
         if (startPassive)
@@ -86,7 +88,7 @@ public class RingBravoure : Ring
 
     public override void Shoot()
     {
-        canFire = false;
+        
 
         playerCharacter.GetComponent<ProjectileBravoure>().Shoot();
         AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber", this.gameObject);
@@ -99,7 +101,7 @@ public class RingBravoure : Ring
         Quaternion rot = firePoint.transform.rotation;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
-        canActive = false;
+        
         
     }
 

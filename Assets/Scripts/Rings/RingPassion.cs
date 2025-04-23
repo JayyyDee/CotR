@@ -68,6 +68,7 @@ public class RingPassion : Ring
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             Active();
+            canActive = false;
         }
     }
 

@@ -62,6 +62,7 @@ public class RingIntrepidite : Ring
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
             Active();
+            canActive = false;
         }
     }
 
