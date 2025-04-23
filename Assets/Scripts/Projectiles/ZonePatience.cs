@@ -31,12 +31,12 @@ public class ZonePatience : NetworkBehaviour
             //AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Passif_Inside_Full__itemnumber", this.gameObject);
             //yield return new WaitForSeconds(3f);
             collider.gameObject.GetComponent<HealthManager>().HealingServerRpc((int)(healing* Time.deltaTime));
-            Debug.Log("HEAL");
+            
         }
         if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc((int)(damage * Time.deltaTime));
-            Debug.Log("Dmg");
+     
         }
         if (explode)
         {
@@ -63,6 +63,7 @@ public class ZonePatience : NetworkBehaviour
         yield return new WaitForSeconds(0.1f);
         GetComponent<NetworkObject>().Despawn();
         Destroy(gameObject, 0f);
+        explode = false;
     }
 
 }

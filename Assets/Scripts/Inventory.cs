@@ -18,7 +18,7 @@ public class Inventory : NetworkBehaviour
     private GameObject firePoint;
     private float attackSpeed =1f;
     private Slider slider;
-    private TextMeshPro text;
+    private TextMeshProUGUI text;
    
 
     public override void OnNetworkSpawn()
@@ -152,23 +152,24 @@ public class Inventory : NetworkBehaviour
         foreach (Ring ring in inventory)
         {
             slider = GameObject.Find("Slot" + i + "CD").GetComponent<Slider>();
-            
+            text = slider.gameObject.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
             
             float cooldown = ring.GetActiveCooldown();
             if (cooldown <= 0 || cooldown == ring.GetActiveMaxCooldown())
             {
-                GameObject.Find("Slot0CD").gameObject.transform.Find("TextCD").GetComponent<TextMeshPro>().SetText(""); 
+                text.SetText("");
                 slider.value = 0;
             }
             else
             {
                 if(cooldown > 1)
                 {
-                    //text.GetComponent<TextMeshPro>().SetText(""  + (int)cooldown);
+                    text.SetText("" + (int)cooldown);
+                    
                 }
                 else
                 {
-                    //text.GetComponent<TextMeshPro>().SetText(String.Format("%.2f", cooldown));
+                    text.SetText(String.Format("{0 : 0.0}", cooldown));
 
                 }
                 slider.value = ring.GetActiveCooldown();
