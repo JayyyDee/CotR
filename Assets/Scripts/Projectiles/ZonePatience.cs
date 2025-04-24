@@ -54,6 +54,7 @@ public class ZonePatience : NetworkBehaviour
     private void DetonateClientRpc()
     {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 
     IEnumerator Despawn()
