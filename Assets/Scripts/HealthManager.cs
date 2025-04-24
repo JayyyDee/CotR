@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using Unity.VisualScripting;
 
 public class HealthManager : NetworkBehaviour
 {
@@ -105,6 +106,7 @@ public class HealthManager : NetworkBehaviour
         gameObject.GetComponent<GemManager>().Death();
         //gameObject.GetComponent<DeathScreenUI>().Death();
         gameObject.SetActive(false);
+        DeathServerRpc();
         deathScreen.gameObject.SetActive(true);
     }
 
@@ -116,5 +118,19 @@ public class HealthManager : NetworkBehaviour
                 hitTimer = 0;
             }
         }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void DeathServerRpc()
+    {
+        gameObject.GetComponent<NetworkObject>().Despawn();
+        DeathClientRpc();
+        
+    }
+
+    [ClientRpc]
+    void DeathClientRpc()
+    {
+        Destroy(this.gameObject);
     }
 }

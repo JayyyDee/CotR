@@ -15,12 +15,20 @@ public class PassiveBienveillance : NetworkBehaviour
     void Update()
     {
         if (!IsOwner) return;
-        Vector2 playerPos = NetworkManager.LocalClient.PlayerObject.transform.position;
-        MoveZoneServerRpc(playerPos);
+        if (NetworkManager.LocalClient.PlayerObject)
+        {
+            Vector2 playerPos = NetworkManager.LocalClient.PlayerObject.transform.position;
+            MoveZoneServerRpc(playerPos);
+        }
+        else
+        {
+            TurnOffServerRpc();
+        }
+        
     }
 
     private void OnTriggerStay2D(Collider2D collider)
-    { 
+    {
         if (collider.CompareTag("Enemy") && collider.gameObject != NetworkManager.LocalClient.PlayerObject && IsOwner)
         {
             collider.gameObject.GetComponent<HealthManager>().TakeDamageServerRpc(damage);
@@ -33,7 +41,7 @@ public class PassiveBienveillance : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     public void MoveZoneServerRpc(Vector2 pos)
     {
-        
+
         MoveZoneClientRpc(pos);
     }
 
@@ -41,5 +49,11 @@ public class PassiveBienveillance : NetworkBehaviour
     public void MoveZoneClientRpc(Vector2 pos)
     {
         gameObject.transform.position = pos;
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void TurnOffServerRpc()
+    {
+        gameObject.GetComponent<NetworkObject>().Despawn();
     }
 }

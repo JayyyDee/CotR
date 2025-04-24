@@ -135,7 +135,6 @@ public class RingBienveillance : Ring
     [ServerRpc(RequireOwnership = false)]
     public void DropServerRpc(Vector2 pos)
     {
-
         DropClientRpc(pos);
     }
 
@@ -170,6 +169,7 @@ public class RingBienveillance : Ring
     {
         Vector2 pos = new Vector2(playerCharacter.transform.position.x + Random.Range(0, 2f), playerCharacter.transform.position.y + Random.Range(0, 2f));
         AkUnitySoundEngine.PostEvent("Play_SFX_DropLoot__itemnumber", this.gameObject);
+       
         DropServerRpc(pos);
     }
 
