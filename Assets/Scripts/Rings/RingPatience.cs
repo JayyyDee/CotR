@@ -69,7 +69,6 @@ public class RingPatience : Ring
             mousePos = new Vector2(cam.ScreenToWorldPoint(Input.mousePosition).x, cam.ScreenToWorldPoint(Input.mousePosition).y);
             Vector2 playerPos = new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y);
             Vector2 direction = mousePos - playerPos;
-            Debug.Log(mousePos);
             if (direction.magnitude > range)
             {
                 spawnPoint = direction.normalized * range + playerPos;
@@ -79,8 +78,8 @@ public class RingPatience : Ring
             {
                     spawnPoint = mousePos;
             }
-            Debug.Log(spawnPoint);
             
+            AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber", this.gameObject);
             ShootServerRpc(spawnPoint);
             canFire = false;
 
@@ -99,6 +98,7 @@ public class RingPatience : Ring
         {
             ActiveServerRpc();
             canActive = false;
+            AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber", this.gameObject);
         }
     }
 
@@ -112,7 +112,7 @@ public class RingPatience : Ring
         {
             ZonesAddClientRpc();
         }
-        AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber", this.gameObject);
+        
         if (zones.Count > 3)
         {
             GameObject toDestroy = zones.Dequeue();
@@ -124,7 +124,7 @@ public class RingPatience : Ring
     public override void Active()
     {
         
-            AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber", this.gameObject);
+            
             foreach (GameObject zone in zones)
             {
                 zone.GetComponent<ZonePatience>().Detonate();

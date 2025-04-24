@@ -24,12 +24,10 @@ public class ZonePatience : NetworkBehaviour
     }
 
     private void OnTriggerStay2D(Collider2D collider)
-        //&& collider.gameObject == NetworkManager.OwnerClient.PlayerObject
     {
         if (collider.CompareTag("Player")  && IsOwner)
         {
-            //AkUnitySoundEngine.PostEvent("Play_Anneaux_Patience_Passif_Inside_Full__itemnumber", this.gameObject);
-            //yield return new WaitForSeconds(3f);
+            
             collider.gameObject.GetComponent<HealthManager>().HealingServerRpc((int)(healing* Time.deltaTime));
             
         }

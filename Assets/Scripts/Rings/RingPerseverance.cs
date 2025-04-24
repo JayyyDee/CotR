@@ -48,6 +48,7 @@ public class RingPerseverance : Ring
         {
             canFire = false;
             ShootServerRpc();
+            AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber", this.gameObject);
         }
 
         if (!canActive)
@@ -64,7 +65,9 @@ public class RingPerseverance : Ring
         {
             canActive = false;
             ActiveServerRpc();
-            
+            AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber", this.gameObject);
+            AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber", this.gameObject);
+
         }
     }
 
@@ -75,7 +78,7 @@ public class RingPerseverance : Ring
         Vector3 pos = firePoint.transform.position;
         
         Quaternion rot = bulletPrefab.transform.rotation*firePoint.transform.rotation;
-        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber", this.gameObject);
+        
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);   
         bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         
@@ -85,8 +88,6 @@ public class RingPerseverance : Ring
     {
         Vector3 pos = playerCharacter.transform.position;
         Quaternion rot = playerCharacter.transform.rotation;
-        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber", this.gameObject);
-        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber", this.gameObject);
         GameObject activeHitbox = Instantiate(activePrefab, pos, rot);
         activeHitbox.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
         canActive = false;

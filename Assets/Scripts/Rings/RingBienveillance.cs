@@ -45,9 +45,10 @@ public class RingBienveillance : Ring
             }
         }
         if (equiped && Input.GetMouseButton(0) && canFire && IsOwner)
-        {
+        {  
             ShootServerRpc();
             canFire = false;
+            AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber", this.gameObject);
         }
 
         if (!canActive)
@@ -64,6 +65,7 @@ public class RingBienveillance : Ring
         {
             ActiveServerRpc();
             canActive = false;
+            AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber", this.gameObject);
         }
     }
 
@@ -75,7 +77,6 @@ public class RingBienveillance : Ring
         Quaternion rot = bulletPrefab.transform.rotation * firePoint.transform.rotation;
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
         bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
-        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber", this.gameObject);
     }
 
     public override void Active()
@@ -84,13 +85,13 @@ public class RingBienveillance : Ring
         Quaternion rot = firePoint.transform.rotation;
         GameObject active = Instantiate(activePrefab, pos, rot);
         active.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
-        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber", this.gameObject);
         canActive = false;
     }
 
     public override void Passive()
     {
         PassiveServerRpc();
+        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber", this.gameObject);
     }
 
     [ServerRpc(RequireOwnership = false)]
@@ -98,7 +99,7 @@ public class RingBienveillance : Ring
     {
         GameObject passive = Instantiate(passivePrefab);
         passive.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
-        AkUnitySoundEngine.PostEvent("Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber", this.gameObject);
+        
     }
 
     [ClientRpc]
@@ -134,6 +135,7 @@ public class RingBienveillance : Ring
     [ServerRpc(RequireOwnership = false)]
     public void DropServerRpc(Vector2 pos)
     {
+
         DropClientRpc(pos);
     }
 

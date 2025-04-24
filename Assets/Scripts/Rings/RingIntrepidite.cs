@@ -58,6 +58,7 @@ public class RingIntrepidite : Ring
         {
             ShootServerRpc();
             canFire = false;
+            AkUnitySoundEngine.PostEvent("Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber", this.gameObject);
         }
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
         {
@@ -78,7 +79,7 @@ public class RingIntrepidite : Ring
     {
         for (int i = 0; i < 3; i++)
         {
-            AkUnitySoundEngine.PostEvent("Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber", this.gameObject);
+            
             GameObject bullet = Instantiate(bulletPrefab, pos, rot);
             bullet.GetComponent<NetworkObject>().SpawnWithOwnership(OwnerClientId);
             yield return new WaitForSeconds(0.05f);

@@ -54,6 +54,7 @@ public class RingBravoure : Ring
         {
             ShootServerRpc();
             canFire = false;
+            AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber", this.gameObject);
         }
 
         if (!canActive)
@@ -88,11 +89,8 @@ public class RingBravoure : Ring
 
     public override void Shoot()
     {
-        
-
         playerCharacter.GetComponent<ProjectileBravoure>().Shoot();
-        AkUnitySoundEngine.PostEvent("Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber", this.gameObject);
-
+       
     }
 
     public override void Active()

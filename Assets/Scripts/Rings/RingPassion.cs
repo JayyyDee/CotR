@@ -63,6 +63,7 @@ public class RingPassion : Ring
         {
             ShootServerRpc();
             canFire = false;
+            AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber", this.gameObject);
         }
 
         if (equiped && Input.GetKeyDown(KeyCode.LeftShift) && canActive && IsOwner)
@@ -80,7 +81,7 @@ public class RingPassion : Ring
         Quaternion rot = firePoint.transform.rotation;
 
         GameObject bullet = Instantiate(bulletPrefab, pos, rot);
-        AkUnitySoundEngine.PostEvent("Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber", this.gameObject);
+        
         bullet.GetComponent<ProjectilePassion>().fireForce = fireForce;
         
         if (activeBoost)
