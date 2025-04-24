@@ -93,11 +93,11 @@ public class PlayerMovement : NetworkBehaviour
             }
             animator.SetFloat("XVelocity", rb.velocity.x);
             animator.SetFloat("YVelocity", rb.velocity.y);
-            if(rb.velocity.x<0){
-                GetComponent<SpriteRenderer>().flipX = true;
-            }else{
-                GetComponent<SpriteRenderer>().flipX = false;
-            }
+            //if(rb.velocity.x<0){
+            //    GetComponent<SpriteRenderer>().flipX = true;
+            //}else{
+            //    GetComponent<SpriteRenderer>().flipX = false;
+            //}
             PlayerMov();
         }
     }

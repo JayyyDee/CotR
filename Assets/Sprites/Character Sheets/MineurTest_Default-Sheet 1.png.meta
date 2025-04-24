@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_0
+      name: MineurTest_Default-Sheet 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1f877a9aadeb514585f5c5956e93335
-      internalID: 1458864512
+      spriteID: 522a1c3a521bbd340987ffafd9388c32
+      internalID: 355689225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_1
+      name: MineurTest_Default-Sheet 1_1
       rect:
         serializedVersion: 2
         x: 48
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bc116fcb0ec3564ab8d4bb809b756aa
-      internalID: -978770795
+      spriteID: 13498b756275bc54e9cb700b6d37832f
+      internalID: 2024783707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_2
+      name: MineurTest_Default-Sheet 1_2
       rect:
         serializedVersion: 2
         x: 96
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80326e23f48ab2f41a5a3f60d8b7c06c
-      internalID: -753605729
+      spriteID: 696b49e8267f5b9488d56afdf7dbc943
+      internalID: -1135873525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_3
+      name: MineurTest_Default-Sheet 1_3
       rect:
         serializedVersion: 2
         x: 144
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e1e6c1c736458b448707cb953a5cbbb
-      internalID: -854132397
+      spriteID: f9c920690f0ed8245813cfcbac183cd7
+      internalID: -1895424816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_4
+      name: MineurTest_Default-Sheet 1_4
       rect:
         serializedVersion: 2
         x: 192
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0911a5a6fc63dd447964ac8a3afeb1df
-      internalID: -1929788521
+      spriteID: 13aad7c806f332d4c93996215644031f
+      internalID: 624647492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_5
+      name: MineurTest_Default-Sheet 1_5
       rect:
         serializedVersion: 2
         x: 240
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a55b3d2f72ba848873f82df1fc2f0d
-      internalID: 1999696196
+      spriteID: 91a98cd7822fe0d4d925d14acec2170b
+      internalID: -2034447640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_6
+      name: MineurTest_Default-Sheet 1_6
       rect:
         serializedVersion: 2
         x: 288
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3121a2bc34671f34aa5915a3cddfa73b
-      internalID: -1990807446
+      spriteID: 6741c8423b285e846b236efd1900cdc7
+      internalID: 1365127746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_7
+      name: MineurTest_Default-Sheet 1_7
       rect:
         serializedVersion: 2
         x: 336
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f286263ce662c0144a979ac3cde47477
-      internalID: -880881675
+      spriteID: 084247abbe9c8314c9809dc33bff231f
+      internalID: 766249444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_8
+      name: MineurTest_Default-Sheet 1_8
       rect:
         serializedVersion: 2
         x: 384
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7de024a7e55b0e94089ca64932a33638
-      internalID: -714658466
+      spriteID: 492d0e03c90b90648a4dd2f9dd9ab706
+      internalID: -15478131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_9
+      name: MineurTest_Default-Sheet 1_9
       rect:
         serializedVersion: 2
         x: 432
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fa9391f3373b1944bb4c286818a31b8
-      internalID: 146858657
+      spriteID: 1f94723db327d814da0c32219a588742
+      internalID: -1193283282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_10
+      name: MineurTest_Default-Sheet 1_10
       rect:
         serializedVersion: 2
         x: 480
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e058485324f015745aa0a97cd7ff0db4
-      internalID: -1275174096
+      spriteID: edd1cf92ab50df249ac093c9d3663ee2
+      internalID: -1844589412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_11
+      name: MineurTest_Default-Sheet 1_11
       rect:
         serializedVersion: 2
         x: 528
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b170f3f5b9c5c7b45ac58ff315b887d7
-      internalID: -8333748
+      spriteID: fb6894c76336e0d4191057c195ef39f0
+      internalID: 551403337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_12
+      name: MineurTest_Default-Sheet 1_12
       rect:
         serializedVersion: 2
         x: 576
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2ed7b57a396a094984e31ad92fbea6b
-      internalID: 1173557487
+      spriteID: f22f8818b15340e4eabc16004996564c
+      internalID: -535942614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineurTest_Default-Sheet_13
+      name: MineurTest_Default-Sheet 1_13
       rect:
         serializedVersion: 2
         x: 624
@@ -397,8 +397,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3505c12cf41bca4291d500277aa1f6d
-      internalID: 301357815
+      spriteID: 9ef9f5aed54011a4fbdaa45735258690
+      internalID: -469233608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Default-Sheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f37821eef88fcb4aa8780898d89ef14
+      internalID: 540465516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Default-Sheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685a9ce238d98ab4e91a0682177e7a1e
+      internalID: -2095674502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Default-Sheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3881a60800439864fa706922e73c3cdd
+      internalID: -462943302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Default-Sheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f9df58a0748444aaecb19289f9b69b
+      internalID: -1020349539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Default-Sheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310740b667dbc664b9e1d789b5bcdd29
+      internalID: -1218228667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Default-Sheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32cd000640f98540a708c560091d719
+      internalID: 1984272704
       vertices: []
       indices: 
       edges: []
@@ -414,20 +540,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MineurTest_Default-Sheet_0: 1458864512
-      MineurTest_Default-Sheet_1: -978770795
-      MineurTest_Default-Sheet_10: -1275174096
-      MineurTest_Default-Sheet_11: -8333748
-      MineurTest_Default-Sheet_12: 1173557487
-      MineurTest_Default-Sheet_13: 301357815
-      MineurTest_Default-Sheet_2: -753605729
-      MineurTest_Default-Sheet_3: -854132397
-      MineurTest_Default-Sheet_4: -1929788521
-      MineurTest_Default-Sheet_5: 1999696196
-      MineurTest_Default-Sheet_6: -1990807446
-      MineurTest_Default-Sheet_7: -880881675
-      MineurTest_Default-Sheet_8: -714658466
-      MineurTest_Default-Sheet_9: 146858657
+      MineurTest_Default-Sheet 1_0: 355689225
+      MineurTest_Default-Sheet 1_1: 2024783707
+      MineurTest_Default-Sheet 1_10: -1844589412
+      MineurTest_Default-Sheet 1_11: 551403337
+      MineurTest_Default-Sheet 1_12: -535942614
+      MineurTest_Default-Sheet 1_13: -469233608
+      MineurTest_Default-Sheet 1_14: 540465516
+      MineurTest_Default-Sheet 1_15: -2095674502
+      MineurTest_Default-Sheet 1_16: -462943302
+      MineurTest_Default-Sheet 1_17: -1020349539
+      MineurTest_Default-Sheet 1_18: -1218228667
+      MineurTest_Default-Sheet 1_19: 1984272704
+      MineurTest_Default-Sheet 1_2: -1135873525
+      MineurTest_Default-Sheet 1_3: -1895424816
+      MineurTest_Default-Sheet 1_4: 624647492
+      MineurTest_Default-Sheet 1_5: -2034447640
+      MineurTest_Default-Sheet 1_6: 1365127746
+      MineurTest_Default-Sheet 1_7: 766249444
+      MineurTest_Default-Sheet 1_8: -15478131
+      MineurTest_Default-Sheet 1_9: -1193283282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

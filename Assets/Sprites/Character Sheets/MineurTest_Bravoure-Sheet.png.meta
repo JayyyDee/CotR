@@ -403,6 +403,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: MineurTest_Bravoure-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e76edb6d8b51be46a14cde0d4cd4749
+      internalID: -1830537697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Bravoure-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289abbe99f5aaf94187e324ad853fab8
+      internalID: -936769085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Bravoure-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28acff6e13d0adb458185d52ed2a66c5
+      internalID: -1461041284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Bravoure-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 0
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea6e1ae94378b84b8762836e27b0229
+      internalID: -1008842302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Bravoure-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 0
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32143c47a2104394885bb7c9b895cd35
+      internalID: 1355521926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MineurTest_Bravoure-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 0
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89bc0354569a2b4590b441bf3167956
+      internalID: -1173822365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -420,6 +546,12 @@ TextureImporter:
       MineurTest_Bravoure-Sheet_11: 460105720
       MineurTest_Bravoure-Sheet_12: -39103838
       MineurTest_Bravoure-Sheet_13: -1086379309
+      MineurTest_Bravoure-Sheet_14: -1830537697
+      MineurTest_Bravoure-Sheet_15: -936769085
+      MineurTest_Bravoure-Sheet_16: -1461041284
+      MineurTest_Bravoure-Sheet_17: -1008842302
+      MineurTest_Bravoure-Sheet_18: 1355521926
+      MineurTest_Bravoure-Sheet_19: -1173822365
       MineurTest_Bravoure-Sheet_2: 779771804
       MineurTest_Bravoure-Sheet_3: -1795361583
       MineurTest_Bravoure-Sheet_4: -1632182436
