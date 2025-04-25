@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathTimer: 2
-  damage: 5
+  damage: 100
   player: {fileID: 0}
 --- !u!61 &8925908340696630240
 BoxCollider2D:

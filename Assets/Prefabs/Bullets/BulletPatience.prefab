@@ -185,8 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184f71ad113e4354f8b602e4044e8c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionDamage: 75
-  damage: 350
+  explosionDamage: 300
+  damage: 100
   healing: 100
 --- !u!95 &7602809143818645477
 Animator:
