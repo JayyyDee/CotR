@@ -18,6 +18,7 @@ public class HealthManager : NetworkBehaviour
     public float hitCooldown = 5f;
     private float hitTimer;
     private bool isHit = false;
+    private float hitSFXTimer;
 
     public void Start()
     {
@@ -47,7 +48,12 @@ public class HealthManager : NetworkBehaviour
                 HealingServerRpc(5);
                 healTimer = 0;
             }
-     
+        if (hitSFXTimer < 0.5f)
+        {
+            hitSFXTimer += Time.deltaTime;
+        }
+        
+
     }
 
 
@@ -55,7 +61,7 @@ public class HealthManager : NetworkBehaviour
     public void TakeDamageServerRpc(int damage)
     {
         TakeDamageClientRpc(damage);
-        AkUnitySoundEngine.PostEvent("Play_SFX_Hit2__itemnumber", this.gameObject);
+        
 
 
 
@@ -80,6 +86,13 @@ public class HealthManager : NetworkBehaviour
             Death();
             
         }
+
+        if (hitSFXTimer >= 0.5f)
+        {
+            AkUnitySoundEngine.PostEvent("Play_SFX_Hit2__itemnumber", this.gameObject);
+            hitSFXTimer = 0;
+        }
+            
     }
     [ServerRpc(RequireOwnership = false)]
     public void HealingServerRpc(int heal)

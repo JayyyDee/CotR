@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 346126451047790905}
   - component: {fileID: -3872972950513623954}
   - component: {fileID: 8342769153752426314}
+  - component: {fileID: 6811439039974657086}
   m_Layer: 0
   m_Name: PassiveBienveillance
   m_TagString: Untagged
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: -1141758979
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.08627451, g: 0.08627451, b: 0.08627451, a: 1}
+  m_Sprite: {fileID: 3767204821571485465, guid: 3604ed23a72886342ad2ed7e76e758d8, type: 3}
+  m_Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -154,9 +155,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.012930797, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.5505475
 --- !u!50 &8342769153752426314
 Rigidbody2D:
   serializedVersion: 4
@@ -184,3 +185,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!95 &6811439039974657086
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8105793773151713233}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd6b35fa53193f3448e6b4e2ea7e4f77, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
