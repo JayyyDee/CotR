@@ -89,9 +89,10 @@ public class GameManager : NetworkBehaviour {
                 break;
             case State.GemCountdown: //When the countdown finished, switch to game playing
                 //PUT AGAIN WHEN GAME IS READY
-                //if (NetworkManager.Singleton.ConnectedClientsIds.Count == 1) {
-                //    state.Value = State.GameOver;
-                //}
+                if (NetworkManager.Singleton.ConnectedClientsIds.Count == 1)
+                {
+                    state.Value = State.GameOver;
+                }
                 gemCountdownTimer.Value -= Time.deltaTime;
                 if (gemCountdownTimer.Value < 0f) {
                     state.Value = State.GamePlaying;
@@ -99,16 +100,17 @@ public class GameManager : NetworkBehaviour {
                 break;
             case State.GamePlaying://When the gem is no longer active finished, switch to gem taken state
                 //PUT AGAIN WHEN GAME IS READY
-                //if (NetworkManager.Singleton.ConnectedClientsIds.Count == 1) {
-                //    state.Value = State.GameOver;
-                //}
+                if (NetworkManager.Singleton.ConnectedClientsIds.Count == 1)
+                {
+                    state.Value = State.GameOver;
+                }
                 if (gem.activeSelf == false) {
                     state.Value = State.GemTaken;
                 }
                 break;
             case State.GemTaken:              
                 gemTakenTimer.Value -= Time.deltaTime;
-                if (gemTakenTimer.Value < 0f /*|| NetworkManager.Singleton.ConnectedClientsIds.Count == 1*/) { //PUT AGAIN WHEN GAME IS READY
+                if (gemTakenTimer.Value < 0f || NetworkManager.Singleton.ConnectedClientsIds.Count == 1) { //PUT AGAIN WHEN GAME IS READY
                         state.Value = State.GameOver;
                     StopGemTimer();
                 }
