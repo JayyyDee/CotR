@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 04dbe3dc954cf04999c0f4a2686209f5
     GuidInternal: 
-    m_lastTime: -8584564423363392191
+    m_lastTime: -8584560680996662565
     List:
     - name: SoundBank_Anneaux_Bienveillance
       guid: b8e54cbe278f6640b2d4a5046170264b
@@ -262,7 +262,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 604df3ab7243064eadf8b44faad8fe60
     GuidInternal: 
-    m_lastTime: -8584564423485357466
+    m_lastTime: -8584560681015507708
     List:
     - name: Actif
       guid: 510b46a3760c5a429eb2ad960d387c0a
@@ -747,8 +747,8 @@ MonoBehaviour:
         guid: 43e4f4946bb312449325cca687fbb9a6
       Path: Events\Default Work Unit\OTHER\Event_Footstep
       maxAttenuation: 0
-      maxDuration: 0.36702645
-      minDuration: 0.14089641
+      maxDuration: -1
+      minDuration: -1
     - name: Event_Jadeide_Slow__Pickup
       guid: e0c1976e20ede14da6355292b3f19cd8
       id: 35105690
@@ -767,8 +767,8 @@ MonoBehaviour:
         guid: e0c1976e20ede14da6355292b3f19cd8
       Path: Events\Default Work Unit\OTHER\Event_Jadeide_Slow__Pickup
       maxAttenuation: 0
-      maxDuration: 5.9253125
-      minDuration: 5.9253125
+      maxDuration: -1
+      minDuration: -1
     - name: Flying
       guid: 1290ff8f9154484f84390e3ec31af3df
       id: 3827174396
@@ -1096,8 +1096,8 @@ MonoBehaviour:
         guid: 5268c9c12de5d045b92f0c1d0c852e39
       Path: Events\Default Work Unit\Menu\V1\Play_1MENU_BACK__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.51883376
-      minDuration: 0.51883376
+      maxDuration: -1
+      minDuration: -1
     - name: Play_1MENU_HOVER__itemnumber
       guid: d087a22945151b46a682154f8615365f
       id: 2297224441
@@ -1119,8 +1119,8 @@ MonoBehaviour:
         guid: d087a22945151b46a682154f8615365f
       Path: Events\Default Work Unit\Menu\V1\Play_1MENU_HOVER__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.15849102
-      minDuration: 0.15849102
+      maxDuration: -1
+      minDuration: -1
     - name: Play_1MENU_SELECT__itemnumber
       guid: 45f07086c1fa0345b409444b12992038
       id: 790975177
@@ -1142,8 +1142,8 @@ MonoBehaviour:
         guid: 45f07086c1fa0345b409444b12992038
       Path: Events\Default Work Unit\Menu\V1\Play_1MENU_SELECT__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.324458
-      minDuration: 0.324458
+      maxDuration: -1
+      minDuration: -1
     - name: Play_2MENU_BACK__itemnumber
       guid: 1cb460a9fbe1334f9db0bc8fbe68c7f6
       id: 1898861817
@@ -1165,8 +1165,8 @@ MonoBehaviour:
         guid: 1cb460a9fbe1334f9db0bc8fbe68c7f6
       Path: Events\Default Work Unit\Menu\V2\Play_2MENU_BACK__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.08522631
-      minDuration: 0.08522631
+      maxDuration: -1
+      minDuration: -1
     - name: Play_2MENU_BACKT2__itemnumber
       guid: 95b863000933cf43849c38db8b84605e
       id: 3319439483
@@ -1188,8 +1188,8 @@ MonoBehaviour:
         guid: 95b863000933cf43849c38db8b84605e
       Path: Events\Default Work Unit\Menu\V2\Play_2MENU_BACKT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.15998621
-      minDuration: 0.15998621
+      maxDuration: -1
+      minDuration: -1
     - name: Play_2MENU_HOVER__itemnumber
       guid: 1f19d96e3db4ba49a739d91ca03480df
       id: 4054149942
@@ -1211,8 +1211,8 @@ MonoBehaviour:
         guid: 1f19d96e3db4ba49a739d91ca03480df
       Path: Events\Default Work Unit\Menu\V2\Play_2MENU_HOVER__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.067283936
-      minDuration: 0.067283936
+      maxDuration: -1
+      minDuration: -1
     - name: Play_2MENU_SELECT__itemnumber
       guid: 9d974d9e28655047adf6b4454415ee3a
       id: 3761818220
@@ -1234,8 +1234,8 @@ MonoBehaviour:
         guid: 9d974d9e28655047adf6b4454415ee3a
       Path: Events\Default Work Unit\Menu\V2\Play_2MENU_SELECT__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.30053484
-      minDuration: 0.30053484
+      maxDuration: -1
+      minDuration: -1
     - name: Play_3MENU_BACK__itemnumber
       guid: c3a9a1567d0c2146a16d7c78a0ebabc2
       id: 1850585002
@@ -1257,8 +1257,8 @@ MonoBehaviour:
         guid: c3a9a1567d0c2146a16d7c78a0ebabc2
       Path: Events\Default Work Unit\Menu\V3\Play_3MENU_BACK__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.35137156
-      minDuration: 0.35137156
+      maxDuration: -1
+      minDuration: -1
     - name: Play_3MENU_BACK2__itemnumber
       guid: 356508e09a44e74392c05ba261a1b2e3
       id: 1194865992
@@ -1280,8 +1280,8 @@ MonoBehaviour:
         guid: 356508e09a44e74392c05ba261a1b2e3
       Path: Events\Default Work Unit\Menu\V3\Play_3MENU_BACK2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.82385415
-      minDuration: 0.82385415
+      maxDuration: -1
+      minDuration: -1
     - name: Play_3MENU_HOVER__itemnumber
       guid: 20af069218d8ea47807c380dae1c1889
       id: 2530256839
@@ -1303,8 +1303,8 @@ MonoBehaviour:
         guid: 20af069218d8ea47807c380dae1c1889
       Path: Events\Default Work Unit\Menu\V3\Play_3MENU_HOVER__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.11812067
-      minDuration: 0.11812067
+      maxDuration: -1
+      minDuration: -1
     - name: Play_3MENU_SELECT__itemnumber
       guid: cc4dd122f87d89409752375e54577278
       id: 2576267239
@@ -1326,8 +1326,8 @@ MonoBehaviour:
         guid: cc4dd122f87d89409752375e54577278
       Path: Events\Default Work Unit\Menu\V3\Play_3MENU_SELECT__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.35286677
-      minDuration: 0.35286677
+      maxDuration: -1
+      minDuration: -1
     - name: Play_4MENU_BACK__itemnumber
       guid: 25f89d052926794f992e33b126f34d1a
       id: 967650755
@@ -1349,8 +1349,8 @@ MonoBehaviour:
         guid: 25f89d052926794f992e33b126f34d1a
       Path: Events\Default Work Unit\Menu\V4\Play_4MENU_BACK__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.1644718
-      minDuration: 0.1644718
+      maxDuration: -1
+      minDuration: -1
     - name: Play_4MENU_HOVER__itemnumber
       guid: 4dc74996b2a4184091b5109f976590cf
       id: 165751236
@@ -1372,8 +1372,8 @@ MonoBehaviour:
         guid: 4dc74996b2a4184091b5109f976590cf
       Path: Events\Default Work Unit\Menu\V4\Play_4MENU_HOVER__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.04485596
-      minDuration: 0.04485596
+      maxDuration: -1
+      minDuration: -1
     - name: Play_4MENU_SELECT__itemnumber
       guid: ca970c6e1bb6f94f92e076cdf6f515e0
       id: 2122796938
@@ -1395,8 +1395,8 @@ MonoBehaviour:
         guid: ca970c6e1bb6f94f92e076cdf6f515e0
       Path: Events\Default Work Unit\Menu\V4\Play_4MENU_SELECT__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.28857324
-      minDuration: 0.28857324
+      maxDuration: -1
+      minDuration: -1
     - name: Play_4MENU_SELECT2__itemnumber
       guid: 16ca11157b090443b54911904fa76b93
       id: 736391848
@@ -1418,8 +1418,8 @@ MonoBehaviour:
         guid: 16ca11157b090443b54911904fa76b93
       Path: Events\Default Work Unit\Menu\V4\Play_4MENU_SELECT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.29903963
-      minDuration: 0.29903963
+      maxDuration: -1
+      minDuration: -1
     - name: Play_5MENU_BACK__itemnumber
       guid: 3438400e20b35d429933ee75e90f4e8f
       id: 4048517708
@@ -1441,8 +1441,8 @@ MonoBehaviour:
         guid: 3438400e20b35d429933ee75e90f4e8f
       Path: Events\Default Work Unit\Menu\V5\Play_5MENU_BACK__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.15251023
-      minDuration: 0.15251023
+      maxDuration: -1
+      minDuration: -1
     - name: Play_5MENU_HOVER__itemnumber
       guid: c6665781bd261d4bb137417bec0bb525
       id: 2768269117
@@ -1464,8 +1464,8 @@ MonoBehaviour:
         guid: c6665781bd261d4bb137417bec0bb525
       Path: Events\Default Work Unit\Menu\V5\Play_5MENU_HOVER__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.040370367
-      minDuration: 0.040370367
+      maxDuration: -1
+      minDuration: -1
     - name: Play_5MENU_SELECT__itemnumber
       guid: 35f7713c0d1b0e4484d6244e6ffcadc1
       id: 3320033789
@@ -1487,8 +1487,8 @@ MonoBehaviour:
         guid: 35f7713c0d1b0e4484d6244e6ffcadc1
       Path: Events\Default Work Unit\Menu\V5\Play_5MENU_SELECT__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.06877913
-      minDuration: 0.06877913
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Actif_PT1__itemnumber
       guid: 39b933d0e6df08439b91e0f9b46fced9
       id: 2783235952
@@ -1513,8 +1513,8 @@ MonoBehaviour:
         guid: 39b933d0e6df08439b91e0f9b46fced9
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_Anneaux_Bienveillance_Actif_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.536188
-      minDuration: 0.536188
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Actif_PT4__itemnumber
       guid: 4135ab4bb0029c4fada0ef8ac0c926ba
       id: 3278177977
@@ -1539,8 +1539,8 @@ MonoBehaviour:
         guid: 4135ab4bb0029c4fada0ef8ac0c926ba
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_Anneaux_Bienveillance_Actif_PT4__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.811446
-      minDuration: 1.811446
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Actif_PT5__itemnumber
       guid: 2befa61e827ec04381b4f2f5508d9956
       id: 1828759756
@@ -1565,8 +1565,8 @@ MonoBehaviour:
         guid: 2befa61e827ec04381b4f2f5508d9956
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_Anneaux_Bienveillance_Actif_PT5__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.1882267
-      minDuration: 2.1882267
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Attack_PT1__itemnumber
       guid: 0ffdcc22274f00459674cc8e0d61f384
       id: 1534784675
@@ -1591,8 +1591,8 @@ MonoBehaviour:
         guid: 0ffdcc22274f00459674cc8e0d61f384
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.49271327
-      minDuration: 0.49271327
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Attack_PT2__itemnumber
       guid: 6b26b2b41ce5694285ef397555ec4a08
       id: 2387987480
@@ -1617,8 +1617,8 @@ MonoBehaviour:
         guid: 6b26b2b41ce5694285ef397555ec4a08
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.44923857
-      minDuration: 0.44923857
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01
       guid: 21788ac5fb1a95418a4d4ba864a38f86
       id: 1743640942
@@ -1643,8 +1643,8 @@ MonoBehaviour:
         guid: 21788ac5fb1a95418a4d4ba864a38f86
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT2__itemnumber_01
       maxAttenuation: 0
-      maxDuration: 2.1302605
-      minDuration: 2.1302605
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Attack_PT3__itemnumber
       guid: d32920ddddd94e4c8c117fd2cb6ad66a
       id: 975694469
@@ -1669,8 +1669,8 @@ MonoBehaviour:
         guid: d32920ddddd94e4c8c117fd2cb6ad66a
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.333306
-      minDuration: 0.333306
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01
       guid: 7338907625f4a84b9e7357023ad771a5
       id: 4047475361
@@ -1695,8 +1695,8 @@ MonoBehaviour:
         guid: 7338907625f4a84b9e7357023ad771a5
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT3__itemnumber_01
       maxAttenuation: 0
-      maxDuration: 2.115769
-      minDuration: 2.115769
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Attack_PT4__itemnumber
       guid: d34d5ea97c379d4684aea58f13e17b78
       id: 936363018
@@ -1721,8 +1721,8 @@ MonoBehaviour:
         guid: d34d5ea97c379d4684aea58f13e17b78
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT4__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.40576386
-      minDuration: 0.40576386
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_Attack_PT5__itemnumber
       guid: 0b3988d849c6e24283dff2bc46c1dea8
       id: 398773119
@@ -1747,8 +1747,8 @@ MonoBehaviour:
         guid: 0b3988d849c6e24283dff2bc46c1dea8
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_Anneaux_Bienveillance_Attack_PT5__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.44923857
-      minDuration: 0.44923857
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber
       guid: c1ca7bb797f0394a844b972cc9a96c53
       id: 4020966477
@@ -1773,8 +1773,8 @@ MonoBehaviour:
         guid: c1ca7bb797f0394a844b972cc9a96c53
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.76805305
-      minDuration: 0.76805305
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber
       guid: c6458d04244c5747a01fd981aec61adc
       id: 756478054
@@ -1799,8 +1799,8 @@ MonoBehaviour:
         guid: c6458d04244c5747a01fd981aec61adc
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.536188
-      minDuration: 0.536188
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber
       guid: bdc538f7bb450e48b4e8291e5cee85da
       id: 4245976043
@@ -1825,8 +1825,8 @@ MonoBehaviour:
         guid: bdc538f7bb450e48b4e8291e5cee85da
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.637629
-      minDuration: 0.637629
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber
       guid: de9f194e1d7f3344a1f6cb53a17c7702
       id: 2083265212
@@ -1851,8 +1851,8 @@ MonoBehaviour:
         guid: de9f194e1d7f3344a1f6cb53a17c7702
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT4__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.5651711
-      minDuration: 0.5651711
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber
       guid: 6d2024abacc0ca4198d07a0dd5ae12bb
       id: 4292055273
@@ -1877,8 +1877,8 @@ MonoBehaviour:
         guid: 6d2024abacc0ca4198d07a0dd5ae12bb
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_Anneaux_Bienveillance_EQUIP_PT5__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.8115278
-      minDuration: 0.8115278
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber
       guid: f0f6d5297997c944974b4f662550d195
       id: 1311394723
@@ -1903,8 +1903,8 @@ MonoBehaviour:
         guid: f0f6d5297997c944974b4f662550d195
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Absorb_Convert_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.2298967
-      minDuration: 1.2298967
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Actif_Activation__itemnumber
       guid: e0edae63801d69428f94e197786b8386
       id: 3519253650
@@ -1929,8 +1929,8 @@ MonoBehaviour:
         guid: e0edae63801d69428f94e197786b8386
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Activation__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.2514738
-      minDuration: 1.2514738
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Actif_Attack_Full__itemnumber
       guid: 8378e45912613542aea3eb66f583dc69
       id: 3848766526
@@ -1955,8 +1955,8 @@ MonoBehaviour:
         guid: 8378e45912613542aea3eb66f583dc69
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Attack_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.438216
-      minDuration: 2.438216
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Actif_Base1__itemnumber
       guid: 9319a1f7c34629439a764b747a2fefc2
       id: 2795927674
@@ -1981,8 +1981,8 @@ MonoBehaviour:
         guid: 9319a1f7c34629439a764b747a2fefc2
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Base1__itemnumber
       maxAttenuation: 0
-      maxDuration: 5.7610946
-      minDuration: 5.7610946
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Actif_Base2__itemnumber
       guid: 18659b9328c8054a8f781629a9cf5594
       id: 2786944721
@@ -2007,8 +2007,8 @@ MonoBehaviour:
         guid: 18659b9328c8054a8f781629a9cf5594
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Base2__itemnumber
       maxAttenuation: 0
-      maxDuration: 5.307975
-      minDuration: 5.307975
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Actif_Holding__itemnumber
       guid: 8111999140fcd1408130a68a80b4c762
       id: 3245141071
@@ -2033,8 +2033,8 @@ MonoBehaviour:
         guid: 8111999140fcd1408130a68a80b4c762
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Actif_Holding__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2__itemnumber
       guid: cc12880877e1984a902ebbaaa2c9139a
       id: 971120188
@@ -2059,8 +2059,8 @@ MonoBehaviour:
         guid: cc12880877e1984a902ebbaaa2c9139a
       Path: Events\Default Work Unit\Anneaux\Bravoure\Actif\Play_Anneaux_Bravoure_Anneaux_Bravoure_Actif_Activation2__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.2625257
-      minDuration: 1.2625257
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber
       guid: 400f93bdd7315d4d94095c3d8c9facae
       id: 3355272866
@@ -2085,8 +2085,8 @@ MonoBehaviour:
         guid: 400f93bdd7315d4d94095c3d8c9facae
       Path: Events\Default Work Unit\Anneaux\Bravoure\Attack\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.122011
-      minDuration: 1.122011
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1__itemnumber
       guid: 6802e1c362f3414196f4f9ffae5f0bd1
       id: 2245180070
@@ -2111,8 +2111,8 @@ MonoBehaviour:
         guid: 6802e1c362f3414196f4f9ffae5f0bd1
       Path: Events\Default Work Unit\Anneaux\Bravoure\Attack\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.2805028
-      minDuration: 0.2805028
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2__itemnumber
       guid: 2a0e9c756e2bfb4f8a8cb295968c8c74
       id: 48028301
@@ -2137,8 +2137,8 @@ MonoBehaviour:
         guid: 2a0e9c756e2bfb4f8a8cb295968c8c74
       Path: Events\Default Work Unit\Anneaux\Bravoure\Attack\Play_Anneaux_Bravoure_Anneaux_Bravoure_Attack_Pt2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.99254817
-      minDuration: 0.99254817
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber
       guid: d09ab17b975da743be0f92408205eee0
       id: 2443778206
@@ -2163,8 +2163,8 @@ MonoBehaviour:
         guid: d09ab17b975da743be0f92408205eee0
       Path: Events\Default Work Unit\Anneaux\Bravoure\Base\Play_Anneaux_Bravoure_Anneaux_Bravoure_Equip__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.9062396
-      minDuration: 0.9062396
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Bravoure_Anneaux_Bravoure_Passif_full__itemnumber
       guid: 2080fa441c22e0419470536d059b249d
       id: 1375151096
@@ -2189,8 +2189,8 @@ MonoBehaviour:
         guid: 2080fa441c22e0419470536d059b249d
       Path: Events\Default Work Unit\Anneaux\Bravoure\Passif\Play_Anneaux_Bravoure_Anneaux_Bravoure_Passif_full__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.83060896
-      minDuration: 0.83060896
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Actif_Dash__itemnumber
       guid: e5abcf82ef183748bcf49ec0880bd102
       id: 2331823957
@@ -2215,8 +2215,8 @@ MonoBehaviour:
         guid: e5abcf82ef183748bcf49ec0880bd102
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Actif\\Play_Anneaux_Intr_pidit__Actif_Dash__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.1462405
-      minDuration: 1.1462405
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Actif_FX1__itemnumber
       guid: aac93dae791c7543998116b60e1e65ca
       id: 2129374944
@@ -2241,8 +2241,8 @@ MonoBehaviour:
         guid: aac93dae791c7543998116b60e1e65ca
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Actif\\Play_Anneaux_Intr_pidit__Actif_FX1__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0.74754804
-      minDuration: 0.74754804
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Actif_FX2__itemnumber
       guid: b6a3be84dca9ce4b8daf4519bd8ea95e
       id: 3131559339
@@ -2267,8 +2267,8 @@ MonoBehaviour:
         guid: b6a3be84dca9ce4b8daf4519bd8ea95e
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Actif\\Play_Anneaux_Intr_pidit__Actif_FX2__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0.93028206
-      minDuration: 0.93028206
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Actif_FX3__itemnumber
       guid: f6fc59406f16f7489ac4586cbf516f94
       id: 2391360038
@@ -2293,8 +2293,8 @@ MonoBehaviour:
         guid: f6fc59406f16f7489ac4586cbf516f94
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Actif\\Play_Anneaux_Intr_pidit__Actif_FX3__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.6113815
-      minDuration: 1.6113815
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type1__itemnumber
       guid: d5783dd1db28fc448f8d6a72ddfd5f33
       id: 358914239
@@ -2322,8 +2322,8 @@ MonoBehaviour:
         guid: d5783dd1db28fc448f8d6a72ddfd5f33
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Catch\\Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type1__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0.5315897
-      minDuration: 0.5315897
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type2__itemnumber
       guid: 5ae26eab70bb3d42a3ddbe14c38c37c3
       id: 329721332
@@ -2351,8 +2351,8 @@ MonoBehaviour:
         guid: 5ae26eab70bb3d42a3ddbe14c38c37c3
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Catch\\Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type2__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0.4983653
-      minDuration: 0.4983653
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type3__itemnumber
       guid: 949540ddc15b0c47a23bb82414122bdb
       id: 4013114017
@@ -2380,8 +2380,8 @@ MonoBehaviour:
         guid: 949540ddc15b0c47a23bb82414122bdb
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Catch\\Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type3__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0.59803855
-      minDuration: 0.59803855
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type4__itemnumber
       guid: b1f7e198a2c89e45b735c946bebadd47
       id: 1743866334
@@ -2409,8 +2409,8 @@ MonoBehaviour:
         guid: b1f7e198a2c89e45b735c946bebadd47
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Catch\\Play_Anneaux_Intr_pidit__Attack_Blades_Catch_Full_Type4__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0.54820186
-      minDuration: 0.54820186
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Flying_Part2__itemnumber
       guid: caa2c3d5b97a1143a25f537f0e809d9a
       id: 1524339847
@@ -2438,8 +2438,8 @@ MonoBehaviour:
         guid: caa2c3d5b97a1143a25f537f0e809d9a
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Flying\\Play_Anneaux_Intr_pidit__Attack_Blades_Flying_Part2__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Flying_PT1__itemnumber
       guid: 58d2d55e33691b4c90879be29995aade
       id: 890300161
@@ -2467,8 +2467,8 @@ MonoBehaviour:
         guid: 58d2d55e33691b4c90879be29995aade
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Flying\\Play_Anneaux_Intr_pidit__Attack_Blades_Flying_PT1__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Stay__itemnumber
       guid: adcda88830daf845a8f859ce34f1f80e
       id: 1119473739
@@ -2496,8 +2496,8 @@ MonoBehaviour:
         guid: adcda88830daf845a8f859ce34f1f80e
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Stay\\Play_Anneaux_Intr_pidit__Attack_Blades_Stay__itemnumber"
       maxAttenuation: 0
-      maxDuration: 3.3224363
-      minDuration: 3.3224363
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Full_WithSTART_END__itemnumber
       guid: b6fbc8c0d115e54298f6d6e2ecd55b35
       id: 231791066
@@ -2525,8 +2525,8 @@ MonoBehaviour:
         guid: b6fbc8c0d115e54298f6d6e2ecd55b35
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Stay\\Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Full_WithSTART_END__itemnumber"
       maxAttenuation: 0
-      maxDuration: 5.3325105
-      minDuration: 5.3325105
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Start__itemnumber
       guid: 0e694cc7f3664840809393b2cdc2fc43
       id: 1432283930
@@ -2554,8 +2554,8 @@ MonoBehaviour:
         guid: 0e694cc7f3664840809393b2cdc2fc43
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Stay\\Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Start__itemnumber"
       maxAttenuation: 0
-      maxDuration: 2.3423176
-      minDuration: 2.3423176
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Start_Stop__itemnumber
       guid: 710332143961cc4f87966811a88da405
       id: 611666961
@@ -2583,8 +2583,8 @@ MonoBehaviour:
         guid: 710332143961cc4f87966811a88da405
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Stay\\Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Start_Stop__itemnumber"
       maxAttenuation: 0
-      maxDuration: 5.3491225
-      minDuration: 5.3491225
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Stop__itemnumber
       guid: 7ba3451f55a0904a941463f69302aba2
       id: 1220261050
@@ -2612,8 +2612,8 @@ MonoBehaviour:
         guid: 7ba3451f55a0904a941463f69302aba2
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Stay\\Play_Anneaux_Intr_pidit__Attack_Blades_Stay_Stop__itemnumber"
       maxAttenuation: 0
-      maxDuration: 2.6081126
-      minDuration: 2.6081126
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber
       guid: 86c4693b58a2d44caa6f2c5ae4411240
       id: 330969792
@@ -2641,8 +2641,8 @@ MonoBehaviour:
         guid: 86c4693b58a2d44caa6f2c5ae4411240
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Throw\\Play_Anneaux_Intr_pidit__Attack_Throw_TYPE1__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.561545
-      minDuration: 1.561545
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Throw_TYPE2__itemnumber
       guid: 9b1d02954bff6c43a9e6a98c732ec1ba
       id: 1828072971
@@ -2670,8 +2670,8 @@ MonoBehaviour:
         guid: 9b1d02954bff6c43a9e6a98c732ec1ba
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Throw\\Play_Anneaux_Intr_pidit__Attack_Throw_TYPE2__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.6113815
-      minDuration: 1.6113815
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Throw_TYPE3__itemnumber
       guid: 0ec63b40e0a6724ebf7a05aecfa5fd64
       id: 1113152902
@@ -2699,8 +2699,8 @@ MonoBehaviour:
         guid: 0ec63b40e0a6724ebf7a05aecfa5fd64
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Throw\\Play_Anneaux_Intr_pidit__Attack_Throw_TYPE3__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.6279937
-      minDuration: 1.6279937
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Attack_Throw_TYPE4__itemnumber
       guid: 89d73e6226e05c41815d9864f5d7b631
       id: 1370043657
@@ -2728,8 +2728,8 @@ MonoBehaviour:
         guid: 89d73e6226e05c41815d9864f5d7b631
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Throw\\Play_Anneaux_Intr_pidit__Attack_Throw_TYPE4__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.561545
-      minDuration: 1.561545
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Passif_Active__itemnumber
       guid: 4c573206b7bb14459b44d8f5204a0ff1
       id: 3240899460
@@ -2754,8 +2754,8 @@ MonoBehaviour:
         guid: 4c573206b7bb14459b44d8f5204a0ff1
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Passif\\Play_Anneaux_Intr_pidit__Passif_Active__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Intr_pidit__Passif_End__itemnumber
       guid: 754d8d3e5bd34c4f8878f97cf53a46c7
       id: 1708722073
@@ -2780,8 +2780,8 @@ MonoBehaviour:
         guid: 754d8d3e5bd34c4f8878f97cf53a46c7
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Passif\\Play_Anneaux_Intr_pidit__Passif_End__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.478484
-      minDuration: 1.478484
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber
       guid: d98084cdeba6f443a2526478e9c5fe5f
       id: 368652901
@@ -2803,8 +2803,8 @@ MonoBehaviour:
         guid: d98084cdeba6f443a2526478e9c5fe5f
       Path: Events\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Actif_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.4240907
-      minDuration: 1.4240907
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Passion_Anneaux_Passion_Attack_Full__itemnumber
       guid: 63794717fb7e5845ad8c8d98f1c0a5e3
       id: 683100430
@@ -2826,8 +2826,8 @@ MonoBehaviour:
         guid: 63794717fb7e5845ad8c8d98f1c0a5e3
       Path: Events\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Attack_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.99254817
-      minDuration: 0.99254817
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber
       guid: c9e4a07efe333a4eb1420b5a65f75699
       id: 3852939954
@@ -2849,8 +2849,8 @@ MonoBehaviour:
         guid: c9e4a07efe333a4eb1420b5a65f75699
       Path: Events\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.8846625
-      minDuration: 0.8846625
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber
       guid: 12a42e4f1f1e4940b03e8efdadf7ca51
       id: 80281929
@@ -2872,8 +2872,8 @@ MonoBehaviour:
         guid: 12a42e4f1f1e4940b03e8efdadf7ca51
       Path: Events\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Attack_Pt2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.53942835
-      minDuration: 0.53942835
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber
       guid: 5537d5e2bb181b43bc64db652219cd92
       id: 419834130
@@ -2895,8 +2895,8 @@ MonoBehaviour:
         guid: 5537d5e2bb181b43bc64db652219cd92
       Path: Events\Default Work Unit\Anneaux\Passion\Play_Anneaux_Passion_Anneaux_Passion_Equip__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.122011
-      minDuration: 1.122011
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Actif_Explosion_PT1__itemnumber
       guid: f32a142be441a6498b3593ad366c3100
       id: 820125396
@@ -2921,8 +2921,8 @@ MonoBehaviour:
         guid: f32a142be441a6498b3593ad366c3100
       Path: Events\Default Work Unit\Anneaux\Patience\Actif\Play_Anneaux_Patience_Actif_Explosion_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.013343
-      minDuration: 1.013343
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Actif_Explosion_PT2__itemnumber
       guid: c70dc3e36d41da44aee5b9dc8a1fb28c
       id: 1595907359
@@ -2947,8 +2947,8 @@ MonoBehaviour:
         guid: c70dc3e36d41da44aee5b9dc8a1fb28c
       Path: Events\Default Work Unit\Anneaux\Patience\Actif\Play_Anneaux_Patience_Actif_Explosion_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.3954232
-      minDuration: 1.3954232
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Attack_TNT_Despawn__itemnumber
       guid: 38b31f4f494ab34bba9f404c4a3fc59f
       id: 2569161331
@@ -2976,8 +2976,8 @@ MonoBehaviour:
         guid: 38b31f4f494ab34bba9f404c4a3fc59f
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\TNT\Play_Anneaux_Patience_Attack_TNT_Despawn__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.4817531
-      minDuration: 0.4817531
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Attack_TNT_Wait__itemnumber
       guid: ff3a1a018c1f51498bced4f3166ad1e6
       id: 647745864
@@ -3005,8 +3005,8 @@ MonoBehaviour:
         guid: ff3a1a018c1f51498bced4f3166ad1e6
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\TNT\Play_Anneaux_Patience_Attack_TNT_Wait__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber
       guid: 3dc3b98d70b5a84285eb63fd2d60f761
       id: 2562864793
@@ -3034,8 +3034,8 @@ MonoBehaviour:
         guid: 3dc3b98d70b5a84285eb63fd2d60f761
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw\Play_Anneaux_Patience_Attack_Trow_Impact_Damage__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.9801186
-      minDuration: 0.9801186
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Attack_Trow_Impact_Placed__itemnumber
       guid: 66016d8b89cb0d4ab949ca4932d7e3c0
       id: 1211254069
@@ -3063,8 +3063,8 @@ MonoBehaviour:
         guid: 66016d8b89cb0d4ab949ca4932d7e3c0
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw\Play_Anneaux_Patience_Attack_Trow_Impact_Placed__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.18273383
-      minDuration: 0.18273383
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Attack_Trow_PT1__itemnumber
       guid: 371982a68299904aa04c3f34d363bb61
       id: 2835906194
@@ -3092,8 +3092,8 @@ MonoBehaviour:
         guid: 371982a68299904aa04c3f34d363bb61
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw\Play_Anneaux_Patience_Attack_Trow_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.3156313
-      minDuration: 0.3156313
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber
       guid: 9640047d3d47904496c8392a215c4d3c
       id: 3058761769
@@ -3121,8 +3121,8 @@ MonoBehaviour:
         guid: 9640047d3d47904496c8392a215c4d3c
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw\Play_Anneaux_Patience_Attack_Trow_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.4817531
-      minDuration: 0.4817531
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Passif_EnterRayon__itemnumber
       guid: 4fcfa382c093ff4e86d16472272a1d15
       id: 468307329
@@ -3147,8 +3147,8 @@ MonoBehaviour:
         guid: 4fcfa382c093ff4e86d16472272a1d15
       Path: Events\Default Work Unit\Anneaux\Patience\Passif\Play_Anneaux_Patience_Passif_EnterRayon__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.8638333
-      minDuration: 0.8638333
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Passif_Inside_Full__itemnumber
       guid: f7538c4777cbff47ba4560257588a477
       id: 584110532
@@ -3173,8 +3173,8 @@ MonoBehaviour:
         guid: f7538c4777cbff47ba4560257588a477
       Path: Events\Default Work Unit\Anneaux\Patience\Passif\Play_Anneaux_Patience_Passif_Inside_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Passif_Inside_Loop__itemnumber
       guid: 8ef5c40a50274c40b6cf97ceb07841c5
       id: 2340276349
@@ -3199,8 +3199,8 @@ MonoBehaviour:
         guid: 8ef5c40a50274c40b6cf97ceb07841c5
       Path: Events\Default Work Unit\Anneaux\Patience\Passif\Play_Anneaux_Patience_Passif_Inside_Loop__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Passif_Inside_Start__itemnumber
       guid: 8d8fbc32358cda4abf9a2fe8cea489f4
       id: 782609553
@@ -3225,8 +3225,8 @@ MonoBehaviour:
         guid: 8d8fbc32358cda4abf9a2fe8cea489f4
       Path: Events\Default Work Unit\Anneaux\Patience\Passif\Play_Anneaux_Patience_Passif_Inside_Start__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.33224347
-      minDuration: 0.33224347
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Patience_Passif_LeaveRayon__itemnumber
       guid: 02f98179df4ad44c91f8669775c8cd04
       id: 3230843872
@@ -3251,8 +3251,8 @@ MonoBehaviour:
         guid: 02f98179df4ad44c91f8669775c8cd04
       Path: Events\Default Work Unit\Anneaux\Patience\Passif\Play_Anneaux_Patience_Passif_LeaveRayon__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.4817531
-      minDuration: 0.4817531
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
       guid: 03da6e7d04d308428cf87a0adbba3b32
       id: 2505770584
@@ -3277,8 +3277,8 @@ MonoBehaviour:
         guid: 03da6e7d04d308428cf87a0adbba3b32
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.6596792
-      minDuration: 2.6596792
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
       guid: bb96c64ee2b5b046a75378949747a6d1
       id: 69287139
@@ -3303,8 +3303,8 @@ MonoBehaviour:
         guid: bb96c64ee2b5b046a75378949747a6d1
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.4276266
-      minDuration: 2.4276266
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
       guid: 20e6b1d205a16d4d9c1b749aa42cfce3
       id: 2375100894
@@ -3329,8 +3329,8 @@ MonoBehaviour:
         guid: 20e6b1d205a16d4d9c1b749aa42cfce3
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.91035986
-      minDuration: 0.91035986
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
       guid: ab8561533e1e4e408d3c562dd83d7d97
       id: 349381281
@@ -3355,8 +3355,8 @@ MonoBehaviour:
         guid: ab8561533e1e4e408d3c562dd83d7d97
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Push_PARTS_Anneaux_Perseverence_Actif_Push_PT4__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.195574
-      minDuration: 2.195574
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
       guid: 44aefd5b54a12d4b8cb9d65056df6af4
       id: 2350078742
@@ -3381,8 +3381,8 @@ MonoBehaviour:
         guid: 44aefd5b54a12d4b8cb9d65056df6af4
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.7314689
-      minDuration: 1.7314689
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
       guid: 426c82b7b518c04a970e6be6f69d1119
       id: 1083529149
@@ -3407,8 +3407,8 @@ MonoBehaviour:
         guid: 426c82b7b518c04a970e6be6f69d1119
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.55335593
-      minDuration: 0.55335593
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
       guid: 2cecd1695aa87d4cb24f4dfb171ac593
       id: 415217232
@@ -3433,8 +3433,8 @@ MonoBehaviour:
         guid: 2cecd1695aa87d4cb24f4dfb171ac593
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_Anneaux_Perseverence_Actif_Start_PARTS_Anneaux_Perseverence_Actif_Start_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.7586332
-      minDuration: 0.7586332
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
       guid: c8c0f382ef57e741b29577926c03ed85
       id: 4121344809
@@ -3459,8 +3459,8 @@ MonoBehaviour:
         guid: c8c0f382ef57e741b29577926c03ed85
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.47303003
-      minDuration: 0.47303003
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
       guid: 51b4033d671ed847a7053e6d295f888d
       id: 3898489234
@@ -3485,8 +3485,8 @@ MonoBehaviour:
         guid: 51b4033d671ed847a7053e6d295f888d
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.8921207
-      minDuration: 1.8921207
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
       guid: 21a1e5e523d62b4eb79a4287751b855a
       id: 659293366
@@ -3511,8 +3511,8 @@ MonoBehaviour:
         guid: 21a1e5e523d62b4eb79a4287751b855a
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_Cooldown_PT3_DONE__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.39270413
-      minDuration: 0.39270413
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Attack_PT1__itemnumber
       guid: 4fd4c8124ebcae46ad105f33991168ad
       id: 3881681859
@@ -3537,8 +3537,8 @@ MonoBehaviour:
         guid: 4fd4c8124ebcae46ad105f33991168ad
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.0706227
-      minDuration: 2.0706227
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Attack_PT2__itemnumber
       guid: eb210500b9625540b3d2694bf4b33beb
       id: 551889208
@@ -3563,8 +3563,8 @@ MonoBehaviour:
         guid: eb210500b9625540b3d2694bf4b33beb
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_Anneaux_Perseverence_Attack_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.4365518
-      minDuration: 2.4365518
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
       guid: 9c7f86c0a3608c438da242fee7e4c976
       id: 680953922
@@ -3589,8 +3589,8 @@ MonoBehaviour:
         guid: 9c7f86c0a3608c438da242fee7e4c976
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT1__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.0977869
-      minDuration: 1.0977869
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
       guid: df8b9c9b5aa9b042b36dc1154ed984e9
       id: 1175457881
@@ -3615,8 +3615,8 @@ MonoBehaviour:
         guid: df8b9c9b5aa9b042b36dc1154ed984e9
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.23205236
-      minDuration: 0.23205236
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
       guid: 5a5921846af20d44aba1e17863293c51
       id: 864848364
@@ -3641,8 +3641,8 @@ MonoBehaviour:
         guid: 5a5921846af20d44aba1e17863293c51
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.4998053
-      minDuration: 0.4998053
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
       guid: ca3d79adf219a34cb45cee22a5d0b6be
       id: 4083119323
@@ -3667,8 +3667,8 @@ MonoBehaviour:
         guid: ca3d79adf219a34cb45cee22a5d0b6be
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT4__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.49088022
-      minDuration: 0.49088022
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
       guid: 54fd7f8c183cc048bd6a3f1579b5610e
       id: 831071958
@@ -3693,8 +3693,8 @@ MonoBehaviour:
         guid: 54fd7f8c183cc048bd6a3f1579b5610e
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_Anneaux_Perseverence_Equip_PARTS_Anneaux_Perseverence_Equip_PT5__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.1781129
-      minDuration: 1.1781129
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber
       guid: 43027290bb6d5a4a9cb4c92a1c03be3d
       id: 1504976930
@@ -3719,8 +3719,8 @@ MonoBehaviour:
         guid: 43027290bb6d5a4a9cb4c92a1c03be3d
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Actif\Play_FULL_Anneaux_Bienveillance_Actif_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.115769
-      minDuration: 2.115769
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber
       guid: 88403c208d61f748ae89fd5250171dd0
       id: 1476587787
@@ -3745,8 +3745,8 @@ MonoBehaviour:
         guid: 88403c208d61f748ae89fd5250171dd0
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Attack\Play_FULL_Anneaux_Bienveillance_Attack_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.536188
-      minDuration: 0.536188
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber
       guid: 11cdadd9669c0046821315d783c0b583
       id: 3631972377
@@ -3771,8 +3771,8 @@ MonoBehaviour:
         guid: 11cdadd9669c0046821315d783c0b583
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Base\Play_FULL_Anneaux_Bienveillance_EQUIP_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.8115278
-      minDuration: 0.8115278
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber
       guid: e8faf85d27bf4a4c83a9c09e4211747f
       id: 4122009797
@@ -3797,8 +3797,8 @@ MonoBehaviour:
         guid: e8faf85d27bf4a4c83a9c09e4211747f
       Path: Events\Default Work Unit\Anneaux\Bienveillance\Passif\Play_FULL_Anneaux_Bienveillance_Passif_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber
       guid: 30c1b64a0be8074c92d40b15ca3b5d91
       id: 3822052572
@@ -3823,8 +3823,8 @@ MonoBehaviour:
         guid: 30c1b64a0be8074c92d40b15ca3b5d91
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Actif\\Play_FULL_Anneaux_Intr_pidit__Actif_Full__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.6134174
-      minDuration: 1.6134174
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Intr_pidit__Attack_Blades_Flying_Full__itemnumber
       guid: 307d1118701806478d371f2c42ac6677
       id: 3931346177
@@ -3852,8 +3852,8 @@ MonoBehaviour:
         guid: 307d1118701806478d371f2c42ac6677
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Attack\\Flying\\Play_FULL_Anneaux_Intr_pidit__Attack_Blades_Flying_Full__itemnumber"
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Intr_pidit__Equipe_FULL__itemnumber
       guid: fb3a90236b448c43855a89fea4abf553
       id: 1864842442
@@ -3878,8 +3878,8 @@ MonoBehaviour:
         guid: fb3a90236b448c43855a89fea4abf553
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Base\\Play_FULL_Anneaux_Intr_pidit__Equipe_FULL__itemnumber"
       maxAttenuation: 0
-      maxDuration: 1.2459135
-      minDuration: 1.2459135
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Intr_pidit__Passif_Full__itemnumber
       guid: 0dc119e37bc3ae4f9b2efd8afb60c880
       id: 3849067727
@@ -3904,8 +3904,8 @@ MonoBehaviour:
         guid: 0dc119e37bc3ae4f9b2efd8afb60c880
       Path: "Events\\Default Work Unit\\Anneaux\\Intr\xE9pidit\xE9\\Passif\\Play_FULL_Anneaux_Intr_pidit__Passif_Full__itemnumber"
       maxAttenuation: 0
-      maxDuration: 4.9670424
-      minDuration: 4.9670424
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full__itemnumber
       guid: 24dc1026308c034da36e6c36e2b81a3e
       id: 2624215598
@@ -3927,8 +3927,8 @@ MonoBehaviour:
         guid: 24dc1026308c034da36e6c36e2b81a3e
       Path: Events\Default Work Unit\Anneaux\Passion\Play_FULL_Anneaux_Passion_Anneaux_Passion_Passif_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.8970577
-      minDuration: 0.8970577
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Patience_Actif_Explosion_Full__itemnumber
       guid: b321af00ebba8c4fbcdaad18e3e71578
       id: 1932143882
@@ -3953,8 +3953,8 @@ MonoBehaviour:
         guid: b321af00ebba8c4fbcdaad18e3e71578
       Path: Events\Default Work Unit\Anneaux\Patience\Actif\Play_FULL_Anneaux_Patience_Actif_Explosion_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.4286475
-      minDuration: 1.4286475
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Patience_Attack_Trow_FULL__itemnumber
       guid: 405d332da6249c4bbe1294880d0c1b0f
       id: 3146683060
@@ -3982,8 +3982,8 @@ MonoBehaviour:
         guid: 405d332da6249c4bbe1294880d0c1b0f
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw\Play_FULL_Anneaux_Patience_Attack_Trow_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.56481403
-      minDuration: 0.56481403
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Patience_Attack_Trow_Impact_Full__itemnumber
       guid: 83bdd4401de6744ba52123c2c50f6804
       id: 1427764535
@@ -4011,8 +4011,8 @@ MonoBehaviour:
         guid: 83bdd4401de6744ba52123c2c50f6804
       Path: Events\Default Work Unit\Anneaux\Patience\Attack\Throw\Play_FULL_Anneaux_Patience_Attack_Trow_Impact_Full__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.196077
-      minDuration: 1.196077
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Patience_Equipe_FULL__itemnumber
       guid: 4e71e6e5042aa3419c89366644a4fdd7
       id: 986124536
@@ -4037,8 +4037,8 @@ MonoBehaviour:
         guid: 4e71e6e5042aa3419c89366644a4fdd7
       Path: Events\Default Work Unit\Anneaux\Patience\Base\Play_FULL_Anneaux_Patience_Equipe_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.0964038
-      minDuration: 1.0964038
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
       guid: d37155be158521418d933c039e36422f
       id: 1106791576
@@ -4063,8 +4063,8 @@ MonoBehaviour:
         guid: d37155be158521418d933c039e36422f
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_COMPLETE_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 3.3826122
-      minDuration: 3.3826122
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
       guid: ac8c4bf4ad327249aec7c0030bccce5b
       id: 1192075387
@@ -4089,8 +4089,8 @@ MonoBehaviour:
         guid: ac8c4bf4ad327249aec7c0030bccce5b
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_Push_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.6686044
-      minDuration: 2.6686044
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
       guid: cad24643f724cc40b795e4a4996cb008
       id: 77499785
@@ -4115,8 +4115,8 @@ MonoBehaviour:
         guid: cad24643f724cc40b795e4a4996cb008
       Path: Events\Default Work Unit\Anneaux\Perseverence\Actif\Play_FULL_Anneaux_Perseverence_Actif_Start_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.6600682
-      minDuration: 1.6600682
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
       guid: 811831d2afeea7429e2f7032413c4f82
       id: 1894354718
@@ -4141,8 +4141,8 @@ MonoBehaviour:
         guid: 811831d2afeea7429e2f7032413c4f82
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_Coldown_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.008147
-      minDuration: 2.008147
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
       guid: 9c3b0ad17f573f4b996f52300d2f6701
       id: 3515088067
@@ -4167,8 +4167,8 @@ MonoBehaviour:
         guid: 9c3b0ad17f573f4b996f52300d2f6701
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_2Sec_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.4365518
-      minDuration: 2.4365518
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
       guid: bb16e745d55f9842ab04abfbdf02b029
       id: 3461245946
@@ -4193,8 +4193,8 @@ MonoBehaviour:
         guid: bb16e745d55f9842ab04abfbdf02b029
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_COMPLETE_3Sec_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 3.6146648
-      minDuration: 3.6146648
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
       guid: b33ed5299cba89458a7f76f1d355664a
       id: 3190605359
@@ -4219,8 +4219,8 @@ MonoBehaviour:
         guid: b33ed5299cba89458a7f76f1d355664a
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_Normal_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 4.5964255
-      minDuration: 4.5964255
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
       guid: d8eb0523e32a48428740545f17276087
       id: 4271747987
@@ -4245,8 +4245,8 @@ MonoBehaviour:
         guid: d8eb0523e32a48428740545f17276087
       Path: Events\Default Work Unit\Anneaux\Perseverence\Attack\Play_FULL_Anneaux_Perseverence_Attack_TIR_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.4454768
-      minDuration: 2.4454768
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
       guid: c9cd3f7510cd8a4aa654f07d0d18d7d8
       id: 952051097
@@ -4271,8 +4271,8 @@ MonoBehaviour:
         guid: c9cd3f7510cd8a4aa654f07d0d18d7d8
       Path: Events\Default Work Unit\Anneaux\Perseverence\Base\Play_FULL_Anneaux_Perseverence_Equip_FULL__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.5708171
-      minDuration: 1.5708171
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_SFX_Death_Type1__itemnumber
       guid: fcd3fb198c3f8742a75430ccbe284165
       id: 3397440394
@@ -4291,8 +4291,8 @@ MonoBehaviour:
         guid: fcd3fb198c3f8742a75430ccbe284165
       Path: Events\Default Work Unit\Death\Play_FULL_SFX_Death_Type1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.64286834
-      minDuration: 0.64286834
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FULL_SFX_Death_Type2__itemnumber
       guid: ef832de7ff7ecb40bdde1ac265cbb9e6
       id: 3014696417
@@ -4311,8 +4311,8 @@ MonoBehaviour:
         guid: ef832de7ff7ecb40bdde1ac265cbb9e6
       Path: Events\Default Work Unit\Death\Play_FULL_SFX_Death_Type2__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.5291898
-      minDuration: 1.5291898
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Musique_Combat_Full_Onetime__itemnumber
       guid: 29beea24919c2d468cf0d8df5f7bc2b2
       id: 54626728
@@ -4334,8 +4334,8 @@ MonoBehaviour:
         guid: 29beea24919c2d468cf0d8df5f7bc2b2
       Path: Events\Default Work Unit\Musique\Combat\Play_Musique_Combat_Full_Onetime__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Musique_Combat_Loop__itemnumber
       guid: 75b1a5325c6de94f9679e0631c9184bd
       id: 227535219
@@ -4357,8 +4357,8 @@ MonoBehaviour:
         guid: 75b1a5325c6de94f9679e0631c9184bd
       Path: Events\Default Work Unit\Musique\Combat\Play_Musique_Combat_Loop__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Musique_Lobby_Full_Onetime__itemnumber
       guid: ab0d20b59282be47bb30f1bb8b9dd946
       id: 699954836
@@ -4380,8 +4380,8 @@ MonoBehaviour:
         guid: ab0d20b59282be47bb30f1bb8b9dd946
       Path: Events\Default Work Unit\Musique\Lobby\Play_Musique_Lobby_Full_Onetime__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Musique_Lobby_Loop__itemnumber
       guid: e1ef3c0905ba1b4faf4e89204ddf2c86
       id: 2547827055
@@ -4403,8 +4403,8 @@ MonoBehaviour:
         guid: e1ef3c0905ba1b4faf4e89204ddf2c86
       Path: Events\Default Work Unit\Musique\Lobby\Play_Musique_Lobby_Loop__itemnumber
       maxAttenuation: 0
-      maxDuration: 68.01435
-      minDuration: 68.01435
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Musique_Lobby_Start__itemnumber
       guid: 06e9a06aa000bb47979524521bf1eb10
       id: 3229792879
@@ -4426,8 +4426,8 @@ MonoBehaviour:
         guid: 06e9a06aa000bb47979524521bf1eb10
       Path: Events\Default Work Unit\Musique\Lobby\Play_Musique_Lobby_Start__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.4935699
-      minDuration: 2.4935699
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Musique_Menu_Loop__itemnumber
       guid: 30aa15826655834cb9acbfe713185800
       id: 4142008756
@@ -4449,8 +4449,8 @@ MonoBehaviour:
         guid: 30aa15826655834cb9acbfe713185800
       Path: Events\Default Work Unit\Musique\Menu\Play_Musique_Menu_Loop__itemnumber
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Death__itemnumber
       guid: 99f17ca7ddd3f64789e26e5444f1ad5c
       id: 3168053200
@@ -4469,8 +4469,8 @@ MonoBehaviour:
         guid: 99f17ca7ddd3f64789e26e5444f1ad5c
       Path: Events\Default Work Unit\Death\Play_SFX_Death__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.70373166
-      minDuration: 0.70373166
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Death2__itemnumber
       guid: 995b959019e67640a6912db915eded83
       id: 2806877478
@@ -4489,8 +4489,8 @@ MonoBehaviour:
         guid: 995b959019e67640a6912db915eded83
       Path: Events\Default Work Unit\Death\Play_SFX_Death2__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.430287
-      minDuration: 1.430287
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Death3__itemnumber
       guid: bf36c973caa6ab49ba1cc52bc88a50c3
       id: 3547076779
@@ -4509,8 +4509,8 @@ MonoBehaviour:
         guid: bf36c973caa6ab49ba1cc52bc88a50c3
       Path: Events\Default Work Unit\Death\Play_SFX_Death3__itemnumber
       maxAttenuation: 0
-      maxDuration: 2.0959792
-      minDuration: 2.0959792
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Death4__itemnumber
       guid: 57dcbcfa7bd03f43ad4e2556abad063d
       id: 4014803068
@@ -4529,8 +4529,8 @@ MonoBehaviour:
         guid: 57dcbcfa7bd03f43ad4e2556abad063d
       Path: Events\Default Work Unit\Death\Play_SFX_Death4__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.6504763
-      minDuration: 0.6504763
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_DropLoot__itemnumber
       guid: e6bf81d638737d4aaf877cae9c28968d
       id: 665791251
@@ -4549,8 +4549,8 @@ MonoBehaviour:
         guid: e6bf81d638737d4aaf877cae9c28968d
       Path: Events\Default Work Unit\Death\Play_SFX_DropLoot__itemnumber
       maxAttenuation: 0
-      maxDuration: 1.1525984
-      minDuration: 1.1525984
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Hit1__itemnumber
       guid: db3fd9f7d4a98345b63efe9b56fb3a60
       id: 3231612006
@@ -4569,8 +4569,8 @@ MonoBehaviour:
         guid: db3fd9f7d4a98345b63efe9b56fb3a60
       Path: Events\Default Work Unit\Hit\Play_SFX_Hit1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.2852966
-      minDuration: 0.2852966
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Hit2__itemnumber
       guid: dd49900b073ef24db7c53839fafa3500
       id: 2201133133
@@ -4589,8 +4589,8 @@ MonoBehaviour:
         guid: dd49900b073ef24db7c53839fafa3500
       Path: Events\Default Work Unit\Hit\Play_SFX_Hit2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.57439715
-      minDuration: 0.57439715
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Random
       guid: c1d42e7eae3dbf4d85edd1b726a7c7f4
       id: 2364136414
@@ -4609,8 +4609,8 @@ MonoBehaviour:
         guid: c1d42e7eae3dbf4d85edd1b726a7c7f4
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Random
       maxAttenuation: 0
-      maxDuration: 0.5325537
-      minDuration: 0.34615985
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type1__itemnumber
       guid: 52b4e7cfc10e9847b2cd49d5d2a171a7
       id: 379622684
@@ -4629,8 +4629,8 @@ MonoBehaviour:
         guid: 52b4e7cfc10e9847b2cd49d5d2a171a7
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type1__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.34615985
-      minDuration: 0.34615985
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type2__itemnumber
       guid: 872cd1f936722248af981f8cc1f7b146
       id: 2560371015
@@ -4649,8 +4649,8 @@ MonoBehaviour:
         guid: 872cd1f936722248af981f8cc1f7b146
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type2__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.3499638
-      minDuration: 0.3499638
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type3__itemnumber
       guid: 66b9fe9e3a4872479024498f3159fd97
       id: 1487608498
@@ -4669,8 +4669,8 @@ MonoBehaviour:
         guid: 66b9fe9e3a4872479024498f3159fd97
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type3__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.77600676
-      minDuration: 0.77600676
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type4__itemnumber
       guid: 26884bf27a82494dbdf6fbc6989f4116
       id: 959648813
@@ -4689,8 +4689,8 @@ MonoBehaviour:
         guid: 26884bf27a82494dbdf6fbc6989f4116
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type4__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.5325537
-      minDuration: 0.5325537
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type5__itemnumber
       guid: 28d444054511a748a7d7bd1b922026fc
       id: 1541507328
@@ -4709,8 +4709,8 @@ MonoBehaviour:
         guid: 28d444054511a748a7d7bd1b922026fc
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type5__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.5325537
-      minDuration: 0.5325537
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type6__itemnumber
       guid: 6daa88e53d03a94880ebc8313f32e0e9
       id: 3938999371
@@ -4729,8 +4729,8 @@ MonoBehaviour:
         guid: 6daa88e53d03a94880ebc8313f32e0e9
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type6__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.4374548
-      minDuration: 0.4374548
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type7__itemnumber
       guid: c0c2a3519fa9d0439f918f518c79e240
       id: 1219670470
@@ -4749,8 +4749,8 @@ MonoBehaviour:
         guid: c0c2a3519fa9d0439f918f518c79e240
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type7__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.42223895
-      minDuration: 0.42223895
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type8__itemnumber
       guid: e0c6932bfc17924da5d4b23f0bb6da66
       id: 305339473
@@ -4769,8 +4769,8 @@ MonoBehaviour:
         guid: e0c6932bfc17924da5d4b23f0bb6da66
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type8__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.37278754
-      minDuration: 0.37278754
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_SelectRing_Type9__itemnumber
       guid: fd920a2ccde7b442ad1f1803f69ff080
       id: 539202276
@@ -4789,8 +4789,8 @@ MonoBehaviour:
         guid: fd920a2ccde7b442ad1f1803f69ff080
       Path: Events\Default Work Unit\Switch\Play_SFX_SelectRing_Type9__itemnumber
       maxAttenuation: 0
-      maxDuration: 0.34615985
-      minDuration: 0.34615985
+      maxDuration: -1
+      minDuration: -1
     - name: Stay
       guid: 4e103f7d64a0924183e3214ca3c7ead1
       id: 553997914
